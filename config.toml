@@ -1,3 +1,6 @@
-baseURL = "http://example.org/"
+baseURL = "https://jeromie.github.io/kss"
 languageCode = "en-us"
 title = "My New Hugo Site"
+theme = "kss"
+publishDir = "docs"
+disableFastRender = true
