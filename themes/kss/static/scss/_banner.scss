@@ -1,0 +1,14 @@
+.banner{
+    width:100%;
+    height:300px;
+    background-size: cover !important;
+    padding-top: 60px;
+    .breadcrumb{
+      background:none;
+      text-align: center;
+      display: inline-flex;
+    }
+    h1{
+      color:$blue;
+    }
+}
