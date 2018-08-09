@@ -1,0 +1,63 @@
+$size: 20px;
+
+#card-list{
+.card{ 
+  border:0px;
+  .card-body {
+    flex: 1 1 auto;
+    padding: 10px 0px;
+    .price{
+      .text-danger{
+        color:red !important;
+      }
+      .text-muted{
+        color:$gray-500 !important;
+        }
+      }
+    }
+  }
+}
+
+.heart {
+  width: $size * 2;
+  height: $size * 1.65;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  
+  &:before {
+    position: absolute;
+    content: "";
+    left: $size;
+    top: 0;
+    width: $size;
+    height: $size * 1.65;
+    background: #fff;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+  }
+  
+  &:after {
+    @extend .heart:before;
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin :100% 100%;
+    box-shadow: 2px 0px 1px #737373;
+  }
+}
+
+.beating {
+  animation: beating .5s 1 alternate;
+  &:before, &:after {
+    background: #FF3016;
+  }
+}
+
+@keyframes beating {
+  0% { transform: scale(1) }
+  40% { transform: scale(1.25) }
+  70% { transform: scale(.9) }
+  100% { transform: scale(1) }
+}
