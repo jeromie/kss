@@ -3,12 +3,20 @@
     height:300px;
     background-size: cover !important;
     padding-top: 60px;
+    @media (max-width: 575.98px) {
+      height:180px;
+      padding-top:30px;
+    }
     .breadcrumb{
       background:none;
       text-align: center;
       display: inline-flex;
     }
     h1{
-      color:$blue;
+      color:$d-blue;
+      font-weight:bold;
+       @media (max-width: 575.98px) {
+            font-size: 30px;
+      }
     }
 }
