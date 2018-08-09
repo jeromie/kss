@@ -3,35 +3,48 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-6">
-				img
+				<img src="{{"img/shirt1.jpg" | absURL}}">
 			</div>
 			<div class="col-6">
 				<h1>Cotton Rich Super Skinny Fit Jeans</h1>
-				<h6>869 <small>1309</small><span>20% OFF</span></h6>
+				<h4>869 <small>1309</small><span>20% OFF</span></h4>
 
-				<div>Color Selection</div>
-				<ul class="kss_variants">
-					<li>green</li>
-					<li>yellow</li>
-					<li>blue</li>
-				</ul>
+				<div class="text-dark">Color Selection</div>
+				<div class="radio-wrap w-image kss_variants">
+				    <input class="d-none radio-input" type="radio" name="kss-variants" id="green" checked="checked"/>
+				    <label class="radio-label" for="green" style="background-image: url({{"img/shirt1.jpg" | absURL}})">
+				      <div class="radio-option">green</div>
+				    </label>
+				    <input class="d-none radio-input" type="radio" name="kss-variants" id="yellow"/>
+				    <label class="radio-label" for="yellow" style="background-image: url({{"img/shirt2.jpg" | absURL}})">
+				      <div class="radio-option">yellow</div>
+				    </label>
+				    <input class="d-none radio-input" type="radio" name="kss-variants" id="blue"/>
+				    <label class="radio-label" for="blue" style="background-image: url({{"img/shirt3.jpg" | absURL}})">
+				      <div class="radio-option">blue</div>
+				    </label>
+				    <input class="d-none radio-input" type="radio" name="kss-variants" id="red"/>
+				    <label class="radio-label" for="red" style="background-image: url({{"img/shirt4.jpg" | absURL}})">
+				      <div class="radio-option">red</div>
+				    </label>
+				</div>
 
-				<div>Select Size</div>
-				<div class="button-wrap kss_sizes">
-				    <input class="d-none radio-label" type="radio" name="kss-sizes" id="18-24" checked="checked"/>
-				    <label class="button-label" for="18-24">
+				<div class="text-dark">Select Size</div>
+				<div class="radio-wrap kss_sizes">
+				    <input class="d-none radio-input" type="radio" name="kss-sizes" id="18-24" checked="checked"/>
+				    <label class="radio-label" for="18-24">
 				      <div class="radio-option">18-24 M</div>
 				    </label>
-				    <input class="d-none radio-label" type="radio" name="kss-sizes" id="1-2"/>
-				    <label class="button-label" for="1-2">
+				    <input class="d-none radio-input" type="radio" name="kss-sizes" id="1-2"/>
+				    <label class="radio-label" for="1-2">
 				      <div class="radio-option">1-2 Y</div>
 				    </label>
-				    <input class="d-none radio-label" type="radio" name="kss-sizes" id="2-4"/>
-				    <label class="button-label" for="2-4">
+				    <input class="d-none radio-input" type="radio" name="kss-sizes" id="2-4"/>
+				    <label class="radio-label" for="2-4">
 				      <div class="radio-option">2-4 Y</div>
 				    </label>
-				    <input class="d-none radio-label" type="radio" name="kss-sizes" id="5-8"/>
-				    <label class="button-label" for="5-8">
+				    <input class="d-none radio-input" type="radio" name="kss-sizes" id="5-8"/>
+				    <label class="radio-label" for="5-8">
 				      <div class="radio-option">5-8 Y</div>
 				    </label>
 				</div>
@@ -48,6 +61,7 @@
 						</select>
 					</div>
 					<div class="col-9">
+						<div class="text-muted">Additional taxes may apply</div>
 						<button class="btn btn-primary btn-lg btn-block">Add to Cart</button>
 					</div>
 				</div>

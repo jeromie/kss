@@ -6301,31 +6301,27 @@ a.text-cancel:hover, a.text-cancel:focus {
   background-color: #adb5bd;
   border-color: #adb5bd; }
 
-.button-label {
+.radio-label {
   display: inline-block;
   padding: 1em 2em;
-  margin: 0.5em;
+  margin: 0;
   cursor: pointer;
-  color: #292929;
-  border-radius: 0.25em;
-  background: #efefef;
+  border: 2px solid #adb5bd;
   transition: 0.3s;
   user-select: none; }
-  .button-label h1 {
+  .radio-label h1 {
     font-size: 1em; }
-  .button-label:hover {
-    background: #d6d6d6;
-    color: #101010; }
-  .button-label:active {
+  .radio-label:active {
     transform: translateY(2px); }
-  @media (max-width: 40em) {
-    .button-label {
-      padding: 0em 1em 3px;
-      margin: 0.25em; } }
 
-.radio-label:checked + .button-label {
-  background: #f9bc23;
-  color: #efefef; }
-  .radio-label:checked + .button-label:hover {
-    background: #f8b40a;
-    color: #e2e2e2; }
+.radio-input:checked + .radio-label {
+  border-color: #f9bc23; }
+
+.radio-wrap.w-image .radio-option {
+  display: none; }
+
+.radio-wrap.w-image .radio-label {
+  padding: 2em;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat; }
