@@ -6350,6 +6350,12 @@ a.text-cancel:hover, a.text-cancel:focus {
     .kss_sizes label div {
       text-align: center; }
 
+@media (max-width: 575.98px) {
+  #card-list {
+    padding: 10px; }
+    #card-list .col-lg-4 {
+      padding: 8px; } }
+
 #card-list .card {
   border: 0px; }
   #card-list .card .card-img-top {

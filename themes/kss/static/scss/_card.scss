@@ -1,11 +1,17 @@
 $size: 20px;
 
 #card-list{
+  @media (max-width: 575.98px) {
+      padding:10px;
+      .col-lg-4{
+        padding:8px;
+      }
+  }
   .card{
     border:0px;
     .card-img-top{
       min-height: 24vw;
-      @media (max-width: 1399px) {
+       @media (max-width: 1399px) {
         min-height: 32vw;
       }
       @media (max-width: 575.98px) {
