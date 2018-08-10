@@ -2,6 +2,8 @@
 	color: $gray-700;
 }
 
-body *{
-	@extend .fade-in;
+body{
+	div, img{
+		// @extend .fade-in;
+	}
 }
