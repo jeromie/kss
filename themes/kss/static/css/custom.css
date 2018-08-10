@@ -6356,22 +6356,22 @@ a.text-cancel:hover, a.text-cancel:focus {
     #card-list .col-lg-4 {
       padding: 8px; } }
 
-#card-list .card {
+.card {
   border: 0px; }
-  #card-list .card .card-img-top {
+  .card .card-img-top {
     min-height: 24vw; }
     @media (max-width: 1399px) {
-      #card-list .card .card-img-top {
+      .card .card-img-top {
         min-height: 32vw; } }
     @media (max-width: 575.98px) {
-      #card-list .card .card-img-top {
+      .card .card-img-top {
         min-height: 70vw; } }
-  #card-list .card .card-body {
+  .card .card-body {
     flex: 1 1 auto;
     padding: 10px 0px; }
-    #card-list .card .card-body .price .text-danger {
+    .card .card-body .price .text-danger {
       color: red !important; }
-    #card-list .card .card-body .price .text-muted {
+    .card .card-body .price .text-muted {
       color: #adb5bd !important; }
 
 .kss_filter {
@@ -6576,8 +6576,8 @@ select::-ms-expand {
  * ----------------------------------------
  */
 .fade-in {
-  -webkit-animation: fade-in 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: fade-in 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
+  -webkit-animation: fade-in 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
 
 @-webkit-keyframes fade-in {
   0% {
