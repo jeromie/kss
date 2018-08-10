@@ -4,9 +4,9 @@ $size: 20px;
 .card{ 
   border:0px;
   .card-img-top{
-    width: 14vw;
+    height: 24vw;
        @media (max-width: 575.98px) {
-        width: 92vw;
+        height: 150vw;
        }
     }
   .card-body {

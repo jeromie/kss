@@ -6330,18 +6330,25 @@ a.text-cancel:hover, a.text-cancel:focus {
   min-width: 100px;
   padding: 1em 0.5em; }
 
-.kss_sizes label {
-  margin: 0px 5px; }
-  .kss_sizes label div {
-    text-align: center; }
+.kss_sizes {
+  display: flex; }
+  @media (max-width: 575.98px) {
+    .kss_sizes {
+      overflow: scroll; }
+      .kss_sizes div {
+        width: 60px; } }
+  .kss_sizes label {
+    margin: 0px 5px; }
+    .kss_sizes label div {
+      text-align: center; }
 
 #card-list .card {
   border: 0px; }
   #card-list .card .card-img-top {
-    width: 14vw; }
+    height: 24vw; }
     @media (max-width: 575.98px) {
       #card-list .card .card-img-top {
-        width: 92vw; } }
+        height: 150vw; } }
   #card-list .card .card-body {
     flex: 1 1 auto;
     padding: 10px 0px; }
@@ -6522,3 +6529,24 @@ select::-ms-expand {
 
 .animated-heart {
   color: red; }
+
+/**
+ * ----------------------------------------
+ * animation fade-in
+ * ----------------------------------------
+ */
+.fade-in, body * {
+  -webkit-animation: fade-in 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
