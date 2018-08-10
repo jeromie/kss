@@ -1,16 +1,54 @@
 {{ define "main" }}
 
-	<div class="container">
-		<div class="row">
-			<div class="col-6">
-				<img src="{{"img/shirt1.jpg" | absURL}}">
-			</div>
-			<div class="col-6">
-				<h1>Cotton Rich Super Skinny Fit Jeans</h1>
-				<h4>869 <small>1309</small><span>20% OFF</span></h4>
+	<div class="breadcrumb-wrapper border-top border-bottom mt-4">
+		<div class="container">
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb mb-0 bg-transparent pl-0 pr-0">
+				    <li class="breadcrumb-item"><a href="#">Home</a></li>
+				    <li class="breadcrumb-item"><a href="#">Kids Clothes</a></li>
+				    <li class="breadcrumb-item"><a href="#">Boys</a></li>
+				    <li class="breadcrumb-item active" aria-current="page">Boys Shirts</li>
+				</ol>
+			</nav>
+		</div>
+	</div>
 
-				<div class="text-dark">Color Selection</div>
-				<div class="radio-wrap w-image kss_variants">
+	<div class="container mt-4">
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="row">
+					<div class="col-10 order-2">
+						<img src="{{"img/4front.png" | absURL}}" xoriginal='{{"img/4front.png" | absURL}}' class="img-fluid xzoom" >
+					</div>
+					<div class="col-2 order-1">
+						<ul class="list-unstyled">
+							<li>
+								<a href="{{"img/4front.png" | absURL}}">
+									<img src="{{"img/4front.png" | absURL}}" class="img-fluid xzoom-gallery">
+								</a>
+							</li>
+							<li>
+								<a href="{{"img/4back.png" | absURL}}">
+									<img src="{{"img/4back.png" | absURL}}" class="img-fluid xzoom-gallery">
+								</a>
+							</li>
+							<li>
+								<a href="{{"img/4focus.png" | absURL}}">
+									<img src="{{"img/4focus.png" | absURL}}" class="img-fluid xzoom-gallery">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<h1>Cotton Rich Super Skinny Fit Jeans</h1>
+				<h4 class="kss-price">₹869 <small class="kss-original-price text-muted">₹1309</small> <span class="kss-discount text-danger">20% OFF</span></h4>
+
+				<hr>
+
+				<label class="">Color Selection</label>
+				<div class="radio-wrap w-image kss_variants mb-4">
 				    <input class="d-none radio-input" type="radio" name="kss-variants" id="green" checked="checked"/>
 				    <label class="radio-label" for="green" style="background-image: url({{"img/shirt1.jpg" | absURL}})">
 				      <div class="radio-option">green</div>
@@ -29,8 +67,8 @@
 				    </label>
 				</div>
 
-				<div class="text-dark">Select Size</div>
-				<div class="radio-wrap kss_sizes">
+				<label class="">Select Size</label>
+				<div class="radio-wrap kss_sizes mb-4">
 				    <input class="d-none radio-input" type="radio" name="kss-sizes" id="18-24" checked="checked"/>
 				    <label class="radio-label" for="18-24">
 				      <div class="radio-option">18-24 M</div>
@@ -49,9 +87,9 @@
 				    </label>
 				</div>
 
-				<div class="row">
+				<div class="row mb-4">
 					<div class="col-3">
-						<div>Quantity</div>
+						<label>Quantity</label>
 						<select class="custom-select">
 							<option>1</option>
 							<option>2</option>
