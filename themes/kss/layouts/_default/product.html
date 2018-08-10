@@ -42,13 +42,13 @@
 				</div>
 			</div>
 			<div class="col-sm-6">
-				<h1>Cotton Rich Super Skinny Fit Jeans</h1>
+				<h1 class="kss-title mb-4 text-gray">Cotton Rich Super Skinny Fit Jeans</h1>
 				<h4 class="kss-price">₹869 <small class="kss-original-price text-muted">₹1309</small> <span class="kss-discount text-danger">20% OFF</span></h4>
 
 				<hr>
 
-				<label class="">Color Selection</label>
-				<div class="radio-wrap w-image kss_variants mb-4">
+				<label class="mt-3">Color Selection</label>
+				<div class="radio-wrap w-image kss_variants mb-5">
 				    <input class="d-none radio-input" type="radio" name="kss-variants" id="green" checked="checked"/>
 				    <label class="radio-label" for="green" style="background-image: url({{"img/shirt1.jpg" | absURL}})">
 				      <div class="radio-option">green</div>
@@ -67,8 +67,11 @@
 				    </label>
 				</div>
 
-				<label class="">Select Size</label>
-				<div class="radio-wrap kss_sizes mb-4">
+				<div class="d-flex justify-content-between">
+					<label class="">Select Size</label>
+					<a href="#" class="font-weight-bold">Size Chart</a>
+				</div>
+				<div class="radio-wrap kss_sizes wo-image mb-5">
 				    <input class="d-none radio-input" type="radio" name="kss-sizes" id="18-24" checked="checked"/>
 				    <label class="radio-label" for="18-24">
 				      <div class="radio-option">18-24 M</div>
@@ -87,28 +90,30 @@
 				    </label>
 				</div>
 
-				<div class="row mb-4">
-					<div class="col-3">
+				<div class="row mb-5">
+					<div class="col-sm-3 col-12">
 						<label>Quantity</label>
-						<select class="custom-select">
-							<option>1</option>
-							<option>2</option>
-							<option>3</option>
-							<option>4</option>
-							<option>5</option>
-						</select>
+						<div class="kss-custom-select ">
+							<select class="form-control form-control-lg">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</div>
 					</div>
-					<div class="col-9">
-						<div class="text-muted">Additional taxes may apply</div>
+					<div class="col-sm-9 col-12">
+						<div class="text-muted mb-2 mt-1">Additional taxes may apply</div>
 						<button class="btn btn-primary btn-lg btn-block">Add to Cart</button>
 					</div>
 				</div>
 
-				<div class="accordion" id="accordionExample">
-				  <div class="card">
-				    <div class="card-header" id="headingOne">
-				      <h5 class="mb-0">
-				        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				<div class="accordion product-collapse" id="accordionExample">
+				  <div class="">
+				    <div class="collapse-head" id="headingOne">
+				      <h5 class="mb-0 py-1 pl-1 pr-2">
+				        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 				        	Details
 				        </button>
 				      </h5>
@@ -120,10 +125,10 @@
 				      </div>
 				    </div>
 				  </div>
-				  <div class="card">
-				    <div class="card-header" id="headingTwo">
-				      <h5 class="mb-0">
-				        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				  <div class="">
+				    <div class="collapse-head" id="headingTwo">
+				      <h5 class="mb-0 py-1">
+				        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
 				        	Additional Info
 				        </button>
 				      </h5>
@@ -134,10 +139,10 @@
 				      </div>
 				    </div>
 				  </div>
-				  <div class="card">
-				    <div class="card-header" id="headingThree">
-				      <h5 class="mb-0">
-				        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				  <div class="">
+				    <div class="collapse-head" id="headingThree">
+				      <h5 class="mb-0 py-1">
+				        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
 				        	Reviews
 				        </button>
 				      </h5>

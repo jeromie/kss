@@ -35,15 +35,21 @@
       background-repeat: no-repeat;
     }
   }
+  &.wo-image{
+    .radio-label{
+      min-width: 100px;
+      padding: 1em 0.5em;
+    }
+  }
 }
 
 .kss_sizes{
-    display: flex;
-    overflow: scroll;
+    // display: flex;
+    // overflow: scroll;
     label{
       margin:0px 5px;
       div{
-        width:50px;
+        // width:50px;
         text-align:center;
       }
     }
