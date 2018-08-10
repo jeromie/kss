@@ -1,3 +1,9 @@
 .text-gray{
 	color: $gray-700;
 }
+
+body{
+	div, img{
+		// @extend .fade-in;
+	}
+}

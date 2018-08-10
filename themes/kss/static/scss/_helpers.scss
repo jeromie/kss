@@ -25,3 +25,10 @@
 .price-l{
 	    background-position: -240px -10px;
 }
+
+body{
+	div, img{
+		// @extend .fade-in;
+	}
+}
+
