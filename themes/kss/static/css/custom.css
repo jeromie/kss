@@ -3201,7 +3201,7 @@ input[type="button"].btn-block {
     display: inline-block;
     padding-right: 0.5rem;
     color: #6c757d;
-    content: "/"; }
+    content: ">"; }
 
 .breadcrumb-item + .breadcrumb-item:hover::before {
   text-decoration: underline; }
@@ -6306,7 +6306,7 @@ a.text-cancel:hover, a.text-cancel:focus {
   padding: 1em 2em;
   margin: 0;
   cursor: pointer;
-  border: 2px solid #adb5bd;
+  border: 2px solid #dee2e6;
   transition: 0.3s;
   user-select: none; }
   .radio-label h1 {
@@ -6447,3 +6447,28 @@ a.text-cancel:hover, a.text-cancel:focus {
     @media (max-width: 575.98px) {
       .kss_banner h1 {
         font-size: 30px; } }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+label {
+  font-size: 0.9rem;
+  font-weight: 600; }
+
+.kss-price {
+  font-size: 1.6rem;
+  font-weight: bold; }
+
+.kss-original-price {
+  font-size: 80%;
+  text-decoration: line-through;
+  font-weight: normal;
+  margin-left: 5px;
+  margin-right: 5px; }
+
+.kss-discount {
+  font-size: 80%;
+  font-weight: normal; }
+
+.breadcrumb-item a {
+  color: #495057; }
