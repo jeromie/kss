@@ -44,12 +44,16 @@
 }
 
 .kss_sizes{
-    // display: flex;
-    // overflow: scroll;
+    display: flex;
+      @media (max-width: 575.98px) {
+         overflow: scroll;
+         div{
+         width:60px;
+         }
+}
     label{
       margin:0px 5px;
       div{
-        // width:50px;
         text-align:center;
       }
     }
