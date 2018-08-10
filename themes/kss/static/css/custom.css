@@ -6590,3 +6590,9 @@ select::-ms-expand {
     opacity: 0; }
   100% {
     opacity: 1; } }
+
+img {
+  opacity: 1;
+  transition: 0.75s cubic-bezier(0.215, 0.61, 0.355, 1); }
+  img[data-imgsrc] {
+    opacity: 0; }
