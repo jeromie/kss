@@ -6345,7 +6345,10 @@ a.text-cancel:hover, a.text-cancel:focus {
 #card-list .card {
   border: 0px; }
   #card-list .card .card-img-top {
-    height: 24vw; }
+    min-height: 24vw; }
+    @media (max-width: 1399px) {
+      #card-list .card .card-img-top {
+        min-height: 32vw; } }
     @media (max-width: 575.98px) {
       #card-list .card .card-img-top {
         height: 70vw; } }
