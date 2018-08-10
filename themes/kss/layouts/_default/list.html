@@ -1,6 +1,6 @@
 {{ define "main" }}
 <section>
-		<div class="banner mb-3 text-center" style="background:url('../img/banner.png') center;">
+		<div class="kss_banner mb-3 text-center" style="background:url('../img/banner.png') center;">
 		<nav aria-label="breadcrumb">
 			  <ol class="breadcrumb">
 			    <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -15,9 +15,9 @@
 	<div class="container">
 	 	<div class="row">
 		  <div class="col-sm-3">
-		  		<div id="accordion" class="filter d-none d-sm-block">
-  <div class="list">
-  	<h4 class="mb-4 mt-0">Filter By <sm><a class="float-right font-weight-light" href="#">Reset </a></sm></h4>
+<div id="accordion" class="kss_filter  d-sm-block">
+  <div class="kss_filter-list">
+  	<h4 class="mb-4 mt-0">Filter By <sm><a class="float-right font-weight-light d-none d-sm-block" href="#">Reset </a></sm> <i id="kss_hide-filter" class="float-right fa fa-times d-block d-sm-none"></i></h4>
   	<hr>
     <div id="headingOne">
  		<h5 data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -48,7 +48,7 @@
       </div>
     </div>
   </div>
-   <div class="list">
+   <div class="kss_filter-list">
     <div id="headingTwo">
         <h5 class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
          Shop by Style<i class="fas fa-angle-up float-right"></i>
@@ -78,7 +78,7 @@
       </div>
     </div>
   </div>
-   <div class="list">
+   <div class="kss_filter-list">
     <div id="headingThree">
         <h5 class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
           Price<i class="fas fa-angle-up float-right"></i>
@@ -107,7 +107,7 @@
       </div>
     </div>
   </div>
-    <div class="list">
+    <div class="kss_filter-list">
     <div id="headingThree">
         <h5 class=" collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
           Look<i class="fas fa-angle-up float-right"></i>
@@ -136,44 +136,75 @@
       </div>
     </div>
   </div>
-   
+<div class="position-absolute fixed-bottom">
+	<div class="container">
+	<div class="row">
+			<div class="col-6 mt-2 mb-2">
+					<button type="button" class=" btn btn-outline-dark btn-block">Clear All</button>
+			</div>
+			<div class="col-6 mt-2 mb-2">
+					<button type="button" class="btn btn-dark btn-block">Apply</button>
+			</div>
+	</div>
+</div>
+</div>
 </div>
 		  </div>
 		  <div class="col-sm-9">
-		  	<div class="row mt-2 d-none d-sm-block">
+		  	<div class="d-none d-sm-block">
+		  	<div class="row mt-2">
 		  		<div class="col-sm-6">
 		  			<i class="d-block mt-2"> Showing 300 items</i>
 		  		</div>
 		  		<div class="col-sm-6 ">
-<form class="form-inline float-right">
-  <div class="form-group mb-2">
-   Sort By
-  </div>
-  <div class="form-group mx-sm-3 mb-2">
-   <select class="form-control">
-	  <option>Default select</option>
-	</select>
-  </div>
-</form>
+			<form class="form-inline float-right">
+			  <div class="form-group mb-2">
+			   Sort By
+			  </div>
+			  <div class="form-group mx-sm-3 mb-2">
+			   <select class="form-control">
+				  <option>Default select</option>
+				</select>
+			  </div>
+			</form>
 		  		</div>
 		  	</div>
+		  </div>
 		  	<hr class="d-none d-sm-block">
-		  	<div class="scroll">
-  <div class="outer">
-    <button type="button" class="btn btn-outline-dark">1 - 24 M</button>
-     <button type="button" class="btn btn-outline-dark">2 - 3 Y </button>
-      <button type="button" class="btn btn-outline-dark">3 - 5 Y</button>
-       <button type="button" class="btn btn-outline-dark">6 - 7 Y</button>
-        <button type="button" class="btn btn-outline-dark">7 - 8 Y</button>
-         <button type="button" class="btn btn-outline-dark">8 - 9 Y</button>
-          <button type="button" class="btn btn-outline-dark">9 - 10 Y</button>
- <button type="button" class="btn btn-outline-dark">10 - 11 Y</button>
-           <button type="button" class="btn btn-outline-dark">11 - 12 Y</button>
-   
-
-
-  </div>
-</div>
+<div class="radio-wrap kss_sizes mb-3">
+				    <input class="d-none radio-input" type="radio" name="kss-sizes" id="18-24" checked="checked"/>
+				    <label class="radio-label" for="18-24">
+				      <div class="radio-option">1-12 M</div>
+				    </label>
+				    <input class="d-none radio-input" type="radio" name="kss-sizes" id="1-2"/>
+				    <label class="radio-label" for="1-2">
+				      <div class="radio-option">1-2 Y</div>
+				    </label>
+				    <input class="d-none radio-input" type="radio" name="kss-sizes" id="2-4"/>
+				    <label class="radio-label" for="2-4">
+				      <div class="radio-option">2-4 Y</div>
+				    </label>
+				    <input class="d-none radio-input" type="radio" name="kss-sizes" id="5-8"/>
+				    <label class="radio-label" for="5-8">
+				      <div class="radio-option">5-8 Y</div>
+				    </label>
+				    	    <input class="d-none radio-input" type="radio" name="kss-sizes" id="18-24" checked="checked"/>
+				    <label class="radio-label" for="18-24">
+				      <div class="radio-option">9-10 Y</div>
+				    </label>
+				    <input class="d-none radio-input" type="radio" name="kss-sizes" id="1-2"/>
+				    <label class="radio-label" for="1-2">
+				      <div class="radio-option">11-12 Y</div>
+				    </label>
+				    <input class="d-none radio-input" type="radio" name="kss-sizes" id="2-4"/>
+				    <label class="radio-label" for="2-4">
+				      <div class="radio-option">13-14 Y</div>
+				    </label>
+				    <input class="d-none radio-input" type="radio" name="kss-sizes" id="5-8"/>
+				    <label class="radio-label" for="5-8">
+				      <div class="radio-option">15-16 Y</div>
+				    </label>
+				</div>
 <div id="card-list" class="row">
 
             <div class="col-lg-4 col-md-6 mb-4">
@@ -264,13 +295,15 @@
 		  </div>
 		</div>
 	</div>
-	<div class="sticky-bottom d-block d-sm-none">
+
+
+	<div class="fixed-bottom d-block d-sm-none">
 			<div class="row">
 			<div class="col-6 text-center b-r">
 					<a><h5 class="mt-4">Sort</h5></a>
 			</div>
-			<div class="col-6 text-center">
-					<a><h5 class="mt-4">Filter</h5></a>
+			<div class="col-6 text-center" id="filter" >
+					<a ><h5 id="filter" class="mt-4">Filter</h5></a>
 			</div>
 		</div>
 	</div>
