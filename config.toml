@@ -1,6 +1,6 @@
 baseURL = "https://jeromie.github.io/kss"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Kidsuperstore.in"
 theme = "kss"
 publishDir = "docs"
 disableFastRender = true
