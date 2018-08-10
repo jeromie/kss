@@ -6327,8 +6327,10 @@ a.text-cancel:hover, a.text-cancel:focus {
   background-repeat: no-repeat; }
 
 .kss_sizes {
-  display: flex;
-  overflow: scroll; }
+  display: flex; }
+  @media (max-width: 575.98px) {
+    .kss_sizes {
+      overflow: scroll; } }
   .kss_sizes label {
     margin: 0px 5px; }
     .kss_sizes label div {
@@ -6338,10 +6340,10 @@ a.text-cancel:hover, a.text-cancel:focus {
 #card-list .card {
   border: 0px; }
   #card-list .card .card-img-top {
-    width: 14vw; }
+    height: 24vw; }
     @media (max-width: 575.98px) {
       #card-list .card .card-img-top {
-        width: 92vw; } }
+        height: 150vw; } }
   #card-list .card .card-body {
     flex: 1 1 auto;
     padding: 10px 0px; }
