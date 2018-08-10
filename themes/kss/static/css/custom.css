@@ -6337,6 +6337,11 @@ a.text-cancel:hover, a.text-cancel:focus {
 
 #card-list .card {
   border: 0px; }
+  #card-list .card .card-img-top {
+    width: 14vw; }
+    @media (max-width: 575.98px) {
+      #card-list .card .card-img-top {
+        width: 92vw; } }
   #card-list .card .card-body {
     flex: 1 1 auto;
     padding: 10px 0px; }
@@ -6344,45 +6349,6 @@ a.text-cancel:hover, a.text-cancel:focus {
       color: red !important; }
     #card-list .card .card-body .price .text-muted {
       color: #adb5bd !important; }
-
-.heart {
-  width: 40px;
-  height: 33px;
-  cursor: pointer;
-  position: absolute;
-  top: 20px;
-  right: 10px; }
-  .heart:before, .heart:after {
-    position: absolute;
-    content: "";
-    left: 20px;
-    top: 0;
-    width: 20px;
-    height: 33px;
-    background: #fff;
-    border-radius: 50px 50px 0 0;
-    transform: rotate(-45deg);
-    transform-origin: 0 100%; }
-  .heart:after {
-    left: 0;
-    transform: rotate(45deg);
-    transform-origin: 100% 100%;
-    box-shadow: 2px 0px 1px #737373; }
-
-.beating {
-  animation: beating .5s 1 alternate; }
-  .beating:before, .beating:after {
-    background: #FF3016; }
-
-@keyframes beating {
-  0% {
-    transform: scale(1); }
-  40% {
-    transform: scale(1.25); }
-  70% {
-    transform: scale(0.9); }
-  100% {
-    transform: scale(1); } }
 
 .kss_filter {
   overflow: hidden;
@@ -6472,3 +6438,16 @@ label {
 
 .breadcrumb-item a {
   color: #495057; }
+
+.kss_heart {
+  position: absolute;
+  font-size: 30px;
+  right: 10px;
+  top: 10px;
+  color: #fff;
+  text-shadow: 1px 1px 2px #797878;
+  cursor: pointer;
+  display: block; }
+
+.animated-heart {
+  color: red; }

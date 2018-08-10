@@ -20,3 +20,20 @@ $(document).ready(function(){
 	    jQuery(".kss_filter").removeClass("kss_filter_mobile");
 	});
 })
+
+jQuery(window).on("load", function(){
+   jQuery.ready.then(function(){
+     var imgDefer = document.getElementsByTagName('img');
+   for (var i=0; i<imgDefer.length; i++) {
+       if(imgDefer[i].getAttribute('data-imgsrc')) {
+           imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-imgsrc'));
+           imgDefer[i].removeAttribute('data-imgsrc');
+       }
+   }
+   });
+})
+
+
+$('.kss_heart').on('click', function(){
+  $(this).toggleClass('animated-heart');
+});
