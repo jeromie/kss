@@ -1,12 +1,15 @@
 $size: 20px;
 
 #card-list{
-.card{ 
+.card{
   border:0px;
   .card-img-top{
-    height: 24vw;
+    min-height: 24vw;
+       @media (max-width: 1399px) {
+        min-height: 32vw;
+       }
        @media (max-width: 575.98px) {
-        height: 150vw;
+        min-height: 150vw;
        }
     }
   .card-body {
