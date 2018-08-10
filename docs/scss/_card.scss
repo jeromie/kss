@@ -1,27 +1,32 @@
 $size: 20px;
 
 #card-list{
-.card{
-  border:0px;
-  .card-img-top{
-    min-height: 24vw;
+  @media (max-width: 575.98px) {
+      padding:10px;
+      .col-lg-4{
+        padding:8px;
+      }
+  }
+  .card{
+    border:0px;
+    .card-img-top{
+      min-height: 24vw;
        @media (max-width: 1399px) {
         min-height: 32vw;
-       }
-       @media (max-width: 575.98px) {
-        height: 70vw;
-
-       }
-    }
-  .card-body {
-    flex: 1 1 auto;
-    padding: 10px 0px;
-    .price{
-      .text-danger{
-        color:red !important;
       }
-      .text-muted{
-        color:$gray-500 !important;
+      @media (max-width: 575.98px) {
+        min-height: 70vw;
+      }
+    }
+    .card-body {
+      flex: 1 1 auto;
+      padding: 10px 0px;
+      .price{
+        .text-danger{
+          color:red !important;
+        }
+        .text-muted{
+          color:$gray-500 !important;
         }
       }
     }

@@ -7,3 +7,13 @@
 	background-color: $gray-500;
 	border-color: $gray-500;
 }
+
+@media (max-width: 767px){
+	.kss-single-prod-add-to-cart{
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		left: 0;
+		z-index: 10;
+	}
+}
