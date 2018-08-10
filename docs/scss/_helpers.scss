@@ -2,8 +2,33 @@
 	color: $gray-700;
 }
 
+.kss_icon {
+	background:url(../img/sprite.png)no-repeat;
+	width:30px;
+	height:33px;
+	background-size: 44vh;
+	display:inline-block;
+	margin-bottom: -4px;
+}
+.popularity{
+	    background-position: -24px -10px;
+}
+.latest{
+	    background-position: -71px -10px;
+}
+.discount{
+	    background-position: -121px -10px;
+}
+.price-h{
+	    background-position: -180px -10px;
+}
+.price-l{
+	    background-position: -240px -10px;
+}
+
 body{
 	div, img{
 		// @extend .fade-in;
 	}
 }
+

@@ -20,7 +20,8 @@
 
     <title>Categories</title>
   </head>
-  <body><nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <body><div class="container pl-0 pr-0">
+<nav class="navbar navbar-expand-lg navbar-light bg-white pl-0 pr-0">
   <a class="navbar-brand" href="#"><img src="https://media-cdn.kidsuperstore.in/media/logo/stores/1/logo.png" width="200px" /></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -44,6 +45,7 @@
     </form>
   </div>
 </nav>
+</div>
 <section>
 		<div class="kss_banner mb-3 text-center" style="background:url('../img/banner.png') center;">
 		<nav aria-label="breadcrumb">
@@ -200,7 +202,11 @@
 			  </div>
 			  <div class="form-group mx-sm-3 mb-2">
 			   <select class="form-control">
-				  <option>Default select</option>
+				  <option>Popularity</option>
+				  <option>Latest</option>
+				  <option>Discount</option>
+				  <option>Price: High to Low</option>
+				  <option>Price: Low to High</option>
 				</select>
 			  </div>
 			</form>
@@ -369,25 +375,26 @@
 		  </div>
 		</div>
 	</div>
-
+<br>
+<br>
 <div class="modal fade" id="kss_sort" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog m-0 fixed-bottom" role="document">
     <div class="modal-content fixed-bottom">
       <div class="modal-header">
-        <h6 class="modal-title" id="exampleModalLongTitle">Sort by</h6>
+        <h6 class="modal-title text-muted" id="exampleModalLongTitle">Sort by</h6>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="">
       <div class="list-group">
-		  <a href="#" class="list-group-item list-group-item-action pt-0 pb-0">Popularity
+		  <a href="#" class="list-group-item list-group-item-action pt-0 pb-0"><i class="kss_icon popularity"></i> Popularity
 </a>
-		  <a href="#" class="list-group-item list-group-item-action pt-0 pb-0">Latest
+		  <a href="#" class="list-group-item list-group-item-action pt-0 pb-0"><i class="kss_icon latest"></i> Latest
 </a>
-		  <a href="#" class="list-group-item list-group-item-action pt-0 pb-0">Discount</a>
-		  <a href="#" class="list-group-item list-group-item-action pt-0 pb-0">Price: High to Low</a>
-		   <a href="#" class="list-group-item list-group-item-action pt-0 pb-0">Price: Low to High</a>
+		  <a href="#" class="list-group-item list-group-item-action pt-0 pb-0"><i class="kss_icon discount"></i> Discount</a>
+		  <a href="#" class="list-group-item list-group-item-action pt-0 pb-0"><i class="kss_icon price-h"></i> Price: High to Low</a>
+		   <a href="#" class="list-group-item list-group-item-action pt-0 pb-0"><i class="kss_icon price-l"></i> Price: Low to High</a>
 		</div>
       </div>
     
