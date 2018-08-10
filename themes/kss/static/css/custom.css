@@ -6326,6 +6326,15 @@ a.text-cancel:hover, a.text-cancel:focus {
   background-position: center;
   background-repeat: no-repeat; }
 
+.kss_sizes {
+  display: flex;
+  overflow: scroll; }
+  .kss_sizes label {
+    margin: 0px 5px; }
+    .kss_sizes label div {
+      width: 50px;
+      text-align: center; }
+
 #card-list .card {
   border: 0px; }
   #card-list .card .card-body {
@@ -6375,69 +6384,47 @@ a.text-cancel:hover, a.text-cancel:focus {
   100% {
     transform: scale(1); } }
 
-@media (max-width: 575.98px) {
-  .kss_filter {
-    position: fixed;
-    z-index: 9999;
-    background: #fff;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 430px;
-    padding: 16px; } }
+.kss_filter {
+  overflow: hidden;
+  transition: all 0.5s ease; }
+  .kss_filter .fixed-bottom {
+    display: none; }
+  @media (max-width: 575.98px) {
+    .kss_filter {
+      position: fixed;
+      z-index: 9999;
+      background: #fff;
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      left: 430px;
+      padding: 16px; } }
+  .kss_filter .kss_filter-list {
+    cursor: pointer;
+    border-bottom: 2px solid #000;
+    margin: 18px 0px; }
+    .kss_filter .kss_filter-list .card-body {
+      padding: 1.25rem 0px; }
+      .kss_filter .kss_filter-list .card-body .form-check .form-check-label {
+        font-size: 15px; }
+      .kss_filter .kss_filter-list .card-body .form-check .form-check-input {
+        margin-top: 0.4rem; }
+    .kss_filter .kss_filter-list .collapsed i {
+      transform: rotate(180deg); }
 
-.kss_filter .kss_filter-list {
-  cursor: pointer;
-  border-bottom: 2px solid #000;
-  margin: 18px 0px; }
-  .kss_filter .kss_filter-list .card-body {
-    padding: 1.25rem 0px; }
-    .kss_filter .kss_filter-list .card-body .form-check .form-check-label {
-      font-size: 15px; }
-    .kss_filter .kss_filter-list .card-body .form-check .form-check-input {
-      margin-top: 0.4rem; }
-  .kss_filter .kss_filter-list .collapsed i {
-    transform: rotate(180deg); }
+.kss_filter_mobile {
+  left: 0px; }
+  .kss_filter_mobile .fixed-bottom {
+    display: block; }
 
-.scroll {
-  overflow-x: auto;
-  width: 100%;
-  margin-bottom: 10px; }
-
-.outer {
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-  min-width: 100%;
-  height: 80px;
-  padding: 5px;
-  float: left;
-  /* To size to content, & not be clamped to available width. (Vendor-prefixed intrinsic sizing keywords for "width" should work here, too.) */ }
-
-.outer > button {
-  flex: 1 1 auto;
-  border: 1px #ccc solid;
-  text-align: center;
-  min-width: 50px;
-  margin: 5px; }
-
-.outer > button:first-child {
-  margin-left: auto; }
-
-.outer > button:last-child {
-  margin-right: auto; }
-
-.sticky-bottom {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 60px;
+.fixed-bottom {
   line-height: 60px;
   background-color: #ffffff;
-  box-shadow: -1px 0px 22px #666; }
-  .sticky-bottom h5 {
+  box-shadow: -1px 0px 22px #666;
+  z-index: 1020; }
+  .fixed-bottom h5 {
     color: #003E86; }
-  .sticky-bottom .b-r {
+  .fixed-bottom .b-r {
     border-right: 1px solid #ccc;
     height: 58px; }
 

@@ -3,3 +3,9 @@ jQuery("#filter").click(function(){
      
         
 });
+
+jQuery("#kss_hide-filter").click(function(){  
+     	 jQuery(".kss_filter").removeClass("kss_filter_mobile");
+     
+        
+});
