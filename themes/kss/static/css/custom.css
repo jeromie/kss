@@ -6348,7 +6348,7 @@ a.text-cancel:hover, a.text-cancel:focus {
     height: 24vw; }
     @media (max-width: 575.98px) {
       #card-list .card .card-img-top {
-        height: 150vw; } }
+        height: 70vw; } }
   #card-list .card .card-body {
     flex: 1 1 auto;
     padding: 10px 0px; }
