@@ -6379,17 +6379,28 @@ a.text-cancel:hover, a.text-cancel:focus {
   100% {
     transform: scale(1); } }
 
-.filter .list {
+@media (max-width: 575.98px) {
+  .kss_filter {
+    position: fixed;
+    z-index: 9999;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 430px;
+    padding: 16px; } }
+
+.kss_filter .kss_filter-list {
   cursor: pointer;
   border-bottom: 2px solid #000;
   margin: 18px 0px; }
-  .filter .list .card-body {
+  .kss_filter .kss_filter-list .card-body {
     padding: 1.25rem 0px; }
-    .filter .list .card-body .form-check .form-check-label {
+    .kss_filter .kss_filter-list .card-body .form-check .form-check-label {
       font-size: 15px; }
-    .filter .list .card-body .form-check .form-check-input {
+    .kss_filter .kss_filter-list .card-body .form-check .form-check-input {
       margin-top: 0.4rem; }
-  .filter .list .collapsed i {
+  .kss_filter .kss_filter-list .collapsed i {
     transform: rotate(180deg); }
 
 .scroll {
@@ -6434,22 +6445,22 @@ a.text-cancel:hover, a.text-cancel:focus {
     border-right: 1px solid #ccc;
     height: 58px; }
 
-.banner {
+.kss_banner {
   width: 100%;
   height: 300px;
   background-size: cover !important;
   padding-top: 60px; }
   @media (max-width: 575.98px) {
-    .banner {
+    .kss_banner {
       height: 180px;
       padding-top: 30px; } }
-  .banner .breadcrumb {
+  .kss_banner .breadcrumb {
     background: none;
     text-align: center;
     display: inline-flex; }
-  .banner h1 {
+  .kss_banner h1 {
     color: #003E86;
     font-weight: bold; }
     @media (max-width: 575.98px) {
-      .banner h1 {
+      .kss_banner h1 {
         font-size: 30px; } }
