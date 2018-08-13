@@ -53,7 +53,15 @@ if($(window).width() < 767){
 }
 })
 
+document.addEventListener('DOMContentLoaded',function(){
+  new SmartPhoto(".js-smartphoto");
+});
+
+
+
 jQuery(window).on("load", function(){
+
+
 	jQuery('.slick-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
    		jQuery(".swipe-arrow").removeClass("swipe-arrow-visible");
       });
