@@ -63,15 +63,18 @@ if ($(window).width() < 514) {
     $('.kss_zoom a').removeClass('js-smartphoto');
 }
 
- jQuery('.slick-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+
+jQuery(function(){
+	jQuery('.slick-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+   		console.log("hi");
    		jQuery(".swipe-arrow").removeClass("swipe-arrow-visible");
       });
+})
+
 
 jQuery(window).on("load", function(){
-  jQuery('.slick-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
-   		jQuery(".swipe-arrow").removeClass("swipe-arrow-visible");
-      });
-   jQuery.ready.then(function(){
+	
+     jQuery.ready.then(function(){
      var imgDefer = document.getElementsByTagName('img');
    for (var i=0; i<imgDefer.length; i++) {
        if(imgDefer[i].getAttribute('data-imgsrc')) {
