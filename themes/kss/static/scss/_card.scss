@@ -1,27 +1,30 @@
 $size: 20px;
 
 #card-list{
-@media (max-width: 575.98px) {
+  @media (max-width: 575.98px) {
       padding:10px;
       .col-lg-4{
         padding:8px;
       }
   }
+}
 .card{
   border:0px;
   .card-title{
-  font-weight: 800;
+    font-weight: 800;
+    @media (max-width: 575.98px) {
+      font-size:.8rem;
+    }
   }
   .card-img-top{
     min-height: 24vw;
-       @media (max-width: 1399px) {
-        min-height: 32vw;
-       }
-       @media (max-width: 575.98px) {
-        height: 70vw;
-
-       }
+     @media (max-width: 1399px) {
+      min-height: 32vw;
     }
+    @media (max-width: 575.98px) {
+      min-height: 70vw;
+    }
+  }
   .card-body {
     flex: 1 1 auto;
     padding: 10px 0px;
@@ -29,10 +32,16 @@ $size: 20px;
     
       .text-muted{
         color:$gray-500 !important;
-        }
       }
     }
   }
 }
 
+ @media (max-width: 575.98px) {
 
+.kss_mobile-list{
+  display:flex;
+  overflow:scroll;
+  flex-wrap: nowrap;
+}
+}

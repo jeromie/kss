@@ -4,6 +4,9 @@
 .text-danger{
         color:red !important;
 }
+.br-0{
+	border:0px;
+}
 .kss_icon {
 	background:url(../img/sprite.png)no-repeat;
 	width:30px;
@@ -11,6 +14,9 @@
 	background-size: 295px;
 	display:inline-block;
 	margin-bottom: -4px;
+}
+.kss_sort li{
+	border-bottom:1px solid #f2f2f2;
 }
 .popularity{
 	    background-position: -24px -10px;
@@ -29,8 +35,13 @@
 }
 
 body{
-	div, img{
+	img{
 		// @extend .fade-in;
 	}
 }
 
+.center{
+	img{
+	width:100%;
+	}
+}

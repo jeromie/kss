@@ -5,8 +5,8 @@
  */
 
 .fade-in {
-	-webkit-animation: fade-in 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: fade-in 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	-webkit-animation: fade-in 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 @-webkit-keyframes fade-in {
@@ -25,3 +25,13 @@
     opacity: 1;
   }
 }
+
+img{
+	opacity: 1;
+	transition: 0.75s cubic-bezier(0.215, 0.61, 0.355, 1);
+	&[data-imgsrc]{
+		opacity: 0;
+	}
+}
+
+

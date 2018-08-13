@@ -5,12 +5,12 @@ $(document).ready(function(){
 		openOnSmall: false
 	});
 
-	$('.xzoom').bind('click', function(event) {
-	    var xzoom = $(this).data('xzoom');
-	    xzoom.closezoom();
-	    $.fancybox.open(xzoom.gallery().cgallery, {padding: 0, helpers: {overlay: {locked: false}}});
-	    event.preventDefault();
-	});
+	// $('.xzoom').bind('click', function(event) {
+	//     var xzoom = $(this).data('xzoom');
+	//     xzoom.closezoom();
+	//     $.fancybox.open(xzoom.gallery().cgallery, {padding: 0, helpers: {overlay: {locked: false}}});
+	//     event.preventDefault();
+	// });
 
 	jQuery("#filter").click(function(){
 	    jQuery(".kss_filter").addClass("kss_filter_mobile");
@@ -25,7 +25,7 @@ if($(window).width() < 767){
 
 	$('.center').slick({
   centerMode: true,
-  centerPadding: '60px',
+  centerPadding: '10px',
   slidesToShow: 3,
   responsive: [
     {
@@ -71,3 +71,19 @@ $('.kss_heart').on('click', function(){
 });
 
 
+$(window).on("load",function() {
+  $(window).scroll(function() {
+    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+    $(".fade-on ").each(function() {
+      /* Check the location of each desired element */
+      var objectBottom = $(this).offset().top + $(this).outerHeight();
+      
+      /* If the element is completely within bounds of the window, fade it in */
+      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+      } else { //object goes out of view (scrolling up)
+        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+      }
+    });
+  }).scroll(); //invoke scroll-handler on page-load
+});
