@@ -16,6 +16,8 @@ $(document).ready(function(){
 	    jQuery(".kss_filter").addClass("kss_filter_mobile");
 	});
 
+	
+	
 	jQuery("#kss_hide-filter").click(function(){
 	    jQuery(".kss_filter").removeClass("kss_filter_mobile");
 	});
@@ -52,6 +54,9 @@ if($(window).width() < 767){
 })
 
 jQuery(window).on("load", function(){
+	jQuery('.slick-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+   		jQuery(".swipe-arrow").removeClass("swipe-arrow-visible");
+      });
    jQuery.ready.then(function(){
      var imgDefer = document.getElementsByTagName('img');
    for (var i=0; i<imgDefer.length; i++) {
@@ -63,6 +68,8 @@ jQuery(window).on("load", function(){
    });
 
      jQuery(".mobile-fixed").addClass("visible");
+     jQuery(".swipe-arrow").addClass("swipe-arrow-visible");
+
 })
 
 

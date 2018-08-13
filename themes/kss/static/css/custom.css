@@ -5835,3 +5835,28 @@ img {
   transition: 0.75s cubic-bezier(0.215, 0.61, 0.355, 1); }
   img[data-imgsrc] {
     opacity: 0; }
+
+.swipe-arrow {
+  position: absolute;
+  z-index: 999;
+  right: 20px;
+  top: 40%;
+  width: 20%;
+  visibility: hidden; }
+
+.swipe-arrow-visible {
+  visibility: visible;
+  -webkit-animation: swipe 0.8s  infinite;
+  animation: swipe 0.8s  infinite; }
+
+@-webkit-keyframes swipe {
+  0% {
+    right: 20px; }
+  100% {
+    right: 0px; } }
+
+@keyframes swipe {
+  0% {
+    right: 20px; }
+  100% {
+    right: 0px; } }
