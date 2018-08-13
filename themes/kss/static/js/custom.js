@@ -18,10 +18,13 @@ $(document).ready(function(){
 
 	
 	
+	jQuery(".center img").click(function(){
+	   jQuery(".swipe-arrow").removeClass("swipe-arrow-visible");
+	});
+
 	jQuery("#kss_hide-filter").click(function(){
 	    jQuery(".kss_filter").removeClass("kss_filter_mobile");
 	});
-
 
 
 })
@@ -33,10 +36,9 @@ if($(window).width() < 767){
         centerMode: true,
         centerPadding: '40px',
         slidesToShow: 1
-  
-});
+  });
 }
-	
+
 });
 
 document.addEventListener('DOMContentLoaded',function(){
@@ -52,7 +54,6 @@ if ($(window).width() < 514) {
 
 jQuery(function(){
 	jQuery('.slick-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
-   		console.log("hi");
    		jQuery(".swipe-arrow").removeClass("swipe-arrow-visible");
       });
 })
