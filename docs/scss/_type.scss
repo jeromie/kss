@@ -39,3 +39,29 @@ label{
 	font-size: 80%;
 	font-weight: normal;
 }
+
+.slick-initialized .slick-slide img{
+	visibility: visible;
+}
+.center {
+ background: #ffffff url(../img/ajax-loader.gif) center center no-repeat;
+    height: 350px;
+    overflow: overlay;
+img{
+	 visibility: hidden;
+}
+
+& > .generic-item-wrap-class {
+    visibility: hidden;
+}
+
+&.slick-initialized {
+    background: none;
+    height: auto;
+    overflow: auto;
+
+    & > .generic-item-wrap-class {
+        visibility: visible;
+    }
+}
+}
