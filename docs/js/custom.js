@@ -57,12 +57,18 @@ document.addEventListener('DOMContentLoaded',function(){
   new SmartPhoto(".js-smartphoto");
 });
 
+if ($(window).width() < 514) {
+    $('.kss_zoom a').addClass('js-smartphoto');
+} else {
+    $('.kss_zoom a').removeClass('js-smartphoto');
+}
 
+ jQuery('.slick-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+   		jQuery(".swipe-arrow").removeClass("swipe-arrow-visible");
+      });
 
 jQuery(window).on("load", function(){
-
-
-	jQuery('.slick-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+  jQuery('.slick-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
    		jQuery(".swipe-arrow").removeClass("swipe-arrow-visible");
       });
    jQuery.ready.then(function(){
@@ -75,7 +81,7 @@ jQuery(window).on("load", function(){
    }
    });
 
-     jQuery(".mobile-fixed").addClass("visible");
+  
      jQuery(".swipe-arrow").addClass("swipe-arrow-visible");
 
 })
@@ -86,19 +92,42 @@ $('.kss_heart').on('click', function(){
 });
 
 
-$(window).on("load",function() {
-  $(window).scroll(function() {
-    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-    $(".fade-on ").each(function() {
-      /* Check the location of each desired element */
-      var objectBottom = $(this).offset().top + $(this).outerHeight();
-      
-      /* If the element is completely within bounds of the window, fade it in */
-      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
-        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
-      } else { //object goes out of view (scrolling up)
-        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
-      }
+
+
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.fade-on').each( function(i){
+            
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},1500);
+                    
+            }
+            
+        }); 
+    
     });
-  }).scroll(); //invoke scroll-handler on page-load
+    
 });
+
+
+$(window).scroll(function() {
+
+    if ($(this).scrollTop()>200)
+     {
+        $('.mobile-fixed').show();
+           jQuery(".mobile-fixed").addClass("visible");
+     }
+    else
+     {
+      $('.mobile-fixed').hide();
+     }
+ });
