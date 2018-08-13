@@ -9,6 +9,9 @@ $size: 20px;
   }
 .card{
   border:0px;
+  .card-title{
+  font-weight: 800;
+  }
   .card-img-top{
     min-height: 24vw;
        @media (max-width: 1399px) {
@@ -23,9 +26,7 @@ $size: 20px;
     flex: 1 1 auto;
     padding: 10px 0px;
     .price{
-      .text-danger{
-        color:red !important;
-      }
+    
       .text-muted{
         color:$gray-500 !important;
         }

@@ -19,6 +19,36 @@ $(document).ready(function(){
 	jQuery("#kss_hide-filter").click(function(){
 	    jQuery(".kss_filter").removeClass("kss_filter_mobile");
 	});
+
+
+if($(window).width() < 767){
+
+	$('.center').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+}
 })
 
 jQuery(window).on("load", function(){
@@ -31,9 +61,13 @@ jQuery(window).on("load", function(){
        }
    }
    });
+
+     jQuery(".mobile-fixed").addClass("visible");
 })
 
 
 $('.kss_heart').on('click', function(){
   $(this).toggleClass('animated-heart');
 });
+
+

@@ -6301,6 +6301,29 @@ a.text-cancel:hover, a.text-cancel:focus {
   background-color: #adb5bd;
   border-color: #adb5bd; }
 
+@media (max-width: 575.98px) {
+  .mobile-fixed {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 11;
+    visibility: hidden;
+    box-shadow: 2px 1px 11px #464646;
+    padding: 10px 10px;
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    transition: -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+    -webkit-transform: translateY(63px);
+    transform: translateY(63px);
+    background-color: #fff; }
+    .mobile-fixed .text-muted {
+      display: none; }
+  .visible {
+    visibility: visible;
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
 .radio-label {
   display: inline-block;
   padding: 1em 2em;
@@ -6328,7 +6351,9 @@ a.text-cancel:hover, a.text-cancel:focus {
 
 .radio-wrap.wo-image .radio-label {
   min-width: 100px;
-  padding: 1em 0.5em; }
+  padding: 16px;
+  text-align: center;
+  display: block; }
 
 .kss_sizes {
   display: flex; }
@@ -6350,6 +6375,8 @@ a.text-cancel:hover, a.text-cancel:focus {
 
 #card-list .card {
   border: 0px; }
+  #card-list .card .card-title {
+    font-weight: 800; }
   #card-list .card .card-img-top {
     min-height: 24vw; }
     @media (max-width: 1399px) {
@@ -6361,8 +6388,6 @@ a.text-cancel:hover, a.text-cancel:focus {
   #card-list .card .card-body {
     flex: 1 1 auto;
     padding: 10px 0px; }
-    #card-list .card .card-body .price .text-danger {
-      color: red !important; }
     #card-list .card .card-body .price .text-muted {
       color: #adb5bd !important; }
 
@@ -6436,13 +6461,23 @@ body {
 label {
   font-size: 0.95rem;
   font-weight: 600; }
+  @media (max-width: 575.98px) {
+    label {
+      font-size: .8rem; } }
 
 .kss-title {
-  font-size: 1.75rem; }
+  font-size: 1.55rem; }
+  @media (max-width: 575.98px) {
+    .kss-title {
+      font-size: .9rem;
+      width: 80%; } }
 
 .kss-price {
   font-size: 1.6rem;
   font-weight: bold; }
+  @media (max-width: 575.98px) {
+    .kss-price {
+      font-size: 1.4rem; } }
 
 .kss-original-price {
   font-size: 80%;
@@ -6483,6 +6518,9 @@ label {
 
 .text-gray {
   color: #495057; }
+
+.text-danger {
+  color: red !important; }
 
 .kss_icon {
   background: url(../img/sprite.png) no-repeat;

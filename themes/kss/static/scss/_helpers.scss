@@ -1,7 +1,9 @@
 .text-gray{
 	color: $gray-700;
 }
-
+.text-danger{
+        color:red !important;
+}
 .kss_icon {
 	background:url(../img/sprite.png)no-repeat;
 	width:30px;

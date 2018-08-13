@@ -5,16 +5,26 @@ body{
 label{
 	font-size: 0.95rem;
 	font-weight: 600;
+	 @media (max-width: 575.98px) {
+		font-size: .8rem;
+	   }
 }
 
 .kss-title{
-	font-size: 1.75rem;
+	font-size: 1.55rem;
+	   @media (max-width: 575.98px) {
+		font-size: .9rem;
+		width:80%;
+	   }
 }
 
 // Price
 .kss-price{
 	font-size: 1.6rem;
 	font-weight: bold;
+	 @media (max-width: 575.98px) {
+		font-size: 1.4rem;
+	   }
 }
 .kss-original-price{
 	font-size: 80%;
