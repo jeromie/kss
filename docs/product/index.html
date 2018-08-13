@@ -17,13 +17,14 @@
 
     <link rel="stylesheet" type="text/css" href="https://jeromie.github.io/kss/css/xzoom.css">
     <link rel="stylesheet" type="text/css" href="https://jeromie.github.io/kss/css/jquery.fancybox.css">
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
     <link rel="stylesheet" type="text/css" href="https://jeromie.github.io/kss/css/custom.css">
 
     <title>Single Product</title>
   </head>
   <body><div class="container pl-2 pl-sm-0 pr-2 pr-sm-0">
-<nav class="navbar navbar-expand-lg navbar-light bg-white pl-0 pr-0">
+<nav class="navbar navbar-expand-lg navbar-light bg-white pl-0 pr-0 pb-0 pt-0">
   <a class="navbar-brand" href="#"><img src="https://media-cdn.kidsuperstore.in/media/logo/stores/1/logo.png" width="200px" /></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -46,8 +47,12 @@
 </nav>
 </div>
 
-	<div class="breadcrumb-wrapper border-top border-bottom">
-		<div class="container">
+
+	<div class="breadcrumb-wrapper border-top border-bottom mb-0 mb-sm-4">
+		<div class="container d-none d-sm-block ">
+		<div class="row">
+			<div class="col-sm-8 col-8">
+
 			<nav aria-label="breadcrumb">
 				<ol class="breadcrumb mb-0 bg-transparent pl-0 pr-0">
 				    <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -57,30 +62,37 @@
 				</ol>
 			</nav>
 		</div>
+			<div class="col-sm-4 col-4">
+		<button type="button" class="btn btn-warning float-right mt-1"> <i class="fas fa-share-alt"></i> Share</button>
+		</div>
+	</div>
+		</div>
 	</div>
 
-	<div class="container my-4 pb-5">
+	<div class="container">
 		<div class="row">
 			<div class="col-sm-6">
 				<div class="row">
-					<div class="col-12 order-1 col-sm-10 order-sm-2 mb-3">
+					<div class="col-12 order-1 col-sm-10 order-sm-2 mb-3 d-none d-sm-block">
 						<img src="https://jeromie.github.io/kss/img/4front.jpg" xoriginal='https://jeromie.github.io/kss/img/4front.jpg' class="img-fluid xzoom" >
 					</div>
 					<div class="col-12 order-2 col-sm-2 order-sm-1 px-0">
-						<ul class="d-flex justify-content-center d-sm-block list-unstyled m-2 m-sm-0">
+							<img src="https://jeromie.github.io/kss/img/arrow.png" class="swipe-arrow">
+						<ul class="d-flex d-sm-block list-unstyled m-2 m-sm-0 center">
+
 							<li class="mx-2 mb-2">
 								<a href="https://jeromie.github.io/kss/img/4front.jpg">
-									<img src="https://jeromie.github.io/kss/img/4front-small.jpg" xpreview="https://jeromie.github.io/kss/img/4front.jpg" class="img-fluid xzoom-gallery m-0">
+									<img src="https://jeromie.github.io/kss/img/4front.jpg" xpreview="https://jeromie.github.io/kss/img/4front.jpg" class="img-fluid xzoom-gallery m-0">
 								</a>
 							</li>
 							<li class="mx-2 mb-2">
 								<a href="https://jeromie.github.io/kss/img/4back.jpg">
-									<img src="https://jeromie.github.io/kss/img/4back-small.jpg" xpreview="https://jeromie.github.io/kss/img/4back.jpg" class="img-fluid xzoom-gallery m-0">
+									<img src="https://jeromie.github.io/kss/img/4back.jpg" xpreview="https://jeromie.github.io/kss/img/4back.jpg" class="img-fluid xzoom-gallery m-0">
 								</a>
 							</li>
 							<li class="mx-2 mb-2">
 								<a href="https://jeromie.github.io/kss/img/4focus.jpg">
-									<img src="https://jeromie.github.io/kss/img/4focus-small.jpg" xpreview="https://jeromie.github.io/kss/img/4focus.jpg" class="img-fluid xzoom-gallery m-0">
+									<img src="https://jeromie.github.io/kss/img/4focus.jpg" xpreview="https://jeromie.github.io/kss/img/4focus.jpg" class="img-fluid xzoom-gallery m-0">
 								</a>
 							</li>
 						</ul>
@@ -88,13 +100,15 @@
 				</div>
 			</div>
 			<div class="col-sm-6">
-				<h1 class="kss-title mb-4 text-gray">Cotton Rich Super Shirt</h1>
+
+				<h1 class="kss-title mb-2 mb-sm-4 text-gray">Cotton Rich Super Skinny Fit Jeans</h1>
+
 				<h4 class="kss-price">₹869 <small class="kss-original-price text-muted">₹1309</small> <span class="kss-discount text-danger">20% OFF</span></h4>
 				<i class="fas fa-heart kss_heart" style="top: 5px;"></i>
 				<hr>
 
-				<label class="mt-3">Color Selection</label>
-				<div class="radio-wrap w-image kss_variants mb-5">
+				<label class="mt-2">Color Selection</label>
+				<div class="radio-wrap w-image kss_variants mb-4 ">
 				    <input class="d-none radio-input" type="radio" name="kss-variants" id="green" checked="checked"/>
 				    <label class="radio-label" for="green" style="background-image: url(https://jeromie.github.io/kss/img/shirt1.jpg)">
 				      <div class="radio-option">green</div>
@@ -117,7 +131,7 @@
 					<label class="">Select Size</label>
 					<a href="#" class="font-weight-bold">Size Chart</a>
 				</div>
-				<div class="radio-wrap kss_sizes wo-image mb-5">
+				<div class="radio-wrap kss_sizes wo-image mb-4">
 				    <input class="d-none radio-input" type="radio" name="kss-sizes" id="18-24" checked="checked"/>
 				    <label class="radio-label" for="18-24">
 				      <div class="radio-option">18-24 M</div>
@@ -136,7 +150,7 @@
 				    </label>
 				</div>
 
-				<div class="row mb-5">
+				<div class="row mb-4">
 					<div class="col-sm-3 col-12">
 						<label>Quantity</label>
 						<div class="kss-custom-select ">
@@ -149,7 +163,7 @@
 							</select>
 						</div>
 					</div>
-					<div class="col-sm-9 col-12">
+					<div class="col-sm-9 col-12 mobile-fixed">
 						<div class="text-muted mb-2 mt-1">Additional taxes may apply; charged at checkout</div>
 						<button class="btn btn-primary btn-lg btn-block kss-single-prod-add-to-cart">Add to Cart</button>
 					</div>
@@ -181,7 +195,33 @@
 				    </div>
 				    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
 				      <div class="card-body">
-				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				     <dl class="row">
+  <dt class="col-sm-3">Format:</dt>
+  <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+
+  <dt class="col-sm-3">Collar:</dt>
+  <dd class="col-sm-9">
+    <p>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</p>
+  </dd>
+
+  <dt class="col-sm-3">Climate:</dt>
+  <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+
+  <dt class="col-sm-3">Pattern:</dt>
+  <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+
+  <dt class="col-sm-3">Sleeve:</dt>
+  <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+
+  <dt class="col-sm-3">Gender:</dt>
+  <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+
+   <dt class="col-sm-3">Material:</dt>
+  <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+
+
+
+</dl>
 				      </div>
 				    </div>
 				  </div>
@@ -195,7 +235,15 @@
 				    </div>
 				    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
 				      <div class="card-body">
-				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				        <blockquote class="blockquote mb-4">
+						  <h6 class="mb-1"><strong>It fits perfect and he loved it.</strong></h6>
+						  <footer class="blockquote-footer"><span class="badge badge-success"><i class="fas fa-star"></i> 4.5 </span> Seema Kothrud, Pune <cite title="Source Title">7 Jul, 2018</cite></footer>
+						</blockquote>
+						 <blockquote class="blockquote mb-4">
+						  <h6 class="mb-1"><strong>I didn't realize you had clothes for 2T and they're super cute and affordable.</strong></h6>
+						  <footer class="blockquote-footer"><span class="badge badge-success"><i class="fas fa-star"></i> 4.5 </span> Seema Kothrud, Pune <cite title="Source Title">7 Jul, 2018</cite></footer>
+						</blockquote>
+					
 				      </div>
 				    </div>
 				  </div>
@@ -208,7 +256,8 @@
 	<div class="kss-related-section py-2 mt-5 bg-light">
 		<div class="container">
 			<h3 class="text-center my-5 font-weight-bold">Other people also viewed</h3>
-			<div class="row px-2 px-sm-0">
+
+			<div class="row px-2 px-sm-0 kss_mobile-list">
 				<div class="col-lg-3 col-md-6 mb-4 px-2 px-sm-3 col-6">
 				  <div class="card h-100">
 				  	<i class="fas fa-heart kss_heart"></i>
@@ -258,9 +307,10 @@
 				  </div>
 				</div>
 			</div>
+
 		</div>
 	</div>
-
+<br>
 
     
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -268,6 +318,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://jeromie.github.io/kss/js/xzoom.min.js"></script>
     <script type="text/javascript" src="https://jeromie.github.io/kss/js/jquery.fancybox.js"></script>
+   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+   
+
     
     <script type="text/javascript" src="https://jeromie.github.io/kss/js/custom.js"></script>
   </body>

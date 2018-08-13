@@ -8,6 +8,36 @@
 	border-color: $gray-500;
 }
 
+@media (max-width: 575.98px) {
+	.mobile-fixed{
+		  position: fixed;
+		  left: 0;
+		  bottom: 0;
+		  z-index: 11;
+		  visibility: hidden;
+		  box-shadow: 2px 1px 11px #464646;
+    	  padding: 10px 10px;
+		  -webkit-transition: -webkit-transform 0.3s ease-out;
+		  transition: -webkit-transform 0.3s ease-out;
+		  transition: transform 0.3s ease-out;
+		  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+		  -webkit-transform: translateY(63px);
+		  transform: translateY(63px);
+		  background-color: #fff;
+    	.text-muted{
+    		display:none;
+    	}
+	}
+	.visible {
+	    visibility: visible;
+	    -webkit-transform: translateY(0);
+	    transform: translateY(0);
+	}
+}
+
+
+
+
 @media (max-width: 767px){
 	.kss-single-prod-add-to-cart{
 		position: fixed;
@@ -17,3 +47,4 @@
 		z-index: 10;
 	}
 }
+

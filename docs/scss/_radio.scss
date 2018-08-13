@@ -37,8 +37,10 @@
   }
   &.wo-image{
     .radio-label{
-      min-width: 100px;
-      padding: 1em 0.5em;
+    min-width: 100px;
+    padding: 16px;
+    text-align: center;
+    display: block;
     }
   }
 }
@@ -57,4 +59,26 @@
         text-align:center;
       }
     }
+}
+
+.custom-control {
+    line-height: 28px;
+    margin-bottom: 6px;
+    .custom-control-label {
+      padding-left:7px;
+    }
+}
+.custom-control-label::before {
+    top: 0.15rem;
+    left: -1.5rem;
+    display: block;
+    width: 1.4rem;
+    height: 1.4rem;
+}
+.custom-control-label::after {
+    top: 0.25rem;
+    left: -1.5rem;
+    width: 1.4rem;
+    height: 1.3rem;
+    background-size: 59% 100%;
 }
