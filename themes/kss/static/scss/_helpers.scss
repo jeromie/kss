@@ -1,7 +1,12 @@
 .text-gray{
 	color: $gray-700;
 }
-
+.text-danger{
+        color:red !important;
+}
+.br-0{
+	border:0px;
+}
 .kss_icon {
 	background:url(../img/sprite.png)no-repeat;
 	width:30px;
@@ -9,6 +14,24 @@
 	background-size: 295px;
 	display:inline-block;
 	margin-bottom: -4px;
+}
+.slick-slide{
+	opacity:0.3;
+		img{
+		 	 -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    		filter: grayscale(100%);
+		}
+}
+.slick-center{
+	opacity:0.9;
+	img{
+		 	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    		filter: grayscale(0%);
+		}
+}
+
+.kss_sort li{
+	border-bottom:1px solid #f2f2f2;
 }
 .popularity{
 	    background-position: -24px -10px;
@@ -32,3 +55,8 @@ body{
 	}
 }
 
+.center{
+	img{
+	width:100%;
+	}
+}

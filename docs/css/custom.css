@@ -5464,6 +5464,29 @@ a.text-cancel:hover, a.text-cancel:focus {
   background-color: #adb5bd;
   border-color: #adb5bd; }
 
+@media (min-width: 360px) and (max-width: 767.98px) {
+  .mobile-fixed {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 11;
+    visibility: hidden;
+    box-shadow: 2px 1px 11px #464646;
+    padding: 10px 10px;
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    transition: -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+    -webkit-transform: translateY(63px);
+    transform: translateY(63px);
+    background-color: #fff; }
+    .mobile-fixed .text-muted {
+      display: none; }
+  .visible {
+    visibility: visible;
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
 @media (max-width: 767px) {
   .kss-single-prod-add-to-cart {
     position: fixed;
@@ -5499,11 +5522,13 @@ a.text-cancel:hover, a.text-cancel:focus {
 
 .radio-wrap.wo-image .radio-label {
   min-width: 100px;
-  padding: 1em 0.5em; }
+  padding: 16px;
+  text-align: center;
+  display: block; }
 
 .kss_sizes {
   display: flex; }
-  @media (max-width: 575.98px) {
+  @media (min-width: 320px) and (max-width: 767.98px) {
     .kss_sizes {
       overflow: scroll; }
       .kss_sizes div {
@@ -5513,6 +5538,26 @@ a.text-cancel:hover, a.text-cancel:focus {
     .kss_sizes label div {
       text-align: center; }
 
+.custom-control {
+  line-height: 28px;
+  margin-bottom: 6px; }
+  .custom-control .custom-control-label {
+    padding-left: 7px; }
+
+.custom-control-label::before {
+  top: 0.15rem;
+  left: -1.5rem;
+  display: block;
+  width: 1.4rem;
+  height: 1.4rem; }
+
+.custom-control-label::after {
+  top: 0.25rem;
+  left: -1.5rem;
+  width: 1.4rem;
+  height: 1.3rem;
+  background-size: 59% 100%; }
+
 @media (max-width: 575.98px) {
   #card-list {
     padding: 10px; }
@@ -5521,6 +5566,14 @@ a.text-cancel:hover, a.text-cancel:focus {
 
 .card {
   border: 0px; }
+  @media (min-width: 320px) and (max-width: 767.98px) {
+    .card {
+      background: none; } }
+  .card .card-title {
+    font-weight: 800; }
+    @media (max-width: 575.98px) {
+      .card .card-title {
+        font-size: .8rem; } }
   .card .card-img-top {
     min-height: 24vw; }
     @media (max-width: 1399px) {
@@ -5532,17 +5585,21 @@ a.text-cancel:hover, a.text-cancel:focus {
   .card .card-body {
     flex: 1 1 auto;
     padding: 10px 0px; }
-    .card .card-body .price .text-danger {
-      color: red !important; }
     .card .card-body .price .text-muted {
       color: #adb5bd !important; }
+
+@media (min-width: 320px) and (max-width: 767.98px) {
+  .kss_mobile-list {
+    display: flex;
+    overflow: scroll;
+    flex-wrap: nowrap; } }
 
 .kss_filter {
   overflow: hidden;
   transition: all 0.5s ease; }
   .kss_filter .fixed-bottom {
     display: none; }
-  @media (max-width: 575.98px) {
+  @media (min-width: 320px) and (max-width: 767.98px) {
     .kss_filter {
       position: fixed;
       z-index: 9999;
@@ -5550,7 +5607,7 @@ a.text-cancel:hover, a.text-cancel:focus {
       width: 100%;
       height: 100%;
       top: 0px;
-      left: 530px;
+      left: 730px;
       padding: 16px; } }
   .kss_filter .kss_filter-list {
     cursor: pointer;
@@ -5581,6 +5638,11 @@ a.text-cancel:hover, a.text-cancel:focus {
     border-right: 1px solid #ccc;
     height: 58px; }
 
+@media (min-width: 360px) and (max-width: 767.98px) {
+  .modal.show .modal-dialog {
+    transform: translate(0, 0);
+    max-width: 100%; } }
+
 .kss_banner {
   width: 100%;
   height: 300px;
@@ -5607,13 +5669,26 @@ body {
 label {
   font-size: 0.95rem;
   font-weight: 600; }
+  @media (max-width: 575.98px) {
+    label {
+      font-size: .8rem; } }
 
 .kss-title {
-  font-size: 1.75rem; }
+  font-size: 1.55rem; }
+  @media (max-width: 575.98px) {
+    .kss-title {
+      font-size: .9rem;
+      width: 80%; } }
+
+.fade-on {
+  opacity: 0; }
 
 .kss-price {
   font-size: 1.6rem;
   font-weight: bold; }
+  @media (max-width: 575.98px) {
+    .kss-price {
+      font-size: 1.4rem; } }
 
 .kss-original-price {
   font-size: 80%;
@@ -5625,6 +5700,25 @@ label {
 .kss-discount {
   font-size: 80%;
   font-weight: normal; }
+
+.slick-initialized .slick-slide img {
+  visibility: visible; }
+
+@media (min-width: 320px) and (max-width: 767.98px) {
+  .center {
+    background: #ffffff url(../img/ajax-loader.gif) center center no-repeat;
+    height: 350px;
+    overflow: overlay; }
+    .center img {
+      visibility: hidden; }
+    .center > .generic-item-wrap-class {
+      visibility: hidden; }
+    .center.slick-initialized {
+      background: none;
+      height: auto;
+      overflow: auto; }
+      .center.slick-initialized > .generic-item-wrap-class {
+        visibility: visible; } }
 
 .breadcrumb-item a {
   color: #495057; }
@@ -5655,6 +5749,12 @@ label {
 .text-gray {
   color: #495057; }
 
+.text-danger {
+  color: red !important; }
+
+.br-0 {
+  border: 0px; }
+
 .kss_icon {
   background: url(../img/sprite.png) no-repeat;
   width: 30px;
@@ -5662,6 +5762,23 @@ label {
   background-size: 295px;
   display: inline-block;
   margin-bottom: -4px; }
+
+.slick-slide {
+  opacity: 0.3; }
+  .slick-slide img {
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%); }
+
+.slick-center {
+  opacity: 0.9; }
+  .slick-center img {
+    -webkit-filter: grayscale(0%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%); }
+
+.kss_sort li {
+  border-bottom: 1px solid #f2f2f2; }
 
 .popularity {
   background-position: -24px -10px; }
@@ -5677,6 +5794,9 @@ label {
 
 .price-l {
   background-position: -240px -10px; }
+
+.center img {
+  width: 100%; }
 
 /* Custom Select */
 .kss-custom-select {
@@ -5729,6 +5849,9 @@ select::-ms-expand {
   text-shadow: 0 0 2px #6c757d;
   cursor: pointer;
   display: block; }
+  @media (min-width: 320px) and (max-width: 767.98px) {
+    .kss_heart {
+      font-size: 25px; } }
 
 .animated-heart {
   color: red; }
@@ -5759,3 +5882,28 @@ img {
   transition: 0.75s cubic-bezier(0.215, 0.61, 0.355, 1); }
   img[data-imgsrc] {
     opacity: 0; }
+
+.swipe-arrow {
+  position: absolute;
+  z-index: 999;
+  right: 20px;
+  top: 40%;
+  width: 20%;
+  visibility: hidden; }
+
+.swipe-arrow-visible {
+  visibility: visible;
+  -webkit-animation: swipe 0.8s  infinite;
+  animation: swipe 0.8s  infinite; }
+
+@-webkit-keyframes swipe {
+  0% {
+    right: 20px; }
+  100% {
+    right: 0px; } }
+
+@keyframes swipe {
+  0% {
+    right: 20px; }
+  100% {
+    right: 0px; } }
