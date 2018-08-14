@@ -5566,6 +5566,9 @@ a.text-cancel:hover, a.text-cancel:focus {
 
 .card {
   border: 0px; }
+  @media (min-width: 320px) and (max-width: 767.98px) {
+    .card {
+      background: none; } }
   .card .card-title {
     font-weight: 800; }
     @media (max-width: 575.98px) {
@@ -5846,6 +5849,9 @@ select::-ms-expand {
   text-shadow: 0 0 2px #6c757d;
   cursor: pointer;
   display: block; }
+  @media (min-width: 320px) and (max-width: 767.98px) {
+    .kss_heart {
+      font-size: 25px; } }
 
 .animated-heart {
   color: red; }
