@@ -1,10 +1,12 @@
+
+// ------------------ Zoom Gallery ------------------//
 $(document).ready(function(){
 	$(".xzoom, .xzoom-gallery").xzoom({
 		position: 'inside',
 		mposition: 'fullscreen',
 		openOnSmall: false
 	});
-
+// ------------------ End Zoom Gallery ------------------//
 	// $('.xzoom').bind('click', function(event) {
 	//     var xzoom = $(this).data('xzoom');
 	//     xzoom.closezoom();
@@ -12,22 +14,23 @@ $(document).ready(function(){
 	//     event.preventDefault();
 	// });
 
+// ------------------ Filter For Mobile ------------------//
 	jQuery("#filter").click(function(){
 	    jQuery(".kss_filter").addClass("kss_filter_mobile");
-	});
-
-	
-	
-	jQuery(".center img").click(function(){
-	   jQuery(".swipe-arrow").removeClass("swipe-arrow-visible");
 	});
 
 	jQuery("#kss_hide-filter").click(function(){
 	    jQuery(".kss_filter").removeClass("kss_filter_mobile");
 	});
-
+	
+// ------------------ Disable Arrow on single product ------------------//	
+	jQuery(".center img").click(function(){
+	   jQuery(".swipe-arrow").removeClass("swipe-arrow-visible");
+	});
 
 })
+
+// ------------------ Mobile View ------------------//	
 $(document).ready(function(){
 if($(window).width() < 790){
 
@@ -51,9 +54,9 @@ if($(window).width() < 790){
      }
  });
 }
-
 });
 
+// ------------------ Mobile Zoom ------------------//	
 document.addEventListener('DOMContentLoaded',function(){
   new SmartPhoto(".js-smartphoto");
 });
@@ -64,13 +67,14 @@ if ($(window).width() < 790) {
     $('.kss_zoom a').removeClass('js-smartphoto');
 }
 
-
+// ------------------ Swipe Animation ------------------//	
 jQuery(function(){
 	jQuery('.slick-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
    		jQuery(".swipe-arrow").removeClass("swipe-arrow-visible");
       });
 })
 
+// ------------------ Image Load ------------------//	
 
 jQuery(window).on("load", function(){
 	
@@ -84,12 +88,13 @@ jQuery(window).on("load", function(){
    }
    });
 
-  
-     jQuery(".swipe-arrow").addClass("swipe-arrow-visible");
+  jQuery(".swipe-arrow").addClass("swipe-arrow-visible");
 
 })
 
 
+// ------------------ Shortlist Icon ------------------//
+	
 $('.kss_heart').on('click', function(){
   $(this).toggleClass('animated-heart');
 });
