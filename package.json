@@ -3,11 +3,7 @@
   "version": "0.1.0",
   "description": "A local environment to minify CSS, JS, & HTML files",
   "license": "Apache-2.0",
-  "author": "Amardeep Rai",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/amardeeprai/local-minifier"
-  },
+  "author": "Jeromie Fernandes",
   "devDependencies": {
     "del": "^2.0.2",
     "gulp": "^3.9.0",
