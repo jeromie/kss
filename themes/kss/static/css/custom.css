@@ -5464,7 +5464,7 @@ a.text-cancel:hover, a.text-cancel:focus {
   background-color: #adb5bd;
   border-color: #adb5bd; }
 
-@media (max-width: 575.98px) {
+@media (min-width: 360px) and (max-width: 767.98px) {
   .mobile-fixed {
     position: fixed;
     left: 0;
@@ -5528,7 +5528,7 @@ a.text-cancel:hover, a.text-cancel:focus {
 
 .kss_sizes {
   display: flex; }
-  @media (max-width: 575.98px) {
+  @media (min-width: 360px) and (max-width: 767.98px) {
     .kss_sizes {
       overflow: scroll; }
       .kss_sizes div {
@@ -5585,7 +5585,7 @@ a.text-cancel:hover, a.text-cancel:focus {
     .card .card-body .price .text-muted {
       color: #adb5bd !important; }
 
-@media (max-width: 575.98px) {
+@media (min-width: 360px) and (max-width: 767.98px) {
   .kss_mobile-list {
     display: flex;
     overflow: scroll;
@@ -5596,7 +5596,7 @@ a.text-cancel:hover, a.text-cancel:focus {
   transition: all 0.5s ease; }
   .kss_filter .fixed-bottom {
     display: none; }
-  @media (max-width: 575.98px) {
+  @media (min-width: 360px) and (max-width: 767.98px) {
     .kss_filter {
       position: fixed;
       z-index: 9999;
@@ -5604,7 +5604,7 @@ a.text-cancel:hover, a.text-cancel:focus {
       width: 100%;
       height: 100%;
       top: 0px;
-      left: 530px;
+      left: 730px;
       padding: 16px; } }
   .kss_filter .kss_filter-list {
     cursor: pointer;
@@ -5634,6 +5634,11 @@ a.text-cancel:hover, a.text-cancel:focus {
   .fixed-bottom .b-r {
     border-right: 1px solid #ccc;
     height: 58px; }
+
+@media (min-width: 360px) and (max-width: 767.98px) {
+  .modal.show .modal-dialog {
+    transform: translate(0, 0);
+    max-width: 100%; } }
 
 .kss_banner {
   width: 100%;

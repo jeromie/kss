@@ -29,7 +29,7 @@ $(document).ready(function(){
 
 })
 $(document).ready(function(){
-if($(window).width() < 767){
+if($(window).width() < 790){
 
 	$('.center').slick({
  		arrows: false,
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded',function(){
   new SmartPhoto(".js-smartphoto");
 });
 
-if ($(window).width() < 514) {
+if ($(window).width() < 790) {
     $('.kss_zoom a').addClass('js-smartphoto');
 } else {
     $('.kss_zoom a').removeClass('js-smartphoto');
