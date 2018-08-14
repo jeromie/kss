@@ -37,6 +37,19 @@ if($(window).width() < 790){
         centerPadding: '40px',
         slidesToShow: 1
   });
+
+	$(window).scroll(function() {
+
+    if ($(this).scrollTop()>200)
+     {
+        $('.mobile-fixed').show();
+           jQuery(".mobile-fixed").addClass("visible");
+     }
+    else
+     {
+      $('.mobile-fixed').hide();
+     }
+ });
 }
 
 });
@@ -109,15 +122,3 @@ $(document).ready(function() {
 });
 
 
-$(window).scroll(function() {
-
-    if ($(this).scrollTop()>200)
-     {
-        $('.mobile-fixed').show();
-           jQuery(".mobile-fixed").addClass("visible");
-     }
-    else
-     {
-      $('.mobile-fixed').hide();
-     }
- });

@@ -5701,20 +5701,21 @@ label {
 .slick-initialized .slick-slide img {
   visibility: visible; }
 
-.center {
-  background: #ffffff url(../img/ajax-loader.gif) center center no-repeat;
-  height: 350px;
-  overflow: overlay; }
-  .center img {
-    visibility: hidden; }
-  .center > .generic-item-wrap-class {
-    visibility: hidden; }
-  .center.slick-initialized {
-    background: none;
-    height: auto;
-    overflow: auto; }
-    .center.slick-initialized > .generic-item-wrap-class {
-      visibility: visible; }
+@media (min-width: 360px) and (max-width: 767.98px) {
+  .center {
+    background: #ffffff url(../img/ajax-loader.gif) center center no-repeat;
+    height: 350px;
+    overflow: overlay; }
+    .center img {
+      visibility: hidden; }
+    .center > .generic-item-wrap-class {
+      visibility: hidden; }
+    .center.slick-initialized {
+      background: none;
+      height: auto;
+      overflow: auto; }
+      .center.slick-initialized > .generic-item-wrap-class {
+        visibility: visible; } }
 
 .breadcrumb-item a {
   color: #495057; }
