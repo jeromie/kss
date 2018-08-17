@@ -1,47 +1,21 @@
-'use strict';
-
-var autoprefixer = require('gulp-autoprefixer');
+var gulp        = require('gulp');
 var csso = require('gulp-csso');
-var del = require('del');
-var gulp = require('gulp');
-var htmlmin = require('gulp-htmlmin');
-var runSequence = require('run-sequence');
-var sass = require('gulp-sass');
-var uglify = require('gulp-uglify');
+var browserSync = require('browser-sync').create();
+var sass        = require('gulp-sass');
 
-// Set the browser that you want to support
-const AUTOPREFIXER_BROWSERS = [
-  'ie >= 10',
-  'ie_mob >= 10',
-  'ff >= 30',
-  'chrome >= 34',
-  'safari >= 7',
-  'opera >= 23',
-  'ios >= 7',
-  'android >= 4.4',
-  'bb >= 10'
-];
-
-// Gulp task to minify CSS files
-gulp.task('styles', function () {
-  return gulp.src('./themes/kss/static/scss/custom.scss')
-    // Compile SASS files
-    .pipe(sass({
-      outputStyle: 'nested',
-      precision: 10,
-      includePaths: ['.'],
-      onError: console.error.bind(console, 'Sass error:')
-    }))
-    // Auto-prefix css styles for cross browser compatibility
-    // .pipe(autoprefixer({browsers: AUTOPREFIXER_BROWSERS}))
-    // Minify the file
-    .pipe(csso())
-    // Output
-    .pipe(gulp.dest('./themes/kss/static/css'))
+// Compile sass into CSS & auto-inject into browsers
+gulp.task('sass', function() {
+    return gulp.src('./themes/kss/static/scss/custom.scss')
+        .pipe(sass())
+        // Minify the file
+        .pipe(csso())
+        .pipe(gulp.dest("./themes/kss/static/css"))
+        .pipe(browserSync.stream());
 });
 
+
 // Static Server + watching scss/html files
-gulp.task('watch', ['styles'], function() {
+gulp.task('watch', ['sass'], function() {
     gulp.watch(['./themes/kss/static/scss/*.scss'], ['sass']);
 });
 
