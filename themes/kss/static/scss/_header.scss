@@ -1,5 +1,5 @@
 .header{
-	background-color: $gray-header;
+	background-color: theme-color("dark");
 	a{
 		color: white;
 	}
@@ -24,4 +24,8 @@
 .hamburger-box{
 	width: 22px;
 	height: 18px;
+}
+
+.mm-slideout{
+	z-index: 3;
 }

@@ -844,21 +844,6 @@ $L:     1200px;
     margin-top: .4em;
   }
 
-  .cd-cart-total {
-    // padding-top: 1em;
-    padding-bottom: 1em;
-
-    span {
-      float: right;
-    }
-
-    &::after { /* clearfix */
-      content: '';
-      display: table;
-      clear: both;
-    }
-  }
-
   .cd-go-to-cart {
     text-align: center;
     margin: 1em 0;
@@ -883,6 +868,20 @@ $L:     1200px;
   }
 }
 
+.cd-cart-total {
+  // padding-top: 1em;
+  padding-bottom: 1em;
+
+  span {
+    float: right;
+  }
+
+  &::after { /* clearfix */
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
 
 #cd-shadow-layer {
   position: fixed;
