@@ -1,5 +1,9 @@
 .breadcrumb-item{
 	a{
-		color: $gray-700;
+		color: $gray-200;
 	}
+}
+
+.breadcrumb-wrapper{
+	background-color: $gray-header;
 }

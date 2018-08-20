@@ -17,86 +17,113 @@
 
     <link rel="stylesheet" type="text/css" href="https://jeromie.github.io/kss/css/xzoom.css">
     <link rel="stylesheet" type="text/css" href="https://jeromie.github.io/kss/css/jquery.fancybox.css">
+    <link rel="stylesheet" type="text/css" href="https://jeromie.github.io/kss/css/jquery.mmenu.all.css">
+    <link rel="stylesheet" type="text/css" href="https://jeromie.github.io/kss/css/hamburgers.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://unpkg.com/smartphoto@1.1.0/css/smartphoto.min.css">
-
 
     <link rel="stylesheet" type="text/css" href="https://jeromie.github.io/kss/css/custom.css">
 
     <title>Single Product</title>
   </head>
-  <body><div class="container pl-2 pl-sm-0 pr-2 pr-sm-0">
-<nav class="navbar navbar-expand-lg navbar-light bg-white pl-0 pr-0 pb-0 pt-0">
-  <a class="navbar-brand" href="#"><img src="https://media-cdn.kidsuperstore.in/media/logo/stores/1/logo.png" width="200px" /></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item active">
-        <a class="nav-link font-weight-bold" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item ">
-        <a class="nav-link font-weight-bold text-dark" href="#">Category</a>
-      </li>
-     <li class="nav-item">
-        <a class="nav-link font-weight-bold text-dark" href="#">Boys</a>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link font-weight-bold text-dark" href="#">Girls</a>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link font-weight-bold text-dark" href="#">Infants</a>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link font-weight-bold text-dark" href="#">Toons</a>
-      </li>
-        <li class="nav-item">
-        <a class="nav-link font-weight-bold text-dark" href="#">Sports</a>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link font-weight-bold text-dark" href="#">Princess</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0 d-none d-md-block">
-     <ul class="list-inline pt-3">
-      <li class="list-inline-item">
-          <h3>
-              <i class="far fa-heart"></i>
-          <h3>
-      </li>
-       <li class="list-inline-item pr-3 pl-2">
-          <h3>
-             <i class="fas fa-shopping-basket"></i>
-          <h3>
-      </li>
-    </ul>
-    </form>
-
+  <body><div class="header">
+  <div class="container pl-2 pl-sm-0 pr-2 pr-sm-0">
+    <nav class="navbar navbar-expand-lg pl-0 pr-0 pb-0 pt-0">
+        <div class="navbar-toggler hamburger hamburger--collapse" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </div>
+        <a class="navbar-brand" href="#">
+            <img src="https://media-cdn.kidsuperstore.in/media/logo/stores/1/logo.png" width="200px"/>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link font-weight-bold" href="#">
+                        Home
+                        <span class="sr-only">
+                            (current)
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link font-weight-bold" href="#">
+                        Category
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="#">
+                        Boys
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="#">
+                        Girls
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="#">
+                        Infants
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="#">
+                        Toons
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="#">
+                        Sports
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="#">
+                        Princess
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="my-2 my-lg-0">
+            <ul class="list-inline pt-3">
+                <li class="list-inline-item">
+                    <a href="#">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item pr-3 pl-2">
+                    <a id="cd-cart-trigger" href="#">
+                        <i class="fas fa-shopping-bag"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
   </div>
-</nav>
 </div>
 
 
 	<div class="breadcrumb-wrapper border-top border-bottom mb-0 mb-sm-4">
-		<div class="container d-none d-md-block ">
-		<div class="row">
-			<div class="col-sm-8 col-8">
-
-			<nav aria-label="breadcrumb">
-				<ol class="breadcrumb mb-0 bg-transparent pl-0 pr-0">
-				    <li class="breadcrumb-item"><a href="#">Home</a></li>
-				    <li class="breadcrumb-item"><a href="#">Boys</a></li>
-				    <li class="breadcrumb-item"><a href="#">Boys Shirts</a></li>
-				    <li class="breadcrumb-item active" aria-current="page">Cotton Rich Super Shirt</li>
-				</ol>
-			</nav>
-		</div>
-			<div class="col-sm-4 col-4">
-		<button type="button" class="btn btn-warning float-right mt-1"> <i class="fas fa-share-alt"></i> Share</button>
-		</div>
-	</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8 col-12">
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb mb-0 bg-transparent pl-0 pr-0">
+						    <li class="breadcrumb-item"><a href="#">Home</a></li>
+						    <li class="breadcrumb-item"><a href="#">Boys</a></li>
+						    <li class="breadcrumb-item active"><a href="#">Boys Shirts</a></li>
+						</ol>
+					</nav>
+				</div>
+				<div class="col-sm-4 col-12">
+					<button type="button" class="btn btn-link float-right mt-1 d-none d-sm-block"> <i class="fas fa-share-alt"></i> Share</button>
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -137,9 +164,9 @@
 				<h4 class="kss-price">₹869 <small class="kss-original-price text-muted">₹1309</small> <span class="kss-discount text-danger">20% OFF</span></h4>
 				<i class="fas fa-heart kss_heart" style="top: 5px;"></i>
 				<hr>
-<div class="d-block d-md-none text-center pt-2 pb-2">
-	<a href="#"> <h5><i class="fas fa-share-alt"></i> Share</h5></a>
-</div>
+				<div class="d-block d-md-none text-center pt-2 pb-2">
+					<a href="#"> <h5><i class="fas fa-share-alt"></i> Share</h5></a>
+				</div>
 				<label class="mt-2">Color Selection</label>
 				<div class="radio-wrap w-image kss_variants mb-4 ">
 				    <input class="d-none radio-input" type="radio" name="kss-variants" id="green" checked="checked"/>
@@ -198,7 +225,7 @@
 					</div>
 					<div class="col-sm-12 col-md-9 col-12 mobile-fixed">
 						<div class="text-muted mb-2 mt-1">Additional taxes may apply; charged at checkout</div>
-						<button class="btn btn-primary btn-lg btn-block kss-single-prod-add-to-cart">Add to Cart</button>
+						<button class="btn btn-primary btn-lg btn-block kss-single-prod-add-to-cart cd-add-to-cart" data-price="869">Add to Cart</button>
 					</div>
 				</div>
 
@@ -227,35 +254,33 @@
 				      </h5>
 				    </div>
 				    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-				      <div class="card-body">
-				     <dl class="row">
-  <dt class="col-sm-3">Format:</dt>
-  <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+				      	<div class="card-body">
+					     	<dl class="row">
+							  <dt class="col-sm-3">Format:</dt>
+							  <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
 
-  <dt class="col-sm-3">Collar:</dt>
-  <dd class="col-sm-9">
-    <p>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</p>
-  </dd>
+							  <dt class="col-sm-3">Collar:</dt>
+							  <dd class="col-sm-9">
+							    <p>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</p>
+							  </dd>
 
-  <dt class="col-sm-3">Climate:</dt>
-  <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+							  <dt class="col-sm-3">Climate:</dt>
+							  <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
 
-  <dt class="col-sm-3">Pattern:</dt>
-  <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+							  <dt class="col-sm-3">Pattern:</dt>
+							  <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
 
-  <dt class="col-sm-3">Sleeve:</dt>
-  <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+							  <dt class="col-sm-3">Sleeve:</dt>
+							  <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
 
-  <dt class="col-sm-3">Gender:</dt>
-  <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+							  <dt class="col-sm-3">Gender:</dt>
+							  <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
 
-   <dt class="col-sm-3">Material:</dt>
-  <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+							   <dt class="col-sm-3">Material:</dt>
+							  <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
 
-
-
-</dl>
-				      </div>
+							</dl>
+				      	</div>
 				    </div>
 				  </div>
 				  <div class="">
@@ -276,7 +301,7 @@
 						  <h6 class="mb-1"><strong>I didn't realize you had clothes for 2T and they're super cute and affordable.</strong></h6>
 						  <footer class="blockquote-footer"><span class="badge badge-success"><i class="fas fa-star"></i> 4.5 </span> Seema Kothrud, Pune <cite title="Source Title">7 Jul, 2018</cite></footer>
 						</blockquote>
-					
+
 				      </div>
 				    </div>
 				  </div>
@@ -343,6 +368,153 @@
 
 		</div>
 	</div>
+
+	<div id="cd-shadow-layer"></div>
+
+	<div id="cd-cart">
+		<div class="cart-header">
+			<div class="d-flex align-items-end">
+				<span class="title">Cart</span> <span class="circle"></span> <span class="count text-muted">3 items</span>
+			</div>
+		</div>
+
+		<ul class="cd-cart-items">
+			<li>
+				<div class="primary-info d-flex">
+					<div class="product-img">
+						<div class="img" style=
+						"background-image: url(https://jeromie.github.io/kss/img/4front.jpg);">
+						</div>
+					</div>
+					<div class="product-detail">
+						<div class="product-name">
+							Cotton Rich Super Skinny Fit Jeans
+						</div>
+						<div class="product-size text-muted mt-2">
+							<span>Size: 2-4 years</span>
+						</div>
+					</div>
+					<div class="product-price">
+						<div class="retail-price">
+							<span class="rs-symbol">₹</span> <span class="price">869</span>
+						</div>
+						<div class="base-price">
+							<div>
+								<span class="rs-symbol">₹</span> <span class="price">1309</span>
+							</div>
+							<div class="perc-off text-danger">
+								20% off
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="secondary-info d-flex justify-content-between align-items-center mt-2">
+					<div class="product-quantity d-flex align-items-center">
+						<div class="label small mr-2">
+							Qty
+						</div>
+						<select class="form-control form-control-sm">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+						</select>
+						<div class="kss-custom-select">
+						</div>
+					</div>
+					<div class="product-delete ml-2" title="Remove">
+						<a href="#0" class="cd-item-remove delete d-block text-center">
+							<i class="far fa-trash-alt"></i>
+						</a>
+					</div>
+				</div>
+
+			</li>
+
+			<li>
+				<div class="primary-info d-flex">
+					<div class="product-img">
+						<div class="img" style=
+						"background-image: url(https://jeromie.github.io/kss/img/4front.jpg);">
+						</div>
+					</div>
+					<div class="product-detail">
+						<div class="product-name">
+							Cotton Rich Super Skinny Fit Jeans
+						</div>
+						<div class="product-size text-muted mt-2">
+							<span>Size: 1-2 years</span>
+						</div>
+					</div>
+					<div class="product-price">
+						<div class="retail-price">
+							<span class="rs-symbol">₹</span> <span class="price">869</span>
+						</div>
+						<div class="base-price">
+							<div>
+								<span class="rs-symbol">₹</span> <span class="price">1309</span>
+							</div>
+							<div class="perc-off text-danger">
+								20% off
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="secondary-info d-flex justify-content-between align-items-center mt-2">
+					<div class="product-quantity d-flex align-items-center">
+						<div class="label small mr-2">
+							Qty
+						</div>
+						<select class="form-control form-control-sm">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+						</select>
+						<div class="kss-custom-select">
+						</div>
+					</div>
+					<div class="product-delete ml-2" title="Remove">
+						<a href="#0" class="cd-item-remove delete d-block text-center">
+							<i class="far fa-trash-alt"></i>
+						</a>
+					</div>
+				</div>
+
+			</li>
+
+		</ul> 
+
+		<div class="cart-summary mt-4">
+			<h4 class="mb-1">Cart Summary</h4>
+			<div class="text-muted small mb-3">Includes GST and all government taxes</div>
+
+			<div class="d-flex justify-content-between py-1">
+				<div>Total item price</div>
+				<div>₹2618</div>
+			</div>
+			<div class="d-flex justify-content-between py-1">
+				<div>Item discount</div>
+				<div>- ₹1738</div>
+			</div>
+			<div class="d-flex justify-content-between py-1">
+				<div>Shipping fee</div>
+				<div>Free</div>
+			</div>
+		</div>
+		<hr>
+		<div class="cd-cart-total">
+			<h5 class="font-weight-bold">Total <span>₹1738</span></h5>
+		</div> 
+
+		<div class="p-3">
+			<a href="#0" class="btn btn-primary btn-lg btn-block">Checkout</a>
+		</div>
+
+		
+	</div> 
 <br>
 
     
@@ -353,6 +525,7 @@
     
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://unpkg.com/smartphoto@1.1.0/js/smartphoto.min.js"></script>
+    <script type="text/javascript" src="https://jeromie.github.io/kss/js/jquery.mmenu.all.js"></script>
 
     
     <script type="text/javascript" src="https://jeromie.github.io/kss/js/custom.js"></script>

@@ -1,71 +1,64 @@
-
 .radio-label {
-  display: inline-block;
-  padding: 1em 2em;
-  margin: 0;
-  cursor: pointer;
-  border: 2px solid $gray-300;
-  transition: 0.3s;
-  user-select: none;
-  h1 {
-    font-size: 1em;
-  }
-  &:hover {
-  }
-  &:active {
-    transform: translateY(2px);
-  }
-}
-
-.radio-input:checked + .radio-label {
-  border-color: theme-color("primary");
-  &:hover {
-  }
-}
-
-.radio-wrap{
-  &.w-image{
-    .radio-option{
-      display: none;
+    display: inline-block;
+    padding: 1em 2em;
+    margin: 0;
+    cursor: pointer;
+    border: 2px solid $gray-300;
+    transition: 0.3s;
+    user-select: none;
+    h1 {
+        font-size: 1em;
     }
-    .radio-label{
-      padding: 2em;
-      background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
+    &:hover {}
+    &:active {
+        transform: translateY(2px);
     }
-  }
-  &.wo-image{
-    .radio-label{
-    min-width: 100px;
-    padding: 16px;
-    text-align: center;
-    display: block;
-    }
-  }
 }
-
-.kss_sizes{
+.radio-input:checked+.radio-label {
+    border-color: theme-color("primary");
+    &:hover {}
+}
+.radio-wrap {
+    &.w-image {
+        .radio-option {
+            display: none;
+        }
+        .radio-label {
+            padding: 2em;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+    &.wo-image {
+        .radio-label {
+            min-width: 100px;
+            padding: 16px;
+            text-align: center;
+            display: block;
+        }
+    }
+}
+.kss_sizes {
     display: flex;
-      @media (min-width: 320px) and (max-width: 767.98px) {
-         overflow: scroll;
-         div{
-         width:60px;
-         }
-}
-    label{
-      margin:0px 5px;
-      div{
-        text-align:center;
-      }
+    @media (min-width: 320px) and (max-width: 767.98px) {
+        overflow: scroll;
+        div {
+            width: 60px;
+        }
+    }
+    label {
+        margin: 0px 5px;
+        div {
+            text-align: center;
+        }
     }
 }
-
 .custom-control {
     line-height: 28px;
     margin-bottom: 6px;
     .custom-control-label {
-      padding-left:7px;
+        padding-left: 7px;
     }
 }
 .custom-control-label::before {

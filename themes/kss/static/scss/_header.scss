@@ -1,0 +1,27 @@
+.header{
+	background-color: $gray-header;
+	a{
+		color: white;
+	}
+}
+.navbar-toggler{
+	padding: 0.15rem 0.45rem;
+}
+.navbar-brand{
+	filter: brightness(0) invert(1);
+}
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
+	width: 22px;
+	height: 2px;
+	background-color: #ffffff;
+}
+.hamburger-inner::before {
+    top: -7px;
+}
+.hamburger--collapse .hamburger-inner::after{
+	top: -14px;
+}
+.hamburger-box{
+	width: 22px;
+	height: 18px;
+}
