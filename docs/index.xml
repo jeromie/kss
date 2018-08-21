@@ -12,15 +12,6 @@
     
     
     <item>
-      <title>Account</title>
-      <link>https://jeromie.github.io/kss/account/</link>
-      <pubDate>Mon, 04 Jun 2018 12:57:20 +0530</pubDate>
-      
-      <guid>https://jeromie.github.io/kss/account/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Catalog</title>
       <link>https://jeromie.github.io/kss/list/</link>
       <pubDate>Mon, 04 Jun 2018 12:57:20 +0530</pubDate>
@@ -35,6 +26,15 @@
       <pubDate>Mon, 04 Jun 2018 12:57:20 +0530</pubDate>
       
       <guid>https://jeromie.github.io/kss/checkout/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Orders</title>
+      <link>https://jeromie.github.io/kss/account/orders/</link>
+      <pubDate>Mon, 04 Jun 2018 12:57:20 +0530</pubDate>
+      
+      <guid>https://jeromie.github.io/kss/account/orders/</guid>
       <description></description>
     </item>
     

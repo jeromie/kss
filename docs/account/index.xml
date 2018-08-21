@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Accounts on Kidsuperstore.in</title>
+    <link>https://jeromie.github.io/kss/account/</link>
+    <description>Recent content in Accounts on Kidsuperstore.in</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 04 Jun 2018 12:57:20 +0530</lastBuildDate>
+    
+	<atom:link href="https://jeromie.github.io/kss/account/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Orders</title>
+      <link>https://jeromie.github.io/kss/account/orders/</link>
+      <pubDate>Mon, 04 Jun 2018 12:57:20 +0530</pubDate>
+      
+      <guid>https://jeromie.github.io/kss/account/orders/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

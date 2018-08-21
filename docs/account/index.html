@@ -1,4 +1,125 @@
-{{ define "main" }}
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link  rel="icon" type="image/x-icon" href="https://jeromie.github.io/kss/img/kss_favicon.png" />
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    
+    
+
+    <link rel="stylesheet" type="text/css" href="https://jeromie.github.io/kss/css/xzoom.css">
+    <link rel="stylesheet" type="text/css" href="https://jeromie.github.io/kss/css/jquery.fancybox.css">
+    <link rel="stylesheet" type="text/css" href="https://jeromie.github.io/kss/css/jquery.mmenu.all.css">
+    <link rel="stylesheet" type="text/css" href="https://jeromie.github.io/kss/css/hamburgers.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/smartphoto@1.1.0/css/smartphoto.min.css">
+
+    <link rel="stylesheet" type="text/css" href="https://jeromie.github.io/kss/css/custom.css">
+
+    <title>Accounts</title>
+  </head>
+  <body><div class="header">
+  <div class="container pl-2 pl-sm-0 pr-2 pr-sm-0">
+    <nav class="navbar navbar-expand-lg pl-0 pr-0 pb-0 pt-0">
+        <div class="navbar-toggler hamburger hamburger--collapse" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </div>
+        <a class="navbar-brand" href="#">
+            <img src="https://media-cdn.kidsuperstore.in/media/logo/stores/1/logo.png" width="200px"/>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link font-weight-bold" href="#">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link font-weight-bold" href="#">
+                        Category
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="#">
+                        Boys
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="#">
+                        Girls
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="#">
+                        Infants
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="#">
+                        Toons
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="#">
+                        Sports
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="#">
+                        Princess
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="my-2 my-lg-0">
+            <ul class="list-inline pt-3">
+                <li class="list-inline-item">
+                    <a href="#">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item pr-3 pl-2">
+                    <a id="cd-cart-trigger" href="#">
+                        <i class="fas fa-shopping-bag"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+  </div>
+</div><div class="breadcrumb-wrapper border-top border-bottom">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 col-12">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb mb-0 bg-transparent pl-0 pr-0">
+					    <li class="breadcrumb-item"><a href="#">Home</a></li>
+					    <li class="breadcrumb-item"><a href="#">Boys</a></li>
+					    <li class="breadcrumb-item active"><a href="#">Boys Shirts</a></li>
+					</ol>
+				</nav>
+			</div>
+			<div class="col-sm-4 col-12">
+				<button type="button" class="btn btn-link float-right mt-1 d-none d-sm-block"> <i class="fas fa-share-alt"></i> Share</button>
+			</div>
+		</div>
+	</div>
+</div>
   <section>
   	<div class="kss_banner mb-3 text-center" style="background:url('../img/banner.jpg') center;">
   		<h1 class="display-4 bold">Boys Shirts</h1>
@@ -192,7 +313,7 @@
             <div class="col-lg-4 col-md-6 mb-4 col-6  ">
               <div class="card h-100 product-card">
               	<i class="fas fa-heart kss_heart"></i>
-                <a href="/kss/product/"><img class="card-img-top" src="{{"img/1front.jpg" | absURL}}" alt=""></a>
+                <a href="/kss/product/"><img class="card-img-top" src="https://jeromie.github.io/kss/img/1front.jpg" alt=""></a>
                 <div class="card-body">
                   <a href="/kss/product/" class="text-dark">
                     <h5 class="card-title">
@@ -207,7 +328,7 @@
             <div class="col-lg-4 col-md-6 mb-4 col-6  ">
            	  <div class="card h-100 product-card">
            	 		<i class="fas fa-heart kss_heart"></i>
-                <a href="/kss/product/"><img class="card-img-top" src="{{"img/3front.jpg" | absURL}}" alt=""></a>
+                <a href="/kss/product/"><img class="card-img-top" src="https://jeromie.github.io/kss/img/3front.jpg" alt=""></a>
                 <div class="card-body">
                   <a href="/kss/product/" class="text-dark">
                     <h5 class="card-title">
@@ -222,7 +343,7 @@
             <div class="col-lg-4 col-md-6 mb-4 col-6   ">
               <div class="card h-100 product-card">
               	<i class="fas fa-heart kss_heart"></i>
-                <a href="/kss/product/"><img class="card-img-top" src="{{"img/Artboard2324.jpg" | absURL}}" alt=""></a>
+                <a href="/kss/product/"><img class="card-img-top" src="https://jeromie.github.io/kss/img/Artboard2324.jpg" alt=""></a>
                 <div class="card-body">
                   <a href="/kss/product/" class="text-dark">
                     <h5 class="card-title">
@@ -237,7 +358,7 @@
             <div class="col-lg-4 col-md-6 mb-4 col-6 fade-on ">
               <div class="card h-100 product-card">
                 <i class="fas fa-heart kss_heart"></i>
-                <a href="/kss/product/"><img class="card-img-top" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E" data-imgsrc="{{"img/Artboard 222.jpg" | absURL}}" alt=""></a>
+                <a href="/kss/product/"><img class="card-img-top" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E" data-imgsrc="https://jeromie.github.io/kss/img/Artboard%20222.jpg" alt=""></a>
                 <div class="card-body">
                   <a href="/kss/product/" class="text-dark">
                     <h5 class="card-title">
@@ -252,7 +373,7 @@
             <div class="col-lg-4 col-md-6 mb-4 col-6 fade-on ">
               <div class="card h-100 product-card">
                 <i class="fas fa-heart kss_heart"></i>
-                <a href="/kss/product/"><img class="card-img-top" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E" data-imgsrc="{{"img/Artboard1234.jpg" | absURL}}" alt=""></a>
+                <a href="/kss/product/"><img class="card-img-top" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E" data-imgsrc="https://jeromie.github.io/kss/img/Artboard1234.jpg" alt=""></a>
                 <div class="card-body">
                   <a href="/kss/product/" class="text-dark">
                     <h5 class="card-title">
@@ -267,7 +388,7 @@
             <div class="col-lg-4 col-md-6 mb-4 col-6 fade-on ">
               <div class="card h-100 product-card">
               	<i class="fas fa-heart kss_heart"></i>
-                <a href="/kss/product/"><img class="card-img-top" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E" data-imgsrc="{{"img/Artboard 2wew.jpg" | absURL}}" alt=""></a>
+                <a href="/kss/product/"><img class="card-img-top" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E" data-imgsrc="https://jeromie.github.io/kss/img/Artboard%202wew.jpg" alt=""></a>
                 <div class="card-body">
                 	<a href="/kss/product/" class="text-dark">
                     <h5 class="card-title">
@@ -282,7 +403,7 @@
             <div class="col-lg-4 col-md-6 mb-4 col-6 fade-on ">
               <div class="card h-100 product-card">
                 <i class="fas fa-heart kss_heart"></i>
-                <a href="/kss/product/"><img class="card-img-top" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E" data-imgsrc="{{"img/Artboard 222.jpg" | absURL}}" alt=""></a>
+                <a href="/kss/product/"><img class="card-img-top" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E" data-imgsrc="https://jeromie.github.io/kss/img/Artboard%20222.jpg" alt=""></a>
                 <div class="card-body">
               	  <a href="/kss/product/" class="text-dark">
                     <h5 class="card-title">
@@ -297,7 +418,7 @@
             <div class="col-lg-4 col-md-6 mb-4 col-6 fade-on ">
               <div class="card h-100 product-card">
                 <i class="fas fa-heart kss_heart"></i>
-                <a href="/kss/product/"><img class="card-img-top" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E" data-imgsrc="{{"img/Artboard1234.jpg" | absURL}}" alt=""></a>
+                <a href="/kss/product/"><img class="card-img-top" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E" data-imgsrc="https://jeromie.github.io/kss/img/Artboard1234.jpg" alt=""></a>
                 <div class="card-body">
                   <h5 class="card-title">
                     Cotton Rich Super Skinny Fit Jeans
@@ -310,7 +431,7 @@
             <div class="col-lg-4 col-md-6 mb-4 col-6 fade-on ">
               <div class="card h-100 product-card">
               	<i class="fas fa-heart kss_heart"></i>
-                <a href="/kss/product/"><img class="card-img-top" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E" data-imgsrc="{{"img/Artboard 2wew.jpg" | absURL}}" alt=""></a>
+                <a href="/kss/product/"><img class="card-img-top" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E" data-imgsrc="https://jeromie.github.io/kss/img/Artboard%202wew.jpg" alt=""></a>
                 <div class="card-body">
               	  <a href="/kss/product/" class="text-dark">
                     <h5 class="card-title">
@@ -369,4 +490,18 @@
     	</div>
     </div>
   </section>
-{{ end }}
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://jeromie.github.io/kss/js/xzoom.min.js"></script>
+    
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/smartphoto@1.1.0/js/smartphoto.min.js"></script>
+    <script type="text/javascript" src="https://jeromie.github.io/kss/js/jquery.mmenu.all.js"></script>
+
+    
+    <script type="text/javascript" src="https://jeromie.github.io/kss/js/custom.js"></script>
+  </body>
+</html>
