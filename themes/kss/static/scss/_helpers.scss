@@ -15,20 +15,6 @@
     display: inline-block;
     margin-bottom: -4px;
 }
-.slick-slide {
-    opacity: 0.3;
-    img {
-        -webkit-filter: grayscale(100%);
-        filter: grayscale(100%);
-    }
-}
-.slick-center {
-    opacity: 0.9;
-    img {
-        -webkit-filter: grayscale(0%);
-        filter: grayscale(0%);
-    }
-}
 .kss_sort li {
     border-bottom: 1px solid #f2f2f2;
 }
@@ -47,13 +33,11 @@
 .price-l {
     background-position: -240px -10px;
 }
-body {
-    img {
-        // @extend .fade-in;
-    }
-}
 .center {
     img {
         width: 100%;
     }
+}
+.fade-on {
+    opacity: 0;
 }
