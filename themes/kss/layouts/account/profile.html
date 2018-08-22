@@ -1,0 +1,97 @@
+{{ define "main" }}
+	<div class="container mt-5">
+		<h1 class="kss-title text-secondary font-weight-bold mb-1">Account</h1>
+		<h6 class="text-muted">Tony Stark</h6>
+		<hr>
+
+		<div class="row">
+			<div class="col-sm-2 border-right">
+				{{- partial "account_menu.html" . -}}
+			</div>
+			<div class="col-sm-10">
+				<div class=" p-4">
+					<h4>Profile</h4>
+					<hr>
+
+					<div class="p-3 mb-3 card shadow-sm d-block">
+						<h5 class="font-weight-bold text-dark mb-3">Primary Info</h5>
+						<div class="row mb-2">
+							<div class="col-sm-2">First Name</div>
+							<label class="mb-0 col-sm-10">Tony</label>
+						</div>
+						<div class="row mb-2">
+							<div class="col-sm-2">Last Name</div>
+							<label class="mb-0 col-sm-10">Stark</label>
+						</div>
+						<div class="row mb-2">
+							<div class="col-sm-2">Gender</div>
+							<label class="mb-0 col-sm-10">Male</label>
+						</div>
+						<div class="row mb-2">
+							<div class="col-sm-2">Date of birth</div>
+							<label class="mb-0 col-sm-10">-</label>
+						</div>
+						<div class="row mb-2">
+							<div class="col-sm-2">Mobile Number</div>
+							<label class="mb-0 col-sm-10">9822334455</label>
+						</div>
+						<div class="row mb-2">
+							<div class="col-sm-2">Location</div>
+							<label class="mb-0 col-sm-10">-</label>
+						</div>
+						<div class="row mb-2">
+							<div class="col-sm-2">E-mail id</div>
+							<label class="mb-0 col-sm-10">tony@avengers.com</label>
+						</div>
+
+						<button type="button" class="btn btn-primary mt-3">Edit Details</button>
+					</div>
+
+					<div class="p-3 mb-3 card shadow-sm d-block">
+						<h5 class="font-weight-bold text-dark mb-3">Email Preferences</h5>
+
+						<label>I want to hear from you:</label>
+						<div class="custom-control custom-radio">
+							<input type="radio" id="emailpref1" name="emailpref" class="custom-control-input">
+							<label class="custom-control-label" for="emailpref1">All the time.</label> Send me every email!
+						</div>
+						<div class="custom-control custom-radio">
+							<input type="radio" id="emailpref2" name="emailpref" class="custom-control-input">
+							<label class="custom-control-label" for="emailpref2">Sometimes.</label> Send me fewer emails per week.
+						</div>
+						<div class="custom-control custom-radio">
+							<input type="radio" id="emailpref3" name="emailpref" class="custom-control-input">
+							<label class="custom-control-label" for="emailpref3">Sometimes.</label> Unsubscribe me from your email list.
+						</div>
+
+						<button type="button" class="btn btn-primary mt-3">Update Preferences</button>
+					</div>
+
+					<div class="p-3 mb-3 card shadow-sm d-block">
+						<h5 class="font-weight-bold text-dark mb-3">Kidsuperstore.in Profile</h5>
+
+						<div>
+							<div class="row mb-2">
+								<div class="col-sm-2">Age</div>
+								<label class="mb-0 col-sm-10">8</label>
+							</div>
+							<div class="row mb-2">
+								<div class="col-sm-2">Top Size</div>
+								<label class="mb-0 col-sm-10">5</label>
+							</div>
+							<div class="row mb-2">
+								<div class="col-sm-2">Bottom Size</div>
+								<label class="mb-0 col-sm-10">5</label>
+							</div>
+							<div>
+								<a href="#">Edit Profile</a>
+							</div>
+						</div>
+						<button type="button" class="btn btn-primary mt-3">Add Profile</button>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+{{ end }}
