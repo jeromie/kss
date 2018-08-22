@@ -148,6 +148,19 @@ $(document).ready(function() {
       }
 
     });
+
+    $('body').on('click', '.view-signup', function(){
+      $('.sign-in-box').addClass('d-none');
+      $('.sign-up-box').removeClass('d-none');
+    })
+    $('body').on('click', '.view-signin', function(){
+      $('.sign-up-box , .reset-box').addClass('d-none');
+      $('.sign-in-box').removeClass('d-none');
+    })
+    $('body').on('click', '.view-reset', function(){
+      $('.sign-in-box').addClass('d-none');
+      $('.reset-box').removeClass('d-none');
+    })
 })
 
 function toggle_panel_visibility ($lateral_panel, $background_layer, $body) {
