@@ -1,12 +1,26 @@
 <div id="cd-shadow-layer"></div>
 
 <div id="cd-cart">
-	<div class="cart-header">
+	<div class="cart-header row  no-gutters">
+		<div class="col-sm-6 col-6">
 		<div class="d-flex align-items-end">
-			<span class="title">Cart</span> <span class="circle"></span> <span class="count text-muted">2 items</span>
+			<span class="title">Cart</span> <span class="circle"></span> <span class="count text-muted">2 items</span> 
+			
 		</div>
+		</div>
+		<div class="col-sm-6 col-6">
+<div id="cart_close" class="float-right font-weight-bold"> Cancel</div>
+		</div>
+		
 	</div>
 
+<hr>
+<div class="alert kss_delivery" role="alert">
+  <strong><i class="kss_marker"></i></strong> Enter Pincode To Delivery
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true"><i class="fas fa-angle-down"></i></span>
+  </button>
+</div>
 	<ul class="cd-cart-items">
 		<li>
 			<div class="primary-info d-flex">
@@ -18,21 +32,13 @@
 						Cotton Rich Super Skinny Fit Jeans
 					</div>
 					<div class="product-size text-muted mt-2">
-						<span>Size: 2-4 years</span>
+						<span class="size">Size: 2-4 years</span> | <span class="Deliver-date">Arrives: 14 Aug </span>
 					</div>
 				</div>
-				<div class="product-price">
-					<div class="retail-price">
-						<span class="rs-symbol">₹</span> <span class="price">869</span>
-					</div>
-					<div class="base-price">
-						<div>
-							<span class="rs-symbol">₹</span> <span class="price">1309</span>
-						</div>
-						<div class="perc-off text-danger">
-							20% off
-						</div>
-					</div>
+				<div class="product-delete ml-2" title="Remove">
+					<a href="#0" class="cd-item-remove delete d-block text-center">
+						<i class="far fa-trash-alt"></i>
+					</a>
 				</div>
 			</div>
 
@@ -50,10 +56,8 @@
 					<div class="kss-custom-select">
 					</div>
 				</div>
-				<div class="product-delete ml-2" title="Remove">
-					<a href="#0" class="cd-item-remove delete d-block text-center">
-						<i class="far fa-trash-alt"></i>
-					</a>
+				<div class="product-price">
+					<h6 class="kss-price">₹869 <small class="kss-original-price text-muted">₹1309</small> <span class="kss-discount text-danger">20% OFF</span></h6>
 				</div>
 			</div>
 
@@ -62,30 +66,20 @@
 		<li>
 			<div class="primary-info d-flex">
 				<div class="product-img">
-					<div class="img" style=
-					"background-image: url({{"img/4front.jpg" | absURL}});">
-					</div>
+					<div class="img" style="background-image: url({{"img/4front.jpg" | absURL}});"></div>
 				</div>
 				<div class="product-detail">
 					<div class="product-name">
 						Cotton Rich Super Skinny Fit Jeans
 					</div>
 					<div class="product-size text-muted mt-2">
-						<span>Size: 1-2 years</span>
+						<span class="size">Size: 2-4 years</span> | <span class="Deliver-date">Arrives: 14 Aug </span>
 					</div>
 				</div>
-				<div class="product-price">
-					<div class="retail-price">
-						<span class="rs-symbol">₹</span> <span class="price">869</span>
-					</div>
-					<div class="base-price">
-						<div>
-							<span class="rs-symbol">₹</span> <span class="price">1309</span>
-						</div>
-						<div class="perc-off text-danger">
-							20% off
-						</div>
-					</div>
+				<div class="product-delete ml-2" title="Remove">
+					<a href="#0" class="cd-item-remove delete d-block text-center">
+						<i class="far fa-trash-alt"></i>
+					</a>
 				</div>
 			</div>
 
@@ -103,17 +97,29 @@
 					<div class="kss-custom-select">
 					</div>
 				</div>
-				<div class="product-delete ml-2" title="Remove">
-					<a href="#0" class="cd-item-remove delete d-block text-center">
-						<i class="far fa-trash-alt"></i>
-					</a>
+				<div class="product-price">
+					<h6 class="kss-price">₹869 <small class="kss-original-price text-muted">₹1309</small> <span class="kss-discount text-danger">20% OFF</span></h6>
 				</div>
 			</div>
 
 		</li>
 
 	</ul> <!-- cd-cart-items -->
-
+	<div class="no-gutter">
+						<div class="alert alert-dark kss_promocode mt-3" role="alert">
+					<form class="form-inline">
+					  <div class="w-100">
+					    <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline" placeholder="Promocode">
+					    <a href="#">
+						    <h4 id="passwordHelpInline" class="text-muted float-right">
+						      Apply
+						    </h4>
+						</a>
+					  </div>
+					</form>
+	
+		</div>
+	</div>
 	<div class="cart-summary mt-4">
 		<h4 class="mb-1">Cart Summary</h4>
 		<div class="text-muted small mb-3">Includes GST and all government taxes</div>
@@ -124,21 +130,25 @@
 		</div>
 		<div class="d-flex justify-content-between py-1">
 			<div>Item discount</div>
-			<div>- ₹880</div>
+			<div class="text-success">- ₹880</div>
 		</div>
 		<div class="d-flex justify-content-between py-1">
 			<div>Shipping fee</div>
-			<div>Free</div>
+			<div class="text-success">Free</div>
 		</div>
 	</div>
 	<hr>
 	<div class="cd-cart-total">
-		<h5 class="font-weight-bold">Total <span>₹1738</span></h5>
+		<h5 class="font-weight-bold">Total Payable <span>₹1738</span></h5>
 	</div> <!-- cd-cart-total -->
 
 	<div class="p-3">
-		<a href="/kss/checkout/" class="btn btn-primary btn-lg btn-block">Checkout</a>
+		<a  id="checkout" class="btn btn-primary btn-lg btn-block " data-toggle="modal" data-target="#signin">Checkout</a>
 	</div>
 
 	<!-- <p class="cd-go-to-cart"><a href="#0">Go to cart page</a></p> -->
+			{{- partial "sign-in.html" . -}}
+			{{- partial "checkout.html" . -}}
+			{{- partial "shipping-details.html" . -}}
+			{{- partial "payment-details.html" . -}}
 </div> <!-- cd-cart -->

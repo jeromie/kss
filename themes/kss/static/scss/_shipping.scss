@@ -1,0 +1,30 @@
+.kss_shipping, .kss_payment{
+    width:100%;
+    background:#fff;
+    position:fixed;
+    right:-600px;
+    height:100vh;
+    transition: all 0.5s ease;
+    z-index: 99999;
+    top: 0px;
+    overflow-y: scroll;
+    .secure-label{
+        line-height:15px;
+        font-size:10px;
+        i{
+            font-size:26px
+        }
+    }
+    .scroll-container{
+        overflow:hidden;
+    }
+    .list-group{
+        label{
+            display:flex;
+        }
+    }
+
+}
+.slide_to_show{
+     right:0px;
+}
