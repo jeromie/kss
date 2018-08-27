@@ -228,6 +228,7 @@ jQuery(window).on("load", function() {
     jQuery(".swipe-arrow").addClass("swipe-arrow-visible");
     $('.kss_shipping').appendTo('#cd-cart');
     $('.kss_payment').appendTo('#cd-cart');
+    $('#modal_pincode').appendTo('#cd-cart');
 })
 
  //getting click event to show modal
@@ -240,6 +241,19 @@ jQuery(window).on("load", function() {
         $('body').removeClass();
         $('body').addClass('hide-scroll');
     });
+
+    //getting click event to show modal
+    $('#delivery-pincode').click(function () {
+        $('#modal_pincode').modal();
+        
+      //appending modal background inside the bigform-content
+        $('.modal-backdrop').appendTo('#cd-cart');
+      //removing body classes to able click events
+        $('body').removeClass();
+        $('body').addClass('hide-scroll');
+    });
+
+
       $('.btn-signin').click(function () {
         $('#signin').modal();
         

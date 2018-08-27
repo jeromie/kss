@@ -20,10 +20,12 @@
 
 <hr>
 <div class="alert kss_delivery" role="alert">
+<a  id="delivery-pincode"  data-toggle="modal" data-target="#modal_pincode">
   <strong><i class="kss_marker"></i></strong> Enter Pincode To Delivery
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+  <button type="button" class="close" >
     <span aria-hidden="true"><i class="fas fa-angle-down"></i></span>
   </button>
+</a>
 </div>
 	<ul class="cd-cart-items">
 		<li>
@@ -45,8 +47,8 @@
 									<option>Size: 6-7 years</option>
 								</select>	
 						</div>
-						<div class="col-md-4 col-6" >
-								<select class="form-control form-control-sm  shadow-sm ">
+						<div class="col-md-4 col-4" >
+								<select class="form-control form-control-sm ">
 									<option>Qty: 1</option>
 									<option>Qty: 2</option>
 									<option>Qty: 3</option>
@@ -93,8 +95,8 @@
 									<option>Size: 6-7 years</option>
 								</select>	
 						</div>
-						<div class="col-md-4 col-6" >
-								<select class="form-control form-control-sm  shadow-sm ">
+						<div class="col-md-4 col-4" >
+								<select class="form-control form-control-sm ">
 									<option>Qty: 1</option>
 									<option>Qty: 2</option>
 									<option>Qty: 3</option>
@@ -185,8 +187,10 @@
 	<!-- <p class="cd-go-to-cart"><a href="#0">Go to cart page</a></p> -->
 			{{- partial "sign-in.html" . -}}
 			{{- partial "checkout.html" . -}}
+			{{- partial "pincode.html" . -}}
 			{{- partial "checkout2.html" . -}}
 			{{- partial "shipping-details.html" . -}}
 			{{- partial "payment-details.html" . -}}
+		
 
 </div> <!-- cd-cart -->
