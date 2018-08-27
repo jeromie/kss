@@ -20,8 +20,14 @@ label {
 .kss-price {
     font-size: 1.6rem;
     font-weight: bold;
+    &--smaller{
+      font-size: 1.3em;
+    }
     @media (max-width: 575.98px) {
         font-size: 1.4rem;
+        &--smaller{
+          font-size: 1.1em;
+        }
     }
 }
 .kss-original-price {

@@ -996,11 +996,7 @@ $L:     1200px;
   }
 
 }
-  .product-price {
-    .kss-price{
-      font-size: 1.3em;
-    }
-  }
+
   .kss_marker{
       background: url(../img/sprite-new.png)no-repeat;
      width: 30px;
@@ -1050,11 +1046,11 @@ $L:     1200px;
   }
 
   .after_modal_appended
-{  
+{
   position:relative;
 }
 
-.block 
+.block
 {
   width:100%;
   height:200px;
@@ -1084,8 +1080,8 @@ $L:     1200px;
           color: #000;
          }
       }
-  
- 
+
+
 }
 body #cd-cart .modal.show .modal-dialog {
     transform: translate(0,0);
@@ -1107,4 +1103,3 @@ body #cd-cart .modal.show .modal-dialog {
        }
 
 
- 
