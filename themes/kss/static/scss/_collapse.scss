@@ -23,7 +23,10 @@
 		}
 	}
 	.collapse-head{
-		background-color: $gray-100;
-		border: 1px solid $gray-200;
+		border-bottom: 1px solid #000;
+		margin-bottom: 15px;
+		button{
+			outline:none;
+		}
 	}
 }

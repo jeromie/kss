@@ -1,12 +1,12 @@
-<div class="kss_shipping">
+<div class="kss_shipping d-none">
   <div class="scroll-container">
 <nav class="navbar navbar-dark bg-dark pt-3 pb-3 position-sticky">
-  <div class="row no-gutter">
-    <div class="col-8">
+  <div class="row no-gutters w-100">
+    <div class="col-8 col-xl-9">
     <img src="{{"img/logo-kss.png" | absURL}}" xpreview="{{"img/logo-kss.png" | absURL}}" class=" img-fluid m-0">
      </div>
-     <div class="col-4 text-white secure-label">
-      <i class="fas fa-lock float-left mr-2"></i>SECURE
+     <div class="col text-white secure-label">
+      <i class="fas fa-lock float-left mr-2"></i>SECURE<br>
       CHECKOUT
      </div>
   </div>
@@ -23,15 +23,15 @@
         <hr>
         <h4 class="font-weight-bold ">Add New Address</h4>
         <br>
+
              <div class="row">
 
                                   <div class="col-md-6">
                                       <!--firstName-->
                                       <div class="form-group ">
-                                          <label class="" for="name">
-                                              Name *
-                                          </label>
+                                          
                                           <input class="form-control form-control-lg" id="name" type="text">
+                                          <label class="control-label">Name*</label>
                                       </div>
                                   </div>
 
@@ -39,10 +39,8 @@
                                   <div class="col-md-6">
                                       <!--lastName-->
                                       <div class="form-group">
-                                          <label class="" for="email-address">
-                                              Email Address *
-                                          </label>
                                           <input class="form-control form-control-lg" id="email-address" type="text">
+                                           <label class="control-label">Email Address*</label>
                                       </div>
                                   </div>
                 </div>
@@ -51,10 +49,8 @@
                                   <div class="col-md-12">
                                       <!--firstName-->
                                       <div class="form-group ">
-                                          <label class="" for="mobile">
-                                              Mobile No *
-                                          </label>
                                           <input class="form-control form-control-lg" id="mobile" type="text">
+                                           <label class="control-label">Mobile No*</label>
                                       </div>
                                   </div>
 
@@ -64,10 +60,8 @@
                                   <div class="col-md-12">
                                       <!--firstName-->
                                       <div class="form-group ">
-                                          <label class="" for="Address">
-                                              Address *
-                                          </label>
                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                            <label class="control-label">Address*</label>
                                       </div>
                                   </div>
 
@@ -77,10 +71,8 @@
                                   <div class="col-md-6">
                                       <!--firstName-->
                                       <div class="form-group ">
-                                          <label class="" for="pincode">
-                                              Pincode *
-                                          </label>
                                           <input class="form-control form-control-lg" id="pincode" type="text">
+                                           <label class="control-label">Pincode*</label>
                                       </div>
                                   </div>
 
@@ -88,10 +80,8 @@
                                   <div class="col-md-6">
                                       <!--lastName-->
                                       <div class="form-group">
-                                          <label class="" for="locality">
-                                              Locality/Town *
-                                          </label>
                                           <input class="form-control form-control-lg" id="locality" type="text">
+                                           <label class="control-label">Locality/Town*</label>
                                       </div>
                                   </div>
                 </div>
@@ -100,10 +90,8 @@
                                   <div class="col-md-6">
                                       <!--firstName-->
                                       <div class="form-group ">
-                                          <label class="" for="city">
-                                              City District *
-                                          </label>
                                           <input class="form-control form-control-lg" id="city" type="text">
+                                          <label class="control-label">City District*</label>
                                       </div>
                                   </div>
 
@@ -111,14 +99,12 @@
                                   <div class="col-md-6">
                                       <!--lastName-->
                                       <div class="form-group">
-                                          <label class="" for="state">
-                                              State *
-                                          </label>
                                           <input class="form-control form-control-lg" id="state" type="text">
+                                            <label class="control-label">State*</label>
                                       </div>
                                   </div>
                 </div>
-                 <div class="row">
+                 <div class="row mt-4">
 
                                   <div class="col-md-12">
                                       <!--firstName-->
@@ -132,14 +118,98 @@
                  <div class="row mt-4">
 
                                   <div class="col-7">
-                                     <h5 class="font-weight-bold">Billing Address</h5>
+                                     <h4 class="font-weight-bold">Billing Address</h4>
                                      <p>The Billing Address is the same as the Shipping Address</p>
                                   </div>
                                   <div class="col-5 text-right">
-                                     <h6><i class="fas fa-edit"></i> Change</h6>
+                                     <a data-toggle="collapse" href="#billing-address" role="button" aria-expanded="false" aria-controls="collapseExample"><h6><i class="fas fa-edit"></i> Change</h6></a>
                                   </div>
 
                 </div>
+                <div id="billing-address" class="collapse">
+                          <div class="row">
+
+                                  <div class="col-md-6">
+                                      <!--firstName-->
+                                      <div class="form-group ">
+                                          
+                                          <input class="form-control form-control-lg" id="name" type="text">
+                                          <label class="control-label">Name*</label>
+                                      </div>
+                                  </div>
+
+
+                                  <div class="col-md-6">
+                                      <!--lastName-->
+                                      <div class="form-group">
+                                          <input class="form-control form-control-lg" id="email-address" type="text">
+                                           <label class="control-label">Email Address*</label>
+                                      </div>
+                                  </div>
+                </div>
+                <div class="row">
+
+                                  <div class="col-md-12">
+                                      <!--firstName-->
+                                      <div class="form-group ">
+                                          <input class="form-control form-control-lg" id="mobile" type="text">
+                                           <label class="control-label">Mobile No*</label>
+                                      </div>
+                                  </div>
+
+                </div>
+                 <div class="row">
+
+                                  <div class="col-md-12">
+                                      <!--firstName-->
+                                      <div class="form-group ">
+                                           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                            <label class="control-label">Address*</label>
+                                      </div>
+                                  </div>
+
+                </div>
+                 <div class="row">
+
+                                  <div class="col-md-6">
+                                      <!--firstName-->
+                                      <div class="form-group ">
+                                          <input class="form-control form-control-lg" id="pincode" type="text">
+                                           <label class="control-label">Pincode*</label>
+                                      </div>
+                                  </div>
+
+
+                                  <div class="col-md-6">
+                                      <!--lastName-->
+                                      <div class="form-group">
+                                          <input class="form-control form-control-lg" id="locality" type="text">
+                                           <label class="control-label">Locality/Town*</label>
+                                      </div>
+                                  </div>
+                </div>
+                 <div class="row">
+
+                                  <div class="col-md-6">
+                                      <!--firstName-->
+                                      <div class="form-group ">
+                                          <input class="form-control form-control-lg" id="city" type="text">
+                                          <label class="control-label">City District*</label>
+                                      </div>
+                                  </div>
+
+
+                                  <div class="col-md-6">
+                                      <!--lastName-->
+                                      <div class="form-group">
+                                          <input class="form-control form-control-lg" id="state" type="text">
+                                            <label class="control-label">State*</label>
+                                      </div>
+                                  </div>
+                </div>
+                </div>
+
+
                 <div class="seperator">
                  </div> 
                 <div class="fixed-bottom d-none">
@@ -150,7 +220,7 @@
                             </a>
                         </div>
                         <div class="col-6 text-center">
-                            <button type="button" class="btn btn-lg btn-block btn-primary mt-1 mb-1">Save</button>
+                            <button type="button" class="shipping-details-save btn btn-lg btn-block btn-primary mt-1 mb-1">Save</button>
                         </div>
                     </div>
                 </div>

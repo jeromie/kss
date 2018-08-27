@@ -101,6 +101,7 @@ $(document).ready(function() {
       $hamburger_icon = $('#cd-hamburger-menu'),
       $lateral_cart = $('#cd-cart'),
       $shadow_layer = $('#cd-shadow-layer');
+      $cart_cancel  = $('#cart_close');
 
     //open lateral menu on mobile
     $hamburger_icon.on('click', function(event){
@@ -116,10 +117,27 @@ $(document).ready(function() {
       //close lateral menu (if it's open)
       $menu_navigation.removeClass('speed-in');
       toggle_panel_visibility($lateral_cart, $shadow_layer, $('body'));
+      $( "body" ).addClass( "hide-scroll" );
     });
 
-    //close lateral cart or lateral menu
-    $shadow_layer.on('click', function(){
+    // //close lateral cart or lateral menu
+    // $shadow_layer.on('click', function(){
+    //   $shadow_layer.removeClass('is-visible');
+    //   // firefox transitions break when parent overflow is changed, so we need to wait for the end of the trasition to give the body an overflow hidden
+    //   if( $lateral_cart.hasClass('speed-in') ) {
+    //     $lateral_cart.removeClass('speed-in').on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
+    //       $('body').removeClass('overflow-hidden');
+    //     });
+    //     $menu_navigation.removeClass('speed-in');
+    //   } else {
+    //     $menu_navigation.removeClass('speed-in').on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
+    //       $('body').removeClass('overflow-hidden');
+    //     });
+    //     $lateral_cart.removeClass('speed-in');
+    //   }
+    //     $( "body" ).removeClass( "hide-scroll" );
+    // });
+ $cart_cancel.on('click', function(){
       $shadow_layer.removeClass('is-visible');
       // firefox transitions break when parent overflow is changed, so we need to wait for the end of the trasition to give the body an overflow hidden
       if( $lateral_cart.hasClass('speed-in') ) {
@@ -133,8 +151,8 @@ $(document).ready(function() {
         });
         $lateral_cart.removeClass('speed-in');
       }
+        $( "body" ).removeClass( "hide-scroll" );
     });
-
     //move #main-navigation inside header on laptop
     //insert #main-navigation after header on mobile
     move_navigation( $menu_navigation, $L);
@@ -201,4 +219,117 @@ jQuery(window).on("load", function() {
         }
     });
     jQuery(".swipe-arrow").addClass("swipe-arrow-visible");
+    $('.kss_shipping').appendTo('#cd-cart');
+    $('.kss_payment').appendTo('#cd-cart');
 })
+
+ //getting click event to show modal
+    $('#checkout').click(function () {
+        $('#signin').modal();
+        
+      //appending modal background inside the bigform-content
+        $('.modal-backdrop').appendTo('#cd-cart');
+      //removing body classes to able click events
+        $('body').removeClass();
+        $('body').addClass('hide-scroll');
+    });
+      $('.btn-signin').click(function () {
+        $('#signin').modal();
+        
+      //appending modal background inside the bigform-content
+        $('.modal-backdrop').appendTo('#cd-cart');
+      //removing body classes to able click events
+        $('body').removeClass();
+          $(".state-1").removeClass('d-block'),100;
+         $(".state-1").addClass('d-none'),100;
+         $(".state-2").removeClass('d-none'),100;
+         $(".state-2").addClass('d-block'),100;
+    });
+      $('.btn-back').click(function () {
+         $(".state-2").removeClass('d-block'),100;
+         $(".state-2").addClass('d-none'),100;
+         $(".state-1").removeClass('d-none'),100;
+         $(".state-1").addClass('d-block'),100;
+
+        });
+
+ $('.btn-verify').click(function () {
+    $('#checkout-flow').modal();
+   $('#signin').modal('hide');
+    $('.modal-backdrop').appendTo('#cd-cart');
+    $('body').removeClass();
+    $('body').addClass('hide-scroll');
+});
+ $('.close').click(function () {
+  $( "body" ).removeClass( "hide-scroll" );
+  $('#checkout-flow').modal('hide');
+  $('.modal-backdrop').remove();
+ })
+
+ $('.shipping-details-save').click(function () {
+    $(".fixed-bottom").removeClass('d-block'),100;
+  $(".fixed-bottom").addClass('d-none'),100;
+    $('#checkout-flow2').modal();
+   $('.kss_shipping').removeClass('slide_to_show'),100;
+       $('#checkout-flow2').appendTo('#cd-cart');
+    $('.modal-backdrop').appendTo('#cd-cart');
+    $('body').removeClass();
+    $('body').addClass('hide-scroll');
+           $( ".kss_shipping" ).addClass( "d-none" );
+  $( ".kss_shipping" ).removeClass( "d-block" );
+});
+
+  $('#customRadio1, #customRadio2 ').click(function () {
+    $(".fixed-bottom").removeClass('d-block'),100;
+  $(".fixed-bottom").addClass('d-none'),100;
+    $('#checkout-flow2').modal();
+   $('.kss_payment').removeClass('slide_to_show'),100;
+       $('#checkout-flow2').appendTo('#cd-cart');
+    $('.modal-backdrop').appendTo('#cd-cart');
+    $('body').removeClass();
+    $('body').addClass('hide-scroll');
+       $( ".kss_payment" ).addClass( "d-none" );
+  $( ".kss_payment" ).removeClass( "d-block" );
+});
+
+
+  $('#shipping-details').click(function () {
+  $( "body" ).removeClass( "hide-scroll" );
+  $('#checkout-flow').modal('hide');
+  $('.modal-backdrop').remove();
+  $( ".kss_shipping" ).addClass( "slide_to_show" );
+  $( ".kss_shipping" ).addClass( "d-block" );
+  $( ".kss_shipping" ).removeClass( "d-none" );
+  $(".fixed-bottom").removeClass('d-none'),100;
+  $(".fixed-bottom").addClass('d-block'),100;
+      $('body').removeClass();
+    $('body').addClass('hide-scroll');
+ })
+
+   $('#payment-details').click(function () {
+  $( "body" ).removeClass( "hide-scroll" );
+  $('#checkout-flow').modal('hide');
+  $('.modal-backdrop').remove();
+  $( ".kss_payment" ).addClass( "slide_to_show" );
+    $( ".kss_payment" ).addClass( "d-block" );
+  $( ".kss_payment" ).removeClass( "d-none" );
+      $('body').removeClass();
+    $('body').addClass('hide-scroll');
+ })
+
+
+$(function(){
+  var x=0;
+  $('.form-control').focusout(function(){
+    var inputValue = $(this).val();
+    
+    if(inputValue == "")
+      {
+        $(this).removeClass("has-value");
+      }
+    else{
+      $(this).addClass("has-value");
+    }
+  });
+
+});

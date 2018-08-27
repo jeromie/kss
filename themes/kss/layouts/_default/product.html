@@ -40,7 +40,7 @@
 				<div class="d-block d-md-none text-center pt-2 pb-2">
 					<a href="#"> <h5><i class="fas fa-share-alt"></i> Share</h5></a>
 				</div>
-				<label class="mt-2">Color Selection</label>
+				<!-- <label class="mt-2">Color Selection</label>
 				<div class="radio-wrap w-image kss_variants mb-4 ">
 				    <input class="d-none radio-input" type="radio" name="kss-variants" id="green" checked="checked"/>
 				    <label class="radio-label" for="green" style="background-image: url({{"img/shirt1.jpg" | absURL}})">
@@ -58,11 +58,11 @@
 				    <label class="radio-label" for="red" style="background-image: url({{"img/shirt4.jpg" | absURL}})">
 				      <div class="radio-option">red</div>
 				    </label>
-				</div>
+				</div> -->
 
 				<div class="d-flex justify-content-between">
 					<label class="">Select Size</label>
-					<a href="#" class="font-weight-bold">Size Chart</a>
+					<a href="#" class="font-weight-bold kss-link">Size Chart</a>
 				</div>
 				<div class="radio-wrap kss_sizes wo-image mb-4">
 				    <input class="d-none radio-input" type="radio" name="kss-sizes" id="18-24" checked="checked"/>
@@ -102,54 +102,59 @@
 					</div>
 				</div>
 
+				 <label class="w-100 mt-4" >
+				 	<i class="fas fa-truck"></i> Check Delivery Options
+				 </label>
+				 <p class="text-muted">Tax: Applicable tax on the basis of exact location & discount will be charged at the time of checkout</p>
+				 <div class="seperator"></div>
 				<div class="accordion product-collapse" id="accordionExample">
 				  <div class="">
 				    <div class="collapse-head" id="headingOne">
-				      <h5 class="mb-0 py-1 pl-1 pr-2">
-				        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				      <label class="w-100 mb-3">
+				        <button class="btn-link text-dark btn-block text-left p-0 br-0 " type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 				        	Details
-				        </button>
+				        </label>
 				      </h5>
 				    </div>
 
 				    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
 				      <div class="card-body">
-				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				       <p> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
 				      </div>
 				    </div>
 				  </div>
 				  <div class="">
 				    <div class="collapse-head" id="headingTwo">
-				      <h5 class="mb-0 py-1 pl-1 pr-2">
-				        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				    <label class="w-100 mb-3">
+				        <button class="btn-link btn-block text-left p-0 br-0  collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
 				        	Additional Info
-				        </button>
+				        </label>
 				      </h5>
 				    </div>
 				    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
 				      	<div class="card-body">
 					     	<dl class="row">
-							  <dt class="col-sm-3">Format:</dt>
+							  <dt class="col-sm-3"><label>Format:</label></dt>
 							  <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
 
-							  <dt class="col-sm-3">Collar:</dt>
+							  <dt class="col-sm-3"><label>Collar:</label></dt>
 							  <dd class="col-sm-9">
 							    <p>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</p>
 							  </dd>
 
-							  <dt class="col-sm-3">Climate:</dt>
+							  <dt class="col-sm-3"><label>Climate:</label></dt>
 							  <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
 
-							  <dt class="col-sm-3">Pattern:</dt>
+							  <dt class="col-sm-3"><label>Pattern:</label></dt>
 							  <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
 
-							  <dt class="col-sm-3">Sleeve:</dt>
+							  <dt class="col-sm-3"><label>Sleeve:</label></dt>
 							  <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
 
-							  <dt class="col-sm-3">Gender:</dt>
+							  <dt class="col-sm-3"><label>Gender:</label></dt>
 							  <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
 
-							   <dt class="col-sm-3">Material:</dt>
+							   <dt class="col-sm-3"><label>Material:</label></dt>
 							  <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
 
 							</dl>
@@ -158,11 +163,11 @@
 				  </div>
 				  <div class="">
 				    <div class="collapse-head" id="headingThree">
-				      <h5 class="mb-0 py-1 pl-1 pr-2">
-				        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				      <label class="w-100 mb-3">
+				        <button class="btn-link btn-block text-left p-0 br-0  collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
 				        	Reviews
 				        </button>
-				      </h5>
+				      </label>
 				    </div>
 				    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
 				      <div class="card-body">
@@ -183,10 +188,55 @@
 			</div>
 		</div>
 	</div>
+<div class="container">
+	<h3 class="text-left my-5 font-weight-bold">Similar Product</h3>
+	<div class="row">
+			<div class="col-sm-3">
+				<div class="card">
+				  <img class="card-img-top" src="{{"img/shirt1.jpg" | absURL}}" alt="Card image cap">
+				  <div class="card-body">
+				    <h5 class="card-title">
+				        Cotton Rich Super Skinny Fit Jeans
+				      </h5>
+				  </div>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="card">
+				  <img class="card-img-top" src="{{"img/shirt2.jpg" | absURL}}" alt="Card image cap">
+				  <div class="card-body">
+				    <h5 class="card-title">
+				        Cotton Rich Super Skinny Fit Jeans
+				      </h5>
+				  </div>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="card">
+				  <img class="card-img-top" src="{{"img/shirt3.jpg" | absURL}}" alt="Card image cap">
+				  <div class="card-body">
+				    <h5 class="card-title">
+				        Cotton Rich Super Skinny Fit Jeans
+				      </h5>
+				  </div>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="card">
+				  <img class="card-img-top" src="{{"img/shirt4.jpg" | absURL}}" alt="Card image cap">
+				  <div class="card-body">
+				    <h5 class="card-title">
+				        Cotton Rich Super Skinny Fit Jeans
+				      </h5>
+				  </div>
+				</div>
+			</div>
+	</div>
+</div>
 
 	<div class="kss-related-section py-2 mt-5 bg-light">
 		<div class="container">
-			<h3 class="text-center my-5 font-weight-bold">Other people also viewed</h3>
+			<h3 class="text-left my-5 font-weight-bold">Other people also viewed</h3>
 
 			<div class="row px-2 px-sm-0 kss_mobile-list">
 				<div class="col-lg-3 col-md-6 mb-4 px-2 px-sm-3 col-6">
@@ -241,7 +291,6 @@
 
 		</div>
 	</div>
-
 	{{- partial "cart.html" . -}}
 
 <br>

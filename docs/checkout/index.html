@@ -34,9 +34,9 @@
                 <span class="hamburger-inner"></span>
             </span>
         </div>
-        <a class="navbar-brand" href="#">
-            <img src="https://media-cdn.kidsuperstore.in/media/logo/stores/1/logo.png" width="200px"/>
-        </a>
+        <a  href="#">
+    <img src="https://jeromie.github.io/kss/img/logo-kss.png" xpreview="https://jeromie.github.io/kss/img/logo-kss.png" class=" img-fluid m-0"> 
+     </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
@@ -102,7 +102,7 @@
         </div>
     </nav>
   </div>
-</div><div class="breadcrumb-wrapper border-top border-bottom">
+</div><div class="breadcrumb-wrapper ">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-8 col-12">
@@ -406,12 +406,30 @@
 	</main><div id="cd-shadow-layer"></div>
 
 <div id="cd-cart">
-	<div class="cart-header">
+	<div class=" row  no-gutters">
+		<div class="col-sm-6 col-6">
 		<div class="d-flex align-items-end">
-			<span class="title">Cart</span> <span class="circle"></span> <span class="count text-muted">2 items</span>
+			<h3 class="modal-title font-weight-bold">
+				Cart <i class="fas fa-circle text-small"></i>
+
+				<small class="count text-muted ">2 items</small> 
+
+			</h3>
 		</div>
+		</div>
+		<div class="col-sm-6 col-6">
+<h6 id="cart_close" class="float-right font-weight-bold mt-2"> Cancel</h6>
+		</div>
+		
 	</div>
 
+<hr>
+<div class="alert kss_delivery" role="alert">
+  <strong><i class="kss_marker"></i></strong> Enter Pincode To Delivery
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true"><i class="fas fa-angle-down"></i></span>
+  </button>
+</div>
 	<ul class="cd-cart-items">
 		<li>
 			<div class="primary-info d-flex">
@@ -423,21 +441,13 @@
 						Cotton Rich Super Skinny Fit Jeans
 					</div>
 					<div class="product-size text-muted mt-2">
-						<span>Size: 2-4 years</span>
+						<span class="size">Size: 2-4 years</span> | <span class="Deliver-date">Arrives: 14 Aug </span>
 					</div>
 				</div>
-				<div class="product-price">
-					<div class="retail-price">
-						<span class="rs-symbol">₹</span> <span class="price">869</span>
-					</div>
-					<div class="base-price">
-						<div>
-							<span class="rs-symbol">₹</span> <span class="price">1309</span>
-						</div>
-						<div class="perc-off text-danger">
-							20% off
-						</div>
-					</div>
+				<div class="product-delete ml-2" title="Remove">
+					<a href="#0" class="cd-item-remove delete d-block text-center">
+						<i class="far fa-trash-alt"></i>
+					</a>
 				</div>
 			</div>
 
@@ -455,10 +465,8 @@
 					<div class="kss-custom-select">
 					</div>
 				</div>
-				<div class="product-delete ml-2" title="Remove">
-					<a href="#0" class="cd-item-remove delete d-block text-center">
-						<i class="far fa-trash-alt"></i>
-					</a>
+				<div class="product-price">
+					<h6 class="kss-price">₹869 <small class="kss-original-price text-muted">₹1309</small> <span class="kss-discount text-danger">20% OFF</span></h6>
 				</div>
 			</div>
 
@@ -467,30 +475,20 @@
 		<li>
 			<div class="primary-info d-flex">
 				<div class="product-img">
-					<div class="img" style=
-					"background-image: url(https://jeromie.github.io/kss/img/4front.jpg);">
-					</div>
+					<div class="img" style="background-image: url(https://jeromie.github.io/kss/img/4front.jpg);"></div>
 				</div>
 				<div class="product-detail">
 					<div class="product-name">
 						Cotton Rich Super Skinny Fit Jeans
 					</div>
 					<div class="product-size text-muted mt-2">
-						<span>Size: 1-2 years</span>
+						<span class="size">Size: 2-4 years</span> | <span class="Deliver-date">Arrives: 14 Aug </span>
 					</div>
 				</div>
-				<div class="product-price">
-					<div class="retail-price">
-						<span class="rs-symbol">₹</span> <span class="price">869</span>
-					</div>
-					<div class="base-price">
-						<div>
-							<span class="rs-symbol">₹</span> <span class="price">1309</span>
-						</div>
-						<div class="perc-off text-danger">
-							20% off
-						</div>
-					</div>
+				<div class="product-delete ml-2" title="Remove">
+					<a href="#0" class="cd-item-remove delete d-block text-center">
+						<i class="far fa-trash-alt"></i>
+					</a>
 				</div>
 			</div>
 
@@ -508,45 +506,479 @@
 					<div class="kss-custom-select">
 					</div>
 				</div>
-				<div class="product-delete ml-2" title="Remove">
-					<a href="#0" class="cd-item-remove delete d-block text-center">
-						<i class="far fa-trash-alt"></i>
-					</a>
+				<div class="product-price">
+					<h6 class="kss-price">₹869 <small class="kss-original-price text-muted">₹1309</small> <span class="kss-discount text-danger">20% OFF</span></h6>
 				</div>
 			</div>
 
 		</li>
 
 	</ul> 
-
+	<div class="no-gutter">
+						<div class="alert alert-dark kss_promocode mt-3" role="alert">
+					<form class="form-inline">
+					  <div class="w-100">
+					    <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline" placeholder="Promocode">
+					    <a href="#">
+						    <h4 id="passwordHelpInline" class="text-muted float-right">
+						      Apply
+						    </h4>
+						</a>
+					  </div>
+					</form>
+	
+		</div>
+	</div>
 	<div class="cart-summary mt-4">
-		<h4 class="mb-1">Cart Summary</h4>
-		<div class="text-muted small mb-3">Includes GST and all government taxes</div>
+		<h4 class="mb-1 font-weight-bold">Cart Summary</h4>
+		<p class="text-muted mb-3">Includes GST and all government taxes</p>
 
 		<div class="d-flex justify-content-between py-1">
 			<div>Total item price</div>
-			<div>₹2618</div>
+			<div class=>₹2618</div>
 		</div>
 		<div class="d-flex justify-content-between py-1">
 			<div>Item discount</div>
-			<div>- ₹880</div>
+			<div class="text-success">- ₹880</div>
 		</div>
 		<div class="d-flex justify-content-between py-1">
 			<div>Shipping fee</div>
-			<div>Free</div>
+			<div class="text-success">Free</div>
 		</div>
 	</div>
 	<hr>
 	<div class="cd-cart-total">
-		<h5 class="font-weight-bold">Total <span>₹1738</span></h5>
+		<h5 class="font-weight-bold">Total Payable <span>₹1738</span></h5>
 	</div> 
 
 	<div class="p-3">
-		<a href="/kss/checkout/" class="btn btn-primary btn-lg btn-block">Checkout</a>
+		<a  id="checkout" class="btn btn-primary btn-lg btn-block " data-toggle="modal" data-target="#signin">Checkout</a>
 	</div>
 
-	
+	<div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content ">
+      <div class="modal-body">
+        <div class="state-1">
+        <div class="row no-gutter">
+            <div class="col-9 cart-header">
+              <span class="title" id="exampleModalLabel">Mobile Number</span>
+              <p>Your Shipping and payment details will be associated with this number</p>
+            </div>
+            <div class="col-3">
+               <h6 class="float-right font-weight-bold mt-2" data-dismiss="modal" aria-label="Close">
+                 Cancel
+                </h6>
+            </div>
+
+        </div>
+        <form>
+          <div class="form-group">
+              
+            <input type="number" class="form-control form-control-lg" id="frm-mobile"  placeholder=" ">
+             <label class="control-label">Enter Mobile Number</label>
+        </form>
+             <div class="mt-3">
+            <button type="button" class="btn btn-primary btn-block btn-lg btn-signin">Continue</button>
+          </div>
+        </div>
+      </div>
+
+        <div class="state-2 d-none">
+        <div class="row no-gutter">
+            <div class="col-12">
+              <h3 class="modal-title font-weight-bold" id="exampleModalLabel"><i class="fas fa-arrow-left mr-3 btn-back"></i> 
+
+ Verfiy Mobile</h3>
+            </div>
+
+        </div>
+        <form class="mt-3">
+          <div class="form-group text-center">
+            <p>Enter the OTP sent to your number <br>+91 840791773 <a class="kss_text-link font-weight-bold">Change</a></p>
+            <input type="password" class="form-control form-control-lg text-center mb-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="****">
+            <small> Resend OTP in 18 sec</small>
+        </form>
+        <div class="mt-3">
+            <button type="button" class="btn btn-primary btn-block btn-lg btn-verify" data-toggle="modal" data-target="#checkout-flow">Verify</button>
+          </div>
+          </div>
+      </div>
+           </div>
+
+
+  </div>
+</div>
+</div><div class="modal fade" id="checkout-flow" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content ">
+      <div class="modal-body">
+        <div class="row no-gutter">
+            <div class="col-9">
+              <h3 class="modal-title font-weight-bold" id="exampleModalLabel">Checkout</h3>
+            </div>
+            <div class="col-3">
+                <h6 class="float-right font-weight-bold mt-2" data-dismiss="modal" aria-label="Close">
+                 Cancel
+                </h6>
+            </div>
+
+        </div>
+
+<div class="row mt-4">
+    <div class="col-3"><h5 class="font-weight-bold">Ship to</h5></div>
+    <div class="col-7"><span class="text-muted">Add Your Shipping Address</span></div>
+    <div class="col-2 text-right"><i id="shipping-details" class="fas fa-edit"></i></div>
+</div>
+<hr>
+<div class="row mt-3">
+    <div class="col-3"><h5 class="font-weight-bold">Pay by</h5></div>
+    <div class="col-7"><span class="text-muted">Choose Payment Method</span></div>
+    <div class="col-2 text-right"><i id="payment-details" class="fas fa-edit"></i></div>
+</div>
+<hr>
+              <div class="mt-3">
+                <button type="button" class="btn btn-primary btn-block btn-lg btn-signin" disabled>Pay . ₹869</button>
+              </div>
+            </div>
+          </div>
+       </div>
+  </div>
+</div><div class="modal fade" id="checkout-flow2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content ">
+      <div class="modal-body">
+        <div class="row no-gutter">
+            <div class="col-9">
+              <h3 class="modal-title font-weight-bold" id="exampleModalLabel">Checkout</h3>
+            </div>
+            <div class="col-3">
+                <h6 class="float-right font-weight-bold mt-2" data-dismiss="modal" aria-label="Close">
+                 Cancel
+                </h6>
+            </div>
+
+        </div>
+
+<div class="row mt-4">
+    <div class="col-3"><h5 class="font-weight-bold">Ship to</h5></div>
+    <div class="col-7">
+      <P>Amit Shah <br>
+        Sindhudurg - 416510
+      </p>
+      <h6 class="font-weight-bold"> Billing Address same as above</h6>
+    </div>
+    <div class="col-2 text-right"><i id="shipping-details" class="fas fa-edit"></i></div>
+</div>
+<hr>
+<div class="row mt-3">
+    <div class="col-3"><h5 class="font-weight-bold">Pay by</h5></div>
+    <div class="col-7"><P>Online Payment </p></div>
+    <div class="col-2 text-right"><i id="payment-details" class="fas fa-edit"></i></div>
+</div>
+<hr>
+              <div class="mt-3">
+                <button type="button" class="btn btn-primary btn-block btn-lg btn-signin" >Pay . ₹869</button>
+              </div>
+            </div>
+          </div>
+       </div>
+  </div>
+</div><div class="kss_shipping d-none">
+  <div class="scroll-container">
+<nav class="navbar navbar-dark bg-dark pt-3 pb-3 position-sticky">
+  <div class="row no-gutters w-100">
+    <div class="col-8 col-xl-9">
+    <img src="https://jeromie.github.io/kss/img/logo-kss.png" xpreview="https://jeromie.github.io/kss/img/logo-kss.png" class=" img-fluid m-0">
+     </div>
+     <div class="col text-white secure-label">
+      <i class="fas fa-lock float-left mr-2"></i>SECURE<br>
+      CHECKOUT
+     </div>
+  </div>
+</nav>
+<div class="py-3 px-3">
+    <div class="row no-gutter">
+            <div class="col-8">
+              <h3 class="modal-title font-weight-bold" id="exampleModalLabel">Ship To</h3>
+            </div>
+            <div class="col-4 text-right">
+                  <h6 class="text-muted mt-2">STEP: 2 / 3</h6>
+            </div>
+        </div>
+        <hr>
+        <h4 class="font-weight-bold ">Add New Address</h4>
+        <br>
+
+             <div class="row">
+
+                                  <div class="col-md-6">
+                                      
+                                      <div class="form-group ">
+                                          
+                                          <input class="form-control form-control-lg" id="name" type="text">
+                                          <label class="control-label">Name*</label>
+                                      </div>
+                                  </div>
+
+
+                                  <div class="col-md-6">
+                                      
+                                      <div class="form-group">
+                                          <input class="form-control form-control-lg" id="email-address" type="text">
+                                           <label class="control-label">Email Address*</label>
+                                      </div>
+                                  </div>
+                </div>
+                <div class="row">
+
+                                  <div class="col-md-12">
+                                      
+                                      <div class="form-group ">
+                                          <input class="form-control form-control-lg" id="mobile" type="text">
+                                           <label class="control-label">Mobile No*</label>
+                                      </div>
+                                  </div>
+
+                </div>
+                 <div class="row">
+
+                                  <div class="col-md-12">
+                                      
+                                      <div class="form-group ">
+                                           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                            <label class="control-label">Address*</label>
+                                      </div>
+                                  </div>
+
+                </div>
+                 <div class="row">
+
+                                  <div class="col-md-6">
+                                      
+                                      <div class="form-group ">
+                                          <input class="form-control form-control-lg" id="pincode" type="text">
+                                           <label class="control-label">Pincode*</label>
+                                      </div>
+                                  </div>
+
+
+                                  <div class="col-md-6">
+                                      
+                                      <div class="form-group">
+                                          <input class="form-control form-control-lg" id="locality" type="text">
+                                           <label class="control-label">Locality/Town*</label>
+                                      </div>
+                                  </div>
+                </div>
+                 <div class="row">
+
+                                  <div class="col-md-6">
+                                      
+                                      <div class="form-group ">
+                                          <input class="form-control form-control-lg" id="city" type="text">
+                                          <label class="control-label">City District*</label>
+                                      </div>
+                                  </div>
+
+
+                                  <div class="col-md-6">
+                                      
+                                      <div class="form-group">
+                                          <input class="form-control form-control-lg" id="state" type="text">
+                                            <label class="control-label">State*</label>
+                                      </div>
+                                  </div>
+                </div>
+                 <div class="row mt-4">
+
+                                  <div class="col-md-12">
+                                      
+                                   <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                      <label class="custom-control-label" for="customCheck1">Make this my default address</label>
+                                    </div>
+                                  </div>
+
+                </div>
+                 <div class="row mt-4">
+
+                                  <div class="col-7">
+                                     <h4 class="font-weight-bold">Billing Address</h4>
+                                     <p>The Billing Address is the same as the Shipping Address</p>
+                                  </div>
+                                  <div class="col-5 text-right">
+                                     <a data-toggle="collapse" href="#billing-address" role="button" aria-expanded="false" aria-controls="collapseExample"><h6><i class="fas fa-edit"></i> Change</h6></a>
+                                  </div>
+
+                </div>
+                <div id="billing-address" class="collapse">
+                          <div class="row">
+
+                                  <div class="col-md-6">
+                                      
+                                      <div class="form-group ">
+                                          
+                                          <input class="form-control form-control-lg" id="name" type="text">
+                                          <label class="control-label">Name*</label>
+                                      </div>
+                                  </div>
+
+
+                                  <div class="col-md-6">
+                                      
+                                      <div class="form-group">
+                                          <input class="form-control form-control-lg" id="email-address" type="text">
+                                           <label class="control-label">Email Address*</label>
+                                      </div>
+                                  </div>
+                </div>
+                <div class="row">
+
+                                  <div class="col-md-12">
+                                      
+                                      <div class="form-group ">
+                                          <input class="form-control form-control-lg" id="mobile" type="text">
+                                           <label class="control-label">Mobile No*</label>
+                                      </div>
+                                  </div>
+
+                </div>
+                 <div class="row">
+
+                                  <div class="col-md-12">
+                                      
+                                      <div class="form-group ">
+                                           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                            <label class="control-label">Address*</label>
+                                      </div>
+                                  </div>
+
+                </div>
+                 <div class="row">
+
+                                  <div class="col-md-6">
+                                      
+                                      <div class="form-group ">
+                                          <input class="form-control form-control-lg" id="pincode" type="text">
+                                           <label class="control-label">Pincode*</label>
+                                      </div>
+                                  </div>
+
+
+                                  <div class="col-md-6">
+                                      
+                                      <div class="form-group">
+                                          <input class="form-control form-control-lg" id="locality" type="text">
+                                           <label class="control-label">Locality/Town*</label>
+                                      </div>
+                                  </div>
+                </div>
+                 <div class="row">
+
+                                  <div class="col-md-6">
+                                      
+                                      <div class="form-group ">
+                                          <input class="form-control form-control-lg" id="city" type="text">
+                                          <label class="control-label">City District*</label>
+                                      </div>
+                                  </div>
+
+
+                                  <div class="col-md-6">
+                                      
+                                      <div class="form-group">
+                                          <input class="form-control form-control-lg" id="state" type="text">
+                                            <label class="control-label">State*</label>
+                                      </div>
+                                  </div>
+                </div>
+                </div>
+
+
+                <div class="seperator">
+                 </div> 
+                <div class="fixed-bottom d-none">
+                    <div class="row no-gutters px-1 py-1">
+                        <div class="col-6">
+                            <a class=" text-center d-block mt-3" href="#">
+                              <h5>Cancel</h5>
+                            </a>
+                        </div>
+                        <div class="col-6 text-center">
+                            <button type="button" class="shipping-details-save btn btn-lg btn-block btn-primary mt-1 mb-1">Save</button>
+                        </div>
+                    </div>
+                </div>
+   </div>
+   </div>
+</div><div class="kss_payment d-none">
+  <div class="scroll-container">
+<nav class="navbar navbar-dark bg-dark pt-3 pb-3 position-sticky">
+  <div class="row no-gutters w-100">
+    <div class="col-8 col-xl-9">
+    <img src="https://jeromie.github.io/kss/img/logo-kss.png" xpreview="https://jeromie.github.io/kss/img/logo-kss.png" class=" img-fluid m-0">
+     </div>
+     <div class="col text-white secure-label">
+      <i class="fas fa-lock float-left mr-2"></i>SECURE<br>
+      CHECKOUT
+     </div>
+  </div>
+</nav>
+<div class="py-3 px-3">
+    <div class="row no-gutter">
+            <div class="col-8">
+              <h3 class="modal-title font-weight-bold" id="exampleModalLabel">Pay with</h3>
+            </div>
+            <div class="col-4 text-right">
+                  <h6 class="text-muted mt-2">STEP: 3 / 3</h6>
+            </div>
+        </div>
+        <hr>
+         <div class="row no-gutter">
+            <div class="col-8">
+             <h4 class="font-weight-bold text-success">You Pay ₹869</h4>
+            </div>
+            <div class="col-4 text-right">
+                  <h6><a class="kss_text-link" data-toggle="collapse" href="#cartsummary" role="button" aria-expanded="false" aria-controls="collapseExample">View Details</a></h6>
+            </div>
+        </div>
+        <div class="cart-summary mt-4 collapse"  id="cartsummary">
+          <div class="d-flex justify-content-between py-1">
+            <div>Total item price</div>
+            <div>₹2618</div>
+          </div>
+          <div class="d-flex justify-content-between py-1">
+            <div>Item discount</div>
+            <div class="text-success">- ₹880</div>
+          </div>
+          <div class="d-flex justify-content-between py-1">
+            <div>Shipping fee</div>
+            <div class="text-success">Free</div>
+          </div>
+        </div>
+        <div class="seperator"></div>
+        <h5 class="font-weight-bold ">Payment Methods</h5>
+        <br>
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action">
+                <div class="custom-control custom-radio mt-1">
+                  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio1">Pay Online
+                     <img src="https://jeromie.github.io/kss/img/payu.png" xpreview="https://jeromie.github.io/kss/img/payu.png" class=" mt-1 ml-3" width="40px" height="20px">
+                  </label>
+                </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+              <div class="custom-control custom-radio mt-1">
+              <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+              <label class="custom-control-label" for="customRadio2">Cash on Delivery</label>
+            </div> 
+          </a>
 </div> 
+   </div>
+   </div>
+</div></div> 
 <div class="modal fade dark-modal" id="loginModal" tabindex="-1" role="dialog" >
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">

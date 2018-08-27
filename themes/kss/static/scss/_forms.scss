@@ -43,3 +43,41 @@ select::-ms-expand {
     -o-transition: .25s all ease;
     transition: .25s all ease;
 }
+
+
+.form-group{
+  position: relative;
+  margin-top:30px;
+}
+
+.form-control{
+  border: 0px;
+  background-image:linear-gradient(#f9bc23, #f9bc23), linear-gradient(#D2D2D2, #D2D2D2);
+  background-size : 0% 2px, 100% 1px;
+  background-position : center bottom, center 100%;
+  background-repeat : no-repeat;
+  border-radius: 0px;
+  background-color: transparent;
+  transition : background 0.3s ease-out;
+}
+
+.form-control:focus{
+  outline : none;
+  background-image:linear-gradient(#f9bc23, #f9bc23), linear-gradient(#D2D2D2, #D2D2D2);
+      background-size: 100% 2px , 100% 1px;
+}
+
+.form-control:focus + .control-label, .has-value + .control-label{
+      top: -20px;
+    left: -14px;
+    font-size: 12px;
+  
+}
+.control-label{
+  position : absolute;
+  top: 6px;
+  font-size:16px;
+  padding-left: 13px;
+  pointer-events : none;
+  transition : all 0.2s ease-out;
+}
