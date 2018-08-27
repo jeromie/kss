@@ -69,15 +69,15 @@ select::-ms-expand {
 
 .form-control:focus + .control-label, .has-value + .control-label{
       top: -20px;
-    left: -14px;
+    left: 0px;
     font-size: 12px;
   
 }
 .control-label{
   position : absolute;
   top: 6px;
-  font-size:16px;
-  padding-left: 13px;
+  font-size:14px;
+  padding-left: 0px;
   pointer-events : none;
   transition : all 0.2s ease-out;
 }

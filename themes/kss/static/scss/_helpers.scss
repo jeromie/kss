@@ -25,6 +25,10 @@
     display: inline-block;
     margin-bottom: -4px;
 }
+.kss_disable {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
 .kss_sort li {
     border-bottom: 1px solid #f2f2f2;
 }

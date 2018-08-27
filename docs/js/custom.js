@@ -39,6 +39,13 @@ $(document).ready(function() {
                 $('.mobile-fixed').hide();
             }
         });
+
+    jQuery("#cd-cart-trigger").click(function() {
+        jQuery("#kss_cart").addClass("fixed-bottom");
+    });
+     jQuery("#cart_close").click(function() {
+        jQuery("#kss_cart").removeClass("fixed-bottom");
+    });
     }
     // ------------------ Mobile Zoom ------------------//
     document.addEventListener('DOMContentLoaded', function() {

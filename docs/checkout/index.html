@@ -441,7 +441,24 @@
 						Cotton Rich Super Skinny Fit Jeans
 					</div>
 					<div class="product-size text-muted mt-2">
-						<span class="size">Size: 2-4 years</span> | <span class="Deliver-date">Arrives: 14 Aug </span>
+						<div class="row no-gutters w-100">
+						<div class="col-md-4 col-6" >
+								<select class="form-control form-control-sm  shadow-sm "  disabled>
+									<option>Size: 1-2 years</option>
+									<option>Size: 2-3 years</option>
+									<option>Size: 4-5 years</option>
+									<option>Size: 6-7 years</option>
+								</select>	
+						</div>
+						<div class="col-md-4 col-6" >
+								<select class="form-control form-control-sm  shadow-sm ">
+									<option>Qty: 1</option>
+									<option>Qty: 2</option>
+									<option>Qty: 3</option>
+									<option>Qty: 4</option>
+								</select>	
+						</div>
+					</div>
 					</div>
 				</div>
 				<div class="product-delete ml-2" title="Remove">
@@ -452,19 +469,7 @@
 			</div>
 
 			<div class="secondary-info d-flex justify-content-between align-items-center mt-2">
-				<div class="product-quantity d-flex align-items-center">
-					<div class="label small mr-2">
-						Qty
-					</div>
-					<select class="form-control form-control-sm">
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-					</select>
-					<div class="kss-custom-select">
-					</div>
-				</div>
+				<span class="Deliver-date text-success"><i class="fas fa-truck"></i> Arrives: 14 Aug </span>
 				<div class="product-price">
 					<div class="kss-price kss-price--smaller">₹869 <small class="kss-original-price text-muted">₹1309</small> <span class="kss-discount text-danger">20% OFF</span></div>
 				</div>
@@ -475,14 +480,36 @@
 		<li>
 			<div class="primary-info d-flex">
 				<div class="product-img">
-					<div class="img" style="background-image: url(https://jeromie.github.io/kss/img/4front.jpg);"></div>
+					<div class="img kss_disable" style="background-image: url(https://jeromie.github.io/kss/img/4front.jpg);"></div>
 				</div>
 				<div class="product-detail">
 					<div class="product-name">
 						Cotton Rich Super Skinny Fit Jeans
 					</div>
 					<div class="product-size text-muted mt-2">
-						<span class="size">Size: 2-4 years</span> | <span class="Deliver-date">Arrives: 14 Aug </span>
+					<div class="product-quantity d-flex align-items-center">
+				
+					<div class="row no-gutters w-100">
+						<div class="col-md-4 col-6" >
+								<select class="form-control form-control-sm  shadow-sm " >
+									<option>Size: 1-2 years</option>
+									<option>Size: 2-3 years</option>
+									<option>Size: 4-5 years</option>
+									<option>Size: 6-7 years</option>
+								</select>	
+						</div>
+						<div class="col-md-4 col-6" >
+								<select class="form-control form-control-sm  shadow-sm ">
+									<option>Qty: 1</option>
+									<option>Qty: 2</option>
+									<option>Qty: 3</option>
+									<option>Qty: 4</option>
+								</select>	
+						</div>
+					</div>
+				
+				</div>
+
 					</div>
 				</div>
 				<div class="product-delete ml-2" title="Remove">
@@ -493,21 +520,10 @@
 			</div>
 
 			<div class="secondary-info d-flex justify-content-between align-items-center mt-2">
-				<div class="product-quantity d-flex align-items-center">
-					<div class="label small mr-2">
-						Qty
-					</div>
-					<select class="form-control form-control-sm">
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-					</select>
-					<div class="kss-custom-select">
-					</div>
-				</div>
+				
+				<span class="Deliver-date text-success">&nbsp; </span>
 				<div class="product-price">
-					<div class="kss-price kss-price--smaller">₹869 <small class="kss-original-price text-muted">₹1309</small> <span class="kss-discount text-danger">20% OFF</span></div>
+					<div class="kss-price kss-price--smaller text-danger">Out of Stock</div>
 				</div>
 			</div>
 
@@ -529,6 +545,7 @@
 
 		</div>
 	</div>
+	<hr>
 	<div class="cart-summary mt-4">
 		<h4 class="mb-1 font-weight-bold">Cart Summary</h4>
 		<p class="text-muted mb-3">Includes GST and all government taxes</p>
@@ -550,8 +567,11 @@
 	<div class="cd-cart-total">
 		<h5 class="font-weight-bold">Total Payable <span>₹1738</span></h5>
 	</div> 
+	<div class="seperator d-block d-sm-none mb-5">
 
-	<div class="p-3">
+	</div>
+
+	<div id="kss_cart" class="p-3 w-100">
 		<a  id="checkout" class="btn btn-primary btn-lg btn-block " data-toggle="modal" data-target="#signin">Checkout</a>
 	</div>
 
