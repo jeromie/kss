@@ -274,8 +274,8 @@ jQuery(window).on("load", function() {
  })
 
  $('.shipping-details-save').click(function () {
-    $(".fixed-bottom").removeClass('d-block'),100;
-  $(".fixed-bottom").addClass('d-none'),100;
+    $(".kss_shipping .fixed-bottom").removeClass('d-block'),100;
+  $(".kss_shipping .fixed-bottom").addClass('d-none'),100;
     $('#checkout-flow2').modal();
    $('.kss_shipping').removeClass('slide_to_show'),100;
        $('#checkout-flow2').appendTo('#cd-cart');
@@ -287,8 +287,8 @@ jQuery(window).on("load", function() {
 });
 
   $('#customRadio1, #customRadio2 ').click(function () {
-    $(".fixed-bottom").removeClass('d-block'),100;
-  $(".fixed-bottom").addClass('d-none'),100;
+    $(".kss_payment .fixed-bottom").removeClass('d-block'),100;
+  $(".kss_payment .fixed-bottom").addClass('d-none'),100;
     $('#checkout-flow2').modal();
    $('.kss_payment').removeClass('slide_to_show'),100;
        $('#checkout-flow2').appendTo('#cd-cart');
