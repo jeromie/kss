@@ -38,9 +38,6 @@
             display: block;
         }
     }
-}
-.kss_sizes {
-    display: flex;
     @media (min-width: 320px) and (max-width: 767.98px) {
         overflow: scroll;
         div {
@@ -54,6 +51,7 @@
         }
     }
 }
+
 .custom-control {
     line-height: 28px;
     margin-bottom: 6px;
