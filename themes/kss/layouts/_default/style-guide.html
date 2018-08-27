@@ -1,0 +1,86 @@
+{{ define "main" }}
+	<div class="container mt-2">
+
+		<h1 class="pt-5">Style Guide</h1>
+
+		<hr class="my-5">
+
+		<div class="row">
+			<div class="col-3">
+				<h4>Typography</h4>
+			</div>
+			<div class="col-9">
+				<h1 class="kss-title text-gray">
+					H1 - Product/Page Title
+				</h1>
+				<p><code>h1</code> tag with classes <code>.kss-title</code>, <code>.text-gray</code></p>
+				<hr>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col-9">
+				<h4 class="kss-price">
+					₹869 - Product price
+				</h4>
+				<p><code>h4</code> tag with <code>.kss-price</code> class</p>
+				<hr>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col-9">
+				<h4 class="kss-price">
+					<small class="kss-original-price text-muted">
+						₹1309 - Original price
+					</small>
+				</h4>
+				<p><code>small</code> tag with classes <code>.kss-original-price</code>, <code>.text-muted</code>. Should be child of <code>.kss-price</code></p>
+				<hr>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col-9">
+				<h4 class="kss-price">
+					<span class="kss-discount text-danger">
+						20% - Discount
+					</span>
+				</h4>
+				<p><code>span</code> tag with classes <code>.kss-discount</code>, <code>.text-danger</code>. Should be child of <code>.kss-price</code></p>
+				<hr>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-3">
+			</div>
+			<div class="col-9">
+				<div class="kss-price kss-price--smaller">₹869 <small class="kss-original-price text-muted">₹1309</small><span class="kss-discount text-danger">20% OFF</span> - Price Variation</div>
+				<p>Add class <code>.kss-price--smaller</code> to <code>.kss-price</code></p>
+				<hr>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-3">
+			</div>
+			<div class="col-9">
+				<label class="">Label</label>
+				<p>Default <code>label</code> tag</p>
+				<hr>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-3">
+			</div>
+			<div class="col-9">
+				<h3 class="font-weight-bold">Section Title</h3>
+				<p><code>h3</code> tag with <code>.font-weight-bold</code> class</p>
+			</div>
+		</div>
+
+
+	</div>
+{{ end }}
