@@ -1097,9 +1097,17 @@ body #cd-cart .modal.show .modal-dialog {
 }
 
 
-       .hide-scroll{
+.hide-scroll{
         position: inherit;
         overflow-y:hidden;
-       }
-
-
+}
+ @media (min-width: 360px) and (max-width: 767.98px) {
+#modal_pincode{
+  .radio-label{
+        min-width: 150px;
+        .radio-option {
+              width: 100px;
+        }
+  }
+}
+}
