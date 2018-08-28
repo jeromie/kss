@@ -1,4 +1,13 @@
 // ------------------ Zoom Gallery ------------------//
+   document.addEventListener('DOMContentLoaded', function() {
+        new SmartPhoto(".js-smartphoto");
+    });
+    if ($(window).width() < 790) {
+        $('.kss_zoom a').addClass('js-smartphoto');
+    } else {
+        $('.kss_zoom a').removeClass('js-smartphoto');
+    }
+
 $(document).ready(function() {
     $(".xzoom, .xzoom-gallery").xzoom({
         position: 'inside',
@@ -48,14 +57,7 @@ $(document).ready(function() {
     });
     }
     // ------------------ Mobile Zoom ------------------//
-    document.addEventListener('DOMContentLoaded', function() {
-        new SmartPhoto(".js-smartphoto");
-    });
-    if ($(window).width() < 790) {
-        $('.kss_zoom a').addClass('js-smartphoto');
-    } else {
-        $('.kss_zoom a').removeClass('js-smartphoto');
-    }
+ 
     // ------------------ Swipe Animation ------------------//
     jQuery(function() {
         jQuery('.slick-slider').on('afterChange', function(event, slick, currentSlide, nextSlide) {
@@ -338,6 +340,13 @@ jQuery(window).on("load", function() {
     $('body').addClass('hide-scroll');
  })
 
+  $('.btn-pay').click(function () {
+  $( "body" ).removeClass( "hide-scroll" );
+  $('#checkout-flow2').modal('hide');
+  $('.modal-backdrop').remove();
+  $( "#cd-cart" ).removeClass( "speed-in" );
+    $( "#cd-shadow-layer" ).removeClass( "is-visible" );
+ })
 
 $(function(){
   var x=0;

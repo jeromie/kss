@@ -4,6 +4,9 @@
 .text-danger {
     color: red !important;
 }
+.text-danger-dark{
+    color:$danger;
+}
 .text-small{
     font-size: 6px;
     color: #ccc;
@@ -16,6 +19,9 @@
 }
 .br-0 {
     border: 0px;
+}
+.br-1 {
+    border: 1px solid #ccc !important;
 }
 .kss_icon {
     background: url(../img/sprite.png)no-repeat;
