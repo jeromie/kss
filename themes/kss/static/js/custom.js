@@ -178,6 +178,16 @@ $(document).ready(function() {
         $('.sign-in-box').addClass('d-none');
         $('.reset-box').removeClass('d-none');
     })
+
+    $('body').on('click', '.btn', function() {
+      var clickedbutton = $(this);
+        clickedbutton.addClass('loading');
+        // replace timeout with success event
+        setTimeout(function(){
+          clickedbutton.removeClass('loading');
+          clickedbutton.addClass('loaded');
+        }, 1000);
+    })
 })
 
 function toggle_panel_visibility($lateral_panel, $background_layer, $body) {

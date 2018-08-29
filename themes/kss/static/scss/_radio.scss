@@ -9,13 +9,23 @@
     h1 {
         font-size: 1em;
     }
-    &:hover {}
+    &:hover {
+        color: darken(theme-color("primary"), 10%);
+    }
     &:active {
-        transform: translateY(2px);
+        // transform: translateY(2px);
     }
 }
 .radio-input:checked+.radio-label {
     border-color: theme-color("primary");
+    color: darken(theme-color("primary"), 10%);
+    &:hover {}
+}
+.radio-input:disabled+.radio-label {
+    background-color: $gray-200;
+    // color: $gray-500;
+    opacity: 0.4;
+    cursor: default;
     &:hover {}
 }
 .radio-wrap {
@@ -45,7 +55,7 @@
         }
     }
     label {
-        margin: 0px 5px;
+        margin: 0px 10px 0 0;
         div {
             text-align: center;
         }

@@ -48,3 +48,25 @@
 	}
 }
 
+.btn{
+	.btn-label-success, .btn-icon{
+		display: none;
+	}
+	&.loading{
+		.btn-label-success, .btn-label-initial{
+			display: none;
+		}
+		.btn-icon{
+			display: block;
+		}
+	}
+	&.loaded{
+		.btn-icon, .btn-label-initial{
+			display: none;
+		}
+		.btn-label-success{
+			display: block;
+		}
+	}
+}
+
