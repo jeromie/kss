@@ -60,7 +60,9 @@ select::-ms-expand {
   background-color: transparent;
   transition : background 0.3s ease-out;
 }
-
+.form-control-number{
+    font-size: 22px !important;
+}
 .form-control:focus{
   outline : none;
   background-image:linear-gradient(#f9bc23, #f9bc23), linear-gradient(#D2D2D2, #D2D2D2);

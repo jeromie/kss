@@ -1,7 +1,17 @@
 <div class="kss_shipping d-none">
   <div class="scroll-container">
-<nav class="navbar navbar-dark bg-dark pt-3 pb-3 position-sticky">
-  <div class="row no-gutters w-100">
+<nav class="navbar navbar-dark bg-dark pt-3 pb-3 ">
+      <div class="d-flex align-items-center w-100">
+        <div class="">
+          <a href="/kss/product/">
+             <img src="{{"img/logo-kss.png" | absURL}}" xpreview="{{"img/logo-kss.png" | absURL}}" class=" img-fluid m-0" width="180px">
+         </a>
+        </div>
+        <div class="ml-auto align-self-center">
+          <h3 class="m-0 text-white kss_highlight btn-pay"><span aria-hidden="true">&times;</span></h3>
+        </div>
+      </div>
+<!--   <div class="row no-gutters w-100">
     <div class="col-8 col-xl-9">
     <img src="{{"img/logo-kss.png" | absURL}}" xpreview="{{"img/logo-kss.png" | absURL}}" class=" img-fluid m-0" width="180px">
      </div>
@@ -9,20 +19,20 @@
       <i class="fas fa-lock float-left mr-2"></i>SECURE<br>
       CHECKOUT
      </div>
-  </div>
+  </div> -->
 </nav>
-<div class="py-3 px-3">
+<div class="py-3 px-3 padding-size">
     <div class="row no-gutter">
             <div class="col-8">
               <h3 class="modal-title font-weight-bold" id="exampleModalLabel">Ship To</h3>
             </div>
             <div class="col-4 text-right">
-                  <h6 class="text-muted mt-2">STEP: 2 / 3</h6>
+                  <h6 class="text-muted mt-2">STEP: 1 / 2</h6>
             </div>
         </div>
         <hr>
-        <h4 class="font-weight-bold ">Add New Address</h4>
-        <br>
+
+     
 
              <div class="row">
 
@@ -115,99 +125,7 @@
                                   </div>
 
                 </div>
-                 <div class="row mt-4">
-
-                                  <div class="col-7">
-                                     <h4 class="font-weight-bold">Billing Address</h4>
-                                     <p>The Billing Address is the same as the Shipping Address</p>
-                                  </div>
-                                  <div class="col-5 text-right">
-                                     <a data-toggle="collapse" href="#billing-address" role="button" aria-expanded="false" aria-controls="collapseExample" class="kss-link"><i class="fas fa-edit"></i> Change</a>
-                                  </div>
-
-                </div>
-                <div id="billing-address" class="collapse">
-                          <div class="row">
-
-                                  <div class="col-md-6">
-                                      <!--firstName-->
-                                      <div class="form-group ">
-                                          
-                                          <input class="form-control form-control-lg" id="name" type="text">
-                                          <label class="control-label">Name*</label>
-                                      </div>
-                                  </div>
-
-
-                                  <div class="col-md-6">
-                                      <!--lastName-->
-                                      <div class="form-group">
-                                          <input class="form-control form-control-lg" id="email-address" type="text">
-                                           <label class="control-label">Email Address*</label>
-                                      </div>
-                                  </div>
-                </div>
-                <div class="row">
-
-                                  <div class="col-md-12">
-                                      <!--firstName-->
-                                      <div class="form-group ">
-                                          <input class="form-control form-control-lg" id="mobile" type="text">
-                                           <label class="control-label">Mobile No*</label>
-                                      </div>
-                                  </div>
-
-                </div>
-                 <div class="row">
-
-                                  <div class="col-md-12">
-                                      <!--firstName-->
-                                      <div class="form-group ">
-                                           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                            <label class="control-label">Address*</label>
-                                      </div>
-                                  </div>
-
-                </div>
-                 <div class="row">
-
-                                  <div class="col-md-6">
-                                      <!--firstName-->
-                                      <div class="form-group ">
-                                          <input class="form-control form-control-lg" id="pincode" type="text">
-                                           <label class="control-label">Pincode*</label>
-                                      </div>
-                                  </div>
-
-
-                                  <div class="col-md-6">
-                                      <!--lastName-->
-                                      <div class="form-group">
-                                          <input class="form-control form-control-lg" id="locality" type="text">
-                                           <label class="control-label">Locality/Town*</label>
-                                      </div>
-                                  </div>
-                </div>
-                 <div class="row">
-
-                                  <div class="col-md-6">
-                                      <!--firstName-->
-                                      <div class="form-group ">
-                                          <input class="form-control form-control-lg" id="city" type="text">
-                                          <label class="control-label">City District*</label>
-                                      </div>
-                                  </div>
-
-
-                                  <div class="col-md-6">
-                                      <!--lastName-->
-                                      <div class="form-group">
-                                          <input class="form-control form-control-lg" id="state" type="text">
-                                            <label class="control-label">State*</label>
-                                      </div>
-                                  </div>
-                </div>
-                </div>
+            
 
 
                 <div class="seperator">
@@ -215,7 +133,8 @@
                 <div class="fixed-bottom d-none">
                     <div class="row no-gutters px-1 py-1">
                         <div class="col-6 text-center">
-                            <h6 id="cart_close" class="font-weight-bold mt-3"> Cancel</h6>
+                          <button type="button" class="shipping-details-save btn btn-lg btn-block btn-link text-dark mt-1 mb-1">Cancel</button>
+              
                         </div>
                         <div class="col-6 text-center">
                             <button type="button" class="shipping-details-save btn btn-lg btn-block btn-primary mt-1 mb-1">Save</button>

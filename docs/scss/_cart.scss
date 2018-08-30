@@ -801,10 +801,13 @@ $L:     1200px;
     top:68px;
     padding-bottom: 68px;
   }
-
-  @include MQ(L) {
-    width: 30%;
+@media (min-width: 992px) and (min-width: 1199.98px) {
+    width: 40% !important;
   }
+@media (min-width: 1300px) {
+    width: 30% !important;
+  }
+
 }
 
 #cd-cart {
@@ -1081,7 +1084,10 @@ $L:     1200px;
          }
       }
 
-
+  .size, .qty{
+    font-size: 14px;
+    margin-top: 2px;
+  }
 }
 body #cd-cart .modal.show .modal-dialog {
     transform: translate(0,0);
@@ -1111,3 +1117,4 @@ body #cd-cart .modal.show .modal-dialog {
   }
 }
 }
+

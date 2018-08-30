@@ -8,6 +8,10 @@
         $('.kss_zoom a').removeClass('js-smartphoto');
     }
 
+    $('.modal #cart_close').click(function () {
+  $("#cd-cart").removeAttr("style");
+ });
+
 $(document).ready(function() {
     $(".xzoom, .xzoom-gallery").xzoom({
         position: 'inside',
@@ -236,7 +240,7 @@ jQuery(window).on("load", function() {
  //getting click event to show modal
     $('#checkout').click(function () {
         $('#signin').modal();
-        
+          $("#cd-cart").css("overflow", "hidden");
       //appending modal background inside the bigform-content
         $('.modal-backdrop').appendTo('#cd-cart');
       //removing body classes to able click events
@@ -258,9 +262,9 @@ jQuery(window).on("load", function() {
 
       $('.btn-signin').click(function () {
         $('#signin').modal();
-        
       //appending modal background inside the bigform-content
         $('.modal-backdrop').appendTo('#cd-cart');
+
       //removing body classes to able click events
         $('body').removeClass();
           $(".state-1").removeClass('d-block'),100;
@@ -276,6 +280,8 @@ jQuery(window).on("load", function() {
 
         });
 
+  
+
  $('.btn-verify').click(function () {
     $('#checkout-flow').modal();
    $('#signin').modal('hide');
@@ -287,8 +293,9 @@ jQuery(window).on("load", function() {
   $( "body" ).removeClass( "hide-scroll" );
   $('#checkout-flow').modal('hide');
   $('.modal-backdrop').remove();
+  $("#cd-cart").css("overflow", "visible");
  })
-
+ 
  $('.shipping-details-save').click(function () {
     $(".kss_shipping .fixed-bottom").removeClass('d-block'),100;
   $(".kss_shipping .fixed-bottom").addClass('d-none'),100;
@@ -323,10 +330,11 @@ jQuery(window).on("load", function() {
   $( ".kss_shipping" ).addClass( "slide_to_show" );
   $( ".kss_shipping" ).addClass( "d-block" );
   $( ".kss_shipping" ).removeClass( "d-none" );
-  $(".fixed-bottom").removeClass('d-none'),100;
-  $(".fixed-bottom").addClass('d-block'),100;
+  $(".kss_shipping  .fixed-bottom").removeClass('d-none'),100;
+  $(".kss_shipping  .fixed-bottom").addClass('d-block'),100;
       $('body').removeClass();
     $('body').addClass('hide-scroll');
+    $("#cd-cart").removeAttr("style");
  })
 
    $('#payment-details').click(function () {
@@ -345,7 +353,17 @@ jQuery(window).on("load", function() {
   $('#checkout-flow2').modal('hide');
   $('.modal-backdrop').remove();
   $( "#cd-cart" ).removeClass( "speed-in" );
-    $( "#cd-shadow-layer" ).removeClass( "is-visible" );
+  $( "#cd-shadow-layer" ).removeClass( "is-visible" );
+  $(".kss_shipping .fixed-bottom").removeClass('d-block'),100;
+  $(".kss_shipping .fixed-bottom").addClass('d-none'),100;
+  $( ".kss_shipping" ).removeClass( "slide_to_show" );
+  $( ".kss_shipping" ).removeClass( "d-block" );
+  $( ".kss_shipping" ).addClass( "d-none" );
+  $("#cd-cart").removeAttr("style");
+  $( ".kss_payment" ).removeClass( "slide_to_show" );
+  $( ".kss_payment" ).removeClass( "d-block" );
+  $( ".kss_payment" ).addClass( "d-none" );
+   $("#kss_cart").removeClass("fixed-bottom");
  })
 
 $(function(){

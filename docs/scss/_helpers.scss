@@ -11,6 +11,9 @@
     font-size: 6px;
     color: #ccc;
 }
+.kss_highlight{
+    cursor:pointer;
+}
 .kss-link{
     color: #ecad0f;
     font-size: .95rem;
@@ -19,6 +22,7 @@
 }
 .br-0 {
     border: 0px;
+    background: none !important;
 }
 .br-1 {
     border: 1px solid #ccc !important;

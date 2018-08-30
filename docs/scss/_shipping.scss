@@ -30,7 +30,7 @@
         }
     }
     .fixed-bottom{
-        width: 30%;
+        width: 40%;
         right: 0px;
         left: inherit;
          @media (min-width: 360px) and (max-width: 767.98px) {
@@ -45,4 +45,17 @@
 #cd-cart .modal, #cd-cart .modal-backdrop {
     position: fixed;
 
+}
+
+@media (min-width: 360px) and (max-width: 767.98px) {
+    .kss_shipping {
+        .navbar{
+                position: fixed !important;
+                width: 102%;
+                z-index: 999;
+        }
+        .padding-size{
+            padding-top:80px !important;
+        }
+    }
 }
