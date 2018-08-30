@@ -83,7 +83,9 @@
     height: 1.3rem;
     background-size: 59% 100%;
 }
+@media (min-width: 768px) and (max-width: 991.98px) {
 .kss_sizes{
     overflow: hidden;
     overflow-x: scroll;
+}
 }

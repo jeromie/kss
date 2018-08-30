@@ -16,7 +16,7 @@
     }
     .kss_filter-list {
         cursor: pointer;
-        border-bottom: 2px solid #000;
+        border-bottom: 1px solid #e8e9e8;
         margin: 18px 0px;
         .card-body {
             padding: 1.25rem 0px;
@@ -35,6 +35,18 @@
             }
         }
     }
+    .custom-control-label::before {
+          background:#fff;
+          border:1px solid #000;
+          width: 1.2rem;
+          height: 1.2rem;  
+        }
+    .custom-control-label::after {
+          left: -1.6rem;
+          width: 1.4rem;
+          height: 1.1rem;
+    }
+
 }
 .kss_filter_mobile {
     left: 0px;
