@@ -3,8 +3,9 @@
 	<div class="container mt-4">
 		<div class="row">
 			<div class="col-sm-12 col-md-6">
-				<div class="row">
+				<div class="row m-similar" >
 					<div class="col-12 order-1 col-sm-10 order-sm-2 mb-3 d-none d-md-block">
+						<a href="#similar" class="scrollLink similar-link"><div class="kss_similar" ><i class="far fa-clone"></i></div></a>
 						<img src="{{"img/4front.jpg" | absURL}}" xoriginal='{{"img/4front.jpg" | absURL}}' class="img-fluid xzoom" >
 					</div>
 					<div class="col-12 order-2 col-sm-12 col-md-2 order-sm-1 px-0">
@@ -31,7 +32,13 @@
 				</div>
 			</div>
 			<div class="col-sm-12 col-md-6">
-
+			<nav aria-label="breadcrumb">
+					<ol class="breadcrumb mb-1 bg-transparent p-0">
+					    <li class="breadcrumb-item"><a href="#">Home</a></li>
+					    <li class="breadcrumb-item"><a href="#">Boys</a></li>
+					    <li class="breadcrumb-item active"><a href="#">Boys Shirts</a></li>
+					</ol>
+				</nav>
 				<h1 class="kss-title mb-2 mb-sm-2 text-gray font-weight-bold">Cotton Rich Super Skinny Fit Jeans</h1>
 
 				<h4 class="kss-price">₹869 <small class="kss-original-price text-muted">₹1309</small> <span class="kss-discount text-danger">20% OFF</span></h4>
@@ -117,14 +124,14 @@
 					<div class="col-sm-12 col-md-12 col-12 mobile-fixed pb-2 pb-sm-0 pr-sm-3 pt-sm-0">
 						<!-- <div class="text-muted mb-2 mt-1">Additional taxes may apply; charged at checkout</div> -->
 						<div class="row">
-							<div class="col-5 col-sm-4 pr-1">
+							<div class="col-6 col-sm-4 pr-1">
 								<button class="btn btn-outline-secondary btn-lg btn-block">
-									<div class="btn-label-initial">Save to Wishlist</div>
+									<div class="btn-label-initial"><i class="far fa-heart"></i> Save to Wishlist</div>
 									<div class="btn-label-success"><i class="fas fa-arrow-right"></i> Go to Cart</div>
 									<div class="btn-icon"><i class="fas fa-circle-notch fa-spin fa-lg"></i></div>
 								</button>
 							</div>
-							<div class="col-7 col-sm-8 pl-1">
+							<div class="col-6 col-sm-8 pl-1">
 								<button class="btn btn-primary btn-lg btn-block cd-add-to-cart " data-price="869">
 									<div class="btn-label-initial">Add to Cart</div>
 									<div class="btn-label-success"><i class="fas fa-arrow-right"></i> Go to Cart</div>
@@ -188,28 +195,28 @@
 				    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
 				      	<div class="card-body pb-2 px-0">
 					     	<dl class="row">
-							  <dt class="col-sm-3"><label>Format:</label></dt>
-							  <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+							  <dt class="col-sm-2"><label class="text-muted f-w-4">Format:</label></dt>
+							  <dd class="col-sm-10">A description list is perfect for defining terms.</dd>
 
-							  <dt class="col-sm-3"><label>Collar:</label></dt>
-							  <dd class="col-sm-9">
+							  <dt class="col-sm-2"><label class="text-muted f-w-4">Collar:</label></dt>
+							  <dd class="col-sm-10">
 							    <p>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</p>
 							  </dd>
 
-							  <dt class="col-sm-3"><label>Climate:</label></dt>
-							  <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+							  <dt class="col-sm-2"><label class="text-muted f-w-4">Climate:</label></dt>
+							  <dd class="col-sm-10">Etiam porta sem malesuada magna mollis euismod.</dd>
 
-							  <dt class="col-sm-3"><label>Pattern:</label></dt>
-							  <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+							  <dt class="col-sm-2"><label class="text-muted f-w-4">Pattern:</label></dt>
+							  <dd class="col-sm-10">Etiam porta sem malesuada magna mollis euismod.</dd>
 
-							  <dt class="col-sm-3"><label>Sleeve:</label></dt>
-							  <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+							  <dt class="col-sm-2"><label class="text-muted f-w-4">Sleeve:</label></dt>
+							  <dd class="col-sm-10">Etiam porta sem malesuada magna mollis euismod.</dd>
 
-							  <dt class="col-sm-3"><label>Gender:</label></dt>
-							  <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+							  <dt class="col-sm-2"><label class="text-muted f-w-4">Gender:</label></dt>
+							  <dd class="col-sm-10">Etiam porta sem malesuada magna mollis euismod.</dd>
 
-							   <dt class="col-sm-3"><label>Material:</label></dt>
-							  <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+							   <dt class="col-sm-2"><label class="text-muted f-w-4">Material:</label></dt>
+							  <dd class="col-sm-10">Etiam porta sem malesuada magna mollis euismod.</dd>
 
 							</dl>
 				      	</div>
@@ -244,7 +251,7 @@
 	</div>
 
 	<!-- Similar Products -->
-	<div class="container">
+	<div id="similar" class="container">
 		<hr class="mt-5">
 		<h3 class="text-left my-4 font-weight-bold">Similar Products</h3>
 		<div class="row kss_mobile-list">
@@ -333,6 +340,7 @@
 				  	<i class="fas fa-heart kss_heart"></i>
 				    <a href="#"><img class="card-img-top" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E" data-imgsrc="{{"img/Artboard 222.jpg" | absURL}}" alt=""></a>
 				    <div class="card-body">
+
 				      <h5 class="card-title">
 				        Cotton Rich Super Skinny Fit Jeans
 				      </h5>

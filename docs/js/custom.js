@@ -34,6 +34,7 @@ $(document).ready(function() {
             $('.kss_zoom a').addClass('js-smartphoto');
             new SmartPhoto(".js-smartphoto");
         });
+        $('.similar-link').appendTo('.m-similar');
         $('.center').slick({
             arrows: false,
             centerMode: true,
@@ -271,7 +272,29 @@ jQuery(window).on("load", function() {
 
         });
 
-  
+  $(document).ready(function() {
+      // Show or hide the sticky footer button
+
+       $( "a.scrollLink" ).click(function( event ) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
+    });
+
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > 200) {
+          $('.go-top').fadeIn(200);
+        } else {
+          $('.go-top').fadeOut(200);
+        }
+      });
+      
+      // Animate the scroll to top
+      $('.go-top').click(function(event) {
+        event.preventDefault();
+        
+        $('html, body').animate({scrollTop: 0}, 300);
+      })
+    });
 
  $('.btn-verify').click(function () {
 
@@ -359,6 +382,8 @@ $('#customRadio1, #customRadio2 ').click(function() {
   $( ".kss_payment" ).addClass( "d-none" );
    $("#kss_cart").removeClass("fixed-bottom");
  })
+
+
 
 $(function(){
   var x=0;
