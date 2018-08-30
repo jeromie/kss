@@ -30,9 +30,14 @@
         }
     }
     .fixed-bottom{
-        width: 40%;
         right: 0px;
         left: inherit;
+        @media (min-width: 992px) and (min-width: 1199.98px) {
+            width: 40% !important;
+          }
+        @media (min-width: 1300px) {
+            width: 30% !important;
+          }
          @media (min-width: 360px) and (max-width: 767.98px) {
             width:100%;
          }

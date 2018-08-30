@@ -226,7 +226,7 @@ jQuery(window).on("load", function() {
     $('.kss_payment').appendTo('#cd-cart');
     $('#modal_pincode').appendTo('#cd-cart');
 })
-<<<<<<< HEAD
+
 
  //getting click event to show modal
     $('#checkout').click(function () {
@@ -274,6 +274,7 @@ jQuery(window).on("load", function() {
   
 
  $('.btn-verify').click(function () {
+
     $('#checkout-flow').modal();
     $('#signin').modal('hide');
     $('.modal-backdrop').appendTo('#cd-cart');
@@ -291,6 +292,7 @@ jQuery(window).on("load", function() {
  $('.shipping-details-save').click(function () {
     $(".kss_shipping .fixed-bottom").removeClass('d-block'),100;
   $(".kss_shipping .fixed-bottom").addClass('d-none'),100;
+
     $('#checkout-flow2').modal();
     $('.kss_shipping').removeClass('slide_to_show'), 100;
     $('#checkout-flow2').appendTo('#cd-cart');
