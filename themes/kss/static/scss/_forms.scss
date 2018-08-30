@@ -44,7 +44,9 @@ select::-ms-expand {
     transition: .25s all ease;
 }
 
-
+label{
+    font-size: .9rem;
+}
 .form-group{
   position: relative;
   margin-top:30px;
@@ -83,4 +85,14 @@ select::-ms-expand {
   pointer-events : none;
   font-weight:400;
   transition : all 0.2s ease-out;
+}
+/* For Firefox */
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+/* Webkit browsers like Safari and Chrome */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }

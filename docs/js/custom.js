@@ -28,7 +28,7 @@ $(document).ready(function() {
         jQuery(".swipe-arrow").removeClass("swipe-arrow-visible");
     });
     // ------------------ Mobile View ------------------//
-    if ($(window).width() < 790) {
+    if ($(window).width() < 760) {
         $('.center').on('init', function(event, slick) {
             // ------------------ Mobile Zoom ------------------//
             $('.kss_zoom a').addClass('js-smartphoto');

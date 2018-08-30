@@ -5,7 +5,7 @@
     right:-600px;
     transition: all 0.5s ease;
     z-index: 99999;
-    height:130vh;
+    height:100vh;
     top: 0px;
     overflow-y: scroll;
      @media (min-width: 320px) and (max-width: 767.98px) {
@@ -31,6 +31,7 @@
     }
     .fixed-bottom{
         right: 0px;
+        width:400px;
         left: inherit;
         @media (min-width: 992px) and (min-width: 1199.98px) {
             width: 40% !important;

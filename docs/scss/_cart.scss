@@ -68,7 +68,7 @@ $L : 1200px;
   z-index: 9999;
 
   @include MQ(M) {
-    width: 350px;
+    width: 400px;
   }
 
 @media (min-width: 360px) and (max-width: 767.98px) {
@@ -166,7 +166,7 @@ $L : 1200px;
     left: 0;
     background: rgba($gray-500, .6);
     cursor: pointer;
-    z-index: 2;
+    z-index: 99;
     display: none;
     &.is-visible {
         display: block; // @include animation(cd-fade-in .3s);
@@ -309,7 +309,7 @@ $L : 1200px;
         bottom: 0px;
         margin: 0px;
         padding: 0px;
-        margin-left: -19px;
+        margin-left: -20px;
         max-width: 100%;
         @media (min-width: 320px) and (max-width: 767.98px) {
             margin-left: -14px;
@@ -361,5 +361,9 @@ body #cd-cart .modal.show .modal-dialog {
   }
 }
 
-
+#delivery-pincode{
+  .close{
+      opacity:1;
+  }
+}
 

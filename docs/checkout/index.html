@@ -28,7 +28,7 @@
   </head>
   <body><div class="header">
   <div class="container pl-2 pl-sm-0 pr-2 pr-sm-0">
-    <nav class="navbar navbar-expand-lg pl-0 pr-0 pb-0 pt-0">
+    <nav class="navbar navbar-expand-lg pl-1 pr-1 pb-0 pt-0">
         <div class="navbar-toggler hamburger hamburger--collapse" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
@@ -93,7 +93,7 @@
                            <img src="https://jeromie.github.io/kss/img/heart.png" xpreview="https://jeromie.github.io/kss/img/heart.png" width="25px"> 
                     </a>
                 </li>
-                <li class="list-inline-item pr-0 pr-sm-3">
+                <li class="list-inline-item pr-0 ">
                     <a id="cd-cart-trigger" href="#">
                         <img src="https://jeromie.github.io/kss/img/bag.png" xpreview="https://jeromie.github.io/kss/img/bag.png" width="25px"> 
                     </a>
@@ -397,7 +397,7 @@
 		</h3>
 	  </div>
 	  <div class="ml-auto align-self-center">
-	 	 	<h6 id="cart_close" class="m-0 font-weight-bold kss_highlight"> Cancel</h6>
+	 	 	<h6 id="cart_close" class="m-0 font-weight-bold kss_highlight"> Close</h6>
 	  </div>
 	</div>
 
@@ -406,7 +406,7 @@
 <a  id="delivery-pincode"  data-toggle="modal" data-target="#modal_pincode">
   <strong><i class="kss_marker"></i></strong> Enter Pincode To Delivery
   <button type="button" class="close" >
-    <span aria-hidden="true"><i class="fas fa-angle-down"></i></span>
+    <label aria-hidden="true" class="kss-link kss_highlight">Check</label>
   </button>
 </a>
 </div>
@@ -427,10 +427,10 @@
 						  </div>
 						  <div class="pl-2 pr-4 align-self-center">
 						  	<select class="size form-control form-control-sm br-0  border-dark "  >
-									<option>1-2 years</option>
-									<option>2-3 years</option>
-									<option>4-5 years</option>
-									<option>6-7 years</option>
+									<option>1-2Y</option>
+									<option>2-3Y</option>
+									<option>4-5Y</option>
+									<option>6-7Y</option>
 								</select>	
 						  </div>
 						  <div class="qty align-self-center">
@@ -481,10 +481,10 @@
 						  </div>
 						  <div class="pl-2 pr-4 align-self-center">
 						  	<select class="size form-control form-control-sm br-0  border-dark "  >
-									<option>1-2 years</option>
-									<option>2-3 years</option>
-									<option>4-5 years</option>
-									<option>6-7 years</option>
+									<option>1-2Y</option>
+									<option>2-3Y</option>
+									<option>4-5Y</option>
+									<option>6-7Y</option>
 								</select>	
 						  </div>
 						  <div class="qty align-self-center">
@@ -532,7 +532,7 @@
 		<div class="col-1">
 		</div>
 		<div class="col-4">
-			<button type="button" class="btn btn-lg btn-outline-primary "> Apply Code</button>
+			<button type="button" class="btn btn-lg btn-primary"> Apply Code</button>
 		</div>
 	</div>
 
@@ -554,7 +554,7 @@
 			<div class="text-success">Free</div>
 		</div>
 	</div>
-	<hr>
+	<hr class="dashed">
 	<div class="cd-cart-total">
 		<h5 class="font-weight-bold">Total Payable <span>₹869</span></h5>
 	</div> 
@@ -600,7 +600,7 @@
           </h3>
           </div>
           <div class="">
-           <h3 class="modal-title font-weight-bold" id="exampleModalLabel">Verfiy Mobile</h3>
+           <h3 class="modal-title font-weight-bold" id="exampleModalLabel">Verify Mobile</h3>
           </div>
         </div>
   
@@ -635,17 +635,17 @@
     
 
 <div class="row mt-4">
-    <div class="col-3"><label class="m-0 font-weight-bold"><i class="fas fa-truck text-warning"></i> Ship to</label></div>
-    <div class="col-6 col-md-7"><span class="text-muted">Add Your Shipping Address</span></div>
-    <div class="col-3 col-md-2 text-right">
+    <div class="col-3"><label class="m-0 font-weight-bold">Ship to</label></div>
+    <div class="col-6 "><span class="text-muted">Add Your Shipping Address</span></div>
+    <div class="col-3  text-right">
      <a id="shipping-details" href="#" class="kss-link font-weight-bold"><i class="fas fa-pencil-alt"></i> Add</a>
     </div>
 </div>
 <hr>
 <div class="row mt-3">
-    <div class="col-3"><label class="m-0 font-weight-bold"><i class="far fa-credit-card text-warning"></i> Pay by</label></div>
-    <div class="col-6 col-md-7"><span class="text-muted">Choose Payment Method</span></div>
-    <div class="col-3 col-md-2 text-right">
+    <div class="col-3"><label class="m-0 font-weight-bold"> Pay by</label></div>
+    <div class="col-6 "><span class="text-muted">Choose Payment Method</span></div>
+    <div class="col-3 text-right">
   <a id="payment-details" href="#" class="kss-link font-weight-bold"><i class="fas fa-pencil-alt"></i> Add</a>
  </div>
 </div>
@@ -719,21 +719,21 @@
         </div>
 
 <div class="row mt-4">
-    <div class="col-3"><label class="m-0 font-weight-bold"><i class="fas fa-truck text-warning"></i> Ship to</label></div>
-    <div class="col-6 col-md-7">
+    <div class="col-3"><label class="m-0 font-weight-bold">Ship to</label></div>
+    <div class="col-6 ">
       <p class="m-0">Amit Shah <br>
         Sindhudurg - 416510
       </p>
     </div>
-    <div class="col-3 col-md-2 text-right">
+    <div class="col-3 text-right">
             <a id="shipping-details" href="#" class="kss-link font-weight-bold"><i class="fas fa-pencil-alt"></i> Edit</a>
     </div>
 </div>
 <hr>
 <div class="row mt-3">
-    <div class="col-3"><label class="m-0 font-weight-bold"><i class="far fa-credit-card text-warning"></i> Pay by</label></div>
-    <div class="col-6 col-md-7">  <p class="m-0">Online Payment </p></div>
-    <div class="col-3 col-md-2 text-right">
+    <div class="col-3"><label class="m-0 font-weight-bold"> Pay by</label></div>
+    <div class="col-6 ">  <p class="m-0">Online Payment </p></div>
+    <div class="col-3 text-right">
 
        <a id="payment-details" href="#" class="kss-link font-weight-bold"><i class="fas fa-pencil-alt"></i> Edit</a>
     </div>
@@ -868,10 +868,9 @@
             
 
 
-                <div class="seperator">
-                 </div> 
+              
                 <div class="fixed-bottom d-none">
-                    <div class="row no-gutters px-1 py-1">
+                    <div class="row no-gutters px-2 py-2">
                         <div class="col-6 text-center">
                           <button type="button" class="shipping-details-save btn btn-lg btn-block btn-link text-dark mt-1 mb-1">Cancel</button>
               

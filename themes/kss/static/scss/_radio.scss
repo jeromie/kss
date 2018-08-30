@@ -43,7 +43,7 @@
     &.wo-image {
         .radio-label {
             min-width: 100px;
-            padding: 16px;
+            padding: 10px;
             text-align: center;
             display: block;
         }
@@ -82,4 +82,8 @@
     width: 1.4rem;
     height: 1.3rem;
     background-size: 59% 100%;
+}
+.kss_sizes{
+    overflow: hidden;
+    overflow-x: scroll;
 }

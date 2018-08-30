@@ -15,8 +15,8 @@
     cursor:pointer;
 }
 .kss-link{
-    color: #ecad0f;
-    font-size: .95rem;
+    color: theme-color("secondary");
+    font-size: 0.8rem;
     margin-bottom: 15px;
     text-decoration:none !important;
 }
@@ -26,6 +26,10 @@
 }
 .br-1 {
     border: 1px solid #ccc !important;
+    background: none !important;
+}
+.dashed{
+        border-style: dashed;
 }
 .kss_icon {
     background: url(../img/sprite.png)no-repeat;
