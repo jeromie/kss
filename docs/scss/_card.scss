@@ -15,7 +15,8 @@ $size: 20px;
         background:none;
     }
     .card-title {
-        font-weight: 800;
+        font-weight: 400;
+        font-size:1rem;
         @media (max-width: 575.98px) {
             font-size:.8rem;
         }
@@ -32,7 +33,7 @@ $size: 20px;
     .card-body {
         flex: 1 1 auto;
         padding: 10px 0px;
-        padding: 0.85rem;
+        padding: 10px 0px;
         .price {
             .text-muted {
                 color: $gray-500 !important;
@@ -47,4 +48,7 @@ $size: 20px;
         overflow: scroll;
         flex-wrap: nowrap;
     }
+}
+.m-similar{
+    margin-top:-8px;
 }

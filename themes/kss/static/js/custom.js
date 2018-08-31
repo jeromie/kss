@@ -20,6 +20,9 @@ $(document).ready(function() {
     jQuery("#filter").click(function() {
         jQuery(".kss_filter").addClass("kss_filter_mobile");
     });
+    jQuery(".clear-filter").click(function(){
+          jQuery(".filter-selection").attr("style", "display: none !important");
+    });
     jQuery("#kss_hide-filter").click(function() {
         jQuery(".kss_filter").removeClass("kss_filter_mobile");
     });

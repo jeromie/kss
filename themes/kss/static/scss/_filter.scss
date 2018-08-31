@@ -72,4 +72,13 @@
         transform: translate(0, 0);
         max-width: 100%;
     }
+   
 }
+
+  @media (min-width: 320px) and (max-width: 767.98px) {
+   .kss_filter_mobile {
+   .footer-filter {
+        display:block !important;
+    }
+   }
+  }
