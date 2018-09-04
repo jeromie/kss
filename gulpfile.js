@@ -39,7 +39,8 @@ gulp.task('sass', function(){
 // CSS Version
 
 gulp.task('css', function(){
-    return gulp.src('./themes/kss/static/css/*.css')
+    // return gulp.src('./themes/kss/static/css/*.css')
+    return gulp.src(['./themes/kss/static/css/hamburgers.css', './themes/kss/static/css/jquery.fancybox.css', './themes/kss/static/css/jquery.mmenu.all.css', './themes/kss/static/css/lightgallery.css', './themes/kss/static/css/xzoom.css', './themes/kss/static/css/custom.css'])
      .pipe(csso())
      .pipe(concat('combine.css'))
    .pipe(gulp.dest('./themes/kss/static/css'))
