@@ -1,46 +1,42 @@
 .prod-slides {
-     height: 515px;
+    @media(max-width: 767px){
+        min-height: 122vw;
+    }
 }
 .loader {
     background: #ffffff url(../img/loader_818e.gif) center center no-repeat;
-     height: 515px;
-     width:100%;
-     position: absolute;
-     z-index: 999;
+    height: 515px;
+    width: 100%;
+    position: absolute;
+    z-index: 999;
 }
-.prod-slides li{ 
-    opacity: 0; 
-    position: absolute; 
-     transition: all 0.5s ease;
+.prod-slides li {
+    opacity: 0;
+    transition: all 0.5s ease;
 }
 .prod-slides.slick-initialized {
     background: none;
 }
-.prod-slides.slick-initialized li { 
+.prod-slides.slick-initialized li {
     opacity: 1;
     position: relative;
- 
 }
-.slick-disabled{
+.slick-disabled {
     opacity: 0;
 }
-
-    .center {
-        overflow: overlay;
+.center {
+    overflow: overlay;
+    transition: all 0.5s ease;
+    &>.prod-slides.slick-initialized {
+        background: none!important;
+        height: auto;
+        overflow: auto;
         transition: all 0.5s ease;
-    
-     
-        &>.prod-slides.slick-initialized {
-            background: none!important;
-            height: auto;
-            overflow: auto;
-            transition: all 0.5s ease;
-            &>.generic-item-wrap-class {
-                visibility: visible;
-            }
+        &>.generic-item-wrap-class {
+            visibility: visible;
         }
     }
-
+}
 /*.slick-slide {
     opacity: 0.3;
     img {
@@ -55,33 +51,27 @@
         filter: grayscale(0%);
     }
 }*/
+
 /* Arrows */
-.slick-loading .slick-list
-{
+
+.slick-loading .slick-list {
     background: #fff url('../img/ajax-loader.gif') center center no-repeat;
 }
-
 /* Icons */
-@font-face
-{
+
+@font-face {
     font-family: 'slick';
     font-weight: normal;
     font-style: normal;
-
     src: url('../fonts/slick.eot');
     src: url('../fonts/slick.eot?#iefix') format('embedded-opentype'), url('../fonts/slick.woff') format('woff'), url('../fonts/slick.ttf') format('truetype'), url('../fonts/slick.svg#slick') format('svg');
 }
-.slick-prev,
-.slick-next
-{
+.slick-prev, .slick-next {
     font-size: 0;
     line-height: 0;
-
     position: absolute;
     top: 50%;
-
     display: block;
-
     width: 20px;
     height: 20px;
     padding: 0;
@@ -90,60 +80,41 @@
     transform: translate(0, -50%);
     z-index: 9;
     cursor: pointer;
-
     color: transparent;
     border: none;
     outline: none;
     background: transparent;
 }
-.slick-prev:hover,
-.slick-prev:focus,
-.slick-next:hover,
-.slick-next:focus
-{
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
     color: transparent;
     outline: none;
     background: transparent;
 }
-.slick-prev:hover:before,
-.slick-prev:focus:before,
-.slick-next:hover:before,
-.slick-next:focus:before
-{
+.slick-prev:hover:before, .slick-prev:focus:before, .slick-next:hover:before, .slick-next:focus:before {
     opacity: 1;
 }
-.slick-prev.slick-disabled:before,
-.slick-next.slick-disabled:before
-{
+.slick-prev.slick-disabled:before, .slick-next.slick-disabled:before {
     opacity: .25;
 }
-
-.slick-prev:before,
-.slick-next:before
-{
+.slick-prev:before, .slick-next:before {
     font-family: 'slick';
     font-size: 30px;
     line-height: 1;
     color: #000;
-
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
-.slick-prev
-{
+.slick-prev {
     left: 35px;
     background: url(../img/sprite.png)no-repeat !important;
-    width:52px;
-    height:52px;
+    width: 52px;
+    height: 52px;
     background-position: -395px -118px!important;
 }
-
-.slick-next
-{
+.slick-next {
     right: 35px;
     background: url(../img/sprite.png)no-repeat!important;
-    width:52px;
-    height:52px;
-     background-position: -315px -118px!important;
+    width: 52px;
+    height: 52px;
+    background-position: -315px -118px!important;
 }

@@ -1,67 +1,53 @@
-
-  $('.modal #cart_close').click(function () {
-  $("#cd-cart").removeAttr("style");
- });
-
-
-$(' .prod-slides').slick({
-
-          lazyLoad: 'ondemand',
-    slidesToShow: 2.05,
-   centerPadding: '0',
-  infinite: false,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 1,
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 1,
-            mobileFirst: true,
-      }
-    }
-  ]
+$('.modal #cart_close').click(function() {
+    $("#cd-cart").removeAttr("style");
 });
-
+$(' .prod-slides').slick({
+    lazyLoad: 'ondemand',
+    slidesToShow: 2.05,
+    centerPadding: '0',
+    infinite: false,
+    responsive: [{
+        breakpoint: 768,
+        settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1,
+        }
+    }, {
+        breakpoint: 480,
+        settings: {
+            arrows: false,
+            centerMode: false,
+            centerPadding: '10px',
+            slidesToShow: 1.25,
+            mobileFirst: true,
+        }
+    }]
+});
 const lazy = () => {
-  document.addEventListener('lazyloaded', (e) => {
-    e.target.parentNode.classList.add('image-loaded');
-    e.target.parentNode.classList.remove('loading');
-  });
+    document.addEventListener('lazyloaded', (e) => {
+        e.target.parentNode.classList.add('image-loaded');
+        e.target.parentNode.classList.remove('loading');
+    });
 }
 lazy();
-
-
-
 $(document).ready(function() {
-$(function() {
-    $(".loader").fadeOut(2000, function() {
-        $(".prod-slides li img").fadeIn(1000);        
+    $(function() {
+        $(".loader").fadeOut(2000, function() {
+            $(".prod-slides li img").fadeIn(1000);
+        });
     });
-});
- $('#aniimated-thumbnials').lightGallery({
-     selector: '.custom-selector',
-     preload:0
-}); 
-
-  
- 
+    $('#aniimated-thumbnials').lightGallery({
+        selector: '.custom-selector',
+        preload: 0
+    });
     // ------------------ Filter For Mobile ------------------//
     jQuery("#filter").click(function() {
         jQuery(".kss_filter").addClass("kss_filter_mobile");
     });
-    jQuery(".clear-filter").click(function(){
-          jQuery(".filter-selection").attr("style", "display: none !important");
+    jQuery(".clear-filter").click(function() {
+        jQuery(".filter-selection").attr("style", "display: none !important");
     });
     jQuery("#kss_hide-filter").click(function() {
         jQuery(".kss_filter").removeClass("kss_filter_mobile");
@@ -71,14 +57,8 @@ $(function() {
         jQuery(".swipe-arrow").removeClass("swipe-arrow-visible");
     });
     // ------------------ Mobile View ------------------//
- 
-
-  
-     if ($(window).width() < 760) {
-
-
+    if ($(window).width() < 760) {
         $('.similar-link').appendTo('.m-similar');
-     
         $(window).scroll(function() {
             if ($(this).scrollTop() > 200) {
                 $('.mobile-fixed').show();
@@ -103,7 +83,6 @@ $(function() {
         });
     })
     // ------------------ Every time the window is scrolled ------------------//
-
     // ------------------ Shortlist Icon ------------------//
     $('.kss_heart').on('click', function() {
         $(this).toggleClass('animated-heart');
@@ -201,14 +180,13 @@ $(function() {
         $('.sign-in-box').addClass('d-none');
         $('.reset-box').removeClass('d-none');
     })
-
     $('body').on('click', '.btn', function() {
-      var clickedbutton = $(this);
+        var clickedbutton = $(this);
         clickedbutton.addClass('loading');
         // replace timeout with success event
-        setTimeout(function(){
-          clickedbutton.removeClass('loading');
-          clickedbutton.addClass('loaded');
+        setTimeout(function() {
+            clickedbutton.removeClass('loading');
+            clickedbutton.addClass('loaded');
         }, 1000);
     })
 })
@@ -248,110 +226,93 @@ jQuery(window).on("load", function() {
     //         }
     //     }
     // });
-
-const lazy = () => {
-  document.addEventListener('lazyloaded', (e) => {
-    e.target.parentNode.classList.add('image-loaded');
-    e.target.parentNode.classList.remove('loading');
-  });
-}
-
-lazy();
-
+    const lazy = () => {
+        document.addEventListener('lazyloaded', (e) => {
+            e.target.parentNode.classList.add('image-loaded');
+            e.target.parentNode.classList.remove('loading');
+        });
+    }
+    lazy();
     jQuery(".swipe-arrow").addClass("swipe-arrow-visible");
     $('.kss_shipping').appendTo('#cd-cart');
     $('.kss_payment').appendTo('#cd-cart');
     $('#modal_pincode').appendTo('#cd-cart');
 })
-
-
- //getting click event to show modal
-    $('#checkout').click(function () {
-        $('#signin').modal();
-          $("#cd-cart").css("overflow", "hidden");
-      //appending modal background inside the bigform-content
-        $('.modal-backdrop').appendTo('#cd-cart');
-      //removing body classes to able click events
-        $('body').removeClass();
-        $('body').addClass('hide-scroll');
-    });
-
-    //getting click event to show modal
-    $('#delivery-pincode').click(function () {
-        $('#modal_pincode').modal();
-        
-      //appending modal background inside the bigform-content
-        $('.modal-backdrop').appendTo('#cd-cart');
-      //removing body classes to able click events
-        $('body').removeClass();
-        $('body').addClass('hide-scroll');
-    });
-
-
-      $('.btn-signin').click(function () {
-        $('#signin').modal();
-      //appending modal background inside the bigform-content
-        $('.modal-backdrop').appendTo('#cd-cart');
-
-      //removing body classes to able click events
-        $('body').removeClass();
-          $(".state-1").removeClass('d-block'),100;
-         $(".state-1").addClass('d-none'),100;
-         $(".state-2").removeClass('d-none'),100;
-         $(".state-2").addClass('d-block'),100;
-    });
-      $('.btn-back').click(function () {
-         $(".state-2").removeClass('d-block'),100;
-         $(".state-2").addClass('d-none'),100;
-         $(".state-1").removeClass('d-none'),100;
-         $(".state-1").addClass('d-block'),100;
-
-        });
-
-  $(document).ready(function() {
-      // Show or hide the sticky footer button
-
-       $( "a.scrollLink" ).click(function( event ) {
+//getting click event to show modal
+$('#checkout').click(function() {
+    $('#signin').modal();
+    $("#cd-cart").css("overflow", "hidden");
+    //appending modal background inside the bigform-content
+    $('.modal-backdrop').appendTo('#cd-cart');
+    //removing body classes to able click events
+    $('body').removeClass();
+    $('body').addClass('hide-scroll');
+});
+//getting click event to show modal
+$('#delivery-pincode').click(function() {
+    $('#modal_pincode').modal();
+    //appending modal background inside the bigform-content
+    $('.modal-backdrop').appendTo('#cd-cart');
+    //removing body classes to able click events
+    $('body').removeClass();
+    $('body').addClass('hide-scroll');
+});
+$('.btn-signin').click(function() {
+    $('#signin').modal();
+    //appending modal background inside the bigform-content
+    $('.modal-backdrop').appendTo('#cd-cart');
+    //removing body classes to able click events
+    $('body').removeClass();
+    $(".state-1").removeClass('d-block'), 100;
+    $(".state-1").addClass('d-none'), 100;
+    $(".state-2").removeClass('d-none'), 100;
+    $(".state-2").addClass('d-block'), 100;
+});
+$('.btn-back').click(function() {
+    $(".state-2").removeClass('d-block'), 100;
+    $(".state-2").addClass('d-none'), 100;
+    $(".state-1").removeClass('d-none'), 100;
+    $(".state-1").addClass('d-block'), 100;
+});
+$(document).ready(function() {
+    // Show or hide the sticky footer button
+    $("a.scrollLink").click(function(event) {
         event.preventDefault();
-        $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
+        $("html, body").animate({
+            scrollTop: $($(this).attr("href")).offset().top
+        }, 500);
     });
-
-      $(window).scroll(function() {
+    $(window).scroll(function() {
         if ($(this).scrollTop() > 300) {
-          $('.go-top').fadeIn(200);
+            $('.go-top').fadeIn(200);
         } else {
-          $('.go-top').fadeOut(200);
+            $('.go-top').fadeOut(200);
         }
-      });
-      
-      // Animate the scroll to top
-      $('.go-top').click(function(event) {
-        event.preventDefault();
-        
-        $('html, body').animate({scrollTop: 0}, 300);
-      })
     });
-
- $('.btn-verify').click(function () {
-
+    // Animate the scroll to top
+    $('.go-top').click(function(event) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: 0
+        }, 300);
+    })
+});
+$('.btn-verify').click(function() {
     $('#checkout-flow').modal();
     $('#signin').modal('hide');
     $('.modal-backdrop').appendTo('#cd-cart');
     $('body').removeClass();
     $('body').addClass('hide-scroll');
 });
-
- $('.close').click(function () {
-  $( "body" ).removeClass( "hide-scroll" );
-  $('#checkout-flow').modal('hide');
-  $('.modal-backdrop').remove();
-  $("#cd-cart").css("overflow", "visible");
- })
- 
- $('.shipping-details-save').click(function () {
-    $(".kss_shipping .fixed-bottom").removeClass('d-block'),100;
-  $(".kss_shipping .fixed-bottom").addClass('d-none'),100;
-
+$('.close').click(function() {
+    $("body").removeClass("hide-scroll");
+    $('#checkout-flow').modal('hide');
+    $('.modal-backdrop').remove();
+    $("#cd-cart").css("overflow", "visible");
+})
+$('.shipping-details-save').click(function() {
+    $(".kss_shipping .fixed-bottom").removeClass('d-block'), 100;
+    $(".kss_shipping .fixed-bottom").addClass('d-none'), 100;
     $('#checkout-flow2').modal();
     $('.kss_shipping').removeClass('slide_to_show'), 100;
     $('#checkout-flow2').appendTo('#cd-cart');
@@ -373,67 +334,54 @@ $('#customRadio1, #customRadio2 ').click(function() {
     $(".kss_payment").addClass("d-none");
     $(".kss_payment").removeClass("d-block");
 });
-
-
-
-  $('#shipping-details').click(function () {
-  $( "body" ).removeClass( "hide-scroll" );
-  $('#checkout-flow').modal('hide');
-  $('.modal-backdrop').remove();
-  $( ".kss_shipping" ).addClass( "slide_to_show" );
-  $( ".kss_shipping" ).addClass( "d-block" );
-  $( ".kss_shipping" ).removeClass( "d-none" );
-  $(".kss_shipping  .fixed-bottom").removeClass('d-none'),100;
-  $(".kss_shipping  .fixed-bottom").addClass('d-block'),100;
-      $('body').removeClass();
+$('#shipping-details').click(function() {
+    $("body").removeClass("hide-scroll");
+    $('#checkout-flow').modal('hide');
+    $('.modal-backdrop').remove();
+    $(".kss_shipping").addClass("slide_to_show");
+    $(".kss_shipping").addClass("d-block");
+    $(".kss_shipping").removeClass("d-none");
+    $(".kss_shipping  .fixed-bottom").removeClass('d-none'), 100;
+    $(".kss_shipping  .fixed-bottom").addClass('d-block'), 100;
+    $('body').removeClass();
     $('body').addClass('hide-scroll');
     $("#cd-cart").removeAttr("style");
- })
-
-   $('#payment-details').click(function () {
-  $( "body" ).removeClass( "hide-scroll" );
-  $('#checkout-flow').modal('hide');
-  $('.modal-backdrop').remove();
-  $( ".kss_payment" ).addClass( "slide_to_show" );
-    $( ".kss_payment" ).addClass( "d-block" );
-  $( ".kss_payment" ).removeClass( "d-none" );
-      $('body').removeClass();
+})
+$('#payment-details').click(function() {
+    $("body").removeClass("hide-scroll");
+    $('#checkout-flow').modal('hide');
+    $('.modal-backdrop').remove();
+    $(".kss_payment").addClass("slide_to_show");
+    $(".kss_payment").addClass("d-block");
+    $(".kss_payment").removeClass("d-none");
+    $('body').removeClass();
     $('body').addClass('hide-scroll');
- })
-
-  $('.btn-pay').click(function () {
-  $( "body" ).removeClass( "hide-scroll" );
-  $('#checkout-flow2').modal('hide');
-  $('.modal-backdrop').remove();
-  $( "#cd-cart" ).removeClass( "speed-in" );
-  $( "#cd-shadow-layer" ).removeClass( "is-visible" );
-  $(".kss_shipping .fixed-bottom").removeClass('d-block'),100;
-  $(".kss_shipping .fixed-bottom").addClass('d-none'),100;
-  $( ".kss_shipping" ).removeClass( "slide_to_show" );
-  $( ".kss_shipping" ).removeClass( "d-block" );
-  $( ".kss_shipping" ).addClass( "d-none" );
-  $("#cd-cart").removeAttr("style");
-  $( ".kss_payment" ).removeClass( "slide_to_show" );
-  $( ".kss_payment" ).removeClass( "d-block" );
-  $( ".kss_payment" ).addClass( "d-none" );
-   $("#kss_cart").removeClass("fixed-bottom");
- })
-
-
-
-$(function(){
-  var x=0;
-  $('.form-control').focusout(function(){
-    var inputValue = $(this).val();
-    
-    if(inputValue == "")
-      {
-        $(this).removeClass("has-value");
-      }
-    else{
-      $(this).addClass("has-value");
-    }
-  });
-
-
+})
+$('.btn-pay').click(function() {
+    $("body").removeClass("hide-scroll");
+    $('#checkout-flow2').modal('hide');
+    $('.modal-backdrop').remove();
+    $("#cd-cart").removeClass("speed-in");
+    $("#cd-shadow-layer").removeClass("is-visible");
+    $(".kss_shipping .fixed-bottom").removeClass('d-block'), 100;
+    $(".kss_shipping .fixed-bottom").addClass('d-none'), 100;
+    $(".kss_shipping").removeClass("slide_to_show");
+    $(".kss_shipping").removeClass("d-block");
+    $(".kss_shipping").addClass("d-none");
+    $("#cd-cart").removeAttr("style");
+    $(".kss_payment").removeClass("slide_to_show");
+    $(".kss_payment").removeClass("d-block");
+    $(".kss_payment").addClass("d-none");
+    $("#kss_cart").removeClass("fixed-bottom");
+})
+$(function() {
+    var x = 0;
+    $('.form-control').focusout(function() {
+        var inputValue = $(this).val();
+        if (inputValue == "") {
+            $(this).removeClass("has-value");
+        } else {
+            $(this).addClass("has-value");
+        }
+    });
 });
