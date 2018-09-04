@@ -4,7 +4,7 @@
  });
 
 
-$('.center  .prod-slides').slick({
+$(' .prod-slides').slick({
 
           lazyLoad: 'ondemand',
     slidesToShow: 2.05,
@@ -53,9 +53,7 @@ $(function() {
      selector: '.custom-selector',
      preload:0
 }); 
-$(".center").on('init', function () {
-            $(".prod-slides").removeClass('hidden');
- }); 
+
   
  
     // ------------------ Filter For Mobile ------------------//
@@ -69,7 +67,7 @@ $(".center").on('init', function () {
         jQuery(".kss_filter").removeClass("kss_filter_mobile");
     });
     // ------------------ Disable Arrow on single product ------------------//
-    jQuery(".center img").click(function() {
+    jQuery(".prod-slides img").click(function() {
         jQuery(".swipe-arrow").removeClass("swipe-arrow-visible");
     });
     // ------------------ Mobile View ------------------//
