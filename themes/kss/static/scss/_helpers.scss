@@ -35,11 +35,11 @@
 .dashed{
         border-style: dashed;
 }
+
 .kss_icon {
-    background: url(../img/sprite.png)no-repeat;
+   background: url(../img/sprite.png)no-repeat;
     width: 30px;
     height: 33px;
-    background-size: 295px;
     display: inline-block;
     margin-bottom: -4px;
 }
@@ -52,18 +52,38 @@
 }
 .popularity {
     background-position: -24px -10px;
+     background-size: 295px;
 }
 .latest {
     background-position: -71px -10px;
+     background-size: 295px;
 }
 .discount {
     background-position: -121px -10px;
+     background-size: 295px;
+}
+.search-icon {
+    background-position: -6px -138px;
+}
+.heart-icon {
+    background-position: -43px -138px;
+}
+.bag-icon {
+    background-position: -81px -138px;
 }
 .price-h {
     background-position: -180px -10px;
+     background-size: 295px;
+}
+.top-icon{
+    background: url(../img/sprite.png)no-repeat;
+    width:50px;
+    height:50px;
+    background-position: -223px -119px;
 }
 .price-l {
     background-position: -240px -10px;
+     background-size: 295px;
 }
 .center {
     img {
@@ -90,5 +110,6 @@
            @media (min-width: 320px) and (max-width: 767.98px) {
            bottom: 5em;
            right: 0em;
+           display:none !important;
            }
 }

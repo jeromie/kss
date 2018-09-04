@@ -1,27 +1,35 @@
 <div id="cd-shadow-layer"></div>
 
 <div id="cd-cart">
-	<div class="d-flex align-items-center">
-	  <div class="">
-		<h3 class="modal-title font-weight-bold">
+	<div class="d-flex ">
+		<div class="pr-3 align-items-center">
+			<h3 class="modal-title font-weight-bold" >
+            <img class="btn-pay btn-back kss_highlight" src="{{"img/left-arrow.png" | absURL}}" style="width:20px;"/>
+          </h3>
+			
+		</div>
+	  <div class="align-items-center">
+		<h3 class="modal-title font-weight-bold mt-1 mb-0">
 				Cart <span class="text-muted "><strong>&#183;</strong></span>
 			<small class="count text-muted ">2 items</small>
 		</h3>
 	  </div>
 	  <div class="ml-auto align-self-center">
-	 	 	<h6 id="cart_close" class="m-0 font-weight-bold kss_highlight"> Close</h6>
+	 	 	 <a class="btn btn-outline-dark mt-1">
+                           <img src="{{"img/heart.png" | absURL}}" xpreview="{{"img/heart.png" | absURL}}" width="20px"> Wishlist
+                </a>
 	  </div>
 	</div>
 
-<hr>
-<div class="alert kss_highlight" role="alert">
+<hr class="mb-0">
+<!-- <div class="alert kss_highlight" role="alert">
 <a  id="delivery-pincode"  data-toggle="modal" data-target="#modal_pincode">
   <strong><i class="kss_marker"></i></strong> Enter Pincode To Delivery
   <button type="button" class="close" >
     <label aria-hidden="true" class="kss-link kss_highlight">Check</label>
   </button>
 </a>
-</div>
+</div> -->
 	<ul class="cd-cart-items">
 		<li>
 			<div class="primary-info d-flex">
@@ -146,7 +154,7 @@
 		</li>
 
 	</ul> <!-- cd-cart-items -->
-	<div class="row no-gutters">
+	<!-- <div class="row no-gutters">
 		<div class="col-7">
    <div class="form-group m-0">
             <input class="form-control form-control-lg br-1" id="name" type="text" placeholder="Enter Promo Code">
@@ -158,29 +166,42 @@
 		<div class="col-4">
 			<button type="button" class="btn btn-lg btn-primary"> Apply Code</button>
 		</div>
+	</div> -->
+	<div class="alert alert-light p-3 m-3 ">
+	<div class="d-flex">
+		<div>
+		<h5 class="f-w-4 text-muted m-0"><i class="fas fa-ticket-alt"></i>  Apply Code</h5>
+		</div>
+		<div class="ml-auto">
+			<h5 class="m-0"><i class="fas fa-angle-right"></i></h5>
+		</div>
 	</div>
-
+</div>
 	<hr>
 	<div class="cart-summary mt-4">
 		<h4 class="mb-1 font-weight-bold">Cart Summary</h4>
 		<p class="sub-text mb-3">Includes GST and all government taxes</p>
 
 		<div class="d-flex justify-content-between py-1">
-			<div><label class="text-muted f-w-4 m-0">Total item price</label></div>
-			<div> ₹2618 </div>
+			<div><label class="text-muted f-w-4 m-0">Cart Total</label></div>
+			<div> ₹1309 </div>
 		</div>
 		<div class="d-flex justify-content-between py-1">
-			<div><label class="text-muted f-w-4 m-0">Item discount</label></div>
-			<div class="text-success">- ₹880</div>
+			<div><label class="text-muted f-w-4 m-0">Cart Discount</label></div>
+			<div class="text-success">- ₹300</div>
 		</div>
 		<div class="d-flex justify-content-between py-1">
-			<div><label class="text-muted f-w-4 m-0">Shipping fee</label></div>
-			<div class="text-success">Free</div>
+			<div><label class="text-muted f-w-4 m-0">Estimated Tax</label></div>
+			<div>₹180</div>
+		</div>
+		<div class="d-flex justify-content-between py-1">
+			<div><label class="text-muted f-w-4 m-0">Coupon Discount</label></div>
+			<div class="text-success">- ₹20</div>
 		</div>
 	</div>
 	<hr class="dashed">
 	<div class="cd-cart-total">
-		<h5 class="font-weight-bold">Total Payable <span>₹869</span></h5>
+		<h5 class="font-weight-bold">Order Total <span>₹1169</span></h5>
 	</div> <!-- cd-cart-total -->
 	<div class="seperator d-block d-md-none mb-5">
 

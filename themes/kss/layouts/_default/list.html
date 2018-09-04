@@ -148,15 +148,27 @@
               		  <input type="checkbox" class="custom-control-input" id="customCheck13">
               		  <label class="custom-control-label f-w-4" for="customCheck13">₹400.00 and above <span class="sub-text">(33)</span></label>
               		</div>
-                  <div class="row">
+                  <div class="row mt-3">
                     <div class="col-5 col-sm-5">
-                      <input class="form-control form-control-lg" id="email-address" type="text" placeholder="Min">
+                        <select class="size form-control form-control-sm  border-dark"  >
+                        <option value="" selected disabled hidden>Min</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                      </select>
                     </div>
                      <div class="col-2 col-sm-2 text-center">
-                      <h6 class="align-self-center mt-3">to</h6>
+                      <h6 class="align-self-center mt-2">to</h6>
                     </div>
                       <div class="col-5 col-sm-5">
-                        <input class="form-control form-control-lg" id="email-address" type="text" placeholder="Max">
+                           <select class="size form-control form-control-sm  border-dark"  >
+                        <option value="" selected disabled hidden>Max</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                      </select>
                     </div>
                   </div> 
                 </div>
@@ -272,7 +284,11 @@
             <div class="col-lg-4 col-md-6 mb-4 col-6  ">
               <div class="card h-100 product-card">
               	<i class="fas fa-heart kss_heart"></i>
-                <a href="/kss/product/"><img class="card-img-top" src="{{"img/1front.jpg" | absURL}}" alt=""></a>
+                <a href="/kss/product/" >
+                  <div class="image oh loading loading-01">
+                  <img class="card-img-top lazyload" src="{{"img/1front.jpg" | absURL}}" alt="">
+                 </div>
+                </a>
                 <div class="card-body">
                   <a href="/kss/product/" class="text-dark">
                     <h5 class="card-title">
@@ -287,7 +303,11 @@
             <div class="col-lg-4 col-md-6 mb-4 col-6  ">
            	  <div class="card h-100 product-card">
            	 		<i class="fas fa-heart kss_heart"></i>
-                <a href="/kss/product/"><img class="card-img-top" src="{{"img/3front.jpg" | absURL}}" alt=""></a>
+                <a href="/kss/product/">
+                   <div class="image oh loading loading-02">
+                  <img data-src="{{"img/normal/4front.jpg" | absURL}}" data-srcset="{{"img/normal/4front.jpg" | absURL}} 1x, {{"img/2x/4front@2x.jpg" | absURL}} 2x" class="lazyload card-img-top" />
+                </div>
+                </a>
                 <div class="card-body">
                   <a href="/kss/product/" class="text-dark">
                     <h5 class="card-title">
@@ -302,7 +322,11 @@
             <div class="col-lg-4 col-md-6 mb-4 col-6   ">
               <div class="card h-100 product-card">
               	<i class="fas fa-heart kss_heart"></i>
-                <a href="/kss/product/"><img class="card-img-top" src="{{"img/Artboard2324.jpg" | absURL}}" alt=""></a>
+                <a href="/kss/product/">
+                   <div class="image oh loading loading-03">
+                        <img data-src="{{"img/normal/4focus.jpg" | absURL}}" data-srcset="{{"img/normal/4focus.jpg" | absURL}} 1x, {{"img/2x/4front@2x.jpg" | absURL}} 2x" class="lazyload card-img-top" />
+                    </div>
+                </a>
                 <div class="card-body">
                   <a href="/kss/product/" class="text-dark">
                     <h5 class="card-title">
@@ -314,10 +338,14 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 mb-4 col-6 fade-on ">
+            <div class="col-lg-4 col-md-6 mb-4 col-6 ">
               <div class="card h-100 product-card">
                 <i class="fas fa-heart kss_heart"></i>
-                <a href="/kss/product/"><img class="card-img-top" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E" data-imgsrc="{{"img/Artboard 222.jpg" | absURL}}" alt=""></a>
+                <a href="/kss/product/">
+                   <div class="image oh loading loading-04">
+                   <img data-src="{{"img/normal/4back.jpg" | absURL}}"  data-srcset="{{"img/normal/4back.jpg" | absURL}} 1x, {{"img/2x/4front@2x.jpg" | absURL}} 2x" class="lazyload card-img-top" />
+                 </div>
+                </a>
                 <div class="card-body">
                   <a href="/kss/product/" class="text-dark">
                     <h5 class="card-title">
@@ -329,7 +357,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 mb-4 col-6 fade-on ">
+            <div class="col-lg-4 col-md-6 mb-4 col-6 ">
               <div class="card h-100 product-card">
                 <i class="fas fa-heart kss_heart"></i>
                 <a href="/kss/product/"><img class="card-img-top" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E" data-imgsrc="{{"img/Artboard1234.jpg" | absURL}}" alt=""></a>
@@ -344,7 +372,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 mb-4 col-6 fade-on ">
+            <div class="col-lg-4 col-md-6 mb-4 col-6 ">
               <div class="card h-100 product-card">
               	<i class="fas fa-heart kss_heart"></i>
                 <a href="/kss/product/"><img class="card-img-top" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E" data-imgsrc="{{"img/Artboard 2wew.jpg" | absURL}}" alt=""></a>
@@ -359,7 +387,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 mb-4 col-6 fade-on ">
+            <div class="col-lg-4 col-md-6 mb-4 col-6  ">
               <div class="card h-100 product-card">
                 <i class="fas fa-heart kss_heart"></i>
                 <a href="/kss/product/"><img class="card-img-top" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E" data-imgsrc="{{"img/Artboard 222.jpg" | absURL}}" alt=""></a>
@@ -374,7 +402,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 mb-4 col-6 fade-on ">
+            <div class="col-lg-4 col-md-6 mb-4 col-6  ">
               <div class="card h-100 product-card">
                 <i class="fas fa-heart kss_heart"></i>
                 <a href="/kss/product/"><img class="card-img-top" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E" data-imgsrc="{{"img/Artboard1234.jpg" | absURL}}" alt=""></a>
@@ -387,7 +415,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 mb-4 col-6 fade-on ">
+            <div class="col-lg-4 col-md-6 mb-4 col-6  ">
               <div class="card h-100 product-card">
               	<i class="fas fa-heart kss_heart"></i>
                 <a href="/kss/product/"><img class="card-img-top" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E" data-imgsrc="{{"img/Artboard 2wew.jpg" | absURL}}" alt=""></a>

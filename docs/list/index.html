@@ -19,9 +19,7 @@
     <link rel="stylesheet" type="text/css" href="https://jeromie.github.io/kss/css/jquery.fancybox.css">
     <link rel="stylesheet" type="text/css" href="https://jeromie.github.io/kss/css/jquery.mmenu.all.css">
     <link rel="stylesheet" type="text/css" href="https://jeromie.github.io/kss/css/hamburgers.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" href="https://unpkg.com/smartphoto@1.1.0/css/smartphoto.min.css">
-
+    <link rel="stylesheet" type="text/css" href="https://jeromie.github.io/kss/css/lightgallery.css">
     <link rel="stylesheet" type="text/css" href="https://jeromie.github.io/kss/css/custom.css">
 
     <title>Catalog</title>
@@ -85,17 +83,20 @@
             <ul class="list-inline pt-3">
                 <li class="list-inline-item">
                     <a href="#">
-                       <img src="https://jeromie.github.io/kss/img/magnifying.png" xpreview="https://jeromie.github.io/kss/img/magnifying.png" width="25px"> 
+                       <i class="kss_icon search-icon">
+                       </i> 
                     </a>
                 </li>
                 <li class="list-inline-item">
                     <a href="#loginModal" data-toggle="modal" data-target="#loginModal">
-                           <img src="https://jeromie.github.io/kss/img/heart.png" xpreview="https://jeromie.github.io/kss/img/heart.png" width="25px"> 
+                        <i class="kss_icon heart-icon">
+                       </i>
                     </a>
                 </li>
                 <li class="list-inline-item pr-0 ">
                     <a id="cd-cart-trigger" href="#">
-                        <img src="https://jeromie.github.io/kss/img/bag.png" xpreview="https://jeromie.github.io/kss/img/bag.png" width="25px"> 
+                       <i class="kss_icon bag-icon">
+                       </i>
                     </a>
                 </li>
             </ul>
@@ -246,15 +247,27 @@
               		  <input type="checkbox" class="custom-control-input" id="customCheck13">
               		  <label class="custom-control-label f-w-4" for="customCheck13">₹400.00 and above <span class="sub-text">(33)</span></label>
               		</div>
-                  <div class="row">
+                  <div class="row mt-3">
                     <div class="col-5 col-sm-5">
-                      <input class="form-control form-control-lg" id="email-address" type="text" placeholder="Min">
+                        <select class="size form-control form-control-sm  border-dark"  >
+                        <option value="" selected disabled hidden>Min</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                      </select>
                     </div>
                      <div class="col-2 col-sm-2 text-center">
-                      <h6 class="align-self-center mt-3">to</h6>
+                      <h6 class="align-self-center mt-2">to</h6>
                     </div>
                       <div class="col-5 col-sm-5">
-                        <input class="form-control form-control-lg" id="email-address" type="text" placeholder="Max">
+                           <select class="size form-control form-control-sm  border-dark"  >
+                        <option value="" selected disabled hidden>Max</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                      </select>
                     </div>
                   </div> 
                 </div>
@@ -370,7 +383,11 @@
             <div class="col-lg-4 col-md-6 mb-4 col-6  ">
               <div class="card h-100 product-card">
               	<i class="fas fa-heart kss_heart"></i>
-                <a href="/kss/product/"><img class="card-img-top" src="https://jeromie.github.io/kss/img/1front.jpg" alt=""></a>
+                <a href="/kss/product/" >
+                  <div class="image oh loading loading-01">
+                  <img class="card-img-top lazyload" src="https://jeromie.github.io/kss/img/1front.jpg" alt="">
+                 </div>
+                </a>
                 <div class="card-body">
                   <a href="/kss/product/" class="text-dark">
                     <h5 class="card-title">
@@ -385,7 +402,11 @@
             <div class="col-lg-4 col-md-6 mb-4 col-6  ">
            	  <div class="card h-100 product-card">
            	 		<i class="fas fa-heart kss_heart"></i>
-                <a href="/kss/product/"><img class="card-img-top" src="https://jeromie.github.io/kss/img/3front.jpg" alt=""></a>
+                <a href="/kss/product/">
+                   <div class="image oh loading loading-02">
+                  <img data-src="https://jeromie.github.io/kss/img/normal/4front.jpg" data-srcset="https://jeromie.github.io/kss/img/normal/4front.jpg 1x, https://jeromie.github.io/kss/img/2x/4front@2x.jpg 2x" class="lazyload card-img-top" />
+                </div>
+                </a>
                 <div class="card-body">
                   <a href="/kss/product/" class="text-dark">
                     <h5 class="card-title">
@@ -400,7 +421,11 @@
             <div class="col-lg-4 col-md-6 mb-4 col-6   ">
               <div class="card h-100 product-card">
               	<i class="fas fa-heart kss_heart"></i>
-                <a href="/kss/product/"><img class="card-img-top" src="https://jeromie.github.io/kss/img/Artboard2324.jpg" alt=""></a>
+                <a href="/kss/product/">
+                   <div class="image oh loading loading-03">
+                        <img data-src="https://jeromie.github.io/kss/img/normal/4focus.jpg" data-srcset="https://jeromie.github.io/kss/img/normal/4focus.jpg 1x, https://jeromie.github.io/kss/img/2x/4front@2x.jpg 2x" class="lazyload card-img-top" />
+                    </div>
+                </a>
                 <div class="card-body">
                   <a href="/kss/product/" class="text-dark">
                     <h5 class="card-title">
@@ -412,10 +437,14 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 mb-4 col-6 fade-on ">
+            <div class="col-lg-4 col-md-6 mb-4 col-6 ">
               <div class="card h-100 product-card">
                 <i class="fas fa-heart kss_heart"></i>
-                <a href="/kss/product/"><img class="card-img-top" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E" data-imgsrc="https://jeromie.github.io/kss/img/Artboard%20222.jpg" alt=""></a>
+                <a href="/kss/product/">
+                   <div class="image oh loading loading-04">
+                   <img data-src="https://jeromie.github.io/kss/img/normal/4back.jpg"  data-srcset="https://jeromie.github.io/kss/img/normal/4back.jpg 1x, https://jeromie.github.io/kss/img/2x/4front@2x.jpg 2x" class="lazyload card-img-top" />
+                 </div>
+                </a>
                 <div class="card-body">
                   <a href="/kss/product/" class="text-dark">
                     <h5 class="card-title">
@@ -427,7 +456,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 mb-4 col-6 fade-on ">
+            <div class="col-lg-4 col-md-6 mb-4 col-6 ">
               <div class="card h-100 product-card">
                 <i class="fas fa-heart kss_heart"></i>
                 <a href="/kss/product/"><img class="card-img-top" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E" data-imgsrc="https://jeromie.github.io/kss/img/Artboard1234.jpg" alt=""></a>
@@ -442,7 +471,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 mb-4 col-6 fade-on ">
+            <div class="col-lg-4 col-md-6 mb-4 col-6 ">
               <div class="card h-100 product-card">
               	<i class="fas fa-heart kss_heart"></i>
                 <a href="/kss/product/"><img class="card-img-top" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E" data-imgsrc="https://jeromie.github.io/kss/img/Artboard%202wew.jpg" alt=""></a>
@@ -457,7 +486,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 mb-4 col-6 fade-on ">
+            <div class="col-lg-4 col-md-6 mb-4 col-6  ">
               <div class="card h-100 product-card">
                 <i class="fas fa-heart kss_heart"></i>
                 <a href="/kss/product/"><img class="card-img-top" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E" data-imgsrc="https://jeromie.github.io/kss/img/Artboard%20222.jpg" alt=""></a>
@@ -472,7 +501,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 mb-4 col-6 fade-on ">
+            <div class="col-lg-4 col-md-6 mb-4 col-6  ">
               <div class="card h-100 product-card">
                 <i class="fas fa-heart kss_heart"></i>
                 <a href="/kss/product/"><img class="card-img-top" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E" data-imgsrc="https://jeromie.github.io/kss/img/Artboard1234.jpg" alt=""></a>
@@ -485,7 +514,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 mb-4 col-6 fade-on ">
+            <div class="col-lg-4 col-md-6 mb-4 col-6  ">
               <div class="card h-100 product-card">
               	<i class="fas fa-heart kss_heart"></i>
                 <a href="/kss/product/"><img class="card-img-top" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E" data-imgsrc="https://jeromie.github.io/kss/img/Artboard%202wew.jpg" alt=""></a>
@@ -628,21 +657,22 @@
 
     </div>
   </div>
-</div><a href="#" class="go-top d-none d-md-block">
- <img src="https://jeromie.github.io/kss/img/go-top.png" xpreview="https://jeromie.github.io/kss/img/go-top.png" class=" img-fluid m-0 " width="40px"> <br>
+</div><a href="#" class="go-top">
+		<div class="top-icon">
+		</div>
 		Go Top
 	</a>
     
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://jeromie.github.io/kss/js/xzoom.min.js"></script>
-    
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://unpkg.com/smartphoto@1.1.0/js/smartphoto.min.js"></script>
+    <script type="text/javascript" src="https://jeromie.github.io/kss/js/slick.min.js"></script>
     <script type="text/javascript" src="https://jeromie.github.io/kss/js/jquery.mmenu.all.js"></script>
-
+      <script type="text/javascript" src="https://jeromie.github.io/kss/js/lazysizes.min.js"></script>
+        <script src="https://jeromie.github.io/kss/js/lightgallery-all.min.js"></script>
+        <script src="https://jeromie.github.io/kss/js/jquery.mousewheel.min.js"></script>
     
+
     <script type="text/javascript" src="https://jeromie.github.io/kss/js/custom.js"></script>
   </body>
 </html>

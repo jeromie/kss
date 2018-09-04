@@ -66,7 +66,18 @@ label{
   transition : background 0.3s ease-out;
 }
 .form-control-number{
-    font-size: 22px !important;
+    font-size: 26px !important;
+    padding-left:0px;
+    font-weight:bold;
+}
+.number-edit{
+    padding: 8px;
+    background: #efefef;
+    width: 35PX;
+    font-size: 17px;
+    height: 35px;
+    border-radius: 100%;
+    color: theme-color("secondary");
 }
 .form-control:focus{
   outline : none;

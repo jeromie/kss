@@ -34,6 +34,11 @@
                 transform: rotate(180deg);
             }
         }
+        .btn-group{
+            button{
+                box-shadow:none !important;
+            }
+        }
     }
     .custom-control-label::before {
           background:#fff;

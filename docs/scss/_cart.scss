@@ -73,7 +73,6 @@ $L : 1200px;
 
 @media (min-width: 360px) and (max-width: 767.98px) {
     width: 100%;
-    top:68px;
     padding-bottom: 68px;
   }
 @media (min-width: 992px) and (min-width: 1199.98px) {
@@ -111,7 +110,7 @@ $L : 1200px;
         li {
             position: relative;
             padding: 1em;
-            border-top: 1px solid $gray-300;
+            border-bottom: 1px solid $gray-300;
             @media (min-width: 360px) and (max-width: 767.98px) {
                 padding: 2em 1em;
             }
