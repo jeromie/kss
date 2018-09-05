@@ -113,7 +113,7 @@
 
 						<img src="https://jeromie.github.io/kss/img/arrow.png" class="swipe-arrow  d-block d-md-none">
 						<div class="loader"></div>
-						<ul id="aniimated-thumbnials" class="d-flex d-sm-block list-unstyled m-2 m-sm-0 prod-slides hidden">
+						<ul id="aniimated-thumbnials" class="d-flex d-sm-block list-unstyled m-0 m-md-2 prod-slides hidden">
 
 							<li class="mx-2 mb-2" >
 								<a href="https://jeromie.github.io/kss/img/3x/4front@3x.jpg" class="custom-selector">
@@ -207,6 +207,10 @@
 				    <input class="d-none radio-input" type="radio" name="kss-sizes" id="4-8"/>
 				    <label class="radio-label" for="4-8" title="4-8 years">
 				      <div class="radio-option">4-8Y</div>
+				    </label>
+				     <input class="d-none radio-input" type="radio" name="kss-sizes" id="9-10"/>
+				    <label class="radio-label" for="9-10" title="9-10 years">
+				      <div class="radio-option">9-10Y</div>
 				    </label>
 				</div>
 
@@ -345,60 +349,85 @@
 	<div id="similar" class="container">
 		<hr class="mt-5">
 		<h3 class="text-left my-4 font-weight-bold">Similar Products</h3>
-		<div class="row kss_mobile-list">
-			<div class="col-5 col-lg-2 col-md-3 col-sm-4">
-				<div class="card">
-				  <img class="card-img-top" src="https://jeromie.github.io/kss/img/shirt1.jpg" alt="Card image cap">
-				  <div class="card-body">
-				  	<h6 class="kss-price kss-price--smaller text-center">₹869 <small class="kss-original-price text-muted">₹1309</small><br><span class="kss-discount text-danger">20% OFF</span></h6>
-				  </div>
-				</div>
-			</div>
-			<div class="col-5 col-lg-2 col-md-3 col-sm-4">
-				<div class="card">
-				  <img class="card-img-top" src="https://jeromie.github.io/kss/img/shirt2.jpg" alt="Card image cap">
-				  <div class="card-body">
-					<h6 class="kss-price kss-price--smaller text-center">₹869 <small class="kss-original-price text-muted">₹1309</small><br><span class="kss-discount text-danger">20% OFF</span></h6>
-				  </div>
-				</div>
-			</div>
-			<div class="col-5 col-lg-2 col-md-3 col-sm-4">
-				<div class="card">
-				  <img class="card-img-top" src="https://jeromie.github.io/kss/img/shirt3.jpg" alt="Card image cap">
-				  <div class="card-body">
-				  <h6 class="kss-price kss-price--smaller text-center">₹869 <small class="kss-original-price text-muted">₹1309</small><br><span class="kss-discount text-danger">20% OFF</span></h6>
-				  </div>
-				</div>
-			</div>
-			<div class="col-5 col-lg-2 col-md-3 col-sm-4">
-				<div class="card">
-				  <img class="card-img-top" src="https://jeromie.github.io/kss/img/shirt4.jpg" alt="Card image cap">
-				  <div class="card-body">
-				    <h6 class="kss-price kss-price--smaller text-center">₹869 <small class="kss-original-price text-muted">₹1309</small><br><span class="kss-discount text-danger">20% OFF</span></h6>
-				  </div>
-				</div>
-			</div>
-			<div class="col-5 col-lg-2 col-md-3 col-sm-4">
-				<div class="card">
-				  <img class="card-img-top" src="https://jeromie.github.io/kss/img/shirt1.jpg" alt="Card image cap">
-				  <div class="card-body">
-				  <h6 class="kss-price kss-price--smaller text-center">₹869 <small class="kss-original-price text-muted">₹1309</small><br><span class="kss-discount text-danger">20% OFF</span></h6>
-				  </div>
-				</div>
-			</div>
-			<div class="col-5 col-lg-2 col-md-3 col-sm-4">
-				<div class="card">
-				  <img class="card-img-top" src="https://jeromie.github.io/kss/img/shirt2.jpg" alt="Card image cap">
-				  <div class="card-body">
-				   <h6 class="kss-price kss-price--smaller text-center">₹869 <small class="kss-original-price text-muted">₹1309</small><br><span class="kss-discount text-danger">20% OFF</span></h6>
-				  </div>
-				</div>
-			</div>
-		</div>
+	  <div id="card-list" class="row">
+            <div class="col-lg-3 col-md-6 mb-4 col-6  ">
+              <div class="card h-100 product-card">
+              	<i class="fas fa-heart kss_heart"></i>
+                <a href="/kss/product/" >
+                  <div class="image oh loading loading-01">
+                  <img data-src="https://jeromie.github.io/kss/img/normal/bluefront@1x.jpg" data-srcset="https://jeromie.github.io/kss/img/normal/bluefront@1x.jpg 1x, https://jeromie.github.io/kss/img/2x/bluefront@2x.jpg 2x" class="lazyload card-img-top" />
+                 </div>
+                </a>
+                <div class="card-body">
+                  <a href="/kss/product/" class="text-dark">
+                    <h5 class="card-title">
+                      Cotton Rich Super Skinny Fit Jeans
+                    </h5>
+                  </a>
+                  <div class="kss-price kss-price--smaller">₹869 <small class="kss-original-price text-muted">₹1309</small><span class="kss-discount text-danger">20% OFF</span></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4 col-6  ">
+           	  <div class="card h-100 product-card">
+           	 		<i class="fas fa-heart kss_heart"></i>
+                <a href="/kss/product/">
+                   <div class="image oh loading loading-02">
+                  <img data-src="https://jeromie.github.io/kss/img/normal/orangefront@1x.jpg" data-srcset="https://jeromie.github.io/kss/img/normal/orangefront@1x.jpg 1x, https://jeromie.github.io/kss/img/2x/orangefront@2x.jpg 2x" class="lazyload card-img-top" />
+                </div>
+                </a>
+                <div class="card-body">
+                  <a href="/kss/product/" class="text-dark">
+                    <h5 class="card-title">
+                      Cotton Rich Super Skinny Fit Jeans
+                    </h5>
+                  </a>
+                  <div class="kss-price kss-price--smaller">₹869 <small class="kss-original-price text-muted">₹1309</small><span class="kss-discount text-danger">20% OFF</span></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4 col-6   ">
+              <div class="card h-100 product-card">
+              	<i class="fas fa-heart kss_heart"></i>
+                <a href="/kss/product/">
+                   <div class="image oh loading loading-03">
+                        <img data-src="https://jeromie.github.io/kss/img/normal/red1front@1x.jpg" data-srcset="https://jeromie.github.io/kss/img/normal/red1front@1x.jpg 1x, https://jeromie.github.io/kss/img/2x/red1front@2x.jpg 2x" class="lazyload card-img-top" />
+                    </div>
+                </a>
+                <div class="card-body">
+                  <a href="/kss/product/" class="text-dark">
+                    <h5 class="card-title">
+                      Cotton Rich Super Skinny Fit Jeans
+                    </h5>
+                  </a>
+                  <div class="kss-price kss-price--smaller">₹869 <small class="kss-original-price text-muted">₹1309</small><span class="kss-discount text-danger">20% OFF</span></div>
+                </div>
+              </div>
+            </div>
+                <div class="col-lg-3 col-md-6 mb-4 col-6 ">
+              <div class="card h-100 product-card">
+                <i class="fas fa-heart kss_heart"></i>
+                <a href="/kss/product/">
+                   <div class="image oh loading loading-04">
+                   <img data-src="https://jeromie.github.io/kss/img/normal/redbluefront@1x.jpg"  data-srcset="https://jeromie.github.io/kss/img/normal/redbluefront@1x.jpg 1x, https://jeromie.github.io/kss/img/2x/redbluefront@2x.jpg 2x" class="lazyload card-img-top" />
+                 </div>
+                </a>
+                <div class="card-body">
+                  <a href="/kss/product/" class="text-dark">
+                    <h5 class="card-title">
+                      Cotton Rich Super Skinny Fit Jeans
+                    </h5>
+             	    </a>
+                  <div class="kss-price kss-price--smaller">₹869 <small class="kss-original-price text-muted">₹1309</small><span class="kss-discount text-danger">20% OFF</span></div>
+                </div>
+              </div>
+            </div>
+        </div>
 	</div>
 <div class="seperator">
-</div>
-<div id="cd-shadow-layer"></div>
+</div><div id="cd-shadow-layer"></div>
 
 <div id="cd-cart">
 	<div class="d-flex ">

@@ -1,14 +1,17 @@
 .prod-slides {
     @media(max-width: 767px){
-        min-height: 122vw;
+           height: 130vw;
     }
 }
 .loader {
     background: #ffffff url(../img/loader_818e.gif) center center no-repeat;
-    height: 515px;
     width: 100%;
     position: absolute;
     z-index: 999;
+   padding-bottom: 78.6549707602%;
+      @media(max-width: 767px){
+        padding-bottom: 128.95377129%
+    }
 }
 .prod-slides li {
     opacity: 0;

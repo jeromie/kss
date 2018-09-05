@@ -1,15 +1,16 @@
 
 var gulp = require('gulp'),
     cleanCSS = require('gulp-clean-css'),
-    concat = require('gulp-concat')
-    uglify = require('gulp-uglify')
-    csso = require('gulp-csso');
-    prefix = require('gulp-autoprefixer')
-    sass = require('gulp-sass');
+    concat = require('gulp-concat'),
+    uglify = require('gulp-uglify'),
+    csso = require('gulp-csso'),
+    prefix = require('gulp-autoprefixer'),
+    sass = require('gulp-sass'),
+    browserSync = require('browser-sync').create()
 
 // Minifies JS
 gulp.task('scripts', function(){
-    return gulp.src(['./themes/kss/static/js/bootstrap.min.js', './themes/kss/static/js/jquery.fancybox.js', './themes/kss/static/js/slick.min.js', './themes/kss/static/js/jquery.mmenu.all.js', './themes/kss/static/js/jquery.mousewheel.min.js', './themes/kss/static/js/lightgallery-all.min.js', './themes/kss/static/js/lazysizes.min.js', './themes/kss/static/js/slick.min.js'])
+    return gulp.src(['./themes/kss/static/js/bootstrap.min.js', './themes/kss/static/js/jquery.fancybox.js', './themes/kss/static/js/slick.min.js', './themes/kss/static/js/jquery.mmenu.all.js', './themes/kss/static/js/jquery.mousewheel.min.js', './themes/kss/static/js/lightgallery-all.min.js', './themes/kss/static/js/lazysizes.min.js'])
     .pipe(uglify())
     .pipe(concat('combine.js'))
     .pipe(gulp.dest('./themes/kss/static/js'))
@@ -18,12 +19,15 @@ gulp.task('scripts', function(){
 /*==========  Minify and concat different styles files  ==========*/
 
 // SASS Version
-gulp.task('sass', function(){
+gulp.task('sass', function() {
     return gulp.src('./themes/kss/static/scss/custom.scss')
-    .pipe(sass())
-    .pipe(cleanCSS())
-    .pipe(gulp.dest('./themes/kss/static/css'))
+        .pipe(sass())
+        // Minify the file
+        .pipe(csso())
+        .pipe(gulp.dest("./themes/kss/static/css"))
+        .pipe(browserSync.stream());
 });
+
 
 // SCSS Version
 //gulp.task('styles', function(){
@@ -49,9 +53,9 @@ gulp.task('css', function(){
 gulp.task('default', function() {
     gulp.run('scripts')
     gulp.run('css')
-    gulp.watch('./themes/kss/static/scss/*.scss', function(){
-        gulp.run('sass')
-    })
+    
 });
 
-
+gulp.task('watch', ['sass'], function() {
+    gulp.watch(['./themes/kss/static/scss/*.scss'], ['sass']);
+});

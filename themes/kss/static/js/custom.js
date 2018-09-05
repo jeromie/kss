@@ -5,6 +5,7 @@ $(' .prod-slides').slick({
     lazyLoad: 'ondemand',
     slidesToShow: 2.05,
     centerPadding: '0',
+    adaptiveHeight: false,
     infinite: false,
     responsive: [{
         breakpoint: 768,
@@ -46,6 +47,10 @@ $(document).ready(function() {
     jQuery("#filter").click(function() {
         jQuery(".kss_filter").addClass("kss_filter_mobile");
     });
+     jQuery(".cd-add-to-cart").click(function() {
+      jQuery( ".kss_sizes" ).toggleClass( "shake" );
+    });
+    
     jQuery(".clear-filter").click(function() {
         jQuery(".filter-selection").attr("style", "display: none !important");
     });
@@ -180,15 +185,15 @@ $(document).ready(function() {
         $('.sign-in-box').addClass('d-none');
         $('.reset-box').removeClass('d-none');
     })
-    $('body').on('click', '.btn', function() {
-        var clickedbutton = $(this);
-        clickedbutton.addClass('loading');
-        // replace timeout with success event
-        setTimeout(function() {
-            clickedbutton.removeClass('loading');
-            clickedbutton.addClass('loaded');
-        }, 1000);
-    })
+    // $('body').on('click', '.btn', function() {
+    //     var clickedbutton = $(this);
+    //     clickedbutton.addClass('loading');
+    //     // replace timeout with success event
+    //     setTimeout(function() {
+    //         clickedbutton.removeClass('loading');
+    //         clickedbutton.addClass('loaded');
+    //     }, 1000);
+    // })
 })
 
 function toggle_panel_visibility($lateral_panel, $background_layer, $body) {

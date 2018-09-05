@@ -29,6 +29,7 @@
     &:hover {}
 }
 .radio-wrap {
+
     &.w-image {
         .radio-option {
             display: none;
@@ -45,7 +46,6 @@
             min-width: 100px;
             padding: 10px;
             text-align: center;
-            display: block;
         }
     }
     @media (min-width: 320px) and (max-width: 767.98px) {
@@ -83,9 +83,24 @@
     height: 1.3rem;
     background-size: 59% 100%;
 }
+.kss_sizes{
+    display:block !important;
+    @media (min-width: 768px) and (max-width: 991.98px) {
+
+    overflow: hidden;
+    overflow-x: scroll;
+    display:flex !important;
+
+}
+    label{
+          display:inline-block;
+          margin-bottom: 7px!important;
+    }
+}
 @media (min-width: 768px) and (max-width: 991.98px) {
 .kss_sizes{
     overflow: hidden;
     overflow-x: scroll;
+    display:flex !important;
 }
 }
