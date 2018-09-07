@@ -3,7 +3,29 @@
  * animation fade-in
  * ----------------------------------------
  */
-
+.slide-out{
+    width: 30% ;
+    background:#fff;
+    position:fixed;
+    right:-1200px;
+    transition: all 0.5s ease;
+    z-index: 99999;
+    height:100vh;
+    overflow-y:scroll;
+    top: 0px;
+@media (min-width: 360px) and (max-width: 767.98px) {
+    width: 100%;
+  }
+@media (min-width: 992px) and (min-width: 1199.98px) {
+    width: 40% !important;
+  }
+@media (min-width: 1300px) {
+    width: 30% !important;
+}
+}
+.slide-show{
+     right:0px !important;
+}
 .fade-in {
     -webkit-animation: fade-in 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     animation: fade-in 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;

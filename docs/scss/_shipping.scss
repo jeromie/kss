@@ -1,21 +1,4 @@
 .kss_shipping, .kss_payment{
-    width: 30%;
-    background:#fff;
-    position:fixed;
-    right:-600px;
-    transition: all 0.5s ease;
-    z-index: 99999;
-    height:100vh;
-    overflow-y:scroll;
-    top: 0px;
-     @media (min-width: 992px) and (min-width: 1199.98px) {
-            width: 40% !important;
-          }
-     @media (min-width: 320px) and (max-width: 767.98px) {
-      height:100vh;
-      position:fixed;
-      width:100%;
-    }
     .secure-label{
         line-height:15px;
         font-size:10px;
@@ -33,12 +16,8 @@
             display:flex;
         }
     }
-  
+}
 
-}
-.slide_to_show{
-     right:0px;
-}
 #cd-cart .modal, #cd-cart .modal-backdrop {
     position: fixed;
 

@@ -335,6 +335,13 @@ $('#add-address').click(function() {
 
 });
 
+$('#kss_coupon').click(function() { 
+    $('#cd-coupon').addClass('slide-show');
+});
+$('.cd-coupon-apply').click(function() { 
+    $('#cd-coupon').removeClass('slide-show');
+});
+
 $('#customRadio1, #customRadio2 ').click(function() {
     $(".kss_payment .fixed-bottom").removeClass('d-block'), 100;
     $(".kss_payment .fixed-bottom").addClass('d-none'), 100;
@@ -348,11 +355,9 @@ $('#customRadio1, #customRadio2 ').click(function() {
     $(".kss_payment").removeClass("d-block");
 });
 $('#shipping-details').click(function() {
-     $('#signin').modal('hide');
+    $('#signin').modal('hide');
     $("body").removeClass("hide-scroll");
-    $(".kss_shipping").addClass("slide_to_show");
-    $(".kss_shipping").addClass("d-block");
-    $(".kss_shipping").removeClass("d-none");
+    $(".kss_shipping").addClass("slide-show");
     $(".kss_shipping  .fixed-bottom").removeClass('d-none'), 100;
     $(".kss_shipping  .fixed-bottom").addClass('d-block'), 100;
     $('body').removeClass();
@@ -363,9 +368,7 @@ $('#payment-details').click(function() {
     $("body").removeClass("hide-scroll");
     $('#checkout-flow').modal('hide');
     $('.modal-backdrop').remove();
-    $(".kss_payment").addClass("slide_to_show");
-    $(".kss_payment").addClass("d-block");
-    $(".kss_payment").removeClass("d-none");
+    $(".kss_payment").addClass("slide-show");
     $('body').removeClass();
     $('body').addClass('hide-scroll');
 })
@@ -377,13 +380,9 @@ $('.btn-pay').click(function() {
     $("#cd-shadow-layer").removeClass("is-visible");
     $(".kss_shipping .fixed-bottom").removeClass('d-block'), 100;
     $(".kss_shipping .fixed-bottom").addClass('d-none'), 100;
-    $(".kss_shipping").removeClass("slide_to_show");
-    $(".kss_shipping").removeClass("d-block");
-    $(".kss_shipping").addClass("d-none");
+    $(".kss_shipping").removeClass("slide-show");
     $("#cd-cart").removeAttr("style");
-    $(".kss_payment").removeClass("slide_to_show");
-    $(".kss_payment").removeClass("d-block");
-    $(".kss_payment").addClass("d-none");
+    $(".kss_payment").removeClass("slide-show");
     $("#kss_cart").removeClass("fixed-bottom");
 })
 $(function() {
