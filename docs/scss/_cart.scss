@@ -330,8 +330,22 @@ $L : 1200px;
   .size, .qty{
     font-size: 14px;
     margin-top: 2px;
+    padding: 0px;
   }
-
+  .fixed-bottom{
+        right: 0px;
+        width:400px;
+        left: inherit;
+        @media (min-width: 992px) and (min-width: 1199.98px) {
+            width: 40% !important;
+          }
+        @media (min-width: 1300px) {
+            width: 30% !important;
+          }
+         @media (min-width: 360px) and (max-width: 767.98px) {
+            width:100%;
+         }
+    }
 }
 body #cd-cart .modal.show .modal-dialog {
     transform: translate(0, 0);

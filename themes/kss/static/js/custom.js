@@ -62,6 +62,12 @@ $(document).ready(function() {
         jQuery(".swipe-arrow").removeClass("swipe-arrow-visible");
     });
     // ------------------ Mobile View ------------------//
+       jQuery("#cd-cart-trigger").click(function() {
+            jQuery("#kss_cart").addClass("fixed-bottom");
+        });
+        jQuery("#cart_close").click(function() {
+            jQuery("#kss_cart").removeClass("fixed-bottom");
+        });
     if ($(window).width() < 760) {
         $('.similar-link').appendTo('.m-similar');
         $(window).scroll(function() {
@@ -72,12 +78,7 @@ $(document).ready(function() {
                 $('.mobile-fixed').hide();
             }
         });
-        jQuery("#cd-cart-trigger").click(function() {
-            jQuery("#kss_cart").addClass("fixed-bottom");
-        });
-        jQuery("#cart_close").click(function() {
-            jQuery("#kss_cart").removeClass("fixed-bottom");
-        });
+     
     } else {
         $('.kss_zoom a').removeClass('js-smartphoto');
     }

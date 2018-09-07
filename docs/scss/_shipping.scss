@@ -1,5 +1,5 @@
 .kss_shipping, .kss_payment{
-    width: 30%!important;
+    width: 30%;
     background:#fff;
     position:fixed;
     right:-600px;
@@ -8,9 +8,13 @@
     height:100vh;
     overflow-y:scroll;
     top: 0px;
+     @media (min-width: 992px) and (min-width: 1199.98px) {
+            width: 40% !important;
+          }
      @media (min-width: 320px) and (max-width: 767.98px) {
       height:100vh;
       position:fixed;
+      width:100%;
     }
     .secure-label{
         line-height:15px;
@@ -29,20 +33,7 @@
             display:flex;
         }
     }
-    .fixed-bottom{
-        right: 0px;
-        width:400px;
-        left: inherit;
-        @media (min-width: 992px) and (min-width: 1199.98px) {
-            width: 40% !important;
-          }
-        @media (min-width: 1300px) {
-            width: 30% !important;
-          }
-         @media (min-width: 360px) and (max-width: 767.98px) {
-            width:100%;
-         }
-    }
+  
 
 }
 .slide_to_show{
@@ -69,12 +60,15 @@
 .shipping-content-info{
     display:none;
         .radio-wrap{
+            display:block !important;
             .radio-label{
                 border:0px;
                 padding:0px;
                 margin-top:10px;
                 margin-bottom:10px;
                 position:relative;
+                width:100% !important;
+                display:block !important;
                 .radio-option{
                     text-align:left;
                     font-weight: normal;
