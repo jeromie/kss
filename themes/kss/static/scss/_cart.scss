@@ -61,6 +61,7 @@ $L : 1200px;
   padding-top: 10px;
 
   overflow-y: auto;
+  overflow-x:hidden;
   -webkit-overflow-scrolling: touch;
 
   box-shadow: 0 0 20px rgba(#000, .2);
@@ -209,8 +210,8 @@ $L : 1200px;
 .primary-info {
     .product-img {
         display: inline-block;
-        height: 70px;
-        width: 70px;
+        height: 84px;
+        width: 50px;
         overflow: hidden;
         position: relative;
         margin-right: 10px;

@@ -1,13 +1,13 @@
 .kss_shipping, .kss_payment{
-    width:100%;
+    width: 30%!important;
     background:#fff;
-    position:absolute;
+    position:fixed;
     right:-600px;
     transition: all 0.5s ease;
     z-index: 99999;
     height:100vh;
+    overflow-y:scroll;
     top: 0px;
-    overflow-y: scroll;
      @media (min-width: 320px) and (max-width: 767.98px) {
       height:100vh;
       position:fixed;
@@ -64,4 +64,36 @@
             padding-top:80px !important;
         }
     }
+}
+
+.shipping-content-info{
+    display:none;
+        .radio-wrap{
+            .radio-label{
+                border:0px;
+                padding:0px;
+                margin-top:10px;
+                margin-bottom:10px;
+                position:relative;
+                .radio-option{
+                    text-align:left;
+                    font-weight: normal;
+                    color: #000;
+                }
+            }
+            .radio-selection{
+                position: absolute;
+                right: 5px;
+                font-size: 20px;
+                top: 5px;
+                color:#ccc;
+            }
+        }
+        .number-edit{
+            display:none;
+        }
+       
+}
+.shipping-state-2{
+    display:none;
 }

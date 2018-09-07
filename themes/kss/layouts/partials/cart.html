@@ -16,7 +16,9 @@
 	  </div>
 	  <div class="ml-auto align-self-center">
 	 	 	 <a class="btn btn-outline-dark mt-1">
-                           <img src="{{"img/heart.png" | absURL}}" xpreview="{{"img/heart.png" | absURL}}" width="20px"> Wishlist
+                           <i class="far fa-heart"></i>
+
+ Wishlist
                 </a>
 	  </div>
 	</div>
@@ -66,7 +68,11 @@
 						  </div>
 						</div>
 					</div>
+						<div class="product-price">
+					<div class="kss-price kss-price--smaller">₹869 <small class="kss-original-price text-muted">₹1309</small> <span class="kss-discount text-danger">20% OFF</span></div>
 				</div>
+				</div>
+			
 				<div class="product-delete ml-2" title="Remove">
 					<a href="#0" class="cd-item-remove delete d-block text-center">
 						<i class="far fa-trash-alt"></i>
@@ -74,12 +80,7 @@
 				</div>
 			</div>
 
-			<div class="secondary-info d-flex justify-content-between align-items-center mt-2">
-				<span class="Deliver-date text-success"><i class="fas fa-truck"></i> Arrives: 14 Aug </span>
-				<div class="product-price">
-					<div class="kss-price kss-price--smaller">₹869 <small class="kss-original-price text-muted">₹1309</small> <span class="kss-discount text-danger">20% OFF</span></div>
-				</div>
-			</div>
+		
 
 		</li>
 
@@ -119,9 +120,11 @@
 								</select>	
 						  </div>
 						</div>
-				
+					
 				</div>
-
+	<div class="product-price">
+					<div class="kss-price kss-price--smaller text-danger-dark">Out of Stock</div>
+				</div>
 					</div>
 				</div>
 				<div class="product-delete ml-2" title="Remove">
@@ -131,25 +134,7 @@
 				</div>
 			</div>
 
-			<div class="secondary-info d-flex justify-content-between align-items-center mt-2">
-				<!-- <div class="product-quantity d-flex align-items-center">
-					<div class="label small mr-2">
-						Qty
-					</div>
-					<select class="form-control form-control-sm">
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-					</select>
-					<div class="kss-custom-select">
-					</div>
-				</div> -->
-				<span class="Deliver-date text-success">&nbsp; </span>
-				<div class="product-price">
-					<div class="kss-price kss-price--smaller text-danger-dark">Out of Stock</div>
-				</div>
-			</div>
+		
 
 		</li>
 
@@ -213,9 +198,6 @@
 
 	<!-- <p class="cd-go-to-cart"><a href="#0">Go to cart page</a></p> -->
 			{{- partial "sign-in.html" . -}}
-			{{- partial "checkout.html" . -}}
-			{{- partial "pincode.html" . -}}
-			{{- partial "checkout2.html" . -}}
 			{{- partial "shipping-details.html" . -}}
 			{{- partial "payment-details.html" . -}}
 		

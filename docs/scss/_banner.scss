@@ -1,7 +1,8 @@
 .kss_banner {
     width: 100%;
     height: 400px;
-    background-size: cover !important;
+    background-size: contain !important;
+    background-color: #ffeb64 !important;
     padding-top: 90px;
     @media (max-width: 575.98px) {
         height:150px;

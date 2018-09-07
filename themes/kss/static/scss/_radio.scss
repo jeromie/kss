@@ -34,6 +34,12 @@
     color: darken(theme-color("primary"), 10%);
     &:hover {}
 }
+.radio-input:checked+.radio-label .radio-selection {
+  color: theme-color("primary");
+}
+.radio-input:checked+.radio-label .number-edit {
+  display: inline-block;
+}
 .radio-input:disabled+.radio-label {
     background-color: $gray-200;
     // color: $gray-500;

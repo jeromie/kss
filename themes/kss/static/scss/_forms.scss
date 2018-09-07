@@ -57,6 +57,7 @@ label{
 
 .form-control{
   border: 0px;
+  padding: 10px 0px;
   background-image:linear-gradient(#f9bc23, #f9bc23), linear-gradient(#D2D2D2, #D2D2D2);
   background-size : 0% 2px, 100% 1px;
   background-position : center bottom, center 100%;
@@ -178,4 +179,11 @@ input[type=number]::-webkit-outer-spin-button {
       cursor:pointer;
       display: block;
     }
+}
+
+.has-error{
+  .form-control{
+       background-image: linear-gradient(#F44336,#F44336),linear-gradient(#d2d2d2,#d2d2d2);
+       background-size: 100% 2px,100% 1px;
+   }
 }
