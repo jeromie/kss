@@ -13,11 +13,13 @@
         text-align: center;
         display: inline-flex;
     }
-    h1 {
+   
+}
+
+ .banner-title {
         color: $d-blue;
         font-weight: bold;
         @media (max-width: 575.98px) {
             font-size: 30px;
         }
     }
-}

@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="kss_banner justify-content-center d-flex p-3 p-md-5 text-white bg-dark" style="background:url('../img/normal/banner-boy.jpg') no-repeat center;">
         <div class="align-self-center text-center">
-            <h1 class="display-4 bold mt-4 mb-1">Boys Fashion</h1>
+            <h1 class="display-4 bold mt-4 mb-1 banner-title">Boys Fashion</h1>
             <h5 class="text-dark m-0">Coolest styles of the season</h5>
           <!-- <h1 class="display-4 font-italic">Title of a longer featured blog post</h1>
           <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.</p>
@@ -12,8 +12,10 @@
     <div class="container">
     <div class="row mt-5 mb-5">
         <div class="col-md-12 text-center">
-          <h3 class="font-weight-bold m-0">Shop By Age</h3>
+          <h2 class="font-weight-bold m-0">Shop By Age</h2>
           <p>Lorem ipsum dolor sit amet</p>
+          <div class="sketch-boy"></div>
+          <div class="sketch-girl"></div>
     <div class="radio-wrap d-flex kss_sizes wo-image mt-5 radio-rounded">
             <input class="d-none radio-input" type="radio" name="kss-sizes" id="18-24" checked="checked"/>
             <label class="radio-label" for="18-24" title="18-24 months">
@@ -39,6 +41,10 @@
             <label class="radio-label" for="11-12" title="11-12 years">
               <div class="radio-option">11-12Y</div>
             </label>
+                <input class="d-none radio-input" type="radio" name="kss-sizes" id="12-13"/>
+            <label class="radio-label" for="12-13" title="12-13 years">
+              <div class="radio-option">12-13Y</div>
+            </label>
         </div>
       </div>
     </div>
@@ -46,73 +52,94 @@
   </section>
   <section>
       <div class="container">
-        <div class="d-flex flex-row   mb-3">
-            <div class="p-2 bd-highlight col-md-2">
+        <div class="d-flex flex-row  overflow-m mb-3 mt-5">
+            <div class="p-2 bd-highlight col-md-2 col-5">
+              <a href="#">
               <div class="alert-light h-100" style="background: #fafafa url('../img/super-hero.png') left bottom no-repeat;background-size: 120%;">
               <div class="w-75 text-center mt-2 float-right">
-                 <h4 class="font-weight-bold text-black">Character <br> Tshirt</h4>
+                 <h5 class="font-weight-bold text-black">Character <br> Tshirt</h5>
                  Choose your favourite Hero
               </div>
               </div>
-            
+              </a>
           </div>
-          <div class="p-2 bd-highlight col-md-2">
+          <div class="p-2 bd-highlight col-md-2 col-5">
              <div class="card h-100 product-card">
               <div class="img-container">
+                <a href="#">
                 <img src="{{"img/disney-img.jpg" | absURL}}" class="img-fluid"/>
+              </a>
               </div>
                 <div class="card-body">
-                    <h5 class="text-center font-weight-bold">
+                  <a href="#">
+                    <h5 class="text-center font-weight-bold text-black">
                      Disney Toon Tshirts
                     </h5>
+                  </a>
                 </div>
               </div>
           </div>
-            <div class="p-2 bd-highlight col-md-2">
+            <div class="p-2 bd-highlight col-md-2 col-5">
              <div class="card h-100 product-card">
               <div class="img-container">
+                <a href="#">
                 <img src="{{"img/marvel-img.jpg" | absURL}}" class="img-fluid"/>
+                  </a>
               </div>
                 <div class="card-body">
-                    <h5 class="text-center font-weight-bold">
+                  <a href="#">
+                    <h5 class="text-center font-weight-bold text-black">
                      Marvel Characters
                     </h5>
+                  </a>
                 </div>
               </div>
           </div>
-            <div class="p-2 bd-highlight col-md-2">
+            <div class="p-2 bd-highlight col-md-2 col-5">
              <div class="card h-100 product-card">
               <div class="img-container">
+                <a href="#">
                 <img src="{{"img/angry-img.jpg" | absURL}}" class="img-fluid"/>
+                  </a>
               </div>
                 <div class="card-body">
-                    <h5 class="text-center font-weight-bold">
+                  <a href="#">
+                    <h5 class="text-center font-weight-bold text-black">
                     Angry Bird Tshirt
                     </h5>
+                  </a>
                 </div>
               </div>
           </div>
-            <div class="p-2 bd-highlight col-md-2">
+            <div class="p-2 bd-highlight col-md-2 col-5">
              <div class="card h-100 product-card">
               <div class="img-container">
+                <a href="#">
                 <img src="{{"img/iron-img.jpg" | absURL}}" class="img-fluid"/>
+                  </a>
               </div>
                 <div class="card-body">
-                    <h5 class="text-center font-weight-bold">
+                  <a href="#">
+                    <h5 class="text-center font-weight-bold text-black">
                      Iron Man Tshirts
                     </h5>
+                  </a>
                 </div>
               </div>
           </div>
-            <div class="p-2 bd-highlight col-md-2">
+            <div class="p-2 bd-highlight col-md-2 col-5">
              <div class="card h-100 product-card">
               <div class="img-container">
+                <a href="#">
                 <img src="{{"img/car-img.jpg" | absURL}}" class="img-fluid"/>
+                  </a>
               </div>
                 <div class="card-body">
-                    <h5 class="text-center font-weight-bold">
+                  <a href="#">
+                    <h5 class="text-center font-weight-bold text-black">
                      Car Tshirts
                     </h5>
+                  </a>
                 </div>
               </div>
           </div>
@@ -125,7 +152,7 @@
     <div class="container">
     <div class="row mt-5 mb-3">
         <div class="col-md-12 text-center">
-          <h3 class="font-weight-bold m-0">Boy Clothings</h3>
+          <h2 class="font-weight-bold m-0">Boy Clothings</h2>
           <p>Lorem ipsum dolor sit amet</p>
         </div>
     </div>
@@ -133,76 +160,444 @@
    </section>
 <section id="kss-clothings" class="stripe-bg-top">
     <div class="container ">
-     <div class="d-flex flex-row ">
-             <div class="p-2 bd-highlight col-md-2">
+     <div class="d-flex flex-row overflow-m">
+             <div class="p-2 bd-highlight col-md-2 col-5">
+             <div class="card h-100 product-card ">
+              <div class="img-container p-1 shadow">
+                <a href="#">
+                <img src="{{"img/product-1.jpg" | absURL}}" class="img-fluid"/>
+               </a>
+              </div>
+                <div class="card-body">
+                   <a href="#">
+                    <h5 class="text-center font-weight-bold text-black">
+                     Jackets
+                    </h5>
+                  </a>
+                </div>
+              </div>
+          </div>
+          <div class="p-2 bd-highlight col-md-2 col-5">
+             <div class="card h-100 product-card ">
+              <div class="img-container p-1 shadow">
+                 <a href="#">
+                <img src="{{"img/product-2.jpg" | absURL}}" class="img-fluid"/>
+                </a>
+              </div>
+                <div class="card-body">
+                   <a href="#">
+                    <h5 class="text-center font-weight-bold text-black">
+                     Pajamas
+                    </h5>
+                  </a>
+                </div>
+              </div>
+          </div>
+            <div class="p-2 bd-highlight col-md-2 col-5">
+             <div class="card h-100 product-card  ">
+              <div class="img-container p-1 shadow">
+                 <a href="#">
+                <img src="{{"img/product-3.jpg" | absURL}}" class="img-fluid"/>
+                </a>
+              </div>
+                <div class="card-body">
+                   <a href="#">
+                    <h5 class="text-center font-weight-bold text-black">
+                     Party Wear
+                    </h5>
+                  </a>
+                </div>
+              </div>
+          </div>
+            <div class="p-2 bd-highlight col-md-2 col-5">
              <div class="card h-100 product-card">
-              <div class="img-container">
-                <img src="{{"img/disney-img.jpg" | absURL}}" class="img-fluid"/>
+              <div class="img-container p-1 shadow">
+                 <a href="#">
+                <img src="{{"img/product-4.jpg" | absURL}}" class="img-fluid"/>
+                </a>
+              </div>
+                <div class="card-body">
+                   <a href="#">
+                    <h5 class="text-center font-weight-bold text-black">
+                    Jeans
+                    </h5>
+                  </a>
+                </div>
+              </div>
+          </div>
+            <div class="p-2 bd-highlight col-md-2 col-5">
+             <div class="card h-100 product-card">
+              <div class="img-container p-1 shadow">
+                 <a href="#">
+                <img src="{{"img/product-5.jpg" | absURL}}" class="img-fluid"/>
+              </a>
+              </div>
+                <div class="card-body">
+                   <a href="#">
+                    <h5 class="text-center font-weight-bold text-black">
+                     Casual Shirts
+                    </h5>
+                  </a>
+                </div>
+              </div>
+          </div>
+            <div class="p-2 bd-highlight col-md-2 col-5">
+             <div class="card h-100 product-card">
+              <div class="img-container p-1 shadow">
+                 <a href="#">
+                <img src="{{"img/product-6.jpg" | absURL}}" class="img-fluid"/>
+              </a>
+              </div>
+                <div class="card-body">
+                   <a href="#">
+                    <h5 class="text-center font-weight-bold text-black">
+                     Ethnic Wear
+                    </h5>
+                  </a>
+                </div>
+              </div>
+          </div>
+
+        </div>
+  </div>
+</section>
+
+<section class="yellow-bg mt-5 mb-5 text-center"> 
+  <div class="container  d-flex">
+  <div class="beach-wear mt-3">
+       <img src="{{"img/beachwear.png" | absURL}}" />
+  </div>
+     <div class="align-self-center text-center w-100 ">
+            <h1 class="display-4 bold banner-title">Beach Wear</h1>
+            <h5 class="text-dark m-0">The vacation beach styles</h5>
+            <button type="button" class="btn btn-dark btn-lg  mt-4">Shop Now</button>
+        </div>
+</div>
+</section>
+<section>
+<div class="beach">
+  <div class="sea-wave">
+  </div>
+</div>
+</section>
+
+  <section>
+    <div class="seperator d-none d-md-block">
+</div>
+    <div class="container">
+    <div class="row mt-5">
+        <div class="col-md-12 text-center">
+          <h2 class="font-weight-bold m-0">Buy by Budget</h2>
+          <p>Lorem ipsum dolor sit amet</p>
+        </div>
+    </div>
+   <div class="d-flex flex-row mb-3 mt-3 overflow-m">
+          <div class="p-2 bd-highlight  col-md-2 col-6">
+            <div class="card price-range text-left p-2">
+              <p>Price Store</p>
+              <h3 class="font-weight-bold">Under<br>₹ 299</h3>
+              <i class="candy-1 k-icon">
+              </i>
+            </div>
+          </div>
+           <div class="p-2 bd-highlight col-md-2 col-6">
+            <div class="card price-range text-left p-2">
+              <p>Price Store</p>
+              <h3 class="font-weight-bold">Under<br>₹ 399</h3>
+              <i class="candy-2 k-icon">
+              </i>
+            </div>
+          </div>
+           <div class="p-2 bd-highlight col-md-2 col-6">
+           <div class="card price-range text-left p-2">
+              <p>Price Store</p>
+              <h3 class="font-weight-bold">Under<br>₹ 499</h3>
+              <i class="candy-3 k-icon">
+              </i>
+            </div>
+          </div>
+           <div class="p-2 bd-highlight col-md-2 col-6">
+           <div class="card price-range text-left p-2">
+              <p>Price Store</p>
+              <h3 class="font-weight-bold">Under<br>₹ 599</h3>
+              <i class="candy-4 k-icon">
+              </i>
+            </div>
+          </div>
+           <div class="p-2 bd-highlight col-md-2 col-6">
+           <div class="card price-range text-left p-2">
+              <p>Price Store</p>
+              <h3 class="font-weight-bold">Under<br>₹ 899</h3>
+              <i class="candy-1 k-icon">
+              </i>
+            </div>
+          </div>
+           <div class="p-2 bd-highlight col-md-2 col-6">
+          <div class="card price-range text-left p-2">
+              <p>Price Store</p>
+              <h3 class="font-weight-bold">Under<br>₹ 999</h3>
+              <i class="candy-1 k-icon">
+              </i>
+            </div>
+          </div>
+    </div>
+  </div>
+     <div class="seperator">
+</div>
+  </section>
+<section id="school-collection" class="light-bg">
+ <div class="container pt-5 pb-5">
+    <div class="row ">
+        <div class="col-md-12 text-center">
+          <h2 class="font-weight-bold m-0">School Collection</h2>
+          <p>Dress Code for fun playtime is here</p>
+        </div>
+    </div>
+      <div class="d-flex flex-row flex-wrap overflow-m">
+             <div class="p-2 bd-highlight col-md-4 col-6">
+             <div class="card h-100 ">
+              <div class="img-container ">
+                <img src="{{"img/school-dress.jpg" | absURL}}" class="img-fluid m-auto d-block"/>
               </div>
                 <div class="card-body">
                     <h5 class="text-center font-weight-bold">
-                     Disney Toon Tshirts
+                     School Uniforms
                     </h5>
                 </div>
               </div>
           </div>
-          <div class="p-2 bd-highlight col-md-2">
-             <div class="card h-100 product-card">
-              <div class="img-container">
-                <img src="{{"img/disney-img.jpg" | absURL}}" class="img-fluid"/>
+          <div class="p-2 bd-highlight col-md-4 col-6">
+             <div class="card h-100 ">
+              <div class="img-container ">
+                <img src="{{"img/bag.jpg" | absURL}}" class="img-fluid m-auto d-block"/>
               </div>
                 <div class="card-body">
                     <h5 class="text-center font-weight-bold">
-                     Disney Toon Tshirts
+                    School Bags
                     </h5>
                 </div>
               </div>
           </div>
-            <div class="p-2 bd-highlight col-md-2">
-             <div class="card h-100 product-card">
-              <div class="img-container">
-                <img src="{{"img/marvel-img.jpg" | absURL}}" class="img-fluid"/>
+            <div class="p-2 bd-highlight col-md-4 col-6">
+             <div class="card h-100   ">
+              <div class="img-container ">
+                <img src="{{"img/shoes.jpg" | absURL}}" class="img-fluid m-auto d-block"/>
               </div>
                 <div class="card-body">
                     <h5 class="text-center font-weight-bold">
-                     Marvel Characters
+                    Shoes
                     </h5>
                 </div>
               </div>
           </div>
-            <div class="p-2 bd-highlight col-md-2">
+    <!--         <div class="p-2 bd-highlight col-md-5 col-6">
              <div class="card h-100 product-card">
-              <div class="img-container">
-                <img src="{{"img/angry-img.jpg" | absURL}}" class="img-fluid"/>
+              <div class="img-container ">
+                <img src="{{"img/jodpuri.png" | absURL}}" class="img-fluid d-block m-auto"/>
               </div>
                 <div class="card-body">
                     <h5 class="text-center font-weight-bold">
-                    Angry Bird Tshirt
+                    Angrakha
                     </h5>
                 </div>
               </div>
           </div>
-            <div class="p-2 bd-highlight col-md-2">
+            <div class="p-2 bd-highlight col-md-5 col-6">
              <div class="card h-100 product-card">
-              <div class="img-container">
-                <img src="{{"img/iron-img.jpg" | absURL}}" class="img-fluid"/>
+              <div class="img-container ">
+                <img src="{{"img/waistcoat.png" | absURL}}" class="img-fluid d-block m-auto"/>
               </div>
                 <div class="card-body">
                     <h5 class="text-center font-weight-bold">
-                     Iron Man Tshirts
+                     Waist Coat
                     </h5>
                 </div>
               </div>
           </div>
-            <div class="p-2 bd-highlight col-md-2">
+            <div class="p-2 bd-highlight col-md-2 col-6">
              <div class="card h-100 product-card">
               <div class="img-container">
-                <img src="{{"img/car-img.jpg" | absURL}}" class="img-fluid"/>
+                <img src="{{"img/mojardi.png" | absURL}}" class="img-fluid"/>
               </div>
                 <div class="card-body">
                     <h5 class="text-center font-weight-bold">
-                     Car Tshirts
+                     Mojardi
                     </h5>
+                </div>
+              </div>
+          </div> -->
+
+        </div>
+        <div class="bg-bag">
+        </div>
+         <div class="seperator d-none d-md-block">
+    </div>
+  </div>
+</section>
+<section id="diwali-collection" >
+ <div class="container pt-5 pb-5">
+    <div class="row ">
+        <div class="col-md-12 text-center">
+          <h2 class="font-weight-bold m-0">Diwali Collection</h2>
+          <p>Dress Code for fun playtime is here</p>
+        </div>
+    </div>
+      <div class="d-flex flex-row flex-wrap overflow-m">
+             <div class="p-2 bd-highlight col-md-4 col-6">
+             <div class="card h-100 ">
+              <div class="img-container ">
+                <img src="{{"img/kurta.png" | absURL}}" class="img-fluid"/>
+              </div>
+                <div class="card-body">
+                    <h5 class="text-center font-weight-bold">
+                     Embroidered Kurta
+                    </h5>
+                </div>
+              </div>
+          </div>
+          <div class="p-2 bd-highlight col-md-4 col-6">
+             <div class="card h-100 ">
+              <div class="img-container ">
+                <img src="{{"img/sherwani.png" | absURL}}" class="img-fluid"/>
+              </div>
+                <div class="card-body">
+                    <h5 class="text-center font-weight-bold">
+                   Sherwani
+                    </h5>
+                </div>
+              </div>
+          </div>
+            <div class="p-2 bd-highlight col-md-4 col-6">
+             <div class="card h-100   ">
+              <div class="img-container ">
+                <img src="{{"img/dhoti.png" | absURL}}" class="img-fluid"/>
+              </div>
+                <div class="card-body">
+                    <h5 class="text-center font-weight-bold">
+                    Kurta & Dhoti Set
+                    </h5>
+                </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</section>
+
+<section class="yellow-bg  text-center"> 
+  <div class="bg-left-overlay">
+  </div>
+   <div class="bg-right-overlay">
+  </div>
+  <div class="container  d-flex justify-content-center diwali-banner">
+     <div class="align-self-center text-center w-100 ">
+            <h1 class="display-4 bold banner-title">New Arrivals</h1>
+            <h5 class="text-dark m-0">20 - 30% OFF on Diwali wear</h5>
+            <button type="button" class="btn btn-dark btn-lg  mt-4">Shop Now</button>
+        </div>
+</div>
+</section>
+
+<section>
+     <div class="seperator">
+    </div>
+</section>
+<section id="kss-clothings" class="stripe-bg-top">
+
+    <div class="container ">
+     <div class="d-flex flex-row overflow-m">
+             <div class="p-2 bd-highlight col-md-2 col-5">
+             <div class="card h-100 product-card ">
+              <div class="img-container p-1 shadow">
+                <a href="#">
+                <img src="{{"img/diwali-1.jpg" | absURL}}" class="img-fluid"/>
+               </a>
+              </div>
+                <div class="card-body">
+                   <a href="#">
+                    <h5 class="text-center font-weight-bold text-black">
+                     Jackets
+                    </h5>
+                  </a>
+                </div>
+              </div>
+          </div>
+          <div class="p-2 bd-highlight col-md-2 col-5">
+             <div class="card h-100 product-card ">
+              <div class="img-container p-1 shadow">
+                 <a href="#">
+               <img src="{{"img/diwali-2.jpg" | absURL}}" class="img-fluid"/>
+                </a>
+              </div>
+                <div class="card-body">
+                   <a href="#">
+                    <h5 class="text-center font-weight-bold text-black">
+                     Pajamas
+                    </h5>
+                  </a>
+                </div>
+              </div>
+          </div>
+            <div class="p-2 bd-highlight col-md-2 col-5">
+             <div class="card h-100 product-card  ">
+              <div class="img-container p-1 shadow">
+                 <a href="#">
+                 <img src="{{"img/diwali-3.jpg" | absURL}}" class="img-fluid"/>
+                </a>
+              </div>
+                <div class="card-body">
+                   <a href="#">
+                    <h5 class="text-center font-weight-bold text-black">
+                     Party Wear
+                    </h5>
+                  </a>
+                </div>
+              </div>
+          </div>
+            <div class="p-2 bd-highlight col-md-2 col-5">
+             <div class="card h-100 product-card">
+              <div class="img-container p-1 shadow">
+                 <a href="#">
+                <img src="{{"img/diwali-4.jpg" | absURL}}" class="img-fluid"/>
+                </a>
+              </div>
+                <div class="card-body">
+                   <a href="#">
+                    <h5 class="text-center font-weight-bold text-black">
+                    Jeans
+                    </h5>
+                  </a>
+                </div>
+              </div>
+          </div>
+            <div class="p-2 bd-highlight col-md-2 col-5">
+             <div class="card h-100 product-card">
+              <div class="img-container p-1 shadow">
+                 <a href="#">
+                <img src="{{"img/diwali-5.jpg" | absURL}}" class="img-fluid"/>
+              </a>
+              </div>
+                <div class="card-body">
+                   <a href="#">
+                    <h5 class="text-center font-weight-bold text-black">
+                     Casual Shirts
+                    </h5>
+                  </a>
+                </div>
+              </div>
+          </div>
+            <div class="p-2 bd-highlight col-md-2 col-5">
+             <div class="card h-100 product-card">
+              <div class="img-container p-1 shadow">
+                 <a href="#">
+                <img src="{{"img/product-6.jpg" | absURL}}" class="img-fluid"/>
+              </a>
+              </div>
+                <div class="card-body">
+                   <a href="#">
+                    <h5 class="text-center font-weight-bold text-black">
+                     Ethnic Wear
+                    </h5>
+                  </a>
                 </div>
               </div>
           </div>
