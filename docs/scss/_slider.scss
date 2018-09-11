@@ -1,5 +1,6 @@
 .prod-slides {
     height: 530px;
+    overflow: hidden;
     @media(max-width: 767px){
            height: 130vw;
     }
