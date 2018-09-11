@@ -55,10 +55,12 @@
             display: none;
         }
         .radio-label {
-            padding: 2em;
-            background-size: contain;
-            background-position: center;
-            background-repeat: no-repeat;
+               padding: 0px;
+                /* background-size: contain; */
+                /* background-position: center; */
+                background-repeat: no-repeat;
+                width: 54px;
+                height: 88px;
         }
     }
     &.wo-image {
