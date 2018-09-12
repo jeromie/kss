@@ -367,7 +367,7 @@ $('#shipping-details').click(function() {
     $(".kss_shipping  .fixed-bottom").addClass('d-block'), 100;
     $('body').removeClass();
     $('body').addClass('hide-scroll');
-    $("#cd-cart").removeAttr("style");
+    // $("#cd-cart").removeAttr("style");
 })
 $('#shipping-summary').click(function() {
     $("body").removeClass("hide-scroll");
