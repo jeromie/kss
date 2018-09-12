@@ -53,7 +53,7 @@ gulp.task('css', function(){
 gulp.task('default', function() {
     gulp.run('scripts')
     gulp.run('css')
-    
+
 });
 
 gulp.task('watch', ['sass'], function() {

@@ -41,7 +41,12 @@ $(document).ready(function() {
     });
     $('#aniimated-thumbnials').lightGallery({
         selector: '.custom-selector',
-        preload: 0
+        preload: 0,
+        download: false,
+        fullScreen: false,
+        autoplayControls: false,
+        share: false
+
     });
     // ------------------ Filter For Mobile ------------------//
     jQuery("#filter").click(function() {
@@ -50,7 +55,7 @@ $(document).ready(function() {
      jQuery(".cd-add-to-cart").click(function() {
       jQuery( ".kss_sizes" ).toggleClass( "shake" );
     });
-    
+
     jQuery(".clear-filter").click(function() {
         jQuery(".filter-selection").attr("style", "display: none !important");
     });
@@ -78,7 +83,7 @@ $(document).ready(function() {
                 $('.mobile-fixed').hide();
             }
         });
-     
+
     } else {
         $('.kss_zoom a').removeClass('js-smartphoto');
     }
@@ -240,8 +245,8 @@ jQuery(window).on("load", function() {
     }
     lazy();
     jQuery(".swipe-arrow").addClass("swipe-arrow-visible");
-    $('.kss_shipping').appendTo('#cd-cart');
-    $('.kss_payment').appendTo('#cd-cart');
+    // $('.kss_shipping').appendTo('#cd-cart');
+    // $('.kss_payment').appendTo('#cd-cart');
     $('#modal_pincode').appendTo('#cd-cart');
 })
 //getting click event to show modal
@@ -311,12 +316,12 @@ $('.close').click(function() {
     $("#cd-cart").css("overflow", "visible");
 })
 $('.shipping-details-save').click(function() {
-    
+
     $('.shipping-content').hide();
     $('.shipping-content-info').show();
     $('.shipping-state-1').hide();
     $('.shipping-state-2').show();
-    
+
     // $(".kss_shipping .fixed-bottom").removeClass('d-block'), 100;
     // $(".kss_shipping .fixed-bottom").addClass('d-none'), 100;
     // $('.kss_shipping').removeClass('slide_to_show'), 100;
@@ -327,7 +332,7 @@ $('.shipping-details-save').click(function() {
 
 });
 $('#add-address').click(function() {
-    
+
     $('.shipping-content').show();
     $('.shipping-content-info').hide();
     $('.shipping-state-1').show();
@@ -335,10 +340,10 @@ $('#add-address').click(function() {
 
 });
 
-$('#kss_coupon').click(function() { 
+$('#kss_coupon').click(function() {
     $('#cd-coupon').addClass('slide-show');
 });
-$('.cd-coupon-apply').click(function() { 
+$('.cd-coupon-apply').click(function() {
     $('#cd-coupon').removeClass('slide-show');
 });
 
@@ -364,6 +369,19 @@ $('#shipping-details').click(function() {
     $('body').addClass('hide-scroll');
     $("#cd-cart").removeAttr("style");
 })
+$('#shipping-summary').click(function() {
+    $("body").removeClass("hide-scroll");
+    $('#checkout-flow').modal('hide');
+    $('.modal-backdrop').remove();
+    // $(".kss_shipping").removeClass("slide-show");
+    $(".kss_shipping_summary").addClass("slide-show");
+    $(".kss_shipping  .fixed-bottom").addClass('d-none'), 100;
+    $(".kss_shipping  .fixed-bottom").removeClass('d-block'), 100;
+    $(".kss_shipping_summary  .fixed-bottom").removeClass('d-none'), 100;
+    $(".kss_shipping_summary  .fixed-bottom").addClass('d-block'), 100;
+    $('body').removeClass();
+    $('body').addClass('hide-scroll');
+})
 $('#payment-details').click(function() {
     $("body").removeClass("hide-scroll");
     $('#checkout-flow').modal('hide');
@@ -378,11 +396,10 @@ $('.btn-pay').click(function() {
     $('.modal-backdrop').remove();
     $("#cd-cart").removeClass("speed-in");
     $("#cd-shadow-layer").removeClass("is-visible");
-    $(".kss_shipping .fixed-bottom").removeClass('d-block'), 100;
-    $(".kss_shipping .fixed-bottom").addClass('d-none'), 100;
-    $(".kss_shipping").removeClass("slide-show");
+    $(".kss_shipping .fixed-bottom, .kss_shipping_summary .fixed-bottom").removeClass('d-block'), 100;
+    $(".kss_shipping .fixed-bottom, .kss_shipping_summary .fixed-bottom").addClass('d-none'), 100;
+    $(".kss_shipping, .kss_shipping_summary, .kss_payment").removeClass("slide-show");
     $("#cd-cart").removeAttr("style");
-    $(".kss_payment").removeClass("slide-show");
     $("#kss_cart").removeClass("fixed-bottom");
 })
 $(function() {
