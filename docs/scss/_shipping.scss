@@ -1,4 +1,4 @@
-.kss_shipping, .kss_payment{
+.kss_shipping, .kss_shipping_summary, .kss_payment{
     .secure-label{
         line-height:15px;
         font-size:10px;
@@ -65,7 +65,7 @@
         .number-edit{
             display:none;
         }
-       
+
 }
 .shipping-state-2{
     display:none;
