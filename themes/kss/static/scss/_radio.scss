@@ -107,6 +107,9 @@
 }
 .kss_sizes{
     display:block !important;
+    .radio-option{
+        font-weight:400;
+    }
    @media (min-width: 320px) and (max-width: 767.98px) {
 
     overflow: hidden;
