@@ -88,7 +88,7 @@ $(document).ready(function() {
             $(".slide-right-fixed").addClass("active");
             $("footer").addClass("d-none");
         })
-        
+
 
     } else {
         $('.kss_zoom a').removeClass('js-smartphoto');
@@ -122,6 +122,7 @@ $(document).ready(function() {
     var $L = 1200,
         $menu_navigation = $('#main-nav'),
         $cart_trigger = $('#cd-cart-trigger'),
+        $cancel_trigger = $('.cancel-trigger'),
         $hamburger_icon = $('#cd-hamburger-menu'),
         $lateral_cart = $('#cd-cart'),
         $shadow_layer = $('#cd-shadow-layer');
@@ -135,6 +136,13 @@ $(document).ready(function() {
     });
     //open cart
     $cart_trigger.on('click', function(event) {
+        event.preventDefault();
+        //close lateral menu (if it's open)
+        $menu_navigation.removeClass('speed-in');
+        toggle_panel_visibility($lateral_cart, $shadow_layer, $('body'));
+        $("body").addClass("hide-scroll");
+    });
+    $cancel_trigger.on('click', function(event) {
         event.preventDefault();
         //close lateral menu (if it's open)
         $menu_navigation.removeClass('speed-in');

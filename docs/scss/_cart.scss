@@ -301,6 +301,9 @@ $L : 1200px;
     height: 200px;
 }
 #cd-cart {
+    .product-name{
+        width: 250px;
+    }
     .modal-dialog {
         position: absolute;
         width: 100%;
