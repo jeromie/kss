@@ -15,12 +15,12 @@ function flyToElement(flyer, flyingTo) {
 	var gotoY = $(flyingTo).offset().top + ($(flyingTo).height() / 2) - ($(flyer).height()/divider)/2;
 	 
 	$(flyerClone).animate({
-		opacity: 0.4,
+		opacity: 0.2,
 		left: gotoX,
 		top: gotoY,
 		width: $(flyer).width()/divider,
 		height: $(flyer).height()/divider
-	}, 700,
+	}, 100,
 	function () {
 		$(flyingTo).fadeOut('fast', function () {
 			$(flyingTo).fadeIn('fast', function () {

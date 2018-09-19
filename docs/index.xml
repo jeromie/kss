@@ -74,5 +74,32 @@
       <description></description>
     </item>
     
+    <item>
+      <title>girl</title>
+      <link>https://jeromie.github.io/kss/girl/</link>
+      <pubDate>Mon, 04 Jun 2018 12:57:20 +0530</pubDate>
+      
+      <guid>https://jeromie.github.io/kss/girl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>orders-details</title>
+      <link>https://jeromie.github.io/kss/account/orders-details/</link>
+      <pubDate>Mon, 04 Jun 2018 12:57:20 +0530</pubDate>
+      
+      <guid>https://jeromie.github.io/kss/account/orders-details/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>orders-details-cod</title>
+      <link>https://jeromie.github.io/kss/account/orders-details-cod/</link>
+      <pubDate>Mon, 04 Jun 2018 12:57:20 +0530</pubDate>
+      
+      <guid>https://jeromie.github.io/kss/account/orders-details-cod/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

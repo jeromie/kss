@@ -84,6 +84,12 @@ $(document).ready(function() {
             }
         });
 
+        $('#list-menu').click(function() {
+            $(".slide-right-fixed").addClass("active");
+            $("footer").addClass("d-none");
+        })
+        
+
     } else {
         $('.kss_zoom a').removeClass('js-smartphoto');
     }

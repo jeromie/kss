@@ -1,28 +1,83 @@
 {{ define "main" }}
-	<div class="container mt-5">
-		<h1 class="kss-title text-secondary font-weight-bold mb-1">Account</h1>
-		<h6 class="text-muted">Peter Smith</h6>
-		<hr>
+	<div class="container mt-3 ">
+		<div class="d-none d-sm-block">
+			   <nav aria-label="breadcrumb ">
+                    <ol class="breadcrumb mb-1 bg-transparent p-0">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active"><a href="#">Accounts</a></li>
+                    </ol>
+                  </nav>
+                 <h1 class="w-100 kss-title m-0 text-gray font-weight-bold ">
+                   Account
+                 </h1>
+	
+		<h6 class="text-muted mb-4">Peter Smith</h6>
+	</div>
+	<div class="d-block d-md-none text-center p-4">
+                 <h1 class="w-100 kss-title m-0 text-gray font-weight-bold ">
+                   Hello Amit
+                 </h1>
+	
+		<h6 class="text-muted">amit@ajency.in</h6>
+	</div>
+		<hr class="m-0">
 
 		<div class="row">
-			<div class="col-sm-2 border-right">
+			<div class="col-sm-3 col-lg-2 border-right">
 				{{- partial "account_menu.html" . -}}
 			</div>
-			<div class="col-sm-10">
-				<div class=" p-4">
-					<h4>Orders</h4>
+			<div class="col-sm-9 col-lg-10 slide-right-fixed">
+				<div class=" p-md-4 p-0">
+					<h4>My Orders</h4>
 					<hr>
 
-					<h6 class="font-weight-bold mb-2 text-dark">Order No. #ABCD-21343-PQRS-01 </h6>
+					<h6 class="font-weight-bold mt-4">Order No. #ABCD-21343-PQRS-02 </h6>
 					<ul class="cd-cart-items list-unstyled">
-						<li class="p-3 mb-3 card shadow-sm cursor-pointer d-flex flex-row align-items-center justify-content-between">
-							<div>
-								<div class="primary-info d-flex">
+						<li class="p-md-3 p-2 mb-3 card shadow-sm cursor-pointer">
+							<div class="row primary-info">
+								<div class="col-md-6">
 									<div class="product-img">
-										<div class="img" style="background-image: url({{"img/4front.jpg" | absURL}});"></div>
+								           <div class="img" style="background-image: url({{"img/thumbnail/6front@thumb.jpg" | absURL}});"></div>
+								    </div>
+									<div class="product-detail ">
+										<div class="product-name text-truncate">
+											Cotton Rich Super Skinny Fit Jeans from eewdsfsafwefwefew
+										</div>
+										<div class="product-size text-muted mb-1">
+											<span>Size: 2-4 years</span> <span>|</span> <span>Qty: 2</span>
+										</div>
+										<div class="product-price">
+											<div class="retail-price">
+												<span class="rs-symbol">₹</span> <span class="price">869</span>
+											</div>
+										</div>
 									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="retail-price mt-2 mt-md-0">
+												<i class="fas fa-inbox mr-1 text-muted"></i><span class="text-success font-weight-bold">In Transit</span>
+												<span class="font-weight-bold">(Arriving 30 Aug)</span>
+									</div>
+									
+									</div>
+									<div class="dropdown">
+										<i class="fas fa-ellipsis-v fa-2x text-light" id="card-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+										  <div class="dropdown-menu dropdown-menu-right shadow-lg" aria-labelledby="card-menu">
+										    <button class="dropdown-item" type="button">Track Item</button>
+										    <button class="dropdown-item" type="button">Cancel Item</button>
+										    <button class="dropdown-item" type="button"> <a href="/kss/account/orders-details/">View Order Details</a></button>
+										  </div>
+										</div>
+								</div>
+						</li>
+						<li class="p-md-3 p-2 mb-3 card shadow-sm cursor-pointer">
+									<div class="row primary-info">
+								<div class="col-md-6">
+									<div class="product-img">
+								           <div class="img" style="background-image: url({{"img/thumbnail/6front@thumb.jpg" | absURL}});"></div>
+								    </div>
 									<div class="product-detail">
-										<div class="product-name">
+										<div class="product-name text-truncate">
 											Cotton Rich Super Skinny Fit Jeans
 										</div>
 										<div class="product-size text-muted mb-1">
@@ -35,52 +90,31 @@
 										</div>
 									</div>
 								</div>
-								<div class="mt-2 small">
-									<span class="font-weight-bold">Delivered</span> (Jun 02, 2018)
+								<div class="col-md-6">
+									<div class="retail-price mt-2 mt-md-0">
+												<i class="fas fa-truck mr-1 text-muted"></i> <span class="text-success font-weight-bold">Ready To Ship</span>
+									</div>
+								
+									</div>
+										<div class="dropdown">
+										<i class="fas fa-ellipsis-v fa-2x text-light" id="card-menu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+										  <div class="dropdown-menu dropdown-menu-right shadow-lg" aria-labelledby="card-menu1">
+										    <button class="dropdown-item" type="button">Track Item</button>
+										    <button class="dropdown-item" type="button">Cancel Item</button>
+										    <button class="dropdown-item" type="button"> <a href="/kss/account/orders-details/">View Order Details</a></button>
+										  </div>
+										</div>
 								</div>
-							</div>
-							<i class="fas fa-chevron-right fa-2x text-light"></i>
 						</li>
-						<li class="p-3 mb-3 card shadow-sm cursor-pointer d-flex flex-row align-items-center justify-content-between">
-							<div>
-								<div class="primary-info d-flex">
-									<div class="product-img">
-										<div class="img" style="background-image: url({{"img/4front.jpg" | absURL}});"></div>
-									</div>
-									<div class="product-detail">
-										<div class="product-name">
-											Cotton Rich Super Skinny Fit Jeans
-										</div>
-										<div class="product-size text-muted mb-1">
-											<span>Size: 2-4 years</span> <span>|</span> <span>Qty: 1</span>
-										</div>
-										<div class="product-price">
-											<div class="retail-price">
-												<span class="rs-symbol">₹</span> <span class="price">869</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="mt-2 small">
-									<span class="font-weight-bold text-danger">Cancelled</span> (Jun 01, 2018)
-								</div>
-							</div>
-							<i class="fas fa-chevron-right fa-2x text-light"></i>
-						</li>
-					</ul>
+						<li class="p-md-3 p-2 mb-3 card shadow-sm cursor-pointer">
 
-					<hr class="my-5">
-
-					<h6 class="font-weight-bold mb-2 text-dark">Order No. #ABCD-21343-PQRS-02 </h6>
-					<ul class="cd-cart-items list-unstyled">
-						<li class="p-3 mb-3 card shadow-sm cursor-pointer d-flex flex-row align-items-center justify-content-between">
-							<div>
-								<div class="primary-info d-flex">
+								<div class="row primary-info">
+								<div class="col-md-6">
 									<div class="product-img">
-										<div class="img" style="background-image: url({{"img/4front.jpg" | absURL}});"></div>
-									</div>
+								           <div class="img" style="background-image: url({{"img/thumbnail/6front@thumb.jpg" | absURL}});"></div>
+								    </div>
 									<div class="product-detail">
-										<div class="product-name">
+										<div class="product-name text-truncate">
 											Cotton Rich Super Skinny Fit Jeans
 										</div>
 										<div class="product-size text-muted mb-1">
@@ -93,13 +127,256 @@
 										</div>
 									</div>
 								</div>
-								<div class="mt-2 small">
-									<span class="font-weight-bold">Delivered</span> (Jun 02, 2018)
+								<div class="col-md-6">
+									<div class="retail-price mt-2 mt-md-0">
+												<i class="fas fa-clipboard-check mr-1 text-muted"></i> <span class="text-success font-weight-bold">Order Processed</span>
+									</div>
+									
+									</div>
+									<div class="dropdown">
+										<i class="fas fa-ellipsis-v fa-2x text-light" id="card-menu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+										  <div class="dropdown-menu dropdown-menu-right shadow-lg" aria-labelledby="card-menu2">
+										    <button class="dropdown-item" type="button">Track Item</button>
+										    <button class="dropdown-item" type="button">Cancel Item</button>
+										    <button class="dropdown-item" type="button"> <a href="/kss/account/orders-details/">View Order Details</a></button>
+										  </div>
+										</div>
 								</div>
-							</div>
-							<i class="fas fa-chevron-right fa-2x text-light"></i>
+						</li>
+						<li class="p-md-3 p-2 mb-3 card shadow-sm cursor-pointer">
+							<div class="row primary-info">
+								<div class="col-md-6">
+									<div class="product-img">
+								           <div class="img" style="background-image: url({{"img/thumbnail/6front@thumb.jpg" | absURL}});"></div>
+								    </div>
+									<div class="product-detail">
+										<div class="product-name text-truncate">
+											Cotton Rich Super Skinny Fit Jeans
+										</div>
+										<div class="product-size text-muted mb-1">
+											<span>Size: 2-4 years</span> <span>|</span> <span>Qty: 2</span>
+										</div>
+										<div class="product-price">
+											<div class="retail-price">
+												<span class="rs-symbol">₹</span> <span class="price">869</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="retail-price mt-2 mt-md-0">
+												<i class="fas fa-clock mr-1 text-muted"></i><span class="text-success font-weight-bold">Out of Delivery</span>
+												<span class="font-weight-bold">(Today)</span>
+									</div>
+								
+									</div>
+										<div class="dropdown">
+										<i class="fas fa-ellipsis-v fa-2x text-light" id="card-menu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+										<div class="dropdown-menu dropdown-menu-right shadow-lg" aria-labelledby="card-menu3">
+										    <button class="dropdown-item" type="button">Track Item</button>
+										    <button class="dropdown-item" type="button"> <a href="/kss/account/orders-details/">View Order Details</a></button>
+										  </div>
+										</div>
+								</div>
 						</li>
 					</ul>
+
+					<hr class="mt-4 mb-4">
+
+					<h6 class="font-weight-bold mb-2 ">Order No. #ABCD-21343-PQRS-02 </h6>
+					<ul class="cd-cart-items list-unstyled">
+					<li class="p-md-3 p-2 mb-3 card shadow-sm cursor-pointer">
+						<div class="row primary-info">
+								<div class="col-md-6">
+									<div class="product-img">
+								           <div class="img" style="background-image: url({{"img/thumbnail/6front@thumb.jpg" | absURL}});"></div>
+								    </div>
+									<div class="product-detail">
+										<div class="product-name text-truncate">
+											Cotton Rich Super Skinny Fit Jeans
+										</div>
+										<div class="product-size text-muted mb-1">
+											<span>Size: 2-4 years</span> <span>|</span> <span>Qty: 2</span>
+										</div>
+										<div class="product-price">
+											<div class="retail-price">
+												<span class="rs-symbol">₹</span> <span class="price">869</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="retail-price mt-2 mt-md-0">
+												<i class="fas fa-undo-alt mr-1 text-muted"></i><span class="text-warning font-weight-bold">Return Requested</span>
+									</div>
+									
+									</div>
+									<div class="dropdown">
+										<i class="fas fa-ellipsis-v fa-2x text-light" id="card-menu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+										<div class="dropdown-menu dropdown-menu-right shadow-lg" aria-labelledby="card-menu4">
+										      <button class="dropdown-item" type="button">Track Item</button>
+										    <button class="dropdown-item" type="button">Cancel Item</button>
+										    <button class="dropdown-item" type="button"> <a href="/kss/account/orders-details/">View Order Details</a></button>
+										  </div>
+										</div>
+								</div>
+						</li>
+						<li class="p-md-3 p-2 mb-3 card shadow-sm cursor-pointer">
+								<div class="row primary-info">
+								<div class="col-md-6">
+									<div class="product-img">
+								           <div class="img" style="background-image: url({{"img/thumbnail/6front@thumb.jpg" | absURL}});"></div>
+								    </div>
+									<div class="product-detail">
+										<div class="product-name text-truncate">
+											Cotton Rich Super Skinny Fit Jeans
+										</div>
+										<div class="product-size text-muted mb-1">
+											<span>Size: 2-4 years</span> <span>|</span> <span>Qty: 2</span>
+										</div>
+										<div class="product-price">
+											<div class="retail-price">
+												<span class="rs-symbol">₹</span> <span class="price">869</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="retail-price mt-2 mt-md-0">
+												<i class="fas fa-undo-alt mr-1 text-muted"></i> <span class="text-warning font-weight-bold">Return</span>
+												<span class="font-weight-bold">(Refund Issued)</span>
+									</div>
+								
+									</div>
+										<div class="dropdown">
+										<i class="fas fa-ellipsis-v fa-2x text-light" id="card-menu5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+										<div class="dropdown-menu dropdown-menu-right shadow-lg" aria-labelledby="card-menu5">
+										      <button class="dropdown-item" type="button">Track Item</button>
+										    <button class="dropdown-item" type="button">Cancel Item</button>
+										    <button class="dropdown-item" type="button"> <a href="/kss/account/orders-details/">View Order Details</a></button>
+										  </div>
+										</div>
+								</div>
+						</li>
+						<li class="p-md-3 p-2 mb-3 card shadow-sm cursor-pointer">
+							<div class="row primary-info">
+								<div class="col-md-6">
+									<div class="product-img">
+								           <div class="img" style="background-image: url({{"img/thumbnail/6front@thumb.jpg" | absURL}});"></div>
+								    </div>
+									<div class="product-detail">
+										<div class="product-name text-truncate">
+											Cotton Rich Super Skinny Fit Jeans
+										</div>
+										<div class="product-size text-muted mb-1">
+											<span>Size: 2-4 years</span> <span>|</span> <span>Qty: 2</span>
+										</div>
+										<div class="product-price">
+											<div class="retail-price">
+												<span class="rs-symbol">₹</span> <span class="price">869</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="retail-price mt-2 mt-md-0">
+											<i class="far fa-times-circle mr-1 text-muted"></i><span class="text-danger font-weight-bold">Cancelled</span>
+												<span class="font-weight-bold">(Sept 17, 2018)</span>
+									</div>
+									</div>
+										<div class="dropdown">
+										<i class="fas fa-ellipsis-v fa-2x text-light" id="card-menu6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+										<div class="dropdown-menu dropdown-menu-right shadow-lg" aria-labelledby="card-menu6">
+										    <button class="dropdown-item" type="button"> <a href="/kss/account/orders-details/">View Order Details</a></button>
+										  </div>
+										</div>
+
+								</div>
+						</li>
+						<li class="p-md-3 p-2 mb-3 card shadow-sm cursor-pointer">
+								<div class="row primary-info">
+								<div class="col-md-6">
+									<div class="product-img">
+								           <div class="img" style="background-image: url({{"img/thumbnail/6front@thumb.jpg" | absURL}});"></div>
+								    </div>
+									<div class="product-detail">
+										<div class="product-name text-truncate">
+											Cotton Rich Super Skinny Fit Jeans
+										</div>
+										<div class="product-size text-muted mb-1">
+											<span>Size: 2-4 years</span> <span>|</span> <span>Qty: 2</span>
+										</div>
+										<div class="product-price">
+											<div class="retail-price">
+												<span class="rs-symbol">₹</span> <span class="price">869</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="retail-price mt-2 mt-md-0">
+												<i class="far fa-check-circle mr-1 text-muted"></i> <span class="text-success font-weight-bold">Delivered</span>
+												<span class="font-weight-bold">(Sept 17, 2018)</span>
+									</div>
+								
+									</div>
+										<div class="dropdown">
+										<i class="fas fa-ellipsis-v fa-2x text-light" id="card-menu7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+										<div class="dropdown-menu dropdown-menu-right shadow-lg" aria-labelledby="card-menu7">
+										    <button class="dropdown-item" type="button"> <a href="/kss/account/orders-details/">View Order Details</a></button>
+										  </div>
+										</div>
+
+								</div>
+
+						</li>
+					</ul>
+					<hr>
+
+					<h6 class="font-weight-bold mt-4">Order No. #ABCD-2134E-PQRS-02 </h6>
+					<!-- COD Cash On Delivery UI-->
+					<ul class="cd-cart-items list-unstyled">
+					<li class="p-md-3 p-2 mb-3 card shadow-sm cursor-pointer">
+						<div class="row primary-info">
+								<div class="col-md-6">
+									<div class="product-img">
+								           <div class="img" style="background-image: url({{"img/thumbnail/6front@thumb.jpg" | absURL}});"></div>
+								    </div>
+									<div class="product-detail">
+										<div class="product-name text-truncate">
+											Cotton Rich Super Skinny Fit Jeans
+										</div>
+										<div class="product-size text-muted mb-1">
+											<span>Size: 2-4 years</span> <span>|</span> <span>Qty: 2</span>
+										</div>
+										<div class="product-price">
+											<div class="retail-price">
+												<span class="rs-symbol">₹</span> <span class="price">869</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="retail-price mt-2 mt-md-0 ">
+											<i class="fas fa-inbox mr-1 text-muted"></i><span class="text-success font-weight-bold">In Transit</span>
+												<span class="font-weight-bold">(Arriving 30 Aug)</span>
+									</div>
+								
+									</div>
+										<div class="dropdown">
+										<i class="fas fa-ellipsis-v fa-2x text-light" id="card-menu15" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+										<div class="dropdown-menu dropdown-menu-right shadow-lg" aria-labelledby="card-menu15">
+										      <button class="dropdown-item" type="button">Track Item</button>
+										    <button class="dropdown-item" type="button">Cancel Item</button>
+										    <button class="dropdown-item" type="button"> <a href="/kss/account/orders-details-cod/">View Order Details</a></button>
+										  </div>
+										</div>
+								</div>
+						</li>
+						</ul>
+
+					<button type="button" class="btn btn-outline-dark btn-lg m-auto d-block">View Old Orders</button>
+					<br>
 				</div>
 			</div>
 		</div>
