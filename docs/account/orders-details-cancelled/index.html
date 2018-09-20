@@ -21,7 +21,7 @@
 
     <link rel="stylesheet" type="text/css" href="https://jeromie.github.io/kss/css/combine.css">
 
-    <title>Profile</title>
+    <title>orders-details-cancelled</title>
   </head>
   <body><div class="header">
   <div class="container pl-2 pl-sm-0 pr-2 pr-sm-0">
@@ -103,104 +103,191 @@
     </nav>
   </div>
 </div>
-	<div class="container mt-5">
-		<h1 class="kss-title text-secondary font-weight-bold mb-1">Account</h1>
-		<h6 class="text-muted">Tony Stark</h6>
-		<hr>
-
+	<div class="container mt-3">
 		<div class="row">
-			<div class="col-sm-2 border-right"><div class="list-group list-group-flush">
-	
-	<a id="list-menu" class="list-group-item text-gray py-4"><i class="fas fa-box-open mr-1 text-secondary"></i> Orders
-		<i class="fas fa-angle-right float-right fa-1x mt-1"></i>
-	</a>
-	<a href="/kss/account/profile/" class="list-group-item text-gray py-4"><i class="far fa-user mr-1 text-secondary"></i> Profile <i class="fas fa-angle-right float-right fa-1x mt-1"></i></a>
-	<a href="#" class="list-group-item text-gray py-4"><i class="fas fa-map-marker-alt mr-1 text-secondary"></i> Addresses <i class="fas fa-angle-right float-right fa-1x mt-1"></i></a>
-	<a href="#" class="list-group-item text-gray py-4"><i class="far fa-credit-card mr-1 text-secondary"></i> Cards <i class="fas fa-angle-right float-right fa-1x mt-1"></i></a>
-	<a href="#" class="list-group-item text-gray py-4"><i class="fas fa-sign-out-alt mr-1 text-secondary"></i> Sign Out <i class="fas fa-angle-right float-right fa-1x mt-1"></i></a>
-</div></div>
-			<div class="col-sm-10">
-				<div class=" p-4">
-					<h4>Profile</h4>
-					<hr>
+			<div class="col-12">
+				<div class="d-none d-md-block">
+					   <nav aria-label="breadcrumb">
+	                    <ol class="breadcrumb mb-1 bg-transparent p-0">
+	                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+	                        <li class="breadcrumb-item"><a href="/kss/account/orders/">Accounts</a></li>
+	                        <li class="breadcrumb-item active"><a href="#">Order Details</a></li>
+	                    </ol>
+	                  </nav>
+                 </div>
+                 	<div class="d-block d-md-none">
+                  <div class="d-flex align-items-center mt-2">
+		            <div class="pr-3">
+		            	<a href="/kss/account/orders/">
+		              <h3  id="back-to-orders" class="m-0 font-weight-bold kss_highlight">
+		                <img class="btn-back kss_highlight" src="https://jeromie.github.io/kss/img/left-arrow.png" style="width:20px;"/>
+		              </h3>
+		          </a>
+		            </div>
+		            <div class="">
+		              <h5 class="modal-title font-weight-bold mt-1">Back to My Orders</h5>
+		            </div>
+		          </div>
+		          <hr>
+		      </div>
+                 <h1 class="w-100 kss-title m-0 text-gray font-weight-bold">
+                    View Order Details
+                 </h1>
+			</div>
+		</div>
+		<div class="row mt-4">
 
-					<div class="p-3 mb-3 card shadow-sm d-block">
-						<h5 class="font-weight-bold text-dark mb-3">Primary Info</h5>
-						<div class="row mb-2">
-							<div class="col-sm-2">First Name</div>
-							<label class="mb-0 col-sm-10">Tony</label>
-						</div>
-						<div class="row mb-2">
-							<div class="col-sm-2">Last Name</div>
-							<label class="mb-0 col-sm-10">Stark</label>
-						</div>
-						<div class="row mb-2">
-							<div class="col-sm-2">Gender</div>
-							<label class="mb-0 col-sm-10">Male</label>
-						</div>
-						<div class="row mb-2">
-							<div class="col-sm-2">Date of birth</div>
-							<label class="mb-0 col-sm-10">-</label>
-						</div>
-						<div class="row mb-2">
-							<div class="col-sm-2">Mobile Number</div>
-							<label class="mb-0 col-sm-10">9822334455</label>
-						</div>
-						<div class="row mb-2">
-							<div class="col-sm-2">Location</div>
-							<label class="mb-0 col-sm-10">-</label>
-						</div>
-						<div class="row mb-2">
-							<div class="col-sm-2">E-mail id</div>
-							<label class="mb-0 col-sm-10">tony@avengers.com</label>
-						</div>
-
-						<button type="button" class="btn btn-primary mt-3">Edit Details</button>
+			<div class="col-md-8">
+				<hr class="d-none d-md-block">
+				<div class="row justify-content-end">
+					<div class="col">
+						Order No.
+					  	<h6 class="font-weight-bold mt-1 ">#ABCD-2134E-PQRS-02</h6>
+					</div>
+					<div class="col">
+						Total amount:
+					  	<h6 class="font-weight-bold mt-1">₹ 869 for 1 items </h6>
+					</div>
+					<div class="col-xl-2 col-sm-3  mt-3 mt-md-0">
+						Placed on:
+					  	<h6 class="font-weight-bold mt-1 "><i class="far fa-calendar-alt"></i> 20 Aug 2018 </h6>
 					</div>
 
-					<div class="p-3 mb-3 card shadow-sm d-block">
-						<h5 class="font-weight-bold text-dark mb-3">Email Preferences</h5>
+				</div>
+				
+					<hr class="mb-5">
+					<div class="d-flex bd-highlight">
+					  <div class="pb-2 pr-5">
+					  	<label class="d-block m-0">Product Details</label>
+							<i class="cursor-pointer far fa-times-circle mr-1 text-muted"></i><span class="text-danger font-weight-bold">Cancelled</span>
+												<span class="font-weight-bold">(Sept 17, 2018)</span>
+					  </div>
+					  <div class="pb-2 ml-auto">
+					  	Total:
+					  	<h6 class="mt-1">₹ 869 for 1 item</h6>
+					  </div>
+					</div>
+				  <div id="kss_shipment" class="card shadow-sm mt-2 mb-5">
+				  <div class="card-body">
+				    <div class="primary-info  d-xl-flex">
+					
+					<div class="kss_product_list flex-grow-1 pr-0 pr-md-4">
+							<div class="product-img">
+										<div class="img" style="background-image: url(https://jeromie.github.io/kss/img/4front.jpg);"></div>
+									</div>
+									<div class="product-detail">
+										<div class="product-name text-truncate">
+											Cotton Rich Super Skinny Fit Jeans
+										</div>
+										<div class="product-size text-muted mb-1">
+											<span>Size: 2-4 years</span> <span>|</span> <span>Qty: 1</span>
+										</div>
+										<div class="product-price">
+											<div class="retail-price">
+												<span class="rs-symbol">₹</span> <span class="price">869</span>
+											</div>
+										</div>
+									
+									</div>
+								<hr class="mt-4 mb-4">
+									<div class="product-img">
+										<div class="img" style="background-image: url(https://jeromie.github.io/kss/img/4front.jpg);"></div>
+									</div>
+									<div class="product-detail">
+										<div class="product-name text-truncate">
+											Cotton Rich Super Skinny Fit Jeans
+										</div>
+										<div class="product-size text-muted mb-1">
+											<span>Size: 2-4 years</span> <span>|</span> <span>Qty: 1</span>
+										</div>
+										<div class="product-price">
+											<div class="retail-price">
+												<span class="rs-symbol">₹</span> <span class="price">869</span>
+											</div>
+										</div>
+									
+									</div>
+					</div>
+				
 
-						<label>I want to hear from you:</label>
-						<div class="custom-control custom-radio">
-							<input type="radio" id="emailpref1" name="emailpref" class="custom-control-input">
-							<label class="custom-control-label" for="emailpref1">All the time.</label> Send me every email!
-						</div>
-						<div class="custom-control custom-radio">
-							<input type="radio" id="emailpref2" name="emailpref" class="custom-control-input">
-							<label class="custom-control-label" for="emailpref2">Sometimes.</label> Send me fewer emails per week.
-						</div>
-						<div class="custom-control custom-radio">
-							<input type="radio" id="emailpref3" name="emailpref" class="custom-control-input">
-							<label class="custom-control-label" for="emailpref3">Sometimes.</label> Unsubscribe me from your email list.
-						</div>
-
-						<button type="button" class="btn btn-primary mt-3">Update Preferences</button>
 					</div>
 
-					<div class="p-3 mb-3 card shadow-sm d-block">
-						<h5 class="font-weight-bold text-dark mb-3">Kidsuperstore.in Profile</h5>
+				  </div>
+				</div>
 
-						<div>
-							<div class="row mb-2">
-								<div class="col-sm-2">Age</div>
-								<label class="mb-0 col-sm-10">8</label>
-							</div>
-							<div class="row mb-2">
-								<div class="col-sm-2">Top Size</div>
-								<label class="mb-0 col-sm-10">5</label>
-							</div>
-							<div class="row mb-2">
-								<div class="col-sm-2">Bottom Size</div>
-								<label class="mb-0 col-sm-10">5</label>
-							</div>
-							<div>
-								<a href="#">Edit Profile</a>
-							</div>
-						</div>
-						<button type="button" class="btn btn-primary mt-3">Add Profile</button>
-					</div>
+				
+			</div>
+			
+			<div class="col-md-4">
+                 <label class="">Payment Information</label>
+           
+                 <div class="card shadow-sm">
+                 	
+				  <div class="card-body text-muted d-flex">
+				    Payment Mode:<i class="icon-master-card mr-1 ml-1"></i> <strong>ending in 1333</strong> 
 
+				  </div>
+				</div>
+
+				 <label class="mt-4">Shipping Address</label>
+                 <div class="card shadow-sm">
+				  <div class="card-body">
+				  
+									<h3 class="kss-title font-weight-bold text-muted">Amit Shah</h3>
+								<p class="text-muted">
+									Maharaja Sayaji Gaikwad Udyog Bhawan Survey Number 152-152, Pune, Maharashtra 411007
+								</p>
+								<p class="text-muted">
+									Mobile: <b class="font-weight-bold">+91 8407917773</b>
+								</p>
+						
+				  </div>
+				</div>
+				<label class="mt-4">Order Summary</label>
+                 <div class="card shadow-sm">
+				  <div class="card-body">
+
+      <div class="d-flex justify-content-between py-1">
+        <div>
+          <label class="text-muted f-w-4 m-0">
+            Cart Total
+          </label>
+        </div>
+        <div> ₹1309 </div>
+      </div>
+      <div class="d-flex justify-content-between py-1">
+        <div><label class="text-muted f-w-4 m-0">Cart Discount</label></div>
+        <div class="text-success">- ₹440</div>
+      </div>
+      <div class="d-flex justify-content-between py-1">
+        <div><label class="text-muted f-w-4 m-0">Estimated Tax</label></div>
+        <div>₹180</div>
+      </div>
+      <div class="d-flex justify-content-between py-1">
+        <div><label class="text-muted f-w-4 m-0">Coupon Discount</label></div>
+        <div class="text-success">- ₹20</div>
+      </div>
+
+    <div class="d-flex justify-content-between py-1">
+      <div>
+        <label class="text-muted f-w-4 m-0">
+          Order Total 
+        </label>
+      </div>
+      <div> ₹1029 </div>
+    </div>
+    <div class="d-flex justify-content-between py-1">
+      <div><label class="text-muted f-w-4 m-0">Shipping Fee</label></div>
+      <div class="">₹100</div>
+    </div>
+    <hr class="dashed">
+    <div class="cd-cart-total">
+    <h5 class="font-weight-bold">Total <span>₹ 2,519</span></h5>
+  </div>
+  </div>
+ 
+   </div>
+				  </div>
 				</div>
 			</div>
 		</div>
