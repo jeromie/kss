@@ -11,7 +11,7 @@
 	                    </ol>
 	                  </nav>
                  </div>
-                 	<div class="d-block d-md-none">
+                 	<div >
                   <div class="d-flex align-items-center mt-2">
 		            <div class="pr-3">
 		            	<a href="/kss/account/orders/">
@@ -21,20 +21,21 @@
 		          </a>
 		            </div>
 		            <div class="">
-		              <h5 class="modal-title font-weight-bold mt-1">Back to My Orders</h5>
+		              <h5 class="modal-title font-weight-bold mt-1">Order Details</h5>
+		            </div>
+		             <div class="ml-auto">
+		              <button type="button" class="btn btn-outline-dark"><i class="fas fa-print"></i> Print Invoice</button>
 		            </div>
 		          </div>
-		          <hr>
+		       
 		      </div>
-                 <h1 class="w-100 kss-title m-0 text-gray font-weight-bold">
-                    View Order Details
-                 </h1>
+              
 			</div>
 		</div>
-		<div class="row mt-4">
+		<div class="row mt-2">
 
 			<div class="col-md-8">
-				<hr class="d-none d-md-block">
+				<hr>
 				<div class="row justify-content-end">
 					<div class="col">
 						Order No.
@@ -98,10 +99,27 @@
 										</div>
 									
 									</div>
-									<h6 class="mt-2">Delivery Estimate: <strong class="font-weight-bold text-success">Arriving 30 Aug - 3 Sept </strong></h6>
-										<div class="progress" style="height:7px;">
-								  <div class="progress-bar bg-success" role="progressbar" style="width: 15%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
+									
+								<div class="status-progress-wrap">
+										  <div  class="status-progress-bar-wrap">
+										    <div style="width:10%;" class="status-progress-bar">
+										    </div>
+										  </div>  
+										  <div class="status-wrap active">
+										    Ordered		
+										  </div>
+										  <div class="status-wrap text-light">
+										    Packed
+										  </div>
+										  <div class="status-wrap text-light">
+										    Shipped
+										  </div>
+										  <div class="status-wrap text-light">
+										    Delivered
+										  </div>
+									</div>
+									<h6 class="mt-2">Your Order has been placed</h6>
+										<h6 class="mt-3">Delivery Estimate: <strong class="font-weight-bold text-info">Arriving 30 Aug - 3 Sept </strong></h6>
 					</div>
 					<div class="ml-auto mt-4 mt-md-0 col-12 col-md-3 p-0">
 						<button type="button" class="btn btn-outline-dark btn-block">Cancel Item</button>
@@ -165,10 +183,27 @@
 										</div>
 									
 									</div>
-									<h6 class="mt-2">Delivery Estimate: <strong class="font-weight-bold text-success">Arriving Today </strong></h6>
-										<div class="progress" style="height:7px;">
-								  <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
+									
+									<div class="status-progress-wrap">
+										  <div  class="status-progress-bar-wrap">
+										    <div style="width:90%;" class="status-progress-bar">
+										    </div>
+										  </div>  
+										  <div class="status-wrap active">
+										    Ordered		
+										  </div>
+										  <div class="status-wrap active">
+										    Packed
+										  </div>
+										  <div class="status-wrap active">
+										    Shipped
+										  </div>
+										  <div class="status-wrap text-light">
+										    Delivered
+										  </div>
+									</div>
+									<h6 class="mt-2">Your Item is <strong>out for delivery</strong> and will arrive today (updated 10 mins ago)</h6>
+										<h6 class="mt-3">Delivery Estimate: <strong class="font-weight-bold text-info">Arriving 30 Aug - 3 Sept </strong></h6>
 					</div>
 					<div class="ml-auto mt-4 mt-md-0 col-12 col-md-3 p-0">
 						<button type="button" class="btn btn-outline-dark btn-block">Cancel Item</button>
@@ -178,6 +213,9 @@
 					</div>
 
 				  </div>
+				</div>
+				<div class="d-flex  align-self-center mb-4">
+				<label><i class="fas fa-question-circle fa-1x "></i> Need help with this order? <a href="#">Visit our help center</a></label>
 				</div>
 			</div>
 			
