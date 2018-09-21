@@ -84,11 +84,13 @@ $(document).ready(function() {
             }
         });
 
-        $('#list-menu').click(function() {
-            $(".slide-right-fixed").addClass("active");
-            $("footer").addClass("d-none");
-        })
-
+        // $('#list-menu').click(function() {
+        //     $(".slide-right-fixed").addClass("active");
+        //     $("footer").addClass("d-none");
+        // })
+        // jQuery(window).on("load", function() {
+        // $('#list-menu').removeAttr('href');
+        // });
 
     } else {
         $('.kss_zoom a').removeClass('js-smartphoto');

@@ -21,7 +21,7 @@
 
     <link rel="stylesheet" type="text/css" href="https://jeromie.github.io/kss/css/combine.css">
 
-    <title>orders-details-failed</title>
+    <title>wishlist</title>
   </head>
   <body><div class="header">
   <div class="container pl-2 pl-sm-0 pr-2 pr-sm-0">
@@ -103,215 +103,59 @@
     </nav>
   </div>
 </div>
-	<div class="container mt-3">
+	<div class="container mt-3 ">
+		<div class="d-none d-sm-block">
+			   <nav aria-label="breadcrumb ">
+                    <ol class="breadcrumb mb-1 bg-transparent p-0">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active"><a href="#">Accounts</a></li>
+                    </ol>
+                  </nav>
+                 <h1 class="w-100 kss-title m-0 text-gray font-weight-bold ">
+                   Account
+                 </h1>
+	
+		<h6 class="text-muted mb-4">Tony Stark</h6>
+	</div>
+
+<hr class="m-0">
 		<div class="row">
-			<div class="col-12">
-				<div class="d-none d-md-block">
-					   <nav aria-label="breadcrumb">
-	                    <ol class="breadcrumb mb-1 bg-transparent p-0">
-	                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-	                        <li class="breadcrumb-item"><a href="/kss/account/orders/">Accounts</a></li>
-	                        <li class="breadcrumb-item active"><a href="#">Order Details</a></li>
-	                    </ol>
-	                  </nav>
-                 </div>
-                 	<div >
-                  <div class="d-flex align-items-center mt-2">
-		            <div class="pr-3">
-		            	<a href="/kss/account/orders/">
-		              <h3  id="back-to-orders" class="m-0 font-weight-bold kss_highlight">
+			<div class="col-sm-3 col-lg-2 border-right d-none d-md-block"><div class="list-group list-group-flush">
+	
+	<a id="list-menu" href="/kss/account/orders/" class="list-group-item text-gray py-4"><i class="fas fa-box-open mr-1 text-secondary"></i> Orders
+		<i class="fas fa-angle-right float-right fa-1x mt-1"></i>
+	</a>
+	<a id="profile-menu" href="/kss/account/profile/" class="list-group-item text-gray py-4"><i class="far fa-user mr-1 text-secondary"></i> Profile <i class="fas fa-angle-right float-right fa-1x mt-1"></i></a>
+	<a href="#" class="list-group-item text-gray py-4"><i class="fas fa-map-marker-alt mr-1 text-secondary"></i> Addresses <i class="fas fa-angle-right float-right fa-1x mt-1"></i></a>
+	<a href="/kss/account/wishlist/" class="list-group-item text-gray py-4"><i class="far fa-heart mr-1 text-secondary"></i> My Wishlist <i class="fas fa-angle-right float-right fa-1x mt-1"></i></a>
+	<a href="#" class="list-group-item text-gray py-4"><i class="fas fa-sign-out-alt mr-1 text-secondary"></i> Sign Out <i class="fas fa-angle-right float-right fa-1x mt-1"></i></a>
+</div></div>
+			<div class="col-sm-9 col-lg-10">
+			
+				<div class=" p-md-4 p-0">
+						<div class="d-flex align-items-top">
+		            <div class="pr-3 d-block d-md-none">
+		            	<a href="/kss/account/overview/">
+		              <h4  id="back-to-orders" class="m-0 font-weight-bold kss_highlight">
 		                <img class="btn-back kss_highlight" src="https://jeromie.github.io/kss/img/left-arrow.png" style="width:20px;"/>
-		              </h3>
+		              </h4>
 		          </a>
 		            </div>
 		            <div class="">
-		              <h5 class="modal-title font-weight-bold mt-1">Order Details</h5>
-		            </div>
-		             <div class="ml-auto">
-		              <button type="button" class="btn btn-outline-dark"><i class="fas fa-print"></i> Print Invoice</button>
+		              <h4>My Wishlist <span class="text-muted "><strong>&#183;</strong>2 items</span></h4>
 		            </div>
 		          </div>
-		       
-		      </div>
-              
-			</div>
-		</div>
-		<div class="row mt-2">
+					<hr>
 
-			<div class="col-md-8">
-				<hr>
-				<div class="row justify-content-end">
-					<div class="col">
-						Order No.
-					  	<h6 class="font-weight-bold mt-1 ">#ABCD-2134E-PQRS-02</h6>
-					</div>
-					<div class="col">
-						Total amount:
-					  	<h6 class="font-weight-bold mt-1 ">₹ 869 for 1 items </h6>
-					</div>
-					<div class="col-xl-2 col-sm-3  mt-3 mt-md-0">
-						Placed on:
-					  	<h6 class="font-weight-bold mt-1 "><i class="far fa-calendar-alt"></i> 20 Aug 2018 </h6>
-					</div>
-
-				</div>
-				
-					<hr class="mb-5">
-					<div class="d-flex bd-highlight">
-					  <div class="pb-2 pr-5">
-					  	<label class="d-block m-0">Product Details</label>
-								<i class="fas fa-exclamation-circle mr-1 text-muted"></i>
-							   <span class="text-danger font-weight-bold"> Payment Failed</span>
-					  </div>
-					  <div class="pb-2 ml-auto">
-					  	Total:
-					  	<h6 class="mt-1">₹ 869 for 1 item</h6>
-					  </div>
-					</div>
-				  <div id="kss_shipment" class="card shadow-sm mt-2 mb-5">
-				  <div class="card-body">
-				    <div class="primary-info  d-xl-flex">
-					
-					<div class="kss_product_list flex-grow-1 pr-0 pr-md-4">
-							<a href="/kss/product/" class="text-black">
-							<div class="product-img">
-										<div class="img" style="background-image: url(https://jeromie.github.io/kss/img/4front.jpg);"></div>
-									</div>
-									<div class="product-detail">
-										<div class="product-name text-truncate">
-											Cotton Rich Super Skinny Fit Jeans
-										</div>
-										<div class="product-size text-muted mb-1">
-											<span>Size: 2-4 years</span> <span>|</span> <span>Qty: 1</span>
-										</div>
-										<div class="product-price">
-											<div class="retail-price">
-												<span class="rs-symbol">₹</span> <span class="price">869</span>
-											</div>
-										</div>
-									
-									</div>
-								</a>
-								<hr class="mt-4 mb-4">
-									<div class="product-img">
-										<div class="img" style="background-image: url(https://jeromie.github.io/kss/img/4front.jpg);"></div>
-									</div>
-									<div class="product-detail">
-										<div class="product-name text-truncate">
-											Cotton Rich Super Skinny Fit Jeans
-										</div>
-										<div class="product-size text-muted mb-1">
-											<span>Size: 2-4 years</span> <span>|</span> <span>Qty: 1</span>
-										</div>
-										<div class="product-price">
-											<div class="retail-price">
-												<span class="rs-symbol">₹</span> <span class="price">869</span>
-											</div>
-										</div>
-									
-									</div>
-					</div>
-					<div class="ml-auto mt-4 mt-md-0 col-12 col-md-3 p-0">
-						<button type="button" class="btn btn-outline-dark btn-block">Cancel Item</button>
-						<button type="button" class="btn btn-primary btn-block"> <i class="fas fa-redo"></i> Retry Payment</button>
-						<br>
-						 <sm><i class="fas fa-exclamation-circle mr-1 "></i> Facing Issue For Online Payment Try Cash on Delivery</sm>
-					</div>
-
-					</div>
-
-				  </div>
-				</div>
-				<div class="d-flex  align-self-center mb-4">
-				<label><i class="fas fa-question-circle fa-1x "></i> Need help with this order? <a href="#">Visit our help center</a></label>
-				</div>
-				
-			</div>
-			
-			<div class="col-md-4">
-                 <label class="">Payment Information</label>
-                 <div class="alert alert-danger" role="alert">
-						 <i class="fas fa-exclamation-circle mr-1 "></i> Your bank hasn't confirmed this payment. We will continue to check for status with your bank. Please try again in 4 hours.
-					</div>
-                 <div class="card shadow-sm">
-                 	
-				  <div class="card-body text-muted d-flex">
-				    Payment Mode:<i class="icon-master-card mr-1 ml-1"></i> <strong>ending in 1333</strong> 
-
-				  </div>
-				</div>
-
-				 <label class="mt-4">Shipping Address</label>
-                 <div class="card shadow-sm">
-				  <div class="card-body">
-				  
-									<h3 class="kss-title font-weight-bold text-muted">Amit Shah</h3>
-								<p class="text-muted">
-									Maharaja Sayaji Gaikwad Udyog Bhawan Survey Number 152-152, Pune, Maharashtra 411007
-								</p>
-								<p class="text-muted">
-									Mobile: <b class="font-weight-bold">+91 8407917773</b>
-								</p>
-						
-				  </div>
-				</div>
-				<label class="mt-4">Order Summary</label>
-                 <div class="card shadow-sm">
-				  <div class="card-body">
-
-      <div class="d-flex justify-content-between py-1">
-        <div>
-          <label class="text-muted f-w-4 m-0">
-            Cart Total
-          </label>
-        </div>
-        <div> ₹1309 </div>
-      </div>
-      <div class="d-flex justify-content-between py-1">
-        <div><label class="text-muted f-w-4 m-0">Cart Discount</label></div>
-        <div class="text-success">- ₹440</div>
-      </div>
-      <div class="d-flex justify-content-between py-1">
-        <div><label class="text-muted f-w-4 m-0">Estimated Tax</label></div>
-        <div>₹180</div>
-      </div>
-      <div class="d-flex justify-content-between py-1">
-        <div><label class="text-muted f-w-4 m-0">Coupon Discount</label></div>
-        <div class="text-success">- ₹20</div>
-      </div>
-
-    <div class="d-flex justify-content-between py-1">
-      <div>
-        <label class="text-muted f-w-4 m-0">
-          Order Total 
-        </label>
-      </div>
-      <div> ₹1029 </div>
-    </div>
-    <div class="d-flex justify-content-between py-1">
-      <div><label class="text-muted f-w-4 m-0">Shipping Fee</label></div>
-      <div class="">₹100</div>
-    </div>
-    <hr class="dashed">
-    <div class="cd-cart-total">
-    <h5 class="font-weight-bold">Total <span>₹ 2,519</span></h5>
-  </div>
-  </div>
- 
-   </div>
-				  </div>
-				</div>
-			</div>
-					<div id="similar" class="container">
-		<hr class="mt-5" >
-		<h3 class="text-left my-4 font-weight-bold">Customers who bought Cotton Rich Super Skinny Fit Jeans also bought</h3>
-	  <div id="card-list" class="row">
-            <div class="col-lg-3 col-md-6 mb-4 col-6  ">
+		  <div id="card-list" class="row">
+            <div class="col-lg-4 col-md-6 mb-4 col-6  ">
               <div class="card h-100 product-card">
-              	<i class="fas fa-heart kss_heart"></i>
+             
+              <span class="badge badge-light kss_cross"><i class="fas fa-times"></i></span>
                 <a href="/kss/product/" >
                   <div class="image oh loading loading-01">
                   <img data-src="https://jeromie.github.io/kss/img/normal/bluefront@1x.jpg" data-srcset="https://jeromie.github.io/kss/img/normal/bluefront@1x.jpg 1x, https://jeromie.github.io/kss/img/2x/bluefront@2x.jpg 2x" class="lazyload card-img-top" />
+                  
                  </div>
                 </a>
                 <div class="card-body">
@@ -322,15 +166,17 @@
                   </a>
                   <div class="kss-price kss-price--smaller">₹869 <small class="kss-original-price text-muted">₹1309</small><span class="kss-discount text-danger">20% OFF</span></div>
                 </div>
+                 	<div class="cart-btn"><button type="button" class="btn btn-lg btn-outline-dark m-auto btn-block"><i class="fas fa-shopping-cart"></i>  Move To Cart</button></div>
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 mb-4 col-6  ">
+            <div class="col-lg-4 col-md-6 mb-4 col-6  ">
            	  <div class="card h-100 product-card">
-           	 		<i class="fas fa-heart kss_heart"></i>
+           	 		  <span class="badge badge-light kss_cross"><i class="fas fa-times"></i></span>
                 <a href="/kss/product/">
                    <div class="image oh loading loading-02">
                   <img data-src="https://jeromie.github.io/kss/img/normal/orangefront@1x.jpg" data-srcset="https://jeromie.github.io/kss/img/normal/orangefront@1x.jpg 1x, https://jeromie.github.io/kss/img/2x/orangefront@2x.jpg 2x" class="lazyload card-img-top" />
+                 
                 </div>
                 </a>
                 <div class="card-body">
@@ -341,47 +187,16 @@
                   </a>
                   <div class="kss-price kss-price--smaller">₹869 <small class="kss-original-price text-muted">₹1309</small><span class="kss-discount text-danger">20% OFF</span></div>
                 </div>
+                <div class="cart-btn"><button type="button" class="btn btn-lg btn-outline-dark m-auto btn-block"><i class="fas fa-shopping-cart"></i>  Move To Cart</button></div>
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 mb-4 col-6   ">
-              <div class="card h-100 product-card">
-              	<i class="fas fa-heart kss_heart"></i>
-                <a href="/kss/product/">
-                   <div class="image oh loading loading-03">
-                        <img data-src="https://jeromie.github.io/kss/img/normal/red1front@1x.jpg" data-srcset="https://jeromie.github.io/kss/img/normal/red1front@1x.jpg 1x, https://jeromie.github.io/kss/img/2x/red1front@2x.jpg 2x" class="lazyload card-img-top" />
-                    </div>
-                </a>
-                <div class="card-body">
-                  <a href="/kss/product/" class="text-dark">
-                    <h5 class="card-title">
-                      Cotton Rich Super Skinny Fit Jeans
-                    </h5>
-                  </a>
-                  <div class="kss-price kss-price--smaller">₹869 <small class="kss-original-price text-muted">₹1309</small><span class="kss-discount text-danger">20% OFF</span></div>
-                </div>
-              </div>
-            </div>
-                <div class="col-lg-3 col-md-6 mb-4 col-6 ">
-              <div class="card h-100 product-card">
-                <i class="fas fa-heart kss_heart"></i>
-                <a href="/kss/product/">
-                   <div class="image oh loading loading-04">
-                   <img data-src="https://jeromie.github.io/kss/img/normal/redbluefront@1x.jpg"  data-srcset="https://jeromie.github.io/kss/img/normal/redbluefront@1x.jpg 1x, https://jeromie.github.io/kss/img/2x/redbluefront@2x.jpg 2x" class="lazyload card-img-top" />
-                 </div>
-                </a>
-                <div class="card-body">
-                  <a href="/kss/product/" class="text-dark">
-                    <h5 class="card-title">
-                      Cotton Rich Super Skinny Fit Jeans
-                    </h5>
-             	    </a>
-                  <div class="kss-price kss-price--smaller">₹869 <small class="kss-original-price text-muted">₹1309</small><span class="kss-discount text-danger">20% OFF</span></div>
-                </div>
-              </div>
-            </div>
+            
+             
         </div>
-	</div>
+
+				</div>
+			</div>
 		</div>
 	</div>
 

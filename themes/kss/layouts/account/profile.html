@@ -1,16 +1,39 @@
 {{ define "main" }}
-	<div class="container mt-5">
-		<h1 class="kss-title text-secondary font-weight-bold mb-1">Account</h1>
-		<h6 class="text-muted">Tony Stark</h6>
-		<hr>
+	<div class="container mt-3 ">
+		<div class="d-none d-sm-block">
+			   <nav aria-label="breadcrumb ">
+                    <ol class="breadcrumb mb-1 bg-transparent p-0">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active"><a href="#">Accounts</a></li>
+                    </ol>
+                  </nav>
+                 <h1 class="w-100 kss-title m-0 text-gray font-weight-bold ">
+                   Account
+                 </h1>
+	
+		<h6 class="text-muted mb-4">Tony Stark</h6>
+	</div>
+<hr class="m-0">
 
 		<div class="row">
-			<div class="col-sm-2 border-right">
+			<div class="col-sm-3 col-lg-2 border-right d-none d-md-block">
 				{{- partial "account_menu.html" . -}}
 			</div>
-			<div class="col-sm-10">
-				<div class=" p-4">
-					<h4>Profile</h4>
+			<div class="col-sm-9 col-lg-10 ">
+				
+				<div class=" p-md-4 p-0">
+					 <div class="d-flex align-items-top ">
+		            <div class="pr-3 d-block d-md-none">
+		            	<a href="/kss/account/overview/">
+		              <h4  id="back-to-orders" class="m-0 font-weight-bold kss_highlight">
+		                <img class="btn-back kss_highlight" src="{{"img/left-arrow.png" | absURL}}" style="width:20px;"/>
+		              </h4>
+		          </a>
+		            </div>
+		            <div class="">
+		              <h4 class="m-0"> Profile</h4>
+		            </div>
+		          </div>
 					<hr>
 
 					<div class="p-3 mb-3 card shadow-sm d-block">

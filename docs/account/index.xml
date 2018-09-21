@@ -101,5 +101,23 @@
       <description></description>
     </item>
     
+    <item>
+      <title>overview</title>
+      <link>https://jeromie.github.io/kss/account/overview/</link>
+      <pubDate>Mon, 04 Jun 2018 12:57:20 +0530</pubDate>
+      
+      <guid>https://jeromie.github.io/kss/account/overview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wishlist</title>
+      <link>https://jeromie.github.io/kss/account/wishlist/</link>
+      <pubDate>Mon, 04 Jun 2018 12:57:20 +0530</pubDate>
+      
+      <guid>https://jeromie.github.io/kss/account/wishlist/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
