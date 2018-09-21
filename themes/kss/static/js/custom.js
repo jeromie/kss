@@ -84,6 +84,21 @@ $(document).ready(function() {
             }
         });
 
+                    /* ========================================== 
+            scrollTop() >= 300
+            Should be equal the the height of the header
+            ========================================== */
+
+            $(window).scroll(function(){
+                if ($(window).scrollTop() >= 300) {
+                    $('.top-navbar').addClass('sticky-menu');
+                }
+                else {
+                    $('.top-navbar').removeClass('sticky-menu');
+
+                }
+            });
+
         // $('#list-menu').click(function() {
         //     $(".slide-right-fixed").addClass("active");
         //     $("footer").addClass("d-none");
