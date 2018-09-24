@@ -52,6 +52,9 @@ $(document).ready(function() {
     jQuery("#filter").click(function() {
         jQuery(".kss_filter").addClass("kss_filter_mobile");
     });
+
+  
+
      jQuery(".cd-add-to-cart").click(function() {
       jQuery( ".kss_sizes" ).toggleClass( "shake" );
     });
@@ -165,6 +168,18 @@ $(document).ready(function() {
         $menu_navigation.removeClass('speed-in');
         toggle_panel_visibility($lateral_cart, $shadow_layer, $('body'));
         $("body").addClass("hide-scroll");
+    });
+     jQuery("#new-address").click(function() {
+        event.preventDefault();
+        //close lateral menu (if it's open)
+           $(".kss_shipping").addClass("slide-show");
+    $(".kss_shipping  .fixed-bottom").removeClass('d-none');
+    $(".kss_shipping  .fixed-bottom").addClass('d-block');
+        $menu_navigation.removeClass('speed-in');
+        toggle_panel_visibility($lateral_cart, $shadow_layer, $('body'));
+        $("body").addClass("hide-scroll");
+    
+ 
     });
     // //close lateral cart or lateral menu
     // $shadow_layer.on('click', function(){
@@ -370,6 +385,7 @@ $('#add-address').click(function() {
     $('.shipping-state-2').hide();
 
 });
+
 
 $('#kss_coupon').click(function() {
     $('#cd-coupon').addClass('slide-show');
