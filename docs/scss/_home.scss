@@ -35,6 +35,19 @@
 	 	margin-top: -170px;
 	}
 }
+.bg-gift{
+  background: url(../img/sprite.png) no-repeat;
+    background-position: -3px -491px;
+    top: 0;
+    right: 0;
+    width: 163px;
+    height: 158px;
+    float: right;
+    margin-top: 0;
+     @media (min-width: 320px) and (max-width: 767.98px) {
+        margin-top: -170px;
+    }
+}
 .bg-left-overlay{
 	background: url(../img/diwali-bg.png) no-repeat;
    background-position: -3px -1px;
@@ -75,6 +88,10 @@
     position: absolute;
     top: 0px;
 }
+.gray-bg{
+    background:#fbfbfb;
+    position: relative;
+}
 .yellow-bg{
 	background:#FFEB64;
 	height:400px;
@@ -82,6 +99,8 @@
 	 @media (min-width: 320px) and (max-width: 767.98px) {
 	 	height:260px !important;
 	}
+
+
 	.diwali-banner{
 		height: 400px;
 		 @media (min-width: 320px) and (max-width: 767.98px) {
@@ -150,6 +169,6 @@
 
 .diwali-lamp-1{
     transition: all 0.5s ease;
-    -webkit-animation: moving 3s infinite;
-    animation: moving 3s infinite;
+    -webkit-animation: moving 12s infinite;
+    animation: moving 12s infinite;
 }
