@@ -4,6 +4,9 @@ a{
 .text-gray {
     color: $gray-700;
 }
+.btn{
+    position: relative;
+}
 .text-danger {
     color: red !important;
 }
@@ -32,6 +35,9 @@ footer .bl-1{
     font-size: 0.8rem;
     margin-bottom: 15px;
     text-decoration: none !important;
+}
+.r-0{
+    right: 10px;
 }
 .br-0 {
     border: 0px;
