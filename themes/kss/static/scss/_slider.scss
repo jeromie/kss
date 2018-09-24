@@ -4,6 +4,10 @@
     @media(max-width: 767px){
            height: 130vw;
     }
+    @media only screen and (min-width: 768px)
+{
+    height: 450px;
+   }
 }
 .loader {
     background: #ffffff url(../img/loader_818e.gif) center center no-repeat;
