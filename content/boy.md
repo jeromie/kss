@@ -1,8 +1,8 @@
 ---
-title: "boy"
+title: "boys"
 date: 2018-06-04T12:57:20+05:30
 draft: false
-layout: boy
-url: /boy/
+layout: boys
+url: /boys/
 
 ---

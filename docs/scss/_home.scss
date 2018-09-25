@@ -48,6 +48,19 @@
         margin-top: -170px;
     }
 }
+.bg-toy{
+    background: url(../img/sprite.png) no-repeat;
+    background-position: -163px -511px;
+    top: 0;
+    right: 0;
+    width: 133px;
+    height: 152px;
+    float: right;
+    margin-top: 0;
+     @media (min-width: 320px) and (max-width: 767.98px) {
+        margin-top: -170px;
+    }
+}
 .bg-left-overlay{
 	background: url(../img/diwali-bg.png) no-repeat;
    background-position: -3px -1px;
