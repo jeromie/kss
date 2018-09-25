@@ -172,3 +172,25 @@
     -webkit-animation: moving 12s infinite;
     animation: moving 12s infinite;
 }
+
+/*** Mobile Media Queries ***/
+
+@media (min-width: 320px) and (max-width: 767.98px) {
+    #kss-age{
+        .col-md-12{
+            padding: 0px;
+        }
+    }
+    .diwali-lamp-1{
+        width: 20%;
+        img{
+            width: 100%;
+        }
+    }
+    .diwali-lamp-2{
+        width: 20%;
+        img{
+            width: 100%;
+        }
+    }
+}
