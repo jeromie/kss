@@ -112,9 +112,7 @@
   position:absolute;
   top:0;
 }
-.active.status-wrap::after{
-  display:none !important;
-}
+
 .status-wrap::before{
   content:"";
   width:10px;
@@ -134,6 +132,9 @@
 .status-wrap.active::before{
   transform: scale(1.25);
    transition:all ease .7s; 
+}
+.status-wrap.active::after{
+  display:none !important;
 }
 .status-wrap:nth-child(2){
   align-items: flex-start;
