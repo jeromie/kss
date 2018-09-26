@@ -112,6 +112,9 @@
   position:absolute;
   top:0;
 }
+.status-wrap.active::after{
+  display:none;
+}
 .status-wrap::before{
   content:"";
   width:10px;
