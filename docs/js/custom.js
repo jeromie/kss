@@ -439,10 +439,8 @@ $('#payment-details').click(function() {
 })
 
 $(".select-size input[type=radio]").change(function(){
-
-
-    ("button").removeClass("disabled");
-    ("button").text("Add To Cart");
+    $("button").removeClass("disabled");
+    $("button").text("Add To Cart");
 });
 $('.btn-pay').click(function() {
     $("body").removeClass("hide-scroll");
