@@ -112,7 +112,7 @@
   position:absolute;
   top:0;
 }
-.status-wrap.active::after{
+.active.status-wrap::after{
   display:none !important;
 }
 .status-wrap::before{
