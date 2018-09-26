@@ -438,10 +438,21 @@ $('#payment-details').click(function() {
     $('body').addClass('hide-scroll');
 })
 
-$(".select-size input[type=radio]").change(function(){
-    $("button").removeClass("disabled");
-    $("button").text("Add To Cart");
+$(".select-size input[type=radio]").change(function(evt){
+    var buttn = $(this).closest('.select-size').find("button");
+    buttn.removeClass("disabled");
+    buttn.addClass("cd-add-cart");
+    buttn.text("Add To Cart");
 });
+  $('.select-size button').click(function() {
+          $(".cart-counter").removeClass('d-none'), 100;
+        $(".cart-counter").addClass('d-block'), 100;
+
+         $('#output').html(function(i, val) { return val*1+1 });
+
+        var itemImgs =  $(this).closest('.card').find("img");
+        flyToElement($(itemImgs), $('.shopping-cart'));
+    });
 $('.btn-pay').click(function() {
     $("body").removeClass("hide-scroll");
     $('#checkout-flow2').modal('hide');
@@ -476,4 +487,5 @@ $(document).ready(function(){
         var itemImg = $(this).closest('.container').find('img').eq(1);
         flyToElement($(itemImg), $('.shopping-cart'));
     });
+    
 });
