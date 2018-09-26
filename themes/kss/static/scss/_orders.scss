@@ -36,7 +36,9 @@
     }
 }
 
-
+.status-wrap.active::after{
+  display:none !important;
+}
 
 .cd-cart-items {
     .dropdown{
@@ -133,9 +135,7 @@
   transform: scale(1.25);
    transition:all ease .7s; 
 }
-.status-wrap.active::after{
-  display:none !important;
-}
+
 .status-wrap:nth-child(2){
   align-items: flex-start;
 }
