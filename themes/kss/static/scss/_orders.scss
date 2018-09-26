@@ -113,7 +113,7 @@
   top:0;
 }
 .status-wrap.active::after{
-  display:none;
+  display:none !important;
 }
 .status-wrap::before{
   content:"";
