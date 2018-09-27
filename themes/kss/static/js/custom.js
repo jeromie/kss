@@ -438,6 +438,17 @@ $('#payment-details').click(function() {
     $('body').addClass('hide-scroll');
 })
 
+
+$(document).ready(function() {
+    // $('#wrap input').focus(function() {
+    //      $(".recent-search").removeClass('d-none'), 100;
+    // $(".recent-search").addClass('d-block'), 100;
+    // });
+     $('#wrap input').on('focusin focusout', function() {
+        $('.recent-search').toggle();
+        $('.overlay-fix').toggle();
+    });
+});
 $(".select-size input[type=radio]").change(function(evt){
     var buttn = $(this).closest('.select-size').find("button");
     buttn.removeClass("disabled");

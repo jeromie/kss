@@ -81,10 +81,22 @@
         <div class="my-2 my-lg-0">
             <ul class="list-inline mb-2 pt-3">
                 <li class="list-inline-item">
-                    <a href="#" >
-                       <i class="kss_icon search-icon">
-                       </i>
-                    </a>
+                   <div id="wrap">
+                  <form action="" autocomplete="on">
+                  <input id="search" name="search" type="text" placeholder="What're we looking for ?" autocomplete="off"><input id="search_submit" value="Rechercher" type="submit">
+                  </form>
+                </div>
+               
+               <div class="card recent-search" style="width: 22rem; display:none;">
+                  <div class="card-header font-weight-bold">
+                    Recent Search
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                  </ul>
+                </div>
                 </li>
                 <li class="list-inline-item">
                     <a href="/kss/account/overview">
@@ -808,7 +820,9 @@
 
     </div>
   </div>
-</div><a href="#" class="go-top">
+</div><div class="overlay-fix" style="display:none;">
+                </div>
+	<a href="#" class="go-top">
 		<div class="top-icon">
 		</div>
 		Go Top
