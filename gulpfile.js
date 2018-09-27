@@ -10,7 +10,7 @@ var gulp = require('gulp'),
 
 // Minifies JS
 gulp.task('scripts', function(){
-    return gulp.src(['./themes/kss/static/js/bootstrap.min.js', './themes/kss/static/js/jquery.fancybox.js', './themes/kss/static/js/slick.min.js', './themes/kss/static/js/jquery.mmenu.all.js', './themes/kss/static/js/jquery.mousewheel.min.js', './themes/kss/static/js/lightgallery-all.min.js', './themes/kss/static/js/lazysizes.min.js'])
+    return gulp.src(['./themes/kss/static/js/bootstrap.min.js', './themes/kss/static/js/jquery.fancybox.js', './themes/kss/static/js/slick.min.js', './themes/kss/static/js/jquery.mmenu.all.js', './themes/kss/static/js/jquery.mousewheel.min.js', './themes/kss/static/js/lightgallery-all.min.js', './themes/kss/static/js/lazysizes.min.js', './themes/kss/static/js/jquery.autocomplete.js'])
     .pipe(uglify())
     .pipe(concat('combine.js'))
     .pipe(gulp.dest('./themes/kss/static/js'))

@@ -86,9 +86,12 @@ $(document).ready(function() {
                 $('.mobile-fixed').hide();
             }
         });
-     $('#wrap input').on('focusin focusout', function() {
-       $('#search').appendTo(".recent-search");
+     $('.search-icon').click(function() {
+        $('.search-icon').addClass("d-block");
+      
     });
+
+ 
                     /* ========================================== 
             scrollTop() >= 300
             Should be equal the the height of the header
@@ -446,10 +449,27 @@ $(document).ready(function() {
     //      $(".recent-search").removeClass('d-none'), 100;
     // $(".recent-search").addClass('d-block'), 100;
     // });
-     $('#wrap input').on('focusin focusout', function() {
-        $('.recent-search').toggle();
-        $('.overlay-fix').toggle();
-        $("body").toggleClass("overflow-h");
+     $('.search-icon').click(function() {
+        $('.search-input').show();
+        $('.search-icon').hide();
+                $('.recent-search').removeClass("d-none");
+        $('.overlay-fix').removeClass("d-none");
+         $('.recent-search').addClass("d-block");
+        $('.overlay-fix').addClass("d-block");
+    });
+
+       $('.hide-search').click(function() {
+        $('.search-input').hide();
+        $('.search-icon').show();
+         $('.recent-search').removeClass("d-block");
+        $('.overlay-fix').removeClass("d-block");
+         $('.recent-search').addClass("d-none");
+        $('.overlay-fix').addClass("d-none");
+    });
+
+      $('#search').on('focusin focusout', function() {
+         $('.recent-search').removeClass("d-block");
+        $('.recent-search').addClass("d-none");
     });
 });
 $(".select-size input[type=radio]").change(function(evt){
@@ -502,4 +522,21 @@ $(document).ready(function(){
         flyToElement($(itemImg), $('.shopping-cart'));
     });
     
+});
+
+
+var products = [
+    'Cotton Rich Jeans', 'Boy Clothings', 'Boy party wear',  'Jeans', 'Casual Shirts',
+    'Ethnic wear', 'Pajamas', 'Jackets', 'Beach Wear', 'School Collection', 'Diwali Collection',
+    'Kurta', 'Dhoti Seta', 'Infants', 'Embroidered Kurta', 'Sherwani', 'Character Tshirt', 'Romper',
+    'Early Walker', 'Musical Walkers', 'Jute Boots', 'Shocks', 'Hair Accessories',
+    'Handbags', 'Jewellery', 'Sleeveless Tshirt', 'Slips', 'Innerwear', 'Woolen Cap',
+    'Baby hug', 'Towel', 'Infants Clothing', 'Barbie Tshirt', 'Frozen Tshirt',
+    'Round Tshirt', 'Swimwear', 'Girls Clothing', 'Outwear', 'Jumpsuit',
+    'Frocks', 'Princess Wear', 'Skirts', 'Lehenga', 'Dupatta', 'Chaniya Choli',
+    'Footwear', 'Gown Duppata', 'Patiala Salwar', 'Looks', 'Dresses'
+];
+
+$('#search').autocomplete({
+    source:[products]
 });
