@@ -86,7 +86,9 @@ $(document).ready(function() {
                 $('.mobile-fixed').hide();
             }
         });
-
+     $('#wrap input').on('focusin focusout', function() {
+       $('#search').appendTo(".recent-search");
+    });
                     /* ========================================== 
             scrollTop() >= 300
             Should be equal the the height of the header
@@ -447,6 +449,7 @@ $(document).ready(function() {
      $('#wrap input').on('focusin focusout', function() {
         $('.recent-search').toggle();
         $('.overlay-fix').toggle();
+        $("body").toggleClass("overflow-h");
     });
 });
 $(".select-size input[type=radio]").change(function(evt){
