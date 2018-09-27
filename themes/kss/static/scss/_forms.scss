@@ -277,13 +277,14 @@ select.custom::-ms-expand {
           z-index: 99;
          } 
 .recent-search{
-  position: absolute;
-  right: 7%;
-  top: 58px;
-  z-index: 9999;
-  @media (min-width: 320px) and (max-width: 767.98px) {
-    right:0px;
-    width:100% !important;
-    top:150px;
-  }
+    position: absolute;
+    right: 7%;
+    top: 58px;
+    z-index: 9999;
+    @media (min-width: 320px) and (max-width: 767.98px) {
+      right:0px;
+      width:100% !important;
+      top:150px;
+      
+    }
 }
