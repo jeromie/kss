@@ -456,6 +456,7 @@ $(document).ready(function() {
         $('.overlay-fix').removeClass("d-none");
          $('.recent-search').addClass("d-block");
         $('.overlay-fix').addClass("d-block");
+        $('body').addClass('hide-scroll');
     });
 
        $('.hide-search').click(function() {
@@ -465,6 +466,7 @@ $(document).ready(function() {
         $('.overlay-fix').removeClass("d-block");
          $('.recent-search').addClass("d-none");
         $('.overlay-fix').addClass("d-none");
+        $('body').removeClass('hide-scroll');
     });
 
       $('#search').on('focusin focusout', function() {

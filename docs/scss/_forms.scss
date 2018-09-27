@@ -275,6 +275,8 @@ select.custom::-ms-expand {
         input{
         width: 90%;
         height: 54px;
+        padding-left: 5px;
+        outline: none;
           }
        }
     }
@@ -314,6 +316,10 @@ text-align: start;
   margin-top:-1px;
   background-color:#fff;
   min-width:100%;
+  @media (min-width: 320px) and (max-width: 767.98px) {
+   min-width:111%;
+   overflow-y:scroll !important;
+  }
   overflow:auto;
 }
 .xdsoft_autocomplete .xdsoft_autocomplete_hint{
@@ -346,6 +352,9 @@ text-align: start;
   cursor: pointer;
   line-height: 1.5em;
   padding: 2px 0px 2px 0px;
+  @media (min-width: 320px) and (max-width: 767.98px) {
+  line-height: 2.5em;
+  }
 }
 .xdsoft_autocomplete .xdsoft_autocomplete_dropdown > div.active{
   background: #0097CF;
