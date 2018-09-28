@@ -1,0 +1,25 @@
+{{ define "main" }}
+<div class="container mt-3">
+  <div class="row">
+      <div class="col-12">
+        <div class="mb-4">
+             <nav aria-label="breadcrumb">
+                      <ol class="breadcrumb mb-1 bg-transparent p-0">
+                          <li class="breadcrumb-item"><a href="#">Home</a></li>
+                          <li class="breadcrumb-item" active><a href="#">404 error</a></li>
+                      </ol>
+              </nav>
+        </div>
+        <div class="col-12 text-center">
+            
+            <img src="{{"img/empty troly.png" | absURL}}" class="img-fluid lazyload " width="400px" />
+            <h2 class="mt-4">We couldn't find any matches!</h2>
+            <p>Please check the spelling or try searching something else</p>
+            <a href="/kss/boys/">
+          <button type="button" class="btn btn-outline-dark btn-lg m-auto d-block">Back to Home</button>
+        </a>
+        </div>
+      </div>
+    </div>
+  </div>
+{{ end }}
