@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>404</title>
+      <link>https://jeromie.github.io/kss/404/</link>
+      <pubDate>Mon, 04 Jun 2018 12:57:20 +0530</pubDate>
+      
+      <guid>https://jeromie.github.io/kss/404/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Catalog</title>
       <link>https://jeromie.github.io/kss/list/</link>
       <pubDate>Mon, 04 Jun 2018 12:57:20 +0530</pubDate>
@@ -26,6 +35,15 @@
       <pubDate>Mon, 04 Jun 2018 12:57:20 +0530</pubDate>
       
       <guid>https://jeromie.github.io/kss/checkout/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Order Empty</title>
+      <link>https://jeromie.github.io/kss/account/orders-empty/</link>
+      <pubDate>Mon, 04 Jun 2018 12:57:20 +0530</pubDate>
+      
+      <guid>https://jeromie.github.io/kss/account/orders-empty/</guid>
       <description></description>
     </item>
     
@@ -197,6 +215,15 @@
       <pubDate>Mon, 04 Jun 2018 12:57:20 +0530</pubDate>
       
       <guid>https://jeromie.github.io/kss/account/wishlist/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wishlist-empty</title>
+      <link>https://jeromie.github.io/kss/account/wishlist-empty/</link>
+      <pubDate>Mon, 04 Jun 2018 12:57:20 +0530</pubDate>
+      
+      <guid>https://jeromie.github.io/kss/account/wishlist-empty/</guid>
       <description></description>
     </item>
     
