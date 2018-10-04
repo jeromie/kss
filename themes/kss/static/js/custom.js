@@ -570,6 +570,11 @@ $('#search').autocomplete({
     source:[products]
 });
 
+jQuery(window).on("load", function() {
+      $('#loginModal').modal('show')
+});
+
+
 $('a[href^="#"]').on('click', function(event) {
     var target = $(this.getAttribute('href'));
     if( target.length ) {
