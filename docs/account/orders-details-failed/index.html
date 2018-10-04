@@ -410,82 +410,61 @@
 		</div>
 	</div>
 
-<div class="modal fade dark-modal" id="loginModal" tabindex="-1" role="dialog" >
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header border-0">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<div class="modal fade bd-example-modal-lg" id="loginModal" tabindex="-1" role="dialog" >
+  <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+    <div class="modal-content ">
+     
+      <div class="modal-body  p-0">
+
+        
+        <div class="row no-gutters">
+            <div class="col-md-6 d-none d-md-block" style="background:#f9ea20;">
+              <img src="https://jeromie.github.io/kss/img/sign-in.jpg" >
+            </div>
+            <div class="col-md-6  p-4">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-      </div>
-      <div class="modal-body px-5 pt-0 pb-1">
-
-        
-        <div class="sign-in-box active">
-          <h3 class="modal-title text-center text-white mb-4">Sign in to Kidsuperstore.in</h3>
-          <form>
-            <ul class="list-group">
-              <li class="list-group-item p-0">
-                <input type="email" class="form-control form-control-lg border-0" required placeholder="Your Email Address">
-              </li>
-              <li class="list-group-item p-0">
-                <input type="password" class="form-control form-control-lg border-0" required placeholder="Enter Password">
-              </li>
-            </ul>
-            <button type="submit" class="btn btn-primary btn-lg btn-block mt-4">Sign In</button>
+              <div class="sign-div ">
+         
+                <h3 class="modal-title mt-4">Sign in to Kidsuperstore.in</h3>
+                <p class="text-muted">Your favourite shopping destination now one click way.</p>
+                <form>
+                  <div class="form-group mb-0">
+                    <input type="number" class="form-control form-control-number form-control-lg" id="frm-mobile"  placeholder=" ">
+                    <label class="control-label">Enter Mobile Number</label>
+                  </div>
+                </form>
+                <div class="mt-3">
+                  <button type="button" class="btn btn-primary btn-block btn-lg login-btn">Send OTP <i class="fas fa-angle-right mt-2 position-absolute r-0"></i></button>
+                 
+                </div>
+                 
+                </form>
+              </div>
+                <div class="verify-div d-none">
+         
+                <h3 class="modal-title mt-4">Verfiy mobile number</h3>
+               
+                <form class="mt-3">
+            <div class="form-group text-center mb-0">
+              <p >Enter the OTP sent to your number</p><h4 class="font-weight-bold m-0">+91 840791773 <i class="fas fa-pencil-alt number-edit"></i></h4>
+              <input type="number" class="form-control form-control-number form-control-lg text-center mb-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+              <small> Resend OTP in 18 sec</small>
+            </div>
           </form>
-        </div>
-
-        
-        <div class="sign-up-box d-none">
-          <h3 class="modal-title text-center text-white mb-4">Signup with Kidsuperstore.in</h3>
-          <form>
-            <ul class="list-group">
-              <li class="list-group-item p-0">
-                <input type="email" class="form-control form-control-lg border-0" required placeholder="Your Email Address">
-              </li>
-              <li class="list-group-item p-0">
-                <input type="password" class="form-control form-control-lg border-0" required placeholder="Choose Password">
-              </li>
-              <li class="list-group-item p-0">
-                <input type="tel" class="form-control form-control-lg border-0" required placeholder="Mobile Number">
-              </li>
-            </ul>
-            <button type="submit" class="btn btn-primary btn-lg btn-block mt-4">Register</button>
-          </form>
-        </div>
-
-        
-        <div class="reset-box d-none">
-          <h3 class="modal-title text-center text-white mb-4">Forgot Password?</h3>
-          <div class="text-white text-center mb-3">We will send you a link to reset your password.</div>
-          <form>
-            <ul class="list-group">
-              <li class="list-group-item p-0">
-                <input type="email" class="form-control form-control-lg border-0" required placeholder="Your Email Address">
-              </li>
-            </ul>
-            <button type="submit" class="btn btn-primary btn-lg btn-block mt-4">Send Reset Link</button>
-          </form>
-        </div>
-        <hr class="mt-4">
-      </div>
-
-      <div class="modal-footer d-block small border-0 px-5 pb-5 pt-1">
-        <div class="sign-in-box">
-          <div class="d-flex flex-wrap justify-content-center justify-content-sm-between align-items-center">
-            <a href="#" class="view-reset">Reset password</a>
-            <div class="text-white">New to Kidsuperstore.in? <a href="#" class="view-signup">Create Account</a></div>
+          <div class="mt-3">
+            <button id="shipping-details" type="button" class="btn btn-primary  btn-block btn-lg btn-verify" data-toggle="modal" data-target="#checkout-flow">Verify <i class="fas fa-angle-right position-absolute r-0 mt-2"></i></button>
           </div>
+              </div>
+            </div>
         </div>
-        <div class="sign-up-box d-none">
-          <div class="text-white text-center">Already have an account? <a href="#" class="view-signin">Login!</a></div>
-        </div>
-        <div class="reset-box d-none">
-          <div class="text-white text-center"><a href="#" class="view-signin">Login!</a></div>
-        </div>
+        
+
+
       </div>
 
+     
     </div>
   </div>
 </div><div class="overlay-fix" style="display:none;">

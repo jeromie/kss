@@ -54,7 +54,7 @@
       <div class="container">
         <div class="d-flex flex-row  overflow-m mb-3 mt-5">
             <div class="p-2 bd-highlight col-md-2 col-5">
-              <a href="/kss/list/">
+              <a data-toggle="modal" data-target="#loginModal">
               <div class="alert-light h-100" style="background: #fafafa url('../img/super-hero.png') left bottom no-repeat;background-size: 120%;">
               <div class="w-75 text-center mt-2 float-right">
                  <h5 class="font-weight-bold text-black">Character <br> Tshirt</h5>
@@ -657,4 +657,5 @@
         </div>
   </div>
 </section>
+{{- partial "sign-in.html" . -}}
 {{ end }}

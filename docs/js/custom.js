@@ -477,6 +477,16 @@ $(document).ready(function() {
         $('.overlay-fix').addClass("d-none");
         $('body').removeClass('hide-scroll');
     });
+ $('.login-btn').click(function() {
+        $('.sign-div').addClass("d-none");
+        $('.verify-div').removeClass("d-none");
+        $('.verify-div').addClass("d-block");
+    });
+  $('#loginModal .close').click(function() {
+        $('.verify-div').addClass("d-none");
+        $('.verify-div').removeClass("d-block");
+        $('.sign-div').removeClass("d-none");
+    });
   $('.overlay-fix').click(function() {
         $('.search-input').hide();
         $('.search-icon').show();
@@ -558,4 +568,14 @@ var products = [
 
 $('#search').autocomplete({
     source:[products]
+});
+
+$('a[href^="#"]').on('click', function(event) {
+    var target = $(this.getAttribute('href'));
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
 });
