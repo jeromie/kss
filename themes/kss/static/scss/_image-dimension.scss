@@ -26,6 +26,19 @@
   background: linear-gradient(#f2f2f2 66%, rgba(242, 242, 242, 0));
   margin-bottom:10px;
 }
+.img-container  {
+  position: relative;
+  padding-bottom:80.7692307692%;
+  margin-bottom:10px;
+  img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
 .image-sm {
   position: relative;
   padding-bottom:133.333333333%;
