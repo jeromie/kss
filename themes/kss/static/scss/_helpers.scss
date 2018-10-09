@@ -213,3 +213,15 @@ footer .bl-1{
 
 }
 
+article {
+  border-radius: 5px;
+  background: #fff;
+}
+main {
+    columns: 300px;
+    column-gap: 20px; 
+}
+article {
+    break-inside: avoid-column;
+    margin-bottom: 1rem; 
+}

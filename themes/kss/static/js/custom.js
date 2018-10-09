@@ -1,6 +1,10 @@
+ // ------------------ Start Close Cart Modal------------------//
 $('.modal #cart_close').click(function() {
     $("#cd-cart").removeAttr("style");
 });
+ // ------------------ End Close Cart Modal------------------//
+
+
 $(' .prod-slides').slick({
     lazyLoad: 'ondemand',
     slidesToShow: 2.05,
@@ -26,6 +30,8 @@ $(' .prod-slides').slick({
         }
     }]
 });
+
+ // ------------------ Start Image Load ------------------//
 const lazy = () => {
     document.addEventListener('lazyloaded', (e) => {
         e.target.parentNode.classList.add('image-loaded');
@@ -33,13 +39,18 @@ const lazy = () => {
     });
 }
 lazy();
+ // ------------------ End Image Load ------------------//
+
+// ------------------ Start Image Loader ------------------//
 $(document).ready(function() {
     $(function() {
         $(".loader").fadeOut(2000, function() {
             $(".prod-slides li img").fadeIn(1000);
         });
-    });
-    $('#aniimated-thumbnials').lightGallery({
+});
+// ------------------ End Image Loader ------------------//
+
+$('#aniimated-thumbnials').lightGallery({
         selector: '.custom-selector',
         preload: 0,
         download: false,
@@ -47,36 +58,48 @@ $(document).ready(function() {
         autoplayControls: false,
         share: false
 
-    });
-    // ------------------ Filter For Mobile ------------------//
-    jQuery("#filter").click(function() {
-        jQuery(".kss_filter").addClass("kss_filter_mobile");
-    });
+ });
 
+
+// ------------------ Start Filter For Mobile ------------------//
+jQuery("#filter").click(function() {
+        jQuery(".kss_filter").addClass("kss_filter_mobile");
+});
+jQuery(".clear-filter").click(function() {
+        jQuery(".filter-selection").attr("style", "display: none !important");
+});
+jQuery("#kss_hide-filter").click(function() {
+        jQuery(".kss_filter").removeClass("kss_filter_mobile");
+});
+// ------------------ End Filter For Mobile ------------------//
   
 
-     jQuery(".cd-add-to-cart").click(function() {
+// ------------------ Start Animation for Add to Cart ------------------//
+jQuery(".cd-add-to-cart").click(function() {
       jQuery( ".kss_sizes" ).toggleClass( "shake" );
-    });
+});
+// ------------------ End Animation for Add to Cart  ------------------//
 
-    jQuery(".clear-filter").click(function() {
-        jQuery(".filter-selection").attr("style", "display: none !important");
-    });
-    jQuery("#kss_hide-filter").click(function() {
-        jQuery(".kss_filter").removeClass("kss_filter_mobile");
-    });
-    // ------------------ Disable Arrow on single product ------------------//
-    jQuery(".prod-slides img").click(function() {
+
+
+// ------------------ Start Disable Arrow on single product ------------------//
+jQuery(".prod-slides img").click(function() {
         jQuery(".swipe-arrow").removeClass("swipe-arrow-visible");
-    });
-    // ------------------ Mobile View ------------------//
-       jQuery("#cd-cart-trigger").click(function() {
+});
+// ------------------ End Disable Arrow on single product ------------------//
+
+
+
+jQuery("#cd-cart-trigger").click(function() {
             jQuery("#kss_cart").addClass("fixed-bottom");
-        });
-        jQuery("#cart_close").click(function() {
+});
+jQuery("#cart_close").click(function() {
             jQuery("#kss_cart").removeClass("fixed-bottom");
-        });
-    if ($(window).width() < 760) {
+});
+
+// ------------------ Mobile View ------------------//
+     
+if ($(window).width() < 760) {
         $('.similar-link').appendTo('.m-similar');
         $(window).scroll(function() {
             if ($(this).scrollTop() > 200) {
@@ -89,15 +112,13 @@ $(document).ready(function() {
      $('.search-icon').click(function() {
         $('.search-icon').addClass("d-block");
       
-    });
+});
 
- 
-                    /* ========================================== 
-            scrollTop() >= 300
-            Should be equal the the height of the header
-            ========================================== */
-
-            $(window).scroll(function(){
+/* ========================================== 
+scrollTop() >= 300
+Should be equal the the height of the header
+========================================== */
+$(window).scroll(function(){
                 if ($(window).scrollTop() >= 300) {
                     $('.top-navbar').addClass('sticky-menu');
                 }
@@ -105,32 +126,27 @@ $(document).ready(function() {
                     $('.top-navbar').removeClass('sticky-menu');
 
                 }
-            });
+ });
 
-        // $('#list-menu').click(function() {
-        //     $(".slide-right-fixed").addClass("active");
-        //     $("footer").addClass("d-none");
-        // })
-        // jQuery(window).on("load", function() {
-        // $('#list-menu').removeAttr('href');
-        // });
-
-    } else {
+} else {
         $('.kss_zoom a').removeClass('js-smartphoto');
-    }
-    // ------------------ Swipe Animation ------------------//
+}
+
+// ------------------ Swipe Animation ------------------//
     jQuery(function() {
         jQuery('.slick-slider').on('afterChange', function(event, slick, currentSlide, nextSlide) {
             jQuery(".swipe-arrow").removeClass("swipe-arrow-visible");
         });
-    })
-    // ------------------ Every time the window is scrolled ------------------//
-    // ------------------ Shortlist Icon ------------------//
+})
+
+// ------------------ Shortlist Icon ------------------//
     $('.kss_heart').on('click', function() {
         $(this).toggleClass('animated-heart');
-    });
-    // ------------------ Shortlist Icon ------------------//
-    $(".navbar-collapse").mmenu({
+});
+
+
+// ------------------ Shortlist Icon ------------------//
+$(".navbar-collapse").mmenu({
         wrappers: ["bootstrap4"],
         "extensions": ["fx-menu-zoom", "fx-panels-zoom", "pagedim-black", "theme-dark"]
     }, {
@@ -186,23 +202,7 @@ $(document).ready(function() {
     
  
     });
-    // //close lateral cart or lateral menu
-    // $shadow_layer.on('click', function(){
-    //   $shadow_layer.removeClass('is-visible');
-    //   // firefox transitions break when parent overflow is changed, so we need to wait for the end of the trasition to give the body an overflow hidden
-    //   if( $lateral_cart.hasClass('speed-in') ) {
-    //     $lateral_cart.removeClass('speed-in').on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
-    //       $('body').removeClass('overflow-hidden');
-    //     });
-    //     $menu_navigation.removeClass('speed-in');
-    //   } else {
-    //     $menu_navigation.removeClass('speed-in').on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
-    //       $('body').removeClass('overflow-hidden');
-    //     });
-    //     $lateral_cart.removeClass('speed-in');
-    //   }
-    //     $( "body" ).removeClass( "hide-scroll" );
-    // });
+
     $cart_cancel.on('click', function() {
         $shadow_layer.removeClass('is-visible');
         // firefox transitions break when parent overflow is changed, so we need to wait for the end of the trasition to give the body an overflow hidden
@@ -229,7 +229,9 @@ $(document).ready(function() {
             $shadow_layer.removeClass('is-visible');
             $('body').removeClass('overflow-hidden');
         }
-    });
+});
+
+
     $('body').on('click', '.view-signup', function() {
         $('.sign-in-box').addClass('d-none');
         $('.sign-up-box').removeClass('d-none');
@@ -513,8 +515,6 @@ $(".select-size input[type=radio]").change(function(evt){
 
          $('#output').html(function(i, val) { return val*1+1 });
 
-        var itemImgs =  $(this).closest('.card').find("img");
-        flyToElement($(itemImgs), $('.shopping-cart'));
     });
 $('.btn-pay').click(function() {
     $("body").removeClass("hide-scroll");
@@ -572,12 +572,12 @@ $('#search').autocomplete({
 
 
 
-$('a[href^="#"]').on('click', function(event) {
-    var target = $(this.getAttribute('href'));
-    if( target.length ) {
-        event.preventDefault();
-        $('html, body').stop().animate({
-            scrollTop: target.offset().top
-        }, 1000);
-    }
-});
+// $('a[href^="#"]').on('click', function(event) {
+//     var target = $(this.getAttribute('href'));
+//     if( target.length ) {
+//         event.preventDefault();
+//         $('html, body').stop().animate({
+//             scrollTop: target.offset().top
+//         }, 1000);
+//     }
+// });
