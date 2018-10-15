@@ -368,6 +368,24 @@ $('.close').click(function() {
     $('.modal-backdrop').remove();
     $("#cd-cart").css("overflow", "visible");
 })
+$('.kss_payment .back-to-cart').click(function() {
+   $(".kss_payment").removeClass("slide-show");
+   $(".kss_payment .fixed-bottom").removeClass('d-block'), 100;
+   $(".kss_payment .fixed-bottom").addClass('d-none'), 100;
+})
+$('.kss_shipping .back-to-cart').click(function() {
+   $(".kss_shipping").removeClass("slide-show");
+   $(".kss_shipping .fixed-bottom").removeClass('d-block'), 100;
+   $(".kss_shipping .fixed-bottom").addClass('d-none'), 100;
+})
+$('.kss_shipping_summary .back-to-cart').click(function() {
+   $(".kss_shipping_summary").removeClass("slide-show");
+   $(" .kss_shipping_summary .fixed-bottom").removeClass('d-block'), 100;
+   $(".kss_shipping_summary .fixed-bottom").addClass('d-none'), 100;
+ $(" .kss_shipping .fixed-bottom").removeClass('d-none'), 100;
+   $(".kss_shipping .fixed-bottom").addClass('d-block'), 100;
+})
+
 $('.shipping-details-save').click(function() {
 
     $('.shipping-content').hide();
