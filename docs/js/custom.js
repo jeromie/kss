@@ -375,6 +375,7 @@ $('.kss_payment .back-to-cart').click(function() {
 })
 $('.kss_shipping .back-to-cart').click(function() {
    $(".kss_shipping").removeClass("slide-show");
+   $("#cd-cart").removeAttr("style");
    $(".kss_shipping .fixed-bottom").removeClass('d-block'), 100;
    $(".kss_shipping .fixed-bottom").addClass('d-none'), 100;
 })
