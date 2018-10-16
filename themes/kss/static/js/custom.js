@@ -560,6 +560,12 @@ $(function() {
 });
 
 $(document).ready(function(){
+
+    var kss_alert_timeout = setTimeout(function()
+        {
+            $('.kss-alert--success').removeClass('is-open');
+        }, 4500);
+
     $('.cd-add-to-cart').on('click',function(){
         //Scroll to top if cart icon is hidden on top
         $(".cart-counter").removeClass('d-none'), 100;
@@ -569,13 +575,12 @@ $(document).ready(function(){
         var itemImg = $(this).closest('.container').find('img').eq(1);
         flyToElement($(itemImg), $('.shopping-cart'));
         $('.kss-alert--success').addClass('is-open');
-        setTimeout(function(){
-            $('.kss-alert--success').removeClass('is-open');
-        }, 4500);
+        kss_alert_timeout;
     });
 
     $('.kss-alert .close').on('click',function(){
         $('.kss-alert').removeClass('is-open');
+        clearTimeout(kss_alert_timeout);
     });
 
     // Tooltip init
