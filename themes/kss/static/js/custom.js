@@ -561,17 +561,15 @@ $(function() {
 
 $(document).ready(function(){
 
-    // var kss_alert_timeout = setTimeout(function()
-    //     {
-    //         $('.kss-alert--success').removeClass('is-open');
-    //     }, 4500);
+    var timeoutHandle;
 
-   
+    function alertTimeout(){
+        timeoutHandle = setTimeout(function () {
+            $('.kss-alert--success').removeClass('is-open');
+        }, 4500);
+        timeoutHandle;
+    }
 
-    // var explode = function(){
-    //   $('.kss-alert--success').removeClass('is-open')
-    // };
-var timeoutHandle;
     $('.cd-add-to-cart').on('click',function(){
         //Scroll to top if cart icon is hidden on top
         $(".cart-counter").removeClass('d-none'), 100;
@@ -582,20 +580,14 @@ var timeoutHandle;
         flyToElement($(itemImg), $('.shopping-cart'));
         $('.kss-alert--success').addClass('is-open');
         // setTimeout(explode, 4500);
-         timeoutHandle = setTimeout(function () {
-        $('.kss-alert--success').removeClass('is-open')
-        console.log('timeout');
-    }, 4500);
-        timeoutHandle;
+         alertTimeout();
     });
 
     $('.kss-alert .close').on('click',function(){
         $('.kss-alert').removeClass('is-open');
         // clearTimeout(explode,0);
         if(timeoutHandle){
-            console.log('remove');
             clearTimeout(timeoutHandle);
-            // timeoutHandle = null;
         }
     });
 
