@@ -59,4 +59,5 @@ gulp.task('default', function() {
 gulp.task('watch', function() {
     gulp.watch(['./themes/kss/static/scss/*.scss'], ['sass']);
     gulp.watch(['./themes/kss/static/css/hamburgers.css', './themes/kss/static/css/jquery.fancybox.css', './themes/kss/static/css/jquery.mmenu.all.css', './themes/kss/static/css/lightgallery.css', './themes/kss/static/css/xzoom.css', './themes/kss/static/css/custom.css'], ['css']);
+    gulp.watch(['./themes/kss/static/js/bootstrap.min.js', './themes/kss/static/js/jquery.fancybox.js', './themes/kss/static/js/slick.min.js', './themes/kss/static/js/jquery.mmenu.all.js', './themes/kss/static/js/jquery.mousewheel.min.js', './themes/kss/static/js/lightgallery-all.min.js', './themes/kss/static/js/lazysizes.min.js', './themes/kss/static/js/jquery.autocomplete.js', './themes/kss/static/js/custom.js'], ['scripts']);
 });
