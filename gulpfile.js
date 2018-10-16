@@ -56,6 +56,7 @@ gulp.task('default', function() {
 
 });
 
-gulp.task('watch', ['sass'], function() {
+gulp.task('watch', function() {
     gulp.watch(['./themes/kss/static/scss/*.scss'], ['sass']);
+    gulp.watch(['./themes/kss/static/css/hamburgers.css', './themes/kss/static/css/jquery.fancybox.css', './themes/kss/static/css/jquery.mmenu.all.css', './themes/kss/static/css/lightgallery.css', './themes/kss/static/css/xzoom.css', './themes/kss/static/css/custom.css'], ['css']);
 });
