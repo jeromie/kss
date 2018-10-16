@@ -573,6 +573,9 @@ $(document).ready(function(){
             $('.kss-alert--success').removeClass('is-open');
         }, 4500);
     });
+
+    // Tooltip init
+    $('[data-toggle="tooltip"]').tooltip()
     
 });
 
