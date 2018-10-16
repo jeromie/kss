@@ -568,6 +568,10 @@ $(document).ready(function(){
         //Select item image and pass to the function
         var itemImg = $(this).closest('.container').find('img').eq(1);
         flyToElement($(itemImg), $('.shopping-cart'));
+        $('.kss-alert--success').addClass('is-open');
+        setTimeout(function(){
+            $('.kss-alert--success').removeClass('is-open');
+        }, 4500);
     });
     
 });

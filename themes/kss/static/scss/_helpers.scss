@@ -193,6 +193,52 @@ footer .bl-1{
     }
 }
 
+.kss-alert{
+    border-radius: 0;
+    width: 300px;
+    color: #fff;
+    &--success{
+        background-color: #71a764;
+        border-color: #71a764;
+    }
+    &--failure{
+        background-color: #d96246;
+        border-color: #d96246;
+    }
+    @media (min-width: 768px){
+        width: 350px;
+        .icon{
+            font-size: 1.2em;
+        }
+        .message{
+            font-size: 1.15em;
+        }
+    }
+    .close{
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        text-shadow: none;
+        color: #fff;
+        opacity: 1;
+        outline: 0;
+    }
+    &.sticky-alert{
+        position: fixed;
+        bottom: 3.5em;
+        z-index: 10;
+        left: 0;
+        transform: translateX(-500px);
+        transition: all 0.5s ease;
+        @media (max-width: 768px){
+            bottom: 4em;
+        }
+    }
+    &.is-open{
+        transform: translateX(0);   
+    }
+}
+
  @media (min-width: 320px) and (max-width: 767.98px) {
     .overflow-m{
         overflow-x:scroll;
