@@ -246,6 +246,23 @@ footer .bl-1{
     }
 }
 
+.kss-toast{
+    padding: 15px 20px;
+    color: #fff;
+    background: rgba(0,0,10,0.7);
+    display: inline-block;
+    position: fixed;
+    top: 0px;
+    transform: translateY(-150px);
+    right: 30px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+    transition: all 0.5s ease-out;
+    &.shown{
+        transform: translateY(70px);
+    }
+}
+
+
  @media (min-width: 320px) and (max-width: 767.98px) {
     .overflow-m{
         overflow-x:scroll;

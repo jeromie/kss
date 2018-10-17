@@ -567,7 +567,7 @@ $(document).ready(function(){
         timeoutHandle = setTimeout(function () {
             $('.kss-alert--success').removeClass('is-open');
         }, 4500);
-        timeoutHandle;
+        timeoutHandle;    
     }
 
     $('.cd-add-to-cart').on('click',function(){
@@ -578,14 +578,21 @@ $(document).ready(function(){
         //Select item image and pass to the function
         var itemImg = $(this).closest('.container').find('img').eq(1);
         flyToElement($(itemImg), $('.shopping-cart'));
-        $('.kss-alert--success').addClass('is-open');
-        // setTimeout(explode, 4500);
-         alertTimeout();
+        
+        if($('.kss-alert').hasClass('is-open')){
+            if(timeoutHandle){
+                clearTimeout(timeoutHandle);
+                alertTimeout();
+            }
+        }
+        else{
+            $('.kss-alert').addClass('is-open');
+            alertTimeout();
+        }
     });
 
     $('.kss-alert .close').on('click',function(){
         $('.kss-alert').removeClass('is-open');
-        // clearTimeout(explode,0);
         if(timeoutHandle){
             clearTimeout(timeoutHandle);
         }
@@ -594,6 +601,7 @@ $(document).ready(function(){
     // Tooltip init
     $('[data-toggle="tooltip"]').tooltip()
     
+
 });
 
 

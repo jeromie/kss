@@ -7969,6 +7969,24 @@ footer .bl-1 {
     -webkit-transform: translateX(0);
             transform: translateX(0); }
 
+.kss-toast {
+  padding: 15px 20px;
+  color: #fff;
+  background: rgba(0, 0, 10, 0.7);
+  display: inline-block;
+  position: fixed;
+  top: 0px;
+  -webkit-transform: translateY(-150px);
+          transform: translateY(-150px);
+  right: 30px;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
+  .kss-toast.shown {
+    -webkit-transform: translateY(70px);
+            transform: translateY(70px); }
+
 @media (min-width: 320px) and (max-width: 767.98px) {
   .overflow-m {
     overflow-x: scroll;
