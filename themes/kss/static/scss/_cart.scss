@@ -385,3 +385,13 @@ body #cd-cart .modal.show .modal-dialog {
   }
 }
 
+
+// Empty cart
+
+.empty-cart{
+    height: calc(100% - 60px);
+    &__icon{
+        font-size: 5em;
+        color: #d2d2d2;
+    }
+}

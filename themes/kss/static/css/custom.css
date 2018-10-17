@@ -9071,6 +9071,12 @@ body #cd-cart .modal.show .modal-dialog {
 #delivery-pincode .close {
   opacity: 1; }
 
+.empty-cart {
+  height: calc(100% - 60px); }
+  .empty-cart__icon {
+    font-size: 5em;
+    color: #d2d2d2; }
+
 .prod-slides {
   height: 530px;
   overflow: hidden; }
