@@ -46,7 +46,9 @@
     // color: $gray-500;
     opacity: 0.4;
     cursor: default;
-    &:hover {}
+    &:hover {
+        color: inherit;
+    }
 }
 .radio-wrap {
 
