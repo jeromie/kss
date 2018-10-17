@@ -60,9 +60,11 @@
                padding: 0px;
                 /* background-size: contain; */
                 /* background-position: center; */
-                background-repeat: no-repeat;
-                width: 54px;
+                width: 77px;
                 height: 88px;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
         }
     }
     &.wo-image {

@@ -7386,9 +7386,11 @@ a.text-cancel:hover, a.text-cancel:focus {
   padding: 0px;
   /* background-size: contain; */
   /* background-position: center; */
-  background-repeat: no-repeat;
-  width: 54px;
-  height: 88px; }
+  width: 77px;
+  height: 88px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
 .radio-wrap.wo-image .radio-label {
   min-width: 100px;
   padding: 10px;
