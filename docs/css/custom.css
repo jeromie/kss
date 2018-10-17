@@ -7377,6 +7377,8 @@ a.text-cancel:hover, a.text-cancel:focus {
   background-color: #e9ecef;
   opacity: 0.4;
   cursor: default; }
+  .radio-input:disabled + .radio-label:hover {
+    color: inherit; }
 
 .radio-wrap.w-image .radio-option {
   display: none; }
