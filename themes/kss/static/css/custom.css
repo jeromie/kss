@@ -7792,6 +7792,9 @@ footer .bl-1 {
 .dashed {
   border-style: dashed; }
 
+.no-outline {
+  outline: 0; }
+
 .kss_icon {
   background: url(../img/sprite.png) no-repeat;
   width: 30px;
