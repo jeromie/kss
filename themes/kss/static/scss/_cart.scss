@@ -404,7 +404,7 @@ body #cd-cart .modal.show .modal-dialog {
         height: 100%;
         top: 0;
         left: 0;
-        background: #ffffff url('../img/loader_818e.gif') center center no-repeat;
+        background: rgba(255, 255, 255, 0.83) url('../img/loader_818e.gif') center center no-repeat;
         z-index: 9999;
     }
 }

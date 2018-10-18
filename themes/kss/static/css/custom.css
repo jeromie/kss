@@ -7363,9 +7363,9 @@ a.text-cancel:hover, a.text-cancel:focus {
   .radio-label:hover {
     color: #e3a406; }
 
-.radio-input:checked + .radio-label {
-  border-color: #f9bc23;
-  color: #e3a406; }
+.radio-input:checked + .radio-label img {
+  -webkit-box-shadow: 0 0 0 2px #f9bc23;
+          box-shadow: 0 0 0 2px #f9bc23; }
 
 .radio-input:checked + .radio-label .radio-selection {
   color: #f9bc23; }
@@ -7386,11 +7386,8 @@ a.text-cancel:hover, a.text-cancel:focus {
   padding: 0px;
   /* background-size: contain; */
   /* background-position: center; */
-  width: 77px;
-  height: 88px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
+  width: 54px;
+  border: 2px solid transparent; }
 .radio-wrap.wo-image .radio-label {
   min-width: 100px;
   padding: 10px;
@@ -7446,7 +7443,6 @@ a.text-cancel:hover, a.text-cancel:focus {
     display: -ms-flexbox !important;
     display: flex !important; } }
 #color-options .radio-option {
-  margin-top: 90px;
   display: block !important; }
 
 @media (max-width: 575.98px) {
@@ -9089,7 +9085,7 @@ body #cd-cart .modal.show .modal-dialog {
   height: 100%;
   top: 0;
   left: 0;
-  background: #ffffff url("../img/loader_818e.gif") center center no-repeat;
+  background: rgba(255, 255, 255, 0.83) url("../img/loader_818e.gif") center center no-repeat;
   z-index: 9999; }
 
 .prod-slides {

@@ -30,9 +30,10 @@
         // transform: translateY(2px);
     }
 }
-.radio-input:checked+.radio-label {
-    border-color: theme-color("primary");
-    color: darken(theme-color("primary"), 10%);
+.radio-input:checked+.radio-label img {
+    // border-color: theme-color("primary");
+    // color: darken(theme-color("primary"), 10%);
+    box-shadow: 0 0 0 2px theme-color("primary");
     &:hover {}
 }
 .radio-input:checked+.radio-label .radio-selection {
@@ -60,11 +61,9 @@
                padding: 0px;
                 /* background-size: contain; */
                 /* background-position: center; */
-                width: 77px;
-                height: 88px;
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
+                width: 54px;
+                // height: 88px;
+                border: 2px solid transparent;
         }
     }
     &.wo-image {
@@ -135,7 +134,7 @@
 }
 #color-options{
     .radio-option{
-        margin-top: 90px;
+        // margin-top: 90px;
         display:block !important;
     }
 }
